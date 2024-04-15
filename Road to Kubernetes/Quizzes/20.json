@@ -1,0 +1,116 @@
+{
+    "quizzes": [
+      {
+        "question": "Qu'est-ce qu'un PORT en informatique ?",
+        "answers": [
+          { "text": "Un PORT est comme une porte spéciale sur l'ordinateur pour accéder à différentes applications.", "correct": true },
+          { "text": "Un PORT est un logiciel qui permet de surveiller et de contrôler le trafic réseau sur un ordinateur.", "correct": false },
+          { "text": "Un PORT est un composant matériel utilisé pour connecter des périphériques externes à un ordinateur.", "correct": false },
+          { "text": "Un PORT est un protocole de communication utilisé pour échanger des données entre deux ordinateurs sur un réseau.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi le numéro du port (comme 8011) est-il important ?",
+        "answers": [
+          { "text": "Il est important parce qu'il permet de savoir où exactement une application doit écouter les demandes sur internet.", "correct": true },
+          { "text": "Le numéro de port indique le nombre de connexions simultanées qu'une application peut gérer.", "correct": false },
+          { "text": "Le numéro de port détermine la vitesse de transfert des données entre le serveur et le client.", "correct": false },
+          { "text": "Le numéro de port est utilisé pour crypter les communications entre le serveur et le client.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que uvicorn ?",
+        "answers": [
+          { "text": "Uvicorn est un programme qui aide à faire fonctionner les applications web, comme celles créées avec FastAPI.", "correct": true },
+          { "text": "Uvicorn est un framework de développement web utilisé pour créer des applications en Python.", "correct": false },
+          { "text": "Uvicorn est un langage de programmation spécialement conçu pour la création d'API RESTful.", "correct": false },
+          { "text": "Uvicorn est un service cloud permettant de déployer et de gérer des applications web à grande échelle.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment peut-on voir notre application FastAPI fonctionner dans le navigateur ?",
+        "answers": [
+          { "text": "On peut la voir en ouvrant notre navigateur web et en allant à l'adresse http://127.0.0.1:8011.", "correct": true },
+          { "text": "On peut la voir en utilisant un outil de développement web intégré à notre IDE.", "correct": false },
+          { "text": "On peut la voir en envoyant un e-mail à une adresse spécifique qui affiche le contenu de l'application.", "correct": false },
+          { "text": "On peut la voir en se connectant à un réseau local privé et en naviguant vers l'adresse IP du serveur.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que cela signifie d'ajouter de nouvelles routes HTTP à notre application FastAPI ?",
+        "answers": [
+          { "text": "Cela signifie qu'on crée de nouveaux chemins ou des manières pour les gens d'interagir avec notre site web.", "correct": true },
+          { "text": "Cela signifie qu'on modifie les paramètres de sécurité de notre application pour permettre l'accès à de nouveaux utilisateurs.", "correct": false },
+          { "text": "Cela signifie qu'on met à jour la base de données de notre application avec de nouvelles informations.", "correct": false },
+          { "text": "Cela signifie qu'on installe de nouveaux modules ou packages pour améliorer les fonctionnalités de notre application.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  {
+    "quizzes": [
+      {
+        "question": "Pourquoi est-il une grande réalisation d'arriver à ce point avec notre projet ?",
+        "answers": [
+          { "text": "Parce que cela montre qu'on a réussi à faire fonctionner notre application web sur notre ordinateur.", "correct": true },
+          { "text": "Parce que cela signifie qu'on a terminé la première phase de développement de notre application.", "correct": false },
+          { "text": "Parce que cela prouve qu'on est capable de comprendre des concepts complexes de programmation.", "correct": false },
+          { "text": "Parce que cela permet d'évaluer notre compétence en résolution de problèmes informatiques.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quelle est l'adresse pour vérifier le fonctionnement de notre application FastAPI ?",
+        "answers": [
+          { "text": "L'adresse est http://127.0.0.1:8011 dans le navigateur web.", "correct": true },
+          { "text": "L'adresse est http://localhost:8011 dans le navigateur web.", "correct": false },
+          { "text": "L'adresse est http://localhost:8000 dans le navigateur web.", "correct": false },
+          { "text": "L'adresse est http://127.0.0.1:8000 dans le navigateur web.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que FastAPI ?",
+        "answers": [
+          { "text": "FastAPI est un outil pour créer des applications web rapidement et facilement.", "correct": true },
+          { "text": "FastAPI est un langage de programmation utilisé pour développer des applications de bureau.", "correct": false },
+          { "text": "FastAPI est un framework JavaScript pour le développement d'applications frontend.", "correct": false },
+          { "text": "FastAPI est un service cloud permettant de déployer des applications web à grande échelle.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment sait-on sur quel port uvicorn fait fonctionner notre application FastAPI ?",
+        "answers": [
+          { "text": "On le sait grâce à la commande qu'on utilise pour démarrer uvicorn, où on spécifie le port avec `--port`.", "correct": true },
+          { "text": "On le sait en consultant la documentation officielle de FastAPI.", "correct": false },
+          { "text": "On le sait en regardant le fichier de configuration de notre application FastAPI.", "correct": false },
+          { "text": "On le sait en exécutant une commande spéciale dans le terminal pour interroger le serveur uvicorn.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une application web ?",
+        "answers": [
+          { "text": "Une application web est un programme qui fonctionne sur internet et que l'on peut utiliser avec un navigateur.", "correct": true },
+          { "text": "Une application web est un logiciel installé localement sur l'ordinateur de l'utilisateur.", "correct": false },
+          { "text": "Une application web est un outil utilisé exclusivement par les développeurs pour créer des sites internet.", "correct": false },
+          { "text": "Une application web est une extension du navigateur permettant d'améliorer les fonctionnalités de navigation.", "correct": false }
+        ]
+      }
+    ]
+  }
+  
+
+  {
+    "quizzes": [
+      {
+        "question": "Pourquoi est-il important d'expérimenter avec notre application en ajoutant de nouvelles routes HTTP ?",
+        "answers": [
+          { "text": "C'est important pour apprendre comment notre application peut répondre à différentes demandes et pour la rendre plus utile.", "correct": true },
+          { "text": "Parce que cela permet de rendre notre application plus complexe et plus difficile à maintenir.", "correct": false },
+          { "text": "Pour éviter que notre application devienne trop lourde et difficile à gérer.", "correct": false },
+          { "text": "Parce que cela garantit que notre application reste compatible avec les versions précédentes.", "correct": false }
+        ]
+      }
+    ]
+  }
+  

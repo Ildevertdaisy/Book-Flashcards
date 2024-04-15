@@ -1,0 +1,126 @@
+{
+    "quizzes": [
+      {
+        "question": "Que veut dire le mot \"module\" dans notre projet ?",
+        "answers": [
+          { "text": "Un module c'est une partie de notre projet, comme un fichier où on écrit notre code.", "correct": true },
+          { "text": "Un module représente un utilisateur dans notre projet.", "correct": false },
+          { "text": "Un module est un type de serveur utilisé dans notre projet.", "correct": false },
+          { "text": "Un module est une bibliothèque externe que nous n'utilisons pas dans notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "À quoi correspond `<module>` quand on démarre notre application ?",
+        "answers": [
+          { "text": "Il correspond à `src.main`, car notre fichier `main.py` se trouve dans le dossier `src`.", "correct": true },
+          { "text": "Il correspond à `app`, l'instance de FastAPI utilisée dans notre fichier `src/main.py`.", "correct": false },
+          { "text": "Il correspond à un répertoire spécifique dans notre projet.", "correct": false },
+          { "text": "Il correspond à une variable qui n'est pas utilisée dans notre application.", "correct": false }
+        ]
+      },
+      {
+        "question": "Que signifie `<variable>` dans notre commande pour démarrer l'application ?",
+        "answers": [
+          { "text": "Cela correspond à `app`, l'instance de FastAPI utilisée dans notre fichier `src/main.py`.", "correct": true },
+          { "text": "Cela correspond à un nom de module dans notre projet.", "correct": false },
+          { "text": "Cela correspond à une commande système utilisée pour démarrer l'application.", "correct": false },
+          { "text": "Cela correspond à un fichier de configuration que nous n'utilisons pas.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi utilise-t-on le drapeau `--reload` ?",
+        "answers": [
+          { "text": "Pour que notre application redémarre automatiquement quand on enregistre des changements.", "correct": true },
+          { "text": "Pour activer le mode de débogage de l'application.", "correct": false },
+          { "text": "Pour limiter l'accès à l'application à un seul utilisateur à la fois.", "correct": false },
+          { "text": "Pour augmenter la vitesse de l'application en production.", "correct": false }
+        ]
+      },
+      {
+        "question": "À quoi sert le drapeau `--port` ?",
+        "answers": [
+          { "text": "Il permet de choisir un numéro de port spécifique sur lequel notre application va fonctionner.", "correct": true },
+          { "text": "Il contrôle le nombre maximal de demandes pouvant être traitées simultanément par notre application.", "correct": false },
+          { "text": "Il définit le chemin d'accès à l'application sur le serveur.", "correct": false },
+          { "text": "Il active le chiffrement SSL pour sécuriser les communications avec l'application.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  {
+    "quizzes": [
+      {
+        "question": "Comment change-t-on le dossier sur lequel on travaille dans le terminal ?",
+        "answers": [
+          { "text": "On utilise la commande `cd` suivi du chemin du dossier, comme `cd ~/Dev/roadtok8s/py/`.", "correct": true },
+          { "text": "On utilise la commande `dir` pour changer de dossier.", "correct": false },
+          { "text": "On utilise la commande `mv` pour déplacer le dossier actif.", "correct": false },
+          { "text": "On utilise la commande `ls` pour lister les fichiers dans le dossier.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'un environnement virtuel en programmation ?",
+        "answers": [
+          { "text": "C'est un espace sur l'ordinateur qui aide à gérer les outils et les versions nécessaires pour un projet.", "correct": true },
+          { "text": "C'est une simulation d'un ordinateur virtuel pour tester des programmes.", "correct": false },
+          { "text": "C'est un système de fichiers cryptés utilisé pour sécuriser les données sensibles.", "correct": false },
+          { "text": "C'est un environnement de développement intégré pour écrire du code en Python.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment active-t-on notre environnement virtuel ?",
+        "answers": [
+          { "text": "Avec la commande `source venv/bin/activate` ou `.\\venv\\Scripts\\activate` selon le système d'exploitation.", "correct": true },
+          { "text": "En exécutant la commande `python venv activate`.", "correct": false },
+          { "text": "En cliquant sur une icône spéciale sur le bureau.", "correct": false },
+          { "text": "En utilisant la commande `start venv`.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quelle est la commande complète pour démarrer notre application FastAPI avec uvicorn ?",
+        "answers": [
+          { "text": "`uvicorn src.main:app --reload --port 8011`.", "correct": true },
+          { "text": "`uvicorn start app --port 8000`.", "correct": false },
+          { "text": "`start uvicorn src.main:app --reload`.", "correct": false },
+          { "text": "`uvicorn run main:app --port 8080`.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi spécifie-t-on un numéro de port comme 8011 quand on démarre l'application ?",
+        "answers": [
+          { "text": "Pour dire à notre ordinateur où écouter les demandes pour notre site web.", "correct": true },
+          { "text": "Parce que c'est le port par défaut recommandé par FastAPI.", "correct": false },
+          { "text": "Pour se conformer aux exigences de sécurité des applications web modernes.", "correct": false },
+          { "text": "Pour éviter les conflits avec d'autres applications en cours d'exécution.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  {
+    "quizzes": [
+      {
+        "question": "Qu'est-ce qu'un chemin dans le terminal ?",
+        "answers": [
+          { "text": "Un chemin montre où se trouve un dossier ou un fichier dans l'ordinateur.", "correct": true },
+          { "text": "Un chemin est une commande pour naviguer entre les dossiers dans le terminal.", "correct": false },
+          { "text": "Un chemin est une série de commandes pour exécuter des tâches spécifiques dans le terminal.", "correct": false },
+          { "text": "Un chemin est une structure de données utilisée pour stocker des informations sur les fichiers dans le terminal.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi est-il important de réactiver l'environnement virtuel avant de démarrer l'application ?",
+        "answers": [
+          { "text": "Pour s'assurer que l'on utilise les bons outils et versions nécessaires pour faire fonctionner notre application correctement.", "correct": true },
+          { "text": "Pour éviter les erreurs de syntaxe lors de l'exécution de commandes dans le terminal.", "correct": false },
+          { "text": "Pour garantir que notre application fonctionne de manière sécurisée sans exposer notre système à des vulnérabilités.", "correct": false },
+          { "text": "Pour permettre à plusieurs utilisateurs d'accéder simultanément à notre application sans conflits.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  

@@ -1,0 +1,1066 @@
+#1
+
+4 Deploying with GitHub Actions
+
+This chapter covers
+
+- Using a CI/CD pipeline
+- Configuring and using GitHub Actions
+- Enriching GitHub Actions workflows with secrets
+- Document-based automation with Ansible
+
+When you first learn to drive a car, everything is new, so every step must be carefully considered. After a few months or years, you start driving without thinking about every little detail. I believe this is the natural state for all humans—we learn and focus intently until it becomes automatic and effortless. Software is much the same. Our built-in human need to remove attention from any given task translates to how we deploy our software into production.
+
+#2
+
+In chapter 3, we implemented elements of automation using Git hooks and Supervisor. Those elements are still important, but they’re missing something: automated repeatability. In other words, if we want to spin up a new server with the exact same configuration, we have to manually run through all of the same steps once again. To perform automated repeatability later in this chapter, we’ll use a popular Python-based command line tool called Ansible. Ansible uses a document-based approach to automation, which means we declare our desired state, and Ansible will ensure that state is met. This desired state would include things like NGINX is installed, configured, and running; Supervisor is installed, configured, and running; and so on. Ansible is a very powerful tool that we’ll only scratch the surface of in this chapter to discuss how it pertains to the tasks we’re going to automate, continuing the work we began in chapter 3.
+
+#3
+
+In addition to configuration automation through Ansible, we are also going to remove Git hooks from our workflow in favor of CI/CD pipelines. CI/CD pipelines can handle a few critical pieces for us, including running our configuration automation and testing our code to ensure it’s even ready for live production. Further, we can use CI/CD pipelines to house our runtime environment variables and secrets (e.g., application-specific passwords, API keys, SSH keys, and so on) to be a single source of truth for our projects. This can be true regardless of how those variables and secrets are used (or obtained) in our code.
+
+
+#4
+
+The value unlocked in this kind of automation comes down to the key phrase portability and scalability. Creating software that can move as you need is essential to maintain an adaptable project and keep all kinds of costs in check while still serving your users, customers, or whomever or whatever needs your software. We’ll start by diving into our first CI/CD pipeline as a Hello World of sorts to show how simple it can be to manage software through Git-based CI/CD workflows.
+
+#5
+
+4.1 Getting started with CI/CD pipelines with GitHub Actions
+
+Pushing code into production is incredibly exciting. It’s when the rubber hits the road and when you can make a major impact on the lives of the users you aim to serve. Or you could be releasing a dud. Either way, production is where the magic happens because even duds can teach us valuable lessons that are beyond the scope of software development.
+
+#6
+
+Continuous integration, or CI, is the process of combining code from various sources (i.e., multiple developers, multiple machines) into a single project. Even if you are working alone, combining your new code with your old code on a regular basis is highly recommended, even if you completely wipe out your old code. Version control with Git makes continuous integration a simple process and gives us the confidence to make big changes to our codebase without fear of losing our work.
+
+#7
+
+Whenever you merge or integrate code, it’s highly recommended that you automatically test the code to ensure the code is stable and working as expected. There are numerous books on the subject of writing automated tests, also called unit tests, for any given programming language. So, while it’s beyond the scope of this book, it’s important to understand that automated tests are a critical component of continuous integration and thus continuous delivery or deployment.
+
+#8
+
+Continuous delivery, or CD, is the process of automatically deploying code into an environment that is pre-production but production-like. This environment is often known as a staging environment. Its primary purpose is to have a manual review of the code as well as the result of any automated testing of the code. Once the staging environment is approved, the code is pushed into the final production stage, also known as “live.” Continuous deployment is much like continuous delivery except that the code is automatically deployed into production without manual approval; it’s end-to-end automation with building, testing, and deploying to production.
+
+#9
+
+For this book, we will perform CI/CD using a popular tool called GitHub Actions. GitHub Actions is a free service by GitHub.com that allows us to run code on their servers when we make changes to our stored repositories. GitHub Actions can be used to execute all kinds of code and run all kinds of automations, but we’ll use it primarily to deploy our applications and configure our environments. There are many CI/CD pipeline tools that exist to perform the exact actions we’ll do in GitHub Actions, including open source options like GitLab and nektos/act.
+
+#10
+
+4.1.1 Your first GitHub Actions workflow
+GitHub Actions is a computer that runs code on your behalf based on your repo-level workflow-definition file(s). The process for it is as follows:
+
+1.Create a GitHub.com repo for your project.
+2.Create a workflow-definition file (or multiple files) in your repo following a specific file path and format (more on this shortly).
+3.Commit the workflow file(s) and push your code to GitHub.
+4.Run workflows on demand or automatically based on your workflow definition file(s).
+
+This process is the same for many CI/CD tools out there; GitHub Actions is just one of many.
+
+#11
+
+The workflows you define are up to you and can be as simple or as complex as you need them to be. They will run on GitHub’s servers and can run any code you tell them to run just as long as they can. How long you run code and how frequently are up to you. It’s good to keep in mind that although GitHub Actions has a generous free tier, the more you use it, the more it costs you.
+
+#12
+
+For this book and many other projects, I have used GitHub Actions thousands of times and have yet to pay a cent; the same should be true for you. If using GitHub Actions is a concern, as it might be for some, we will also use the self-hosted and open-source alternative to GitHub Actions called nektos/act, which is almost a one-to-one drop-in replacement for GitHub Actions.
+
+#13
+
+Now let’s build a Hello World workflow to get a sense of how to define and run workflows. In chapter 2, we created two GitHub repositories; for this section, I’ll use my roadtok8s-py repo (https://github.com/jmitchel3/roadtok8s-py).
+
+#14
+
+In the root of your Python project, create the path .github/workflows/. This path is required for GitHub Actions to recognize your workflow definition files. For more advanced Git users, the workflows will only work on your default branch (e.g., main or master), so be sure to create these folders on your default branch.
+
+#15
+
+Now that we have the base GitHub Actions Workflow folder created, we’ll add a file named hello-world.yaml as our first workflow with the resulting path .github/workflows/hello-world.yaml. The workflow is going to define the following items:
+
+- The name of the workflow
+- When the workflow should run
+- A single job to run (workflows can have many jobs)
+- Which operating system to use (this is done via Docker container images)
+- The steps, or code, to run in the job
+
+#16
+
+We need to convert these items into YAML format because that is what GitHub Actions workflows require. YAML format is a human-readable data serialization format commonly used for configuration and declarative programming. YAML is often great for at-a-glance reviews because it’s very easy to read, as you can see in the following listing.
+
+Listing 4.1 YAML basics
+name: Hello World
+items:
+  sub-item:
+    name: Hello
+    description: world
+  sub-list:
+    - element a
+    - element b
+  other-list: [1, 2, 3]
+
+While listing 4.1 is just a simple example, you can see the format in action.
+
+#17
+
+YAML is commonly used for declarative programming, which is concerned with the output and not the steps to get there. Imperative programming is concerned with the steps to get to the output. Python and JavaScript are both examples of imperative programming because we design how the data flows and what the application must do. YAML can be used for both kinds of programming paradigms.
+
+#18
+
+Listing 4.2 is a YAML-formatted file that GitHub Actions workflows can understand. GitHub Actions is an example of declarative programming because we declare what we want to be done regardless of how exactly it gets done.
+
+Listing 4.2 Hello World with GitHub Actions
+name: Hello World
+on:
+  workflow_dispatch:
+  push:
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Hello World
+      run: echo "Hello World"
+
+#19
+
+After you create this file locally, be sure to commit and push the file to GitHub with the following:
+
+git add .github/workflows/hello-world.yaml
+git commit -m "Create hello-world.yaml workflow"
+git push origin main
+
+
+#20
+
+
+To better understand what this workflow is doing, let’s break it down:
+
+- on:push—This tells GitHub Actions to run this workflow every time we push code to our repository. We can narrow the scope of this configuration, but for now, we’ll keep it simple.
+- on:workflow_dispatch—This tells GitHub Actions that this workflow can be manually triggered from the user interface on GitHub.com. I recommend using this manual trigger frequently when learning GitHub Actions.
+- runs-on: ubuntu-latest—Ubuntu is one of the most flexible options to use for GitHub Actions so we will stick with this option. There are other options for other operating systems but using them is beyond the scope of this book. Consider reading more about GitHub Action Runners in the official docs (https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) and review the available images from GitHub (https://github.com/actions/runner-images#available-images).
+
+
+#21
+
+- steps—This is where we define the steps, or code, we want to run. In our case, we only have one step, which is to run the command echo "Hello World". This command will print the text “Hello World” to the console. Steps have several options including
+    - uses—This is the name of the action we want to use (if it’s not built into GitHub Actions). In our case, we’re using the built-in action actions/checkout@v3, which is used to check out our code from GitHub. This is a required step for nearly all workflows.
+    - name—We can optionally name each step; in this case, we just used “Hello World”.
+    - run—This is the barebones command that allows us to execute any other command, such as echo "my text" or even python3 my_script.py.
+
+#22
+
+Even in this simple workflow, we can see that GitHub Actions workflows can start to get rather complex rather quickly because they are so flexible. The flexibility is a great thing, but it can also be a bit overwhelming at first. The best way to learn GitHub Actions is to start with a simple workflow and then build on it as you need to.
+
+Let’s review this workflow on GitHub.com by visiting the Actions tab of any given GitHub repository, as seen in figure 4.1.
+
+Figure 4.1 GitHub Actions tab
+
+
+#23
+
+Once at this tab, you should see our GitHub Action listed in the sidebar, as seen in figure 4.2. If you do not see our workflow listed, you did not commit or push your code to the GitHub repository correctly, so you will have to go back and review the previous steps.
+
+Figure 4.2 GitHub Actions sidebar
+
+
+#24
+
+The name listed here matches directly to the declaration of name: Hello World in the workflow file in listing 4.2. To maintain the ordering of these names, it’s often a good idea to put a number in front of the name (e.g., name: 01 Hello World). Now click Hello World and then click Run Workflow, as seen in figure 4.3.
+
+Figure 4.3 GitHub Actions Run Workflow
+
+The reason we can even see Run Workflow is directly tied to the definition of on:workflow_dispatch in the workflow file.
+
+#25
+
+Given that we included on:push, there’s a good chance that this workflow has already run as denoted by Create hello-world.yaml in the history of this workflow, as seen in figure 4.3. Click any of the history items here to review the output of the workflow, as seen in figure 4.4.
+
+Figure 4.4 GitHub Actions workflow run result
+
+#26
+
+Figure 4.4 shows a few important items:
+
+- The name of the workflow that ran
+- The jobs with the name build (again directly tied to the workflow file)
+- The steps that ran in the job (including ones we did not define)
+- The output of each step
+- The output of our specific step named “Hello World”
+- All checks passed (e.g., each icon for each step as well as the job have check icons instead of warning icons)
+
+#27
+
+Congratulations! You just ran your first GitHub Actions workflow. This is a great first step into the world of CI/CD pipelines and GitHub Actions. Whether or not your workflow was successful is not the point. The point is you just used a serverless CI/CD pipeline to run code on your behalf. This is a very powerful concept we’ll use throughout this book.
+
+#28
+
+GitHub Actions workflows are powerful indeed, but they become even more powerful when we give them permission to do a wider variety of things on our behalf. In the next section, we’ll look at how to give GitHub Actions workflows permission to do things like install software on a remote server by storing passwords, API keys, SSH keys, and other secrets.
+
+#29
+
+4.1.2 Creating your first GitHub Actions secret
+Now that we have our first workflow completed, let’s start working toward a more practical example with the goal of simply installing NGINX on a remote server. This example requires us to use private and public SSH keys to work with GitHub Actions and our virtual machines at the same time.
+
+
+#30
+
+We start by creating purpose-built SSH keys to be used specifically on GitHub Actions and Akamai Linode. The private key will be stored as a GitHub Actions secret, and the public key will be automatically installed on new instances provisioned on Akamai Linode.
+
+#31
+Creating new SSH keys will ensure that our personal SSH keys are never exposed to GitHub Actions and thus are never exposed anywhere besides our local environment. Doing this will also set us up for even better automation for when we use Ansible with GitHub Actions later in this chapter. If you’re new to working with SSH keys, consider reviewing appendix C. The following listing gives us the command to create a new SSH key without any input; it should work across different platforms.
+
+Listing 4.3 Creating a new SSH key
+# windows/mac/linux
+ssh-keygen -t rsa -b 4096 -f github_actions_key -N ""
+
+#32
+
+This command results in the following files in the directory you ran the command in
+
+- github_actions_key—This is the private key we’ll install in a GitHub Actions secret.
+- github_actions_key.pub—This is the public key we’ll install on Akamai Linode.
+
+Once again, you should never expose or share your personal, private SSH keys (e.g., ~/.ssh/id_rsa) because it poses a major security concern, which is exactly why we created a new SSH key pair for this purpose.
+
+#33
+
+At this point, we will add the private key (e.g., github_actions_key without the .pub) to the GitHub repos we created in chapter 2. Here are the steps:
+
+1.Navigate to your repo on GitHub.
+2.Click Settings.
+3.Navigate to Secrets and Variables on the sidebar.
+4.Click Actions, as seen in figure 4.5.
+
+Figure 4.5 GitHub Actions secrets link
+
+#34
+
+At this point, click New Repository Secret and enter SSH_PRIVATE_KEY. Then paste the contents of your newly created private key (e.g., github_actions_key) into the value field. Click Add Secret to save the new secret. Figure 4.6 shows what this should look like.
+
+Figure 4.6 New GitHub Actions secret
+
+
+#35
+
+Repeat this same process for any new secret you want to add. Figure 4.6 only highlights my Python application (https://github.com/jmitchel3/roadtok8s-py), but I recommend you repeat this exact same key on your Node.js application’s repo as well (https://github.com/jmitchel3/roadtok8s-js). With the private key installed on GitHub Actions secrets, it’s time to take the public key to the Akamai Connected Cloud Console.
+
+#36
+
+4.1.3 Installing the public SSH key on Akamai Connected Cloud
+Installing a public SSH key on our new instances provisioned by Akamai Connected Cloud will allow us to connect to the virtual machine without requiring a password or user input and enable GitHub Actions to perform the job(s) we need it to. Here are the steps to install a public SSH key to Akamai Connected Cloud:
+
+1.Navigate to your Akamai Connected Cloud Console.
+2.Click Account in the top-right corner.
+3.Click SSH Keys on the sidebar, as seen in figure 4.7.
+4.Click Add An SSH Key.
+5.Add a label for your key (e.g., GitHub Actions Public Key) and paste the contents of your newly created public key (e.g., github_actions_key.pub) into the SSH Public Key field, as seen in figure 4.8.
+
+Figure 4.7 Akamai Linode navigation bar: click SSH Keys.
+
+Figure 4.8 Akamai Linode: paste new SSH key.
+
+A more in-depth guide on SSH keys can be found in appendix D. With our SSH keys installed, let’s provision a new virtual machine on Akamai Connected Cloud.
+
+
+#37
+
+4.1.4 Creating a new virtual machine on Akamai Linode
+Now that we have our SSH keys in place on Akamai Connected Cloud and GitHub Actions secrets, we will provision a new virtual machine instance. As you may recall, we did this exact step in section 3.1.1, so we’ll keep this section brief.
+
+#38
+
+
+Navigate to Akamai Connected Cloud Linodes (https://cloud.linode.com/linodes) and click Create Linode. Use the following settings:
+
+- Distribution—Ubuntu 22.04 LTS (or the latest LTS).
+- Region—Dallas, TX (or the region nearest you).
+- Plan—Shared CPU > Nanode 1GB (or larger).
+- Label—rk8s-github-actions.
+- Tags—<optional>.
+- Root Password—Set a good one.
+- SSH Keys—Select your newly created SSH Key (e.g., GitHub Actions Public Key) and any other user keys you may need, as seen in figure 4.9.
+- All other settings—<optional>.
+
+Figure 4.9 Akamai Linode: create VM GitHub Actions with SSH keys.
+
+#39
+
+After you configure these settings, click Create Linode and wait for the IP address to be assigned, as seen in figure 4.10. Once the IP address is assigned, we will move on to the next section, where we use GitHub Actions to install NGINX on this virtual machine.
+
+Figure 4.10 Akamai Linode: IP address assigned to GitHub Actions
+
+
+#40
+
+Figure 4.10 shows the IP address of the newly provisioned virtual machine as 45.79.56.109. This IP address will be different for you, so be sure to use the IP address assigned to your virtual machine.
+
+Back in your GitHub Repo’s Actions secrets, you need to add this IP address just like we did the SSH private key in section 4.1.3. Use the secret name of AKAMAI_INSTANCE_IP_ADDRESS and the secret value with your IP address as seen in figure 4.11.
+
+#41
+
+Figure 4.11 GitHub Actions: add IP address secret.
+
+With all of the conditions set correctly, we are now going to create a GitHub Actions workflow that will install NGINX on our newly created virtual machine. The workflow and process are as simple as it gets, but it’s an important next step to using automation pipelines.
+
+
+#42
+
+4.1.5 Installing NGINX on a remote server with a GitHub Actions workflow
+The standard way to install NGINX on Ubuntu systems is as simple as they come: first we use sudo apt update and then sudo apt install nginx (or apt-get install nginx). These commands should look very familiar to you, because we used these in section 3.2. This simplicity is a great way to test our progress in adopting new methods of deployment—for example, using GitHub Actions.
+
+
+#43
+
+Knowing that these are the two commands, we can use them with the built-in ssh command in the format of ssh <user>@<ip-address> <command>. For example, if we wanted to run sudo apt update and sudo apt install nginx -y on our newly provisioned virtual machine, we would run the following commands:
+ssh root@my-ip-address sudo apt get update:
+ssh root@my-ip-address sudo apt get install nginx -y
+
+#44
+
+Remember, the -y will automatically approve any prompts during this installation, thus making it fully automated, assuming the nginx package exists.
+
+With these two commands in mind, our new workflow will use two of our GitHub Actions secrets:
+
+- SSH_PRIVATE_KEY—This is the private key we created in section 4.1.2.
+- AKAMAI_INSTANCE_IP_ADDRESS—This is the IP address of the virtual machine we created in section 4.1.3.
+
+
+#45
+
+We must never expose secrets in GitHub Actions or Git repositories. Secrets are meant to be secret and should be treated as such. Storing secrets in GitHub Actions is a great way to keep them secure, out of your codebase, and out of the hands of others.
+
+Using stored secrets within a GitHub Actions workflow requires special syntax that looks like this: ${{ secrets.SECRET_NAME }} so we’ll use the following:
+
+- ${{ secrets.SSH_PRIVATE_KEY }}—for our SSH private key
+- ${{ secrets.AKAMAI_INSTANCE_IP_ADDRESS }}—for our Akamai instance IP address
+
+
+#46
+
+Passwordless SSH sessions require at least the following conditions:
+
+- The private key—Available locally (e.g., cat ~/.ssh/id_rsa) and executable with chmod 600 ~/.ssh/id_rsa
+- The public key—Installed remotely (e.g., in ~/.ssh/authorized_keys)
+- An IP address (or hostname)—Accessible via the internet (or simply to the machine attempting to connect)
+
+#47
+
+We have the conditions set for passwordless SSH sessions, but we still need to install the private key during the execution of a GitHub Actions workflow. This means we will inject this key during the workflow so future steps can use this configuration. Luckily for us, this is a straightforward process, as we can see in listing 4.4. Create a new workflow file at the path .github/workflows/install-nginx.yaml with the contents of the following listing.
+
+Listing 4.4 Installing NGINX with GitHub Actions
+name: Install NGINX
+on:
+  workflow_dispatch:
+  push:
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Configure the SSH Private Key Secret
+      run: |
+        mkdir -p ~/.ssh/
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+    - name: Set Strict Host Key Checking
+      run: echo "StrictHostKeyChecking=no" > ~/.ssh/config
+    - name: Install NGINX
+      run: |
+        export MY_HOST="${{ secrets.AKAMAI_INSTANCE_IP_ADDRESS }}"
+        ssh root@$MY_HOST sudo apt update
+        ssh root@$MY_HOST sudo apt install nginx -y
+
+
+#48
+As we can see, this workflow introduced two new steps that we did not have in our Hello World workflow, while everything else remained virtually untouched. Let’s review the new steps:
+
+1.Configure the SSH private key secret—Once again, we see that we use run: to execute a command. In this case, we use a multiline command by leveraging the pipe (|) to enable multiple commands within this single step. We could break these commands into separate steps for more granular clarity on each step (e.g., if one of the commands fails, often having multiple steps can help).
+2.Set strict host key checking—Typically, when you connect via SSH on your local machine, you are prompted to verify the authenticity of the host key. This step skips that verification process because GitHub Actions workflows do not allow for user input. You could also consider using
+
+echo "${{ secrets.AKAMAI_INSTANCE_IP_ADDRESS }} $(ssh-keyscan -H ${secrets.AKAMAI_INSTANCE_IP_ADDRESS})" > ~/.ssh/known_hosts 
+
+to add the host key to the known host file instead of
+
+echo "StrictHostKeyChecking=no" > ~/.ssh/config
+
+#49
+
+3.Install NGINX—This step is very similar to the previous step, except we do not need to configure the SSH private key secret again because the entire build job has access to the results of previous steps. We simply run the two commands to install NGINX on our remote server.
+
+#50
+
+Now you can open your web browser to your IP address and see the NGINX Hello World page, as we have seen before. Seeing this page might not be too exciting because we’ve seen it before, and there’s not much going on here, but the fact that we did this with GitHub Actions is a big deal. We can now use GitHub Actions to install software on remote servers, and we can do it in a repeatable and automated fashion. This is a big step toward a fully automated CI/CD pipeline.
+
+#51
+
+At this point, we could dive into the wonderful world of ssh and scp (a command to copy files) to install and configure our remote host, but instead, we’re going to implement a more robust solution, Ansible, that will allow us to install and configure our remote host. From a developer’s perspective, Ansible and GitHub Actions look a lot alike because they both use YAML-formatted files, but Ansible is designed to automate the configuration of remote hosts.
+
+#52
+
+4.2 Virtual machine automation with Ansible
+Ansible is an enjoyable way to install and configure machines, and in this section, I will show you exactly why. When we consider the command sudo apt install nginx -y, a few questions come to mind:
+
+- Is NGINX installed?
+- Is NGINX running?
+- Do we need to add or update our NGINX configuration?
+- Will we need to restart or reload NGINX after we configure it, if we do need to configure it?
+- Do we need to perform this same exact process on another machine? How about 10 others? 1,000 others?
+
+#53
+
+Since this command, sudo apt install nginx -y, raises several really good questions, we must consider what they are all about: desired state. Desired state is all about ensuring any given machine is configured exactly as needed so our applications will run as intended. I picked NGINX because it’s an incredibly versatile application that has very little overhead to get working well. NGINX is also a great stand-in for when we need to install and configure more complex applications like our Python and Node.js applications. NGINX also gives us features that we can use on both of our applications, such as load balancing and path-based routing.
+
+#54
+
+Ansible, like other infrastructure-as-code (IaC) software, is a tool that helps us achieve a desired state on our machines regardless of the current state of those machines so we can reach a specific outcome through YAML-based files called Ansible Playbooks. Ansible is an example of declarative programming. We will use Ansible to do the following:
+
+- Install OS-level and project-specific dependencies for Python, Node.js, NGINX, and Supervisor.
+- Configure Supervisor and NGINX.
+- Start, restart, and reload Supervisor and NGINX.
+
+#55
+
+Ansible works through a secure shell connection (SSH), so it remains critical that we have the proper SSH keys on the machine to run Ansible and the machine or machines we aim to configure.
+
+Ansible is a powerful tool with many options, so I recommend keeping the Official Documentation (https://docs.ansible.com/ansible/latest/) handy to review all kinds of configuration options. Let’s create our first Ansible Playbook along with a GitHub Actions workflow to run it.
+
+#56
+
+4.2.1 GitHub Actions workflow for Ansible
+Ansible is a Python-based tool that we can install on nearly any machine, and in our case, we will continue using GitHub Actions workflows as our configuration machine and CI/CD pipeline. Using Ansible’s full capabilities is well beyond the scope of this book, but we will use the minimal amount to achieve the results we’re after.
+
+#57
+
+Before we create our first Ansible Playbook, we will create a GitHub Actions workflow that will establish all the pieces we need to run our Ansible Playbook. This workflow will do the following:
+
+1.Set up Python 3.
+2.Install Ansible.
+3.Implement the private SSH key.
+4.Create an Ansible inventory file for our remote host.
+5.Create a Ansible default configuration file.
+6.Run any Ansible Playbook.
+
+#58
+
+Before we look at the GitHub Actions Workflow, let’s review the new terms:
+
+- Inventory file—Ansible has the flexibility to configure a lot of remote hosts via an IP address or even a domain name. This file is how we can define and group the remote hosts as we see fit. In our case, we’ll use one remote host within one group.
+- Default configuration file—Configuring Ansible to use the custom inventory file we create, along with a few SSH-related options, is all we need to get started. We’ll use the default configuration file to do this.
+- Ansible Playbook—Playbooks are the primary feature of Ansible we’ll be using. These are YAML-formatted files that define the desired state of a remote host or group of remote hosts. For larger projects, playbooks can get rather complex.
+
+#59
+
+In listing 4.5, we see the workflow file that will set up Ansible and our remote host. Create a new workflow file at the path .github/workflows/run-ansible.yaml with the contents of the following listing.
+
+Listing 4.5 Running Ansible with GitHub Actions
+name: Run Ansible
+on:
+  workflow_dispatch:
+ 
+jobs:
+  run-playbooks:
+ 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Python 3
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.8"
+    - name: Upgrade Pip & Install Ansible
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install ansible
+    - name: Implement the Private SSH Key
+      run: |
+        mkdir -p ~/.ssh/
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+    - name: Ansible Inventory File for Remote host
+      run: |
+        mkdir -p ./devops/ansible/
+        export INVENTORY_FILE=./devops/ansible/inventory.ini
+        echo "[my_host_group]" > $INVENTORY_FILE
+        echo "${{ secrets.AKAMAI_INSTANCE_IP_ADDRESS }}" >> $INVENTORY_FILE
+    - name: Ansible Default Configuration File
+      run: |
+        mkdir -p ./devops/ansible/
+        cat <<EOF > ./devops/ansible/ansible.cfg
+        [defaults]
+        ansible_python_interpreter = '/usr/bin/python3'
+        ansible_ssh_private_key_file = ~/.ssh/id_rsa
+        remote_user = root
+        inventory = ./inventory.ini
+        host_key_checking = False
+        EOF
+    - name: Ping Ansible Hosts
+      working-directory: ./devops/ansible/
+      run: |
+       ansible all -m ping
+    - name: Run Ansible Playbooks
+      working-directory: ./devops/ansible/
+      run: |
+       ansible-playbook install-nginx.yaml
+    - name: Deploy Python via Ansible
+      working-directory: ./devops/ansible/
+      run: |
+       ansible-playbook deploy-python.yaml
+
+#60
+
+The two key files created in this workflow are inventory.ini and ansible.cfg. This workflow is an end-to-end example of what needs to be done to run an Ansible workflow. The command ansible all -m ping simply ensures that our previous configuration was done correctly and in the correct location. We see the declaration working-directory for each of the ansible commands (ansible and ansible-playbook) simply because ansible.cfg is located in and references the inventory.ini file in the working-directory. After you commit this workflow to Git, push it to GitHub, and run it, you will see the result in figure 4.12.
+
+Figure 4.12 GitHub Actions Ansible setup result
+
+#61
+
+Ansible can verify that it’s connecting to our remote host and that it fails to run the install-nginx.yaml workflow (because it hasn’t been created yet). If you see the same result, then you’re ready to create your first Ansible Playbook. If you see anything related to connecting to localhost, there’s a good chance that your inventory.ini file was incorrectly created or the IP address is no longer set correctly in your GitHub Actions secrets. If you see anything related to permission denied or ssh key errors, there’s a good chance that your SSH private key is not set up correctly.
+
+Assuming you got the result shown in figure 4.12, we’re now ready to create our first Ansible Playbook. Get ready because this is where the magic happens.
+
+#62
+
+4.2.2 Creating your first Ansible Playbook
+In my experience, basic Ansible Playbooks are much easier to understand than GitHub Actions workflows, but advanced Ansible Playbooks are much harder to understand. Luckily for us, we’ll stick with basic Ansible Playbooks for the remainder of this book. In each playbook, we’ll declare the following:
+
+- name—The name of the playbook.
+- hosts—The hosts and the host group that this playbook will run on. You can use all, which means all hosts, or you can use a specific group such as [my_host_group], which we defined in inventory.ini in listing 4.5. Using all is what we can use for our first playbook.
+- become—a special keyword that allows us to run commands as the root user. Using a root user is not always recommended for production environments, but the intricacies of user permissions are beyond the scope of this book.
+- tasks—a list of configurations we want Ansible to run. Each task runs after the previous task.
+
+#63
+
+Listing 4.6 shows the contents of install-nginx.yaml, which we will create at the path devops/ansible/install-nginx.yaml.
+
+Listing 4.6 Installing NGINX with Ansible
+- name: Install NGINX
+  hosts: all
+  become: true
+  tasks:
+  - name: Install NGINX
+    apt:
+      name: nginx
+      state: present
+      update_cache: yes
+
+#64
+
+Are you floored by how simple this is? Probably not. After all, it’s a lot more lines than just sudo apt update && sudo apt install nginx -y. The major difference is that we can run this same workflow on thousands of hosts if needed, with the same ease as running on one host (assuming the correct SSH keys are installed, of course). We can make this even more robust by ensuring that the NGINX service is actually running on this host by appending a new task to this playbook, as shown in the following listing.
+
+Listing 4.7 Ensuring NGINX is running with Ansible
+- name: Install NGINX
+  hosts: all
+  become: true
+  tasks:
+  - name: Install NGINX
+    apt:
+      name: nginx
+      state: present
+      update_cache: yes
+  - name: Ensure NGINX is running
+    service:
+      name: nginx
+      state: started
+      enabled: yes
+
+With this file created, let’s commit it to Git, push it, and then run our GitHub Actions Ansible workflow. You should see the output shown in figure 4.13.
+
+Figure 4.13 GitHub Actions Ansible install NGINX.
+
+#65
+
+With Ansible, we can see the status of each task being run in the order it was declared. If you had more than one host in your inventory file, you would see the same output for each host. This is a great way to see the status of each task and each host. Once again, we see the desired state (e.g., the declared task), along with the current state, and the updated state if it changed. This is a great way to see what Ansible is doing and why it’s doing it. Of course, adding more remote hosts is as easy as the following:
+
+1.Add each host as a secret in GitHub Actions Secrets (e.g., AKAMAI_INSTANCE_IP_ADDRESS_1, AKAMAI_INSTANCE_IP_ADDRESS_2, etc.).
+2.Add each host to the inventory.ini file in the workflow (e.g., echo "${{ secrets.AKAMAI_INSTANCE_IP_ADDRESS_1 }}" >> inventory.ini and echo "${{ secrets.AKAMAI_INSTANCE_IP_ADDRESS_2 }}" >> inventory.ini).
+3.Run the GitHub Actions workflow.
+
+#66
+
+With this new Ansible Playbook, we can now install NGINX on any number of remote hosts with a single command. This is a great step toward a fully automated CI/CD pipeline. Now we need to take the next step toward automating the deployment of our Python and Node.js applications.
+
+#67
+
+4.2.3 Ansible for our Python app
+In chapter 3, we deployed a Python application and used a number of Git hooks to perform the configuration. While this method works and is valid, it’s prone to errors and requires us to self-host our Git repo, which is not ideal (for a large number of reasons).
+
+#68
+
+Before we start creating the playbook, let’s recap what we need to do for our Python application to run on nearly any remote host:
+
+- Install Python 3 and related system-wide dependencies (such as python3-dev, python3-venv, build-essential, etc.).
+- Create a Python 3.8+ virtual environment.
+- Copy or update the source code.
+- Install or update the requirements (via Python’s requirements.txt).
+- Install and configure Supervisor for the Python app.
+- Install and configure NGINX for the Python app.
+
+#69
+
+The source code and the requirements.txt file are the items that will likely change the most, while the configurations for Supervisor and NGINX are likely to change very little. We’ll start by adding a purpose-designed configuration for each tool by adding the following files to our local repo:
+
+- conf/nginx.conf
+- conf/supervisor.conf
+
+#70
+
+The configuration for Supervisor at conf/supervisor.conf comes directly from listing 3.27. The idea is to use a specific command to run our Python application (e.g., gunicorn) along with a working directory and a location for the log output, which is all encapsulated in the following listing.
+
+Listing 4.8 Supervisor configuration for Python and Ansible
+[program:roadtok8s-py]
+directory=/opt/projects/roadtok8s/py/src
+command=/opt/venv/bin/gunicorn
+    --worker-class uvicorn.workers.UvicornWorker main:app
+    --bind "0.0.0.0:8888" --pid /var/run/roadtok8s-py.pid
+autostart=true
+autorestart=true
+startretries=3
+stderr_logfile=/var/log/supervisor/roadtok8s/py/stderr.log
+stdout_logfile=/var/log/supervisor/roadtok8s/py/stdout.log
+
+#71
+
+NOTE
+For those familiar with writing multiline bash commands, you will notice that command= does not have the new line escape pattern (\) on each line. This is done on purpose because of how Supervisor parses this file.
+
+The next piece is to implement the NGINX configuration at conf/nginx.conf with a few slight modifications to what you see in listing 4.9.
+
+Listing 4.9 NGINX configuration for Python and Ansible
+server {
+  listen 80;
+  server_name _;
+  location / {
+    proxy_pass http://127.0.0.1:8888;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+  }
+}
+
+#72
+
+Let’s create our Ansible file piece by piece to understand what’s going on. First, we’ll create a new Ansible Playbook at the path devops/ansible/deploy-python.yaml with the contents of listing 4.10.
+
+Listing 4.10 Installing Python with Ansible Playbook, part 1
+- name: Deploy Python app
+  hosts: all
+  become: yes
+
+#73
+
+Now let’s move on to the first task of updating the system’s package cache. We do this first so that future tasks can use this if needed. Listing 4.11 shows the first task. Define package cache and explain briefly under what conditions future tasks will need to use it.
+
+Listing 4.11 Installing Python with Ansible Playbook, part 2
+  tasks:
+    - name: Update and upgrade system
+      apt:
+        upgrade: yes
+        update_cache: yes
+        cache_valid_time: 3600
+
+#74
+
+This will update the system’s package cache for about an hour. In the next listing, we’ll install the specific apt packages our system needs to run Python, Supervisor, and NGINX.
+
+Listing 4.12 Installing Python with Ansible Playbook, part 3
+    - name: Install dependencies
+      apt:
+        pkg:
+          - python3-pip
+          - python3-dev
+          - python3-venv
+          - rsync
+          - nginx
+          - supervisor
+        state: present
+
+    
+#75
+
+The apt declaration is built-in to Ansible and allows us to have the state: present line as an option on this task for any given package we list. We have other options for state (e.g., latest, absent). What’s powerful about this state: present line is how repeatable it is, assuming apt install is your OS-level install package. This is a lot like what requirements.txt enables for us within our Python project but for our entire system.
+
+#76
+
+Since python3-venv is a core component of the installations done in listing 4.12, we can now create our Python 3.8+ virtual environment. Listing 4.13 shows the task to create the virtual environment.
+
+Listing 4.13 Installing Python with Ansible Playbook, part 4
+    - name: Create virtual environment
+      ansible.builtin.command:
+        cmd: python3 -m venv /opt/venv
+        creates: /opt/venv
+
+#77
+
+
+The built-in Ansible command module (see command module in the Ansible documentation for more details) runs a command without shell variables (like bash variables \(HOME`, `\)PWD, $USER). If you are familiar with these bash variables and need them, you can use ansible.builtin.shell instead. In this task, it will run the command python3 -m venv /opt/venv only if the directory /opt/venv does not exist due to the creates: declaration with the folder the virtual environment creates. This is a great way to ensure that this task is only run once to guard against running it multiple times, which can cause problems with other commands.
+
+#78
+
+Now we want to create the directories for both the source code (e.g., the Python project) and the log output folder(s) as specified in Supervisor. If you need to run a task multiple times for multiple directories, you can use the with_items declaration, as shown in the following listing.
+
+Listing 4.14 Installing Python with Ansible Playbook, part 5
+    - name: Set up application directory
+      file:
+        path: "{{ item }}"
+        state: directory
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0755'
+      with_items:
+        - /opt/projects/roadtok8s/py/src/
+        - /var/log/supervisor/roadtok8s/py/
+
+
+#79
+
+As we see here, with_items takes a list of items and iterates over the remainder of the task. In this case, the task is to create a file or directory. This task introduces us to Jinja2-like syntax with the variable {{ item }}, which corresponds directly to the list of items in with_items, and the {{ ansible_user }} variable, which is the root user, as provided directly by Ansible because of the become: yes declaration at the top of the playbook. The rest of the file declaration is just to ensure that each directory is created with the correct permissions and ownership so that our user (and other applications) can properly use these directories.
+
+#80
+
+Now we have a choice to make: How do we get our code to our remote machine(s)? On the one hand, we could use Git on the remote machine(s) to clone or pull the code, or we could synchronize the code from the local machine (e.g., the GitHub Actions workflow). We will opt to synchronize the code for the following reasons:
+
+- Our GitHub Actions workflow already has a Git checkout copy of the most current code.
+- Ansible has a clean built-in way to synchronize files and directories (without needing to copy each one each time).
+- Within GitHub Actions workflows, our Ansible synchronize command is less prone to accidentally synchronizing files and folders that should not be synchronized (e.g., any file that is not yet managed by Git and is not yet in .gitignore).
+- GitHub Actions workflows can be run on private code repositories. Attempting to clone or pull a private repo on a remote machine requires additional configuration and is not as clean as using Ansible’s synchronize command.
+
+#81
+
+Whenever I need to copy a number of files to a remote host with Ansible, I tend to use the built-in synchronize module (see synchronize module in the Ansible documentation for more details) because it handles recursively copying directories very well. The following listing shows the task to synchronize the code from the local machine to the remote machine.
+
+Listing 4.15 Installing Python with Ansible Playbook, part 6
+    - name: Copy FastAPI app to remote server
+      synchronize:
+        src: '{{ playbook_dir }}/../../src/'
+        dest: /opt/projects/roadtok8s/py/src/
+        recursive: yes
+        delete: yes
+
+#82
+
+We’re introduced to another built-in Ansible variable called {{ playbook_dir }}, which is the location where the playbook is being executed. In this case, the playbook_dir variable references where this playbook is located, which is in devops/ansible/. This means we need to synchronize the src folder from two levels up, which is where ../../src/ comes in. dest is the location on the remote machine where we want to synchronize the files. In this case, we want to synchronize the files to /opt/projects/roadtok8s/py/src/, which is the same location we created in listing 4.16.
+
+#83
+
+We use recursive: yes and delete: yes to ensure that every file in src/ is the same from GitHub to our remote host(s), thus keeping the source code in sync. Storing our source code in src/ is a common convention for Python projects and is a great way to keep our source code separate from our configuration files and thus make it easier to synchronize with Ansible.
+
+#84
+
+Now we can move on and install all of the Python project packages from requirements.txt, and if the synchronize task worked correctly, that file will be located at /opt/projects/roadtok8s/py/src/requirements.txt. We can use this file along with the pip executable located at /opt/venv/bin/pip to install our Python packages to our Python virtual environment. Listing 4.16 shows the task to install the Python packages.
+
+Listing 4.16 Installing Python with Ansible Playbook, part 7
+    - name: Install Python packages in virtual environment
+      ansible.builtin.pip:
+        requirements: /opt/projects/roadtok8s/py/src/requirements.txt
+        executable: /opt/venv/bin/pip
+
+    
+#85
+
+Python pip will not install or update a package that is already installed, so it’s perfectly reasonable to attempt to run this task on every Ansible run. This is a great way to ensure that the Python packages are always up to date. There are more advanced configurations that can be done with pip, but this is the approach we’ll take.
+
+#86
+
+At this point, our remote host(s) would have our Python project installed and ready to run. All we have to do now is copy our NGINX and Supervisor configuration. When they are copied, we’ll also notify an Ansible feature called a handler to run a task based on these configuration changes. Ansible handlers are basically callback blocks we can trigger from anywhere in our playbooks using the notify: argument. Listing 4.17 shows the task to copy these configurations.
+
+Listing 4.17 Installing Python with Ansible Playbook, part 8
+    - name: Configure gunicorn and uvicorn with supervisor
+      copy:
+        src: '{{ playbook_dir }}/../../conf/supervisor.conf'
+        dest: /etc/supervisor/conf.d/roadtok8s-py.conf
+      notify: reload supervisor
+    - name: Configure nginx
+      copy:
+        src: '{{ playbook_dir }}/../../conf/nginx.conf'
+        dest: /etc/nginx/sites-available/roadtok8s-py
+      notify: restart nginx
+
+
+#87
+
+When I am copying a single file, I tend to use the built-in copy module (see copy module in the Ansible documentation for more details) as seen in listing 4.17. This module is very similar to the file module we used in listing 4.16, but it’s more specific to copying files. If the supervisor configuration file changes, use the notify declaration to trigger the reload supervisor handler. If the nginx configuration changes, we trigger the restart nginx handler. Each handler is defined outside of the tasks: block and is run after all tasks have completed. Almost any task or handler can trigger a handler to execute. In this case, it makes sense that if our NGINX or Supervisor configuration changes, we should reload or restart each respective service.
+
+#88
+
+With our new NGINX configuration added, we will remove the default NGINX configuration and link our new configuration to the sites-enabled directory. The following listing shows the task to do this.
+
+Listing 4.18 Installing Python with Ansible Playbook, part 9
+    - name: Enable nginx site
+      command: ln -s /etc/nginx/sites-available/roadtok8s-py /etc/nginx/sites-enabled
+      args:
+        creates: /etc/nginx/sites-enabled/roadtok8s-py
+    - name: Remove default nginx site
+      file:
+        path: "{{ item }}"
+        state: absent
+      notify: restart nginx
+      with_items:
+        - /etc/nginx/sites-enabled/default
+        - /etc/nginx/sites-available/default
+
+
+#89
+
+Removing the default NGINX configuration is optional, but it’s often a good idea, as it ensures that only your NGINX configuration is being used. We use the file module to remove the default configuration and then use the command module again to create a symbolic link from our new configuration to the sites-enabled directory. This is a common way to configure NGINX and is a great way to ensure that our NGINX configuration is always up to date.
+
+#90
+
+Now it’s time to implement the handler for each service. Notifying handlers typically occurs when a task with notify: runs successfully and the handler referenced exists. In our case, we used notify: restart nginx and notify: reload supervisor. We must remember that the handler name must match the notify: declaration exactly (e.g., restart nginx and reload supervisor). Listing 4.19 shows the handler for reloading Supervisor and restarting NGINX.
+
+Listing 4.19 Installing Python with Ansible Playbook, part 10
+  handlers:
+    - name: reload supervisor
+      command: "{{ item }}"
+      with_items:
+        - supervisorctl reread
+        - supervisorctl update
+        - supervisorctl restart roadtok8s-py
+      notify: restart nginx
+    - name: restart nginx
+      systemd:
+        name: nginx
+        state: restarted
+
+#91
+
+Handlers are callback functions that are only run if they are notified. Handlers are only notified if a block (task or another handler) successfully executes. To notify a handler, we use the notify: <handler name> declaration, assuming the <handler name> is defined and exists in the playbook.
+
+
+#92
+
+In our case, the handler reload supervisor has a notify: restart nginx definition. This means that if the reload supervisor handler is called and is successful then the restart nginx handler will be triggered. If the restart nginx handler had a notify: reload supervisor, we would see an infinite loop between these handlers. This infinite loop should be avoided, but it is something to be aware of.
+
+#93
+
+With the playbook nearly complete, let’s commit it to Git and push it to GitHub. Once you do, you should have the following files related to running Ansible:
+
+- devops/ansible/install-nginx.yaml
+- devops/ansible/deploy-python.yaml
+- .github/workflows/run-ansible.yaml
+
+#94
+
+As you may recall, run-ansible.yaml has a step that calls the install-nginx.yaml file with ansible-playbook install-nginx.yaml. We must update this line to read ansible-playbook deploy-python.yaml instead. The following listing shows the updated step in the workflow file.
+
+Listing 4.20 Deploying the Python app with Ansible with GitHub Actions
+    - name: Deploy Python via Ansible
+      working-directory: ./devops/ansible/
+      run: |
+       ansible-playbook deploy-python.yaml
+
+#95
+
+Before we commit this playbook and updated workflow to our GitHub Repo, be sure to compare yours with the full reference playbook at my Python project’s official repo at https://github.com/jmitchel3/roadtok8s-py. With the full playbook and the updated GitHub Actions workflow, it is time to run the workflow and see what happens. When you run the workflow, you should see the output in figure 4.14.
+
+Figure 4.14 GitHub Actions Ansible deploy Python result
+
+#96
+
+If you ran into errors with this workflow, you may have to use a manual SSH session to diagnose all the problems that may have occurred, just like we did in chapter 3. If you did not run into any errors, you should be able to open your web browser to your IP address and see the Python application running. If you see the Python application running, you have successfully deployed your Python application with Ansible and GitHub Actions. Congratulations!
+
+If you were successful, I recommend changing your Python source code and running it all over again. Ensure that the desired outcome(s) are happening correctly.The next step is to implement this Ansible and GitHub Actions automation on the Node.js application.
+
+
+#97
+
+
+4.2.4 Ansible for our Node.js app
+Deploying a Node.js application with Ansible and GitHub Actions is almost identical to deploying the Python application, with only a few exceptions. We are going to create a new virtual machine for this process, although we could deploy this application to the same virtual machine as the Python project, as we saw in chapter 3. This section will be far more condensed than the previous sections because we can reuse a lot of our code and configurations.
+
+
+#98
+
+Let’s recap what we need to do in order for our Node.js application to run on GitHub Actions correctly:
+
+1.Create new SSH keys: Having new keys will help ensure additional security for each isolated web application.
+2.Add the new SSH private key as a GitHub Actions secret on our Node.js repo.
+3.Install the new SSH public key on Akamai Linode.
+4.Provision a new virtual machine and add the new IP address as a GitHub Actions secret.
+5.Copy the NGINX and Supervisor configuration files for Node.js from chapter 3.
+6.Create a new Ansible Playbook for our Node.js application.
+7.Copy and modify the GitHub Actions workflow for running Ansible, created in section 4.2.3.
+
+You should be able to do steps 1-3 with ease now, so I will leave that to you. Now let’s go ahead and create our Ansible Playbook for our Node.js application.
+
+#99
+
+Creating a new Ansible Playbook for our Node.js application
+We already have most of the foundation necessary to create a Node.js-based Ansible Playbook for our project. The main difference between using Ansible for installing Node and what we did in chapter 3 is that we are going to update the apt package directly instead of using the Node Version Manager.
+
+#100
+
+In your Node.js application at ~/dev/roadtok8s/js, create a folder devops and add the file deploy-js.yaml, and declare the first few steps as outlined in listing 4.21. Since nvm and Ansible do not play well together, we added a new block called vars (for variables) that we can reuse throughout this playbook. In this case, we set the variable nodejs_v to the value 18 to be used to install Node.js v18, as shown in the following listing.
+
+Listing 4.21 Installing Node.js with Ansible Playbook, part 1
+---
+- name: Deploy Node.js app
+  hosts: all
+  become: yes
+  vars:
+    nodejs_v: 18
+  tasks:
+    - name: Update and upgrade system
+      apt:
+        upgrade: yes
+        update_cache: yes
+        cache_valid_time: 3600
+    - name: Install dependencies
+      apt:
+        pkg:
+          - curl
+          - rsync
+          - nginx
+          - supervisor
+        state: present
+      tags: install
+
+Once again, we start will updating apt and various system requirements to set the foundation for installing Node.js.
+
+#101
+
+Unfortunately, we cannot just install Node.js with apt install nodejs, so we need to add a new key and apt repository with Ansible by using the blocks that add a new apt_key and apt_repository, respectively. Once this is done, we can install Node.js using the apt block directly, as seen in the following listing.
+
+Listing 4.22 Installing Node.js with Ansible Playbook, part 2
+---
+- name: Deploy Node.js app
+  hosts: all
+  become: yes
+  vars:
+    nodejs_v: 18
+  tasks:
+    - name: Update and upgrade system
+      apt:
+        upgrade: yes
+        update_cache: yes
+        cache_valid_time: 3600
+    - name: Install dependencies
+      apt:
+        pkg:
+          - curl
+          - rsync
+          - nginx
+          - supervisor
+        state: present
+      tags: install
+
+#102
+
+Once this is complete, we’ll use the npm block to update npm globally, as seen in the following listing.
+
+Listing 4.23 Installing Node.js with Ansible Playbook, part 3
+    - name: Update npm globally
+      npm:
+        global: yes
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - npm
+
+The npm block is built in to Ansible, but our host machine must have it installed; otherwise, it will not succeed.
+
+#103
+
+Before we can proceed further, we need to update our supervisor.conf to account for the change in how we start our Node.js application. You can simply change the command from /root/.nvm/versions/node/v18.16.0/bin/node main.js to command=node main.js. With the supervisor.conf file updated, we can start synchronizing the code to the host machine, as seen in the following listing.
+
+Listing 4.24 Installing Node.js with Ansible Playbook, part 4
+    - name: Set up application directory
+      file:
+        path: "{{ item }}"
+        state: directory
+        mode: '0755'
+      with_items:
+        - /opt/projects/roadtok8s/js/src/
+        - /var/log/supervisor/roadtok8s/js/
+    - name: Copy Node.js app to remote server
+      synchronize:
+        src: '{{ playbook_dir }}/../../src/'
+        dest: /opt/projects/roadtok8s/js/src/
+        recursive: yes
+        delete: yes
+    - name: Copy Package.json to remote server
+      synchronize:
+        src: '{{ playbook_dir }}/../../package.json'
+        dest: /opt/projects/roadtok8s/js/package.json
+        recursive: yes
+        delete: yes
+
+This process is nearly identical with what we did in listing 4.14 and 4.15, just modified slightly to account for the Node.js application.
+
+#104
+
+With the code synchronized, we can now install the Node.js application dependencies with the npm block, as seen in in the following listing.
+
+Listing 4.25 Installing Node.js with Ansible Playbook, part 5
+    - name: Install Node.js packages
+      shell: |
+        npm install
+      args:
+        executable: /bin/bash
+        chdir: "/opt/projects/roadtok8s/js/"
+      notify: reload supervisor
+
+
+#105
+
+The remainder of this file is the same as the one for the Python application before it, as you can see in the following listing.
+
+Listing 4.26 Installing Node.js with Ansible Playbook, part 6
+    - name: Configure Node.js with supervisor
+      copy:
+        src: ../../conf/supervisor.conf
+        dest: /etc/supervisor/conf.d/roadtok8s-js.conf
+      notify:  reload supervisor
+    - name: Configure nginx
+      copy:
+        src: ../../conf/nginx.conf
+        dest: /etc/nginx/sites-available/roadtok8s-js
+      notify: restart nginx
+    - name: Enable nginx site
+      command: ln -s /etc/nginx/sites-available/roadtok8s-js /etc/nginx/sites-enabled
+      args:
+        creates: /etc/nginx/sites-enabled/roadtok8s-js
+    - name: Remove default nginx site
+      file:
+        path: "{{ item }}"
+        state: absent
+      notify: restart nginx
+      with_items:
+        - /etc/nginx/sites-enabled/default
+        - /etc/nginx/sites-available/default
+ 
+  handlers:
+    - name: reload supervisor
+      command: "{{ item }}"
+      with_items:
+        - supervisorctl reread
+        - supervisorctl update
+        - supervisorctl restart roadtok8s-js
+      notify: restart nginx
+    - name: restart nginx
+      systemd:
+        name: nginx
+        state: restarted
+
+Now that we have our Ansible playbook complete, let’s update our GitHub Actions workflow.     
+
+#106
+
+GitHub Actions workflow for Node.js and Ansible Playbook
+Copy the entire GitHub Actions workflow file from the Python project at ~/dev/roadtok8s/py/.github/workflows/run-ansible.yaml to the Node.js project at ~/dev/roadtok8s/js/.github/workflows/run-ansible.yaml. After you do this, you’ll need to change one line to make our new Ansible playbook work: ansible-playbook deploy-python.yaml to ansible-playbook deploy-js.yaml. Everything else should work exactly the same.
+
+
+#107
+
+With this change, we can now commit our changes to Git and push them to GitHub. Before you can run the workflow, you need to verify the following GitHub Actions secrets:
+
+- SSH_PRIVATE_KEY
+- AKAMAI_INSTANCE_IP_ADDRESS
+
+#108
+
+As a reminder, if you haven’t done it already, you will need to create a new SSH_PRIVATE_KEY with ssh-keygen, install it on Akamai Linode, and then add the private key to GitHub Actions secrets. You will also need to create a new virtual machine on Akamai Linode with the new SSH key to obtain a new and valid IP address that you will add to GitHub Actions secrets as AKAMAI_INSTANCE_IP_ADDRESS.
+Once you do that, you can run your GitHub Actions workflow and verify that your Node.js application is running by visiting the AKAMAI_INSTANCE_IP_ADDRESS after the workflow completes. I will leave it to you to go through this process and verify it works.

@@ -1,0 +1,163 @@
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que FastAPI ?",
+            "answers": [
+                {"text": "FastAPI est un outil utilisé pour créer des sites web avec Python.", "correct": true},
+                {"text": "FastAPI est un langage de programmation.", "correct": false},
+                {"text": "FastAPI est un framework utilisé pour créer des jeux vidéo.", "correct": false},
+                {"text": "FastAPI est un système d'exploitation pour smartphones.", "correct": false}
+            ]
+        },
+        {
+            "question": "À quoi sert un cadre d'application web comme FastAPI ?",
+            "answers": [
+                {"text": "Il aide à construire des sites web sans devoir refaire les parties communes à tous les sites.", "correct": true},
+                {"text": "Il sert à modifier le contenu des sites web existants.", "correct": false},
+                {"text": "Il est utilisé pour tester la vitesse des connexions internet.", "correct": false},
+                {"text": "Il est utilisé pour sécuriser les serveurs web.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un package tiers en informatique ?",
+            "answers": [
+                {"text": "C'est un ensemble de codes créé par d'autres personnes qu'on peut utiliser dans nos propres projets.", "correct": true},
+                {"text": "C'est un ensemble de câbles reliant différents appareils électroniques.", "correct": false},
+                {"text": "C'est un ensemble de logiciels développés en interne dans une entreprise.", "correct": false},
+                {"text": "C'est un ensemble de circuits électroniques dans un boîtier.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi utiliser FastAPI pour créer un site web ?",
+            "answers": [
+                {"text": "Parce qu'il a déjà beaucoup de fonctionnalités prêtes à l'emploi, ce qui nous fait gagner du temps.", "correct": true},
+                {"text": "Parce qu'il est le plus cher parmi tous les outils disponibles.", "correct": false},
+                {"text": "Parce qu'il nécessite moins de ressources matérielles que les autres outils.", "correct": false},
+                {"text": "Parce qu'il est moins performant que les autres outils disponibles.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un décorateur en Python ?",
+            "answers": [
+                {"text": "C'est une fonction spéciale qui ajoute des capacités supplémentaires à d'autres fonctions dans notre code.", "correct": true},
+                {"text": "C'est un outil utilisé pour dessiner des formes géométriques en 2D.", "correct": false},
+                {"text": "C'est un dispositif utilisé pour contrôler la température d'un environnement de travail.", "correct": false},
+                {"text": "C'est un programme utilisé pour compresser des fichiers.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que nous permet de faire FastAPI avec peu de code ?",
+            "answers": [
+                {"text": "De mettre en marche une application web complète.", "correct": true},
+                {"text": "De résoudre des équations mathématiques complexes.", "correct": false},
+                {"text": "De créer des animations graphiques interactives.", "correct": false},
+                {"text": "De modifier des vidéos avec des effets spéciaux.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle version de Python faut-il au minimum pour utiliser FastAPI ?",
+            "answers": [
+                {"text": "Il faut Python version 3.8 ou plus.", "correct": true},
+                {"text": "Il faut Python version 2.7 ou moins.", "correct": false},
+                {"text": "Il faut Python version 3.0 ou plus.", "correct": false},
+                {"text": "Il faut Python version 4.0 ou plus.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que venv en Python ?",
+            "answers": [
+                {"text": "C'est un outil pour créer des espaces isolés pour nos projets Python.", "correct": true},
+                {"text": "C'est un langage de programmation concurrent.", "correct": false},
+                {"text": "C'est un module Python pour envoyer des emails.", "correct": false},
+                {"text": "C'est un format de fichier pour stocker des données compressées.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi utiliser venv dans un projet Python ?",
+            "answers": [
+                {"text": "Pour isoler et gérer séparément les outils et bibliothèques de chaque projet.", "correct": true},
+                {"text": "Pour garantir la compatibilité avec tous les systèmes d'exploitation.", "correct": false},
+                {"text": "Pour assurer la sécurité des données stockées dans le projet.", "correct": false},
+                {"text": "Pour simplifier le processus de déploiement du projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quel serveur web utiliserons-nous avec FastAPI ?",
+            "answers": [
+                {"text": "Nous utiliserons uvicorn pour gérer le trafic web.", "correct": true},
+                {"text": "Nous utiliserons Apache pour gérer le trafic web.", "correct": false},
+                {"text": "Nous utiliserons Nginx pour gérer le trafic web.", "correct": false},
+                {"text": "Nous utiliserons IIS pour gérer le trafic web.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'un serveur web ?",
+            "answers": [
+                {"text": "C'est un logiciel qui reçoit des demandes via Internet et envoie des réponses, comme les pages d'un site web.", "correct": true},
+                {"text": "C'est un appareil utilisé pour stocker des données en ligne.", "correct": false},
+                {"text": "C'est un protocole de communication utilisé pour envoyer des emails.", "correct": false},
+                {"text": "C'est un service de streaming vidéo en direct sur Internet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment FastAPI peut-il être utilisé ?",
+            "answers": [
+                {"text": "Pour construire des sites qui fonctionnent grâce à du code HTML ou des API.", "correct": true},
+                {"text": "Pour créer des applications mobiles pour smartphones.", "correct": false},
+                {"text": "Pour développer des jeux vidéo en ligne.", "correct": false},
+                {"text": "Pour automatiser des tâches de bureau sur un ordinateur.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un site web HTML ?",
+            "answers": [
+                {"text": "C'est un site constitué de pages codées en HTML, le langage de base des sites web.", "correct": true},
+                {"text": "C'est un site dont le contenu est généré dynamiquement par un serveur.", "correct": false},
+                {"text": "C'est un site web sécurisé avec des certificats SSL.", "correct": false},
+                {"text": "C'est un site qui utilise des bases de données pour stocker des informations.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une API dans le contexte d'un site web ?",
+            "answers": [
+                {"text": "Une API est un moyen pour des programmes différents de communiquer entre eux sur le web.", "correct": true},
+                {"text": "Une API est une organisation qui régule les normes de développement web.", "correct": false},
+                {"text": "Une API est un langage de programmation utilisé pour créer des sites web.", "correct": false},
+                {"text": "Une API est un format de fichier utilisé pour stocker des données sur un serveur.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il avantageux de ne pas réécrire les fonctionnalités communes des sites web ?",
+            "answers": [
+                {"text": "Pour économiser du temps et se concentrer sur les parties uniques de notre site.", "correct": true},
+                {"text": "Pour garantir la sécurité des données sur notre site web.", "correct": false},
+                {"text": "Pour améliorer la vitesse de chargement des pages de notre site.", "correct": false},
+                {"text": "Pour rendre notre site compatible avec tous les navigateurs web.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment FastAPI simplifie-t-il la création d'applications web ?",
+            "answers": [
+                {"text": "En fournissant des fonctionnalités prédéfinies qui peuvent être facilement ajoutées à notre application.", "correct": true},
+                {"text": "En réduisant la taille des fichiers de nos applications web.", "correct": false},
+                {"text": "En automatisant la gestion des bases de données de nos applications web.", "correct": false},
+                {"text": "En garantissant la sécurité des transactions financières sur nos applications web.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quel est l'avantage principal d'utiliser des environnements virtuels comme venv ?",
+            "answers": [
+                {"text": "Ils permettent de garder les projets organisés et évitent les conflits entre les versions des outils et bibliothèques.", "correct": true},
+                {"text": "Ils améliorent les performances des applications web en isolant les ressources système.", "correct": false},
+                {"text": "Ils simplifient le processus de déploiement des applications web sur des serveurs distants.", "correct": false},
+                {"text": "Ils garantissent la compatibilité des applications web avec tous les navigateurs web.", "correct": false}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "quizzes": [
+      {
+        "question": "Quand est-ce qu'on utilise un fichier plein de noms de paquets pour un projet Python ?",
+        "answers": [
+          { "text": "Quand notre projet devient grand et qu'on a beaucoup de paquets à installer.", "correct": true },
+          { "text": "Quand on veut ajouter des fonctionnalités supplémentaires à notre projet.", "correct": false },
+          { "text": "Quand on veut créer un fichier exécutable pour notre projet.", "correct": false },
+          { "text": "Quand on veut stocker des données de configuration pour notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment s'appelle le fichier utilisé pour lister tous les paquets qu'on veut installer pour notre projet Python ?",
+        "answers": [
+          { "text": "Il s'appelle un fichier de besoins, ou en anglais \"requirements file\".", "correct": true },
+          { "text": "Il s'appelle un fichier de configuration, ou en anglais \"configuration file\".", "correct": false },
+          { "text": "Il s'appelle un fichier de dépendances, ou en anglais \"dependencies file\".", "correct": false },
+          { "text": "Il s'appelle un fichier de spécifications, ou en anglais \"specifications file\".", "correct": false }
+        ]
+      },
+      {
+        "question": "Quel est le nom habituel du fichier où on écrit tous les paquets qu'on veut installer ?",
+        "answers": [
+          { "text": "Le fichier s'appelle souvent `requirements.txt`.", "correct": true },
+          { "text": "Le fichier s'appelle généralement `packages.txt`.", "correct": false },
+          { "text": "Le fichier s'appelle couramment `dependencies.txt`.", "correct": false },
+          { "text": "Le fichier s'appelle fréquemment `requirements.yaml`.", "correct": false }
+        ]
+      },
+      {
+        "question": "Où doit-on placer le fichier `requirements.txt` dans notre projet Python ?",
+        "answers": [
+          { "text": "Dans le dossier du code source de notre projet, par exemple `~/Dev/roadtok8s/py/src`.", "correct": true },
+          { "text": "Dans le dossier racine de notre projet.", "correct": false },
+          { "text": "Dans le dossier de tests de notre projet.", "correct": false },
+          { "text": "Dans le dossier des dépendances de notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'on met dans le fichier `requirements.txt` pour un projet utilisant FastAPI ?",
+        "answers": [
+          { "text": "On y met les noms des paquets nécessaires, comme fastapi, jinja2, uvicorn, et gunicorn.", "correct": true },
+          { "text": "On y met uniquement le nom du paquet principal, c'est-à-dire fastapi.", "correct": false },
+          { "text": "On y met uniquement le nom du paquet pour le serveur web, c'est-à-dire uvicorn.", "correct": false },
+          { "text": "On y met uniquement le nom du paquet pour la gestion des templates, c'est-à-dire jinja2.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+
+  {
+    "quizzes": [
+      {
+        "question": "Pourquoi utiliserait-on FastAPI dans un projet Python ?",
+        "answers": [
+          { "text": "Pour créer des sites web rapides et interactifs.", "correct": true },
+          { "text": "Pour gérer la base de données de notre projet.", "correct": false },
+          { "text": "Pour automatiser des tâches récurrentes dans notre projet.", "correct": false },
+          { "text": "Pour générer des rapports PDF à partir des données de notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que jinja2 et pourquoi l'ajouterait-on à notre projet ?",
+        "answers": [
+          { "text": "Jinja2 est un outil pour créer des parties de site web qu'on peut réutiliser, ce qui rend le développement plus facile.", "correct": true },
+          { "text": "Jinja2 est un outil pour gérer les migrations de base de données dans notre projet.", "correct": false },
+          { "text": "Jinja2 est un outil pour tester l'interface utilisateur de notre projet.", "correct": false },
+          { "text": "Jinja2 est un outil pour automatiser le déploiement de notre projet sur des serveurs distants.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quel est le rôle d'uvicorn dans notre projet Python ?",
+        "answers": [
+          { "text": "Uvicorn est un serveur web qui aide notre application FastAPI à communiquer avec l'internet.", "correct": true },
+          { "text": "Uvicorn est un outil pour automatiser les tests unitaires dans notre projet.", "correct": false },
+          { "text": "Uvicorn est un outil pour gérer les tâches asynchrones dans notre projet.", "correct": false },
+          { "text": "Uvicorn est un outil pour sécuriser les connexions HTTPS dans notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi ajouterait-on gunicorn à notre fichier de besoins ?",
+        "answers": [
+          { "text": "Gunicorn est un outil qui permet à notre site web de gérer beaucoup de visiteurs en même temps.", "correct": true },
+          { "text": "Gunicorn est un outil pour optimiser les performances de notre base de données.", "correct": false },
+          { "text": "Gunicorn est un outil pour automatiser les déploiements sur des serveurs cloud.", "correct": false },
+          { "text": "Gunicorn est un outil pour surveiller l'utilisation des ressources système dans notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment pip sait-il quels paquets installer pour notre projet ?",
+        "answers": [
+          { "text": "Pip regarde les noms dans le fichier `requirements.txt` et installe ces paquets.", "correct": true },
+          { "text": "Pip analyse le code source de notre projet pour déterminer les dépendances.", "correct": false },
+          { "text": "Pip interroge un serveur centralisé pour obtenir une liste de paquets à installer.", "correct": false },
+          { "text": "Pip demande à l'utilisateur de spécifier les paquets à installer à chaque fois.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  {
+    "quizzes": [
+      {
+        "question": "Que doit-on faire si on veut ajouter un nouveau paquet à notre projet Python plus tard ?",
+        "answers": [
+          { "text": "On ajoute le nom du nouveau paquet dans le fichier `requirements.txt` puis on dit à pip de l'installer.", "correct": true },
+          { "text": "On crée un nouveau fichier `requirements-new.txt` pour chaque nouveau paquet ajouté.", "correct": false },
+          { "text": "On télécharge manuellement le paquet depuis internet et on l'ajoute au dossier du projet.", "correct": false },
+          { "text": "On modifie directement le fichier `setup.py` avec le nom du nouveau paquet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quel avantage y a-t-il à lister tous les paquets dans un fichier `requirements.txt` ?",
+        "answers": [
+          { "text": "Cela rend l'installation des paquets plus rapide et plus organisée, surtout pour les grands projets.", "correct": true },
+          { "text": "Cela permet de réduire la taille des fichiers de code source dans notre projet.", "correct": false },
+          { "text": "Cela facilite la génération automatique de documentation pour notre projet.", "correct": false },
+          { "text": "Cela garantit que notre projet est conforme aux normes de sécurité établies.", "correct": false }
+        ]
+      },
+      {
+        "question": "Que fait-on après avoir écrit tous les noms des paquets dans le fichier `requirements.txt` ?",
+        "answers": [
+          { "text": "On utilise pip avec une commande spéciale pour installer tous ces paquets en même temps.", "correct": true },
+          { "text": "On crée une copie de sauvegarde du fichier `requirements.txt` au cas où.", "correct": false },
+          { "text": "On envoie le fichier `requirements.txt` à notre équipe de développement pour examen.", "correct": false },
+          { "text": "On fusionne le contenu du fichier `requirements.txt` avec celui du fichier `setup.py`.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment pip peut aider avec les gros projets ayant beaucoup de dépendances ?",
+        "answers": [
+          { "text": "Pip peut installer tous les paquets listés dans le fichier `requirements.txt`, ce qui facilite la gestion des dépendances.", "correct": true },
+          { "text": "Pip peut automatiquement mettre à jour les versions des paquets installés dans notre projet.", "correct": false },
+          { "text": "Pip peut analyser le code source de notre projet et recommander des paquets à installer.", "correct": false },
+          { "text": "Pip peut créer des environnements virtuels isolés pour chaque dépendance de notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quelle est la première étape pour utiliser FastAPI et d'autres outils dans notre projet Python ?",
+        "answers": [
+          { "text": "Écrire les noms de FastAPI et des autres outils nécessaires dans le fichier `requirements.txt`.", "correct": true },
+          { "text": "Créer un nouveau dossier dans notre projet appelé `dependencies` et y stocker les fichiers nécessaires.", "correct": false },
+          { "text": "Installer manuellement chaque paquet à l'aide de la commande `pip install`.", "correct": false },
+          { "text": "Modifier directement le fichier `requirements.txt` à l'aide d'un éditeur de texte.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  

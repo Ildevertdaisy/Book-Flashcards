@@ -1,0 +1,65 @@
+{
+    "quizzes": [
+      {
+        "question": "Qu'est-ce qu'on a besoin de faire pour commencer avec FastAPI dans notre projet Python ?",
+        "answers": [
+          { "text": "On doit importer FastAPI, créer une instance de FastAPI, et définir des fonctions pour les chemins d'URL.", "correct": true },
+          { "text": "Pour commencer avec FastAPI, on doit d'abord installer Python sur notre système.", "correct": false },
+          { "text": "Il faut cloner le dépôt GitHub de FastAPI et l'ajouter comme dépendance à notre projet.", "correct": false },
+          { "text": "On doit créer une nouvelle branche Git nommée 'fastapi' dans notre dépôt de projet existant.", "correct": false }
+        ]
+      },
+      {
+        "question": "Où doit-on écrire le code pour notre application FastAPI ?",
+        "answers": [
+          { "text": "Dans un fichier nommé `main.py` situé dans le dossier `src` de notre projet.", "correct": true },
+          { "text": "Le code FastAPI doit être écrit dans un fichier appelé `api.py` à la racine de notre projet.", "correct": false },
+          { "text": "Nous devons écrire notre code FastAPI dans un dossier spécifique nommé `fastapi` à l'intérieur du dossier `src`.", "correct": false },
+          { "text": "Il est recommandé d'écrire le code FastAPI dans un fichier `app.py` dans le dossier `scripts` de notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment importe-t-on FastAPI dans notre fichier ?",
+        "answers": [
+          { "text": "Avec la ligne `from fastapi import FastAPI`.", "correct": true },
+          { "text": "Pour importer FastAPI, on doit utiliser `import fastapi`.", "correct": false },
+          { "text": "FastAPI est automatiquement disponible dans tous les fichiers Python, pas besoin de l'importer.", "correct": false },
+          { "text": "On doit installer FastAPI en utilisant la commande `pip install fastapi`.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une instance de FastAPI dans notre code ?",
+        "answers": [
+          { "text": "C'est une application FastAPI que l'on crée en écrivant `app = FastAPI()`.", "correct": true },
+          { "text": "Une instance de FastAPI est un objet Python spécialisé utilisé pour gérer les bases de données.", "correct": false },
+          { "text": "C'est un package Python préinstallé avec FastAPI qui fournit des utilitaires supplémentaires pour la création d'APIs.", "correct": false },
+          { "text": "Une instance de FastAPI est un fichier de configuration spécifique que l'on doit créer dans notre projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "À quoi sert la fonction `read_index()` dans notre code FastAPI ?",
+        "answers": [
+          { "text": "Elle répond à la page d'accueil de notre site web avec un message 'Hello: World'.", "correct": true },
+          { "text": "La fonction `read_index()` est utilisée pour lire un fichier index HTML et le renvoyer comme réponse HTTP.", "correct": false },
+          { "text": "Elle lit les informations d'index d'une base de données et les renvoie en tant que réponse JSON.", "correct": false },
+          { "text": "La fonction `read_index()` est une fonction obsolète qui n'est plus utilisée dans les versions récentes de FastAPI.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+
+  {
+    "quizzes": [
+      {
+        "question": "Comment fait-on pour dire à FastAPI quelle fonction utiliser pour une certaine page web ?",
+        "answers": [
+          { "text": "On utilise un décorateur comme `@app.get(\"/\")` avant la définition de la fonction.", "correct": true },
+          { "text": "Pour indiquer à FastAPI quelle fonction utiliser pour une page web, on doit créer un fichier de configuration spécifique.", "correct": false },
+          { "text": "FastAPI détecte automatiquement les fonctions à utiliser pour chaque page web en fonction de leur nom.", "correct": false },
+          { "text": "Il suffit de nommer la fonction en fonction de l'URL à laquelle elle doit répondre, par exemple `def index():` pour la page d'accueil.", "correct": false }
+        ]
+      }
+    ]
+  }
+  

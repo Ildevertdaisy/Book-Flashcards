@@ -1,0 +1,92 @@
+{
+    "quizzes": [
+      {
+        "question": "C'est quoi un dictionnaire en programmation ?",
+        "answers": [
+          { "text": "Un dictionnaire en programmation est une collection où tu peux garder des informations en les associant à des noms spécifiques.", "correct": true },
+          { "text": "Un dictionnaire en programmation est un outil utilisé pour dessiner des graphiques et des diagrammes.", "correct": false },
+          { "text": "Un dictionnaire en programmation est une fonction qui effectue des calculs mathématiques complexes.", "correct": false },
+          { "text": "Un dictionnaire en programmation est un type de fichier utilisé pour stocker des images.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi est-ce que certaines fonctions retournent un dictionnaire ?",
+        "answers": [
+          { "text": "Elles retournent un dictionnaire pour organiser les informations de manière simple et claire.", "correct": true },
+          { "text": "Elles retournent un dictionnaire pour exécuter des animations sur une page web.", "correct": false },
+          { "text": "Elles retournent un dictionnaire pour jouer des fichiers audio dans un navigateur.", "correct": false },
+          { "text": "Elles retournent un dictionnaire pour créer des interfaces utilisateur interactives.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que le format JSON ?",
+        "answers": [
+          { "text": "JSON est une façon de ranger des informations pour qu'elles soient faciles à lire et à utiliser par des programmes différents.", "correct": true },
+          { "text": "JSON est un logiciel utilisé pour éditer des vidéos.", "correct": false },
+          { "text": "JSON est un système d'exploitation pour les téléphones portables.", "correct": false },
+          { "text": "JSON est un type de langage de programmation orienté objet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi doit-on convertir un dictionnaire en JSON ?",
+        "answers": [
+          { "text": "On le convertit en JSON pour que l'information puisse être facilement partagée et utilisée sur internet.", "correct": true },
+          { "text": "On le convertit en JSON pour le rendre illisible par d'autres programmes.", "correct": false },
+          { "text": "On le convertit en JSON pour le protéger contre les attaques de pirates informatiques.", "correct": false },
+          { "text": "On le convertit en JSON pour le rendre plus efficace en termes de stockage de données.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une API REST ?",
+        "answers": [
+          { "text": "C'est un moyen pour les programmes de parler entre eux sur internet en utilisant JSON.", "correct": true },
+          { "text": "C'est un outil utilisé pour tester la vitesse de connexion à internet.", "correct": false },
+          { "text": "C'est un type de langage de programmation utilisé pour créer des applications mobiles.", "correct": false },
+          { "text": "C'est un service de streaming de musique en ligne.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  {
+    "quizzes": [
+      {
+        "question": "Comment peut-on vérifier si un dictionnaire peut être converti en JSON ?",
+        "answers": [
+          { "text": "On peut le vérifier en utilisant un simple test avec Python pour s'assurer qu'il n'y a pas d'erreur.", "correct": true },
+          { "text": "On peut le vérifier en utilisant une calculatrice pour effectuer des opérations mathématiques sur les clés du dictionnaire.", "correct": false },
+          { "text": "On peut le vérifier en comparant le dictionnaire à une liste de mots anglais pour voir s'il est compréhensible.", "correct": false },
+          { "text": "On peut le vérifier en essayant de l'imprimer sur une feuille de papier.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que cela signifie quand quelque chose est \"JSON serializable\" ?",
+        "answers": [
+          { "text": "Cela signifie que l'objet, comme un dictionnaire, peut être converti en format JSON sans problème.", "correct": true },
+          { "text": "Cela signifie que l'objet peut être transformé en un personnage de dessin animé.", "correct": false },
+          { "text": "Cela signifie que l'objet est capable de réaliser des opérations mathématiques complexes.", "correct": false },
+          { "text": "Cela signifie que l'objet est prêt à être utilisé dans une recette de cuisine.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi certains dictionnaires sont-ils compliqués à convertir en JSON ?",
+        "answers": [
+          { "text": "Parce qu'ils peuvent contenir des types d'informations que JSON ne comprend pas facilement.", "correct": true },
+          { "text": "Parce qu'ils sont écrits dans une langue étrangère que JSON ne peut pas interpréter.", "correct": false },
+          { "text": "Parce qu'ils sont trop petits pour être traités par les ordinateurs.", "correct": false },
+          { "text": "Parce qu'ils contiennent des emojis et des symboles spéciaux que JSON ne peut pas gérer.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment peut-on tester la conversion d'un dictionnaire en JSON ?",
+        "answers": [
+          { "text": "On peut tester cela en utilisant une commande spéciale en Python qui essaie de transformer le dictionnaire en JSON.", "correct": true },
+          { "text": "On peut tester cela en lançant le dictionnaire depuis une catapulte et en regardant s'il se convertit en JSON en volant dans les airs.", "correct": false },
+          { "text": "On peut tester cela en demandant à un ami de lire le dictionnaire à haute voix et de voir s'il comprend ce qui est dit.", "correct": false },
+          { "text": "On peut tester cela en essayant de plier le dictionnaire en papier et en le transformant en avion en papier.", "correct": false }
+        ]
+      }
+    ]
+  }
+  

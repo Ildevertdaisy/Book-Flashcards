@@ -1,0 +1,326 @@
+#1
+
+Chapter 2. Modern Python
+It’s all in a day’s work for Confuse-a-Cat.
+
+Monty Python
+
+#2
+
+Preview
+Python evolves to keep up with our changing technical world. This chapter discusses specific Python features that apply to issues in the previous chapter, and a few extras:
+
+- Tools
+
+- APIs and services
+
+- Variables and type hinting
+
+- Data structures
+
+- Web frameworks
+
+#3
+
+
+Tools
+Every computing language has the following:
+
+- The core language and built-in standard packages
+
+- Ways to add external packages
+
+- Recommended external packages
+
+- An environment of development tools
+
+#4
+
+The following sections list the Python tools required or recommended for this book.
+
+These may change over time! Python packaging and development tools are moving targets, and better solutions come along now and then.
+
+
+#5
+
+Getting Started
+You should be able to write and run a Python program like Example 2-1.
+
+Example 2-1. The Python program that goes like this: this.py
+def paid_promotion():
+    print("(that calls this function!)")
+
+print("This is the program")
+paid_promotion()
+print("that goes like this.")
+
+
+
+#6
+
+To execute this program from the command line in a text window or terminal, I’ll use the convention of a $ prompt (your system begging you to type something, already). What you type after the prompt is shown in bold print. If you saved Example 2-1 to a file named this.py, you can run it as shown in Example 2-2.
+
+Example 2-2. Test this.py
+$ python this.py
+This is the program
+(that calls this function!)
+that goes like this.
+
+#7
+
+Some code examples use the interactive Python interpreter, which is what you get if you just type python:
+
+$ python
+Python 3.9.1 (v3.9.1:1e5d33e9b9, Dec  7 2020, 12:10:52)
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+#8
+
+The first few lines are specific to your operating system and Python version. The >>> is your prompt here. A handy extra feature of the interactive interpreter is that it will print the value of a variable for you if you type its name:
+
+>>> wrong_answer = 43
+>>> wrong_answer
+43
+
+#9
+
+This also works for expressions:
+
+>>> wrong_answer = 43
+>>> wrong_answer - 3
+40
+If you’re fairly new to Python or would like a quick review, read the next few sections.
+
+#10
+
+Python Itself
+You will need, as a bare minimum, Python 3.7. This includes features like type hints and asyncio, which are core requirements for FastAPI. I recommend using at least Python 3.9, which will have a longer support lifetime. The standard source for Python is the Python Software Foundation.
+
+#11
+
+Package Management
+You will want to download external Python packages and install them safely on your computer. The classic tool for this is pip.
+
+But how do you download this downloader? If you installed Python from the Python Software Foundation, you should already have pip. If not, follow the instructions at the pip site to get it. Throughout this book, as I introduce a new Python package, I’ll include the pip command to download it.
+
+Although you can do a lot with plain old pip, you’ll likely also want to use virtual environments and consider an alternative tool like Poetry.
+
+#12
+
+Virtual Environments
+Pip will download and install packages, but where should it put them? Although standard Python and its included libraries are usually installed in a standard place on your operating system, you may not (and probably should not) be able to change anything there. Pip uses a default directory other than the system one, so you won’t step on your system’s standard Python files. You can change this; see the pip site for details for your operating system.
+
+
+#13
+
+But it’s common to work with multiple versions of Python, or make installations specific to a project, so you know exactly which packages are in there. To do this, Python supports virtual environments. These are just directories (folders in the non-Unix world) into which pip writes downloaded packages. When you activate a virtual environment, your shell (main system command interpreter) looks there first when loading Python modules.
+
+#14
+
+The program for this is venv, and it’s been included with standard Python since version 3.4.
+
+Let’s make a virtual environment called venv1. You can run the venv module as a standalone program:
+
+$ venv venv1
+
+Or as a Python module:
+
+$ python -m venv venv1
+
+#15
+
+To make this your current Python environment, run this shell command (on Linux or Mac; see the venv docs for Windows and others):
+
+$ source venv1/bin/activate
+Now, anytime you run pip install, it will install packages under venv1. And when you run Python programs, that’s where your Python interpreter and modules will be found.
+
+
+#16
+
+To deactivate your virtual environment, press Control-D (Linux or Mac), or type deactivate (Windows).
+
+You can create alternative environments like venv2, and deactivate/activate to step between them (although I hope you have more naming imagination than me).
+
+#17
+
+Poetry
+This combination of pip and venv is so common that people started combining them to save steps and avoid that source shell wizardry. One such package is Pipenv, but a newer rival called Poetry is becoming more popular.
+
+Having used pip, Pipenv, and Poetry, I now prefer Poetry. Get it with pip install poetry. Poetry has many subcommands, such as poetry add to add a package to your virtual environment, poetry install to actually download and install it, and so on. Check the Poetry site or run the poetry command for help.
+
+
+#18
+
+
+Besides downloading single packages, pip and Poetry manage multiple packages in configuration files: requirements.txt for pip, and pyproject.toml for Poetry. Poetry and pip don’t just download packages, but also manage the tricky dependencies that packages may have on other packages. You can specify desired package versions as minima, maxima, ranges, or exact values (also known as pinning). This can be important as your project grows and the packages that it depends on change. You may need a minimum version of a package if a feature that you use first appeared there, or a maximum if a feature was dropped.
+
+
+#19
+
+Source Formatting
+Source formatting is less important than the topics of the previous sections but still helpful. Avoid code formatting (bikeshedding) arguments with a tool that massages source into a standard, nonweird format. One good choice is Black. Install it with pip install black.
+
+
+#20
+
+Testing
+Testing is covered in detail in Chapter 12. Although the standard Python test package is unittest, the industrial-strength Python test package used by most Python developers is pytest. Install it with pip install pytest.
+
+#21
+
+Source Control and Continuous Integration
+The almost-universal solution for source control now is Git, with storage repositories (repos) at sites like GitHub and GitLab. Using Git isn’t specific to Python or FastAPI, but you’ll likely spend a lot of your development time with Git. The pre-commit tool runs various tests on your local machine (such as black and pytest) before committing to Git. After pushing to a remote Git repo, more continuous integration (CI) tests may be run there.
+
+Chapter 12 and “Troubleshooting” have more details.
+
+
+#22
+
+Web Tools
+Chapter 3 shows how to install and use the main Python web tools used in this book:
+
+FastAPI
+The web framework itself
+
+Uvicorn
+An asynchronous web server
+
+HTTPie
+A text web client, similar to curl
+
+Requests
+A synchronous web client package
+
+HTTPX
+A synchronous/asynchronous web client package
+
+#23
+
+APIs and Services
+Python’s modules and packages are essential for creating large applications that don’t become “big balls of mud”. Even in a single-process web service, you can maintain the separation discussed in Chapter 1 by the careful design of modules and imports.
+
+#24
+
+Python’s built-in data structures are extremely flexible, and very tempting to use everywhere. But in the coming chapters, you’ll see that we can define higher-level models to make our interlayer communication cleaner. These models rely on a fairly recent Python addition called type hinting. Let’s get into that, but first with a brief aside on how Python handles variables. This won’t hurt.
+
+#25
+
+Variables Are Names
+The term object has many definitions in the software world—maybe too many. In Python, an object is a data structure that wraps every distinct piece of data in the program, from an integer like 5, to a function, to anything that you might define. It specifies, among other bookkeeping info, the following:
+
+- A unique identity value
+
+- The low-level type that matches the hardware
+
+- The specific value (physical bits)
+
+- A reference count of the number of variables that refer to it
+
+Python is strongly typed at the object level (its type doesn’t change, although its value might). An object is termed mutable if its value may be changed, immutable if not.
+
+
+#26
+
+But at the variable level, Python differs from many other computing languages, and this can be confusing. In many other languages, a variable is essentially a direct pointer to an area of memory that contains a raw value, stored in bits that follow the computer’s hardware design. If you assign a new value to that variable, the language overwrites the previous value in memory with the new one.
+
+That’s direct and fast. The compiler keeps track of what goes where. It’s one reason languages like C are faster than Python. As a developer, you need to ensure that you assign only values of the correct type to each variable.
+
+
+#27
+
+Now, here’s the big difference with Python: a Python variable is just a name that is temporarily associated with a higher-level object in memory. If you assign a new value to a variable that refers to an immutable object, you’re actually creating a new object that contains that value, and then getting the name to refer to that new object. The old object (that the name used to refer to) is then free, and its memory can be reclaimed if no other names are still referring to it (i.e., its reference count is 0).
+
+In Introducing Python (O’Reilly), I compare objects to plastic boxes sitting on memory shelves, and names/variables to sticky notes on these boxes. Or you can picture names as tags attached by strings to those boxes.
+
+#28
+
+Usually, when you use a name, you assign it to one object, and it stays attached. Such simple consistency helps you understand your code. A variable’s scope is the area of code in which a name refers to the same object—such as within a function. You can use the same name in different scopes, but each one refers to a different object.
+
+
+#29
+
+Although you can make a variable refer to different objects throughout a Python program, that isn’t necessarily a good practice. Without looking, you don’t know if name x on line 100 is in the same scope as name x on line 20. (By the way, x is a terrible name. We should pick names that actually confer some meaning.)
+
+#30
+
+Type Hints
+All of this background has a point.
+
+Python 3.6 added type hints to declare the type of object to which a variable refers. These are not enforced by the Python interpreter as it’s running! Instead, they can be used by various tools to ensure that your use of a variable is consistent. The standard type checker is called mypy, and I’ll show you how it’s used later.
+
+
+#31
+
+A type hint may seem like just a nice thing, like many lint tools used by programmers to avoid mistakes. For instance, it may remind you that your variable count refers to a Python object of type int. But hints, although they’re optional and unenforced notes (literally, hints), turn out to have unexpected uses. Later in this book, you’ll see how FastAPI adapted the Pydantic package to make clever use of type hinting.
+
+The addition of type declarations may be a trend in other, formerly typeless, languages. For example, many JavaScript developers have moved to TypeScript.
+
+
+#32
+
+Data Structures
+You’ll get details on Python and data structures in Chapter 5.
+
+Web Frameworks
+Among other things, a web framework translates between HTTP bytes and Python data structures. It can save you a lot of effort. On the other hand, if part of it doesn’t work as you need it to, you may need to hack a solution. As the saying goes, don’t reinvent the wheel—unless you can’t get a round one.
+
+
+#33
+
+The Web Server Gateway Interface (WSGI) is a synchronous Python standard specification to connect application code to web servers. Traditional Python web frameworks are all built on WSGI. But synchronous communication may mean busy waiting for something that’s much slower than the CPU, like a disk or network. Then you’ll look for better concurrency. Concurrency has become more important in recent years. As a result, the Python Asynchronous Server Gateway Interface (ASGI) specification was developed. Chapter 4 talks about this.
+
+#34
+
+Django
+Django is a full-featured web framework that tags itself as “the web framework for perfectionists with deadlines.” It was announced by Adrian Holovaty and Simon Willison in 2003, and named after Django Reinhardt, a 20th-century Belgian jazz guitarist. Django is often used for database-backed corporate sites. I include more details on Django in Chapter 7.
+
+
+#35
+
+Flask
+In contrast, Flask, introduced by Armin Ronacher in 2010, is a microframework. Chapter 7 has more information on Flask and how it compares with Django and FastAPI.
+
+#36
+
+FastAPI
+After meeting other suitors at the ball, we finally encounter the intriguing FastAPI, the subject of this book. Although FastAPI was published by Sebastián Ramírez in 2018, it has already climbed to the third place of Python web frameworks, behind Flask and Django, and is growing faster. A 2022 comparison shows that it may pass them at some point.
+
+
+#37
+
+NOTE
+As of the end of October 2023, here are the GitHub star counts:
+
+- Django: 73.8 thousand
+
+- Flask: 64.8 thousand
+
+- FastAPI: 64 thousand
+
+#38
+
+After careful investigation into alternatives, Ramírez came up with a design that was heavily based on two third-party Python packages:
+
+- Starlette for web details
+
+- Pydantic for data details
+
+And he added his own ingredients and special sauces to the final product. You’ll see what I mean in the next chapter.
+
+
+#39
+Review
+This chapter covered a lot of ground related to today’s Python:
+
+- Useful tools for a Python web developer
+
+- The prominence of APIs and services
+
+- Python’s type hinting, objects, and variables
+
+- Data structures for web services
+
+- Web frameworks
+

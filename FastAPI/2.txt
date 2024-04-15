@@ -1,0 +1,375 @@
+#1
+Chapter 1. The Modern Web
+The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.
+
+Tim Berners-Lee
+
+
+#2
+
+
+Preview
+Once upon a time, the web was small and simple. Developers had such fun throwing PHP, HTML, and MySQL calls into single files and proudly telling everyone to check out their website. But the web grew over time to zillions, nay, squillions of pages—and the early playground became a metaverse of theme parks.
+
+
+#3
+
+In this chapter, I’ll point out some areas that have become ever more relevant to the modern web:
+
+- Services and APIs
+
+- Concurrency
+
+- Layers
+
+- Data
+
+The next chapter will show what Python offers in these areas. After that, we’ll dive into the FastAPI web framework and see what it has to offer.
+
+#4
+
+Services and APIs
+The web is a great connecting fabric. Although much activity still occurs on the content side—HTML, JavaScript, images, and so on—there’s an increasing emphasis on the application programming interfaces (APIs) that connect things.
+
+#5
+
+Commonly, a web service handles low-level database access and middle-level business logic (often lumped together as a backend), while JavaScript or mobile apps provide a rich top-level frontend (interactive user interface). These fore and aft worlds have become more complex and divergent, usually requiring developers to specialize in one or the other. It’s harder to be a full stack developer than it used to be.1
+
+#6
+
+These two worlds talk to each other using APIs. In the modern web, API design is as important as the design of websites themselves. An API is a contract, similar to a database schema. Defining and modifying APIs is now a major job.
+
+#7
+
+Kinds of APIs
+Each API defines the following:
+
+Protocol
+The control structure
+
+Format
+The content structure
+
+#8
+
+Multiple API methods have developed as technology has evolved from isolated machines, to multitasking systems, to networked servers. You’ll probably run across one or more of these at some point, so the following is a brief summary before getting to HTTP and its friends, which are featured in this book:
+
+- Before networking, an API usually meant a very close connection, like a function call to a library in the same language as your application—say, calculating a square root in a math library.
+
+- Remote procedure calls (RPCs) were invented to call functions in other processes, on the same machine or others, as though they were in the calling application. A popular current example is gRPC.
+
+
+#9
+
+
+- Messaging sends small chunks of data in pipelines among processes. Messages may be verb-like commands or may just indicate noun-like events of interest. Current popular messaging solutions, which vary broadly from toolkits to full servers, include Apache Kafka, RabbitMQ, NATS, and ZeroMQ. Communication can follow different patterns:
+
+Request-response
+One: one, like a web browser calling a web server.
+
+Publish-subscribe, or pub-sub
+A publisher emits messages, and subscribers act on each according to some data in the message, like a subject.
+
+Queues
+Like pub-sub, but only one of a pool of subscribers grabs the message and acts on it.
+
+Any of these may be used alongside a web service—for example, performing a slow backend task like sending an email or creating a thumbnail image.
+
+#10
+
+HTTP
+Berners-Lee proposed three components for his World Wide Web:
+
+HTML
+A language for displaying data
+
+HTTP
+A client-server protocol
+
+URLs
+An addressing scheme for web resources
+
+
+#11
+
+
+Although these seem obvious in retrospect, they turned out to be a ridiculously useful combination. As the web evolved, people experimented, and some ideas, like the IMG tag, survived the Darwinian struggle. And as needs became clearer, people got serious about defining standards.
+
+
+#12
+
+REST(ful)
+One chapter in Roy Fielding’s Ph.D. thesis defined Representational State Transfer (REST)—an architectural style for HTTP use.2 Although often referenced, it’s been largely misunderstood.
+
+A roughly shared adaptation has evolved and dominates the modern web. It’s called RESTful, with these characteristics:
+
+- Uses HTTP and client-server protocol
+
+- Stateless (each connection is independent)
+
+- Cacheable
+
+- Resource-based
+
+#13
+
+A resource is data that you can distinguish and perform operations on. A web service provides an endpoint—a distinct URL and HTTP verb (action)—for each feature that it wants to expose. An endpoint is also called a route, because it routes the URL to a function.
+
+#14
+
+Database users are familiar with the CRUD acronym of procedures: create, read, update, delete. The HTTP verbs are pretty CRUDdy:
+
+POST
+Create (write)
+
+PUT
+Modify completely (replace)
+
+PATCH
+Modify partially (update)
+
+GET
+Um, get (read, retrieve)
+
+DELETE
+Uh, delete
+
+#15
+
+A client sends a request to a RESTful endpoint with data in one of the following areas of an HTTP message:
+
+- Headers
+
+- The URL string
+
+- Query parameters
+
+- Body values
+
+#16
+
+In turn, an HTTP response returns these:
+
+An integer status code indicating the following:
+
+100s
+Info, keep going
+
+200s
+Success
+
+300s
+Redirection
+
+400s
+Client error
+
+500s
+Server error
+
+- Various headers
+
+- A body, which may be empty, single, or chunked (in successive pieces)
+
+#17
+
+At least one status code is an Easter egg: 418 (I’m a teapot) is supposed to be returned by a web-connected teapot, if asked to brew coffee.
+
+You’ll find many websites and books on RESTful API design, all with useful rules of thumb. This book will dole some out on the way.
+
+#18
+
+JSON and API Data Formats
+Frontend applications can exchange plain ASCII text with backend web services, but how can you express data structures like lists of things?
+
+Just about when we really started to need it, along came JavaScript Object Notation (JSON)—another simple idea that solves an important problem and seems obvious with hindsight. Although the J stands for JavaScript, the syntax looks a lot like Python too.
+
+
+#19
+
+JSON has largely replaced older attempts like XML and SOAP. In the rest of this book, you’ll see that JSON is the default web service input and output format.
+
+
+#20
+
+JSON:API
+The combination of RESTful design and JSON data formats is common now. But some wiggle room still remains for ambiguity and nerd tussles. The recent JSON:API proposal aims to tighten specs a bit. This book will use the loose RESTful approach, but JSON:API or something similarly rigorous may be useful if you have significant tussles.
+
+
+#21
+
+GraphQL
+RESTful interfaces can be cumbersome for some purposes. Facebook (now Meta) designed Graph Query Language (GraphQL) to specify more flexible service queries. I won’t go into GraphQL in this book, but you may want to look into it if you find RESTful design inadequate for your application.
+
+#22
+
+Concurrency
+Besides the growth of service orientation, the rapid expansion of the number of connections to web services requires ever better efficiency and scale.
+
+We want to reduce the following:
+
+Latency
+The up-front wait time
+
+Throughput
+The number of bytes per second between the service and its callers
+
+In the old web days,3 people dreamed of supporting hundreds of simultaneous connections, then fretted about the “10K problem,” and now assume millions at a time.
+
+
+#23
+
+The term concurrency doesn’t mean full parallelism. Multiple processing isn’t occurring in the same nanosecond, in a single CPU. Instead, concurrency mostly avoids busy waiting (idling the CPU until a response is delivered). CPUs are zippy, but networks and disks are thousands to millions of times slower. So, whenever we talk to a network or disk, we don’t want to just sit there with a blank stare until it responds.
+
+#24
+
+Normal Python execution is synchronous: one thing at a time, in the order specified by the code. Sometimes we want to be asynchronous: do a little of one thing, then a little of another thing, back to the first thing, and so on. If all our code uses the CPU to calculate things (CPU bound), there’s really no spare time to be asynchronous. But if we perform something that makes the CPU wait for an external thing to complete (I/O bound), we can be asynchronous.
+
+#25
+
+Asynchronous systems provide an event loop: requests for slow operations are sent and noted, but we don’t hold up the CPU waiting for their responses. Instead, some immediate processing is done on each pass through the loop, and any responses that came in during that time are handled in the next pass.
+
+The effects can be dramatic. Later in this book, you’ll see how FastAPI’s support of asynchronous processing makes it much faster than typical web frameworks.
+
+#26
+
+Asynchronous processing isn’t magic. You still have to be careful to avoid doing too much CPU-intensive work during the event loop, because that will slow down everything. Later in this book, you’ll see the uses of Python’s async and await keywords, and how FastAPI lets you mix both synchronous and asynchronous processing.
+
+#27
+
+Layers
+Shrek fans may remember he noted his layers of personality, to which Donkey replied, “Like an onion?”
+
+
+#28
+Well, if ogres and tearful vegetables can have layers, then so can software. To manage size and complexity, many applications have long used a so-called three-tier model.4 This isn’t terribly new. Terms differ,5 but for this book I’m using the following simple separation of terms (see Figure 1-1):
+
+Web
+Input/output layer over HTTP, which assembles client requests, calls the Service Layer, and returns responses
+
+Service
+The business logic, which calls the Data layer when needed
+
+Data
+Access to data stores and other services
+
+Model
+Data definitions shared by all layers
+
+Web client
+Web browser or other HTTP client-side software
+
+Database
+The data store, often an SQL or NoSQL server
+
+
+#29
+
+Figure 1-1. Vertical layers
+These components will help you scale your site without having to start from scratch. They’re not laws of quantum mechanics, so consider them guidelines for this book’s exposition.
+
+The layers talk to one another via APIs. These can be simple function calls to separate Python modules, but could access external code via any method. As I showed earlier, this could include RPCs, messages, and so on. In this book, I’m assuming a single web server, with Python code importing other Python modules. The separation and information hiding is handled by the modules.
+
+#30
+
+The Web layer is the one that users see, via client applications and APIs. We’re usually talking about a RESTful web interface, with URLs, and JSON-encoded requests and responses. But alternative text (or command-line interface, CLI) clients also could be built alongside the Web layer. Python Web code may import Service-layer modules but should not import Data modules.
+
+
+#31
+
+The Service layer contains the actual details of whatever this website provides. This layer essentially looks like a library. It imports Data modules to access databases and external services but should not know the details.
+
+#32
+
+The Data layer provides the Service layer access to data, through files or client calls to other services. Alternative Data layers may also exist, communicating with a single Service layer.
+
+#33
+
+The Model box isn’t an actual layer but a source of data definitions shared by the layers. This isn’t needed if you’re passing built-in Python data structures among them. As you will see, FastAPI’s inclusion of Pydantic enables the definition of data structures with many useful features.
+
+#34
+
+Why make these divisions? Among many reasons, each layer can be:
+
+- Written by specialists.
+
+- Tested in isolation.
+
+- Replaced or supplemented: you might add a second Web layer, using a different API such as gRPC, alongside a web one.
+
+Follow one rule from Ghostbusters: Don’t cross the streams. That is, don’t let web details leak out of the Web layer, or database details out of the Data layer.
+
+#35
+
+
+You can visualize layers as a vertical stack, like a cake in the Great British Bake Off.6
+
+Here are some reasons for separation of the layers:
+
+- If you don’t separate the layers, expect a hallowed web meme: Now you have two problems.
+
+- Once the layers are mixed, later separation will be very difficult.
+
+- You’ll need to know two or more specialties to understand and write tests if code logic gets muddled.
+
+
+
+#36
+
+By the way, even though I call them layers, you don’t need to assume that one layer is “above” or “below” another, and that commands flow with gravity. Vertical chauvinism! You could also view layers as sideways-communicating boxes (Figure 1-2).
+
+Figure 1-2. Sideways-communicating boxes
+However you visualize them, the only communication paths between the boxes/layers are the arrows (APIs). This is important for testing and debugging. If undocumented doors exist in a factory, the night watchman will inevitably be surprised.
+
+
+#37
+
+The arrows between the web client and Web layer use HTTP or HTTPS to transport mostly JSON text. The arrows between the Data layer and database use a database-specific protocol and carry SQL (or other) text. The arrows between the layers themselves are function calls carrying data models.
+
+#38
+
+Also, the recommended data formats flowing through the arrows are as follows:
+
+Client ⇔ Web
+RESTful HTTP with JSON
+
+Web ⇔ Service
+Models
+
+Service ⇔ Data
+Models
+
+Data ⇔ Databases and services
+Specific APIs
+
+#39
+
+Based on my own experience, this is how I’ve chosen to structure the topics in this book. It’s workable and has scaled to fairly complex sites, but isn’t sacred. You may have a better design! However you do it, these are the important points:
+
+- Separate domain-specific details.
+
+- Define standard APIs between the layers.
+
+- Don’t cheat; don’t leak.
+
+
+#40
+
+Sometimes deciding which layer is the best home for code is a challenge. For example, Chapter 11 looks at authentication and authorization requirements and how to implement them—as an extra layer between Web and Service, or within one of them. Software development is sometimes as much art as science.
+
+#41
+
+
+Data
+The web has often been used as a frontend to relational databases, although many other ways of storing and accessing data have evolved, such as NoSQL or NewSQL databases.
+
+But beyond databases, machine learning (ML)—or deep learning or just AI—is fundamentally remaking the technology landscape. The development of large models requires lots of messing with data, which has traditionally been called extract, transform, load (ETL).
+
+As a general-purpose service architecture, the web can help with many of the fiddly bits of ML systems.
+
+
+#42
+
+Review
+The web uses many APIs, but especially RESTful ones. Asynchronous calls allow better concurrency, which speeds up the overall process. Web service applications are often large enough to divide into layers. Data has become a major area in its own right. All these concepts are addressed in the Python programming language, coming in the next chapter.
+

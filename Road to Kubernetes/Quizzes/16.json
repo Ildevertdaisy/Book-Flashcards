@@ -1,0 +1,177 @@
+{
+    "quizzes": [
+      {
+        "question": "Qu'est-ce que FastAPI ?",
+        "answers": [
+          { "text": "FastAPI est un outil pour créer des sites web qui peuvent répondre rapidement à ce que les gens demandent.", "correct": true },
+          { "text": "FastAPI est un langage de programmation similaire à Python, mais conçu spécifiquement pour les applications web.", "correct": false },
+          { "text": "FastAPI est une bibliothèque pour gérer les bases de données SQL dans Python.", "correct": false },
+          { "text": "FastAPI est un service cloud pour le déploiement automatique d'applications web.", "correct": false }
+        ]
+      },
+      {
+        "question": "À quoi sert un module en Python ?",
+        "answers": [
+          { "text": "Un module en Python est un morceau de code qui peut être utilisé dans d'autres projets pour ajouter des fonctionnalités spécifiques.", "correct": true },
+          { "text": "Un module en Python est une fonction qui effectue une tâche spécifique dans un programme.", "correct": false },
+          { "text": "Un module en Python est une structure de données pour stocker des valeurs de manière organisée.", "correct": false },
+          { "text": "Un module en Python est une classe spéciale utilisée pour créer des interfaces utilisateur graphiques.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'un \"import\" en Python ?",
+        "answers": [
+          { "text": "\"Import\" en Python est une manière de dire qu'on veut utiliser un morceau de code (comme FastAPI) qui a été écrit par quelqu'un d'autre.", "correct": true },
+          { "text": "\"Import\" en Python est une fonction pour importer des fichiers depuis l'ordinateur vers le programme.", "correct": false },
+          { "text": "\"Import\" en Python est un moyen de fusionner deux variables en une seule.", "correct": false },
+          { "text": "\"Import\" en Python est une instruction pour créer une copie d'une classe existante.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi doit-on créer un fichier main.py ?",
+        "answers": [
+          { "text": "On crée un fichier main.py pour écrire le code principal de notre site web.", "correct": true },
+          { "text": "Le fichier main.py est nécessaire pour exécuter des tests unitaires sur notre application.", "correct": false },
+          { "text": "Le fichier main.py est utilisé pour stocker des données de configuration spécifiques à notre projet.", "correct": false },
+          { "text": "On doit créer un fichier main.py pour gérer les dépendances de notre application.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une \"classe\" en programmation ?",
+        "answers": [
+          { "text": "Une classe est un plan ou un modèle que les programmeurs utilisent pour créer des objets qui peuvent faire certaines choses dans un programme.", "correct": true },
+          { "text": "Une classe en programmation est une fonction spéciale utilisée pour effectuer des calculs mathématiques complexes.", "correct": false },
+          { "text": "Une classe est une condition logique utilisée pour prendre des décisions dans un programme.", "correct": false },
+          { "text": "Une classe est un format de données pour stocker des informations dans une base de données.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  {
+    "quizzes": [
+      {
+        "question": "Qu'est-ce qu'une instance de classe ?",
+        "answers": [
+          { "text": "Une instance de classe est un objet spécifique créé à partir du plan de la classe, capable de faire ce que la classe décrit.", "correct": true },
+          { "text": "Une instance de classe est une fonction utilisée pour initialiser les variables dans une classe.", "correct": false },
+          { "text": "Une instance de classe est un module Python utilisé pour regrouper des fonctions similaires.", "correct": false },
+          { "text": "Une instance de classe est une condition logique utilisée pour effectuer des tests dans un programme.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'un décorateur en Python ?",
+        "answers": [
+          { "text": "Un décorateur est une manière de modifier ou d'ajouter des fonctionnalités à certaines parties de notre code.", "correct": true },
+          { "text": "Un décorateur est un outil pour dessiner des formes géométriques dans Python.", "correct": false },
+          { "text": "Un décorateur est une structure de données utilisée pour stocker des valeurs de manière organisée.", "correct": false },
+          { "text": "Un décorateur est une fonction spéciale utilisée pour vérifier les erreurs dans un programme.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi utilise-t-on un décorateur avec \"app.get()\" ?",
+        "answers": [
+          { "text": "On utilise \"app.get()\" comme décorateur pour dire à notre site web quoi faire quand quelqu'un visite une page spécifique.", "correct": true },
+          { "text": "Le décorateur \"app.get()\" est utilisé pour définir la couleur de fond d'une page web.", "correct": false },
+          { "text": "Le décorateur \"app.get()\" est utilisé pour ajouter des images à une page web.", "correct": false },
+          { "text": "Le décorateur \"app.get()\" est utilisé pour afficher des messages d'erreur sur une page web.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une route HTTP dans un site web ?",
+        "answers": [
+          { "text": "Une route HTTP est un chemin sur le site web qui mène à une page ou une action spécifique.", "correct": true },
+          { "text": "Une route HTTP est un moyen de sécuriser un site web contre les attaques de pirates informatiques.", "correct": false },
+          { "text": "Une route HTTP est un format de données utilisé pour stocker des informations dans une base de données.", "correct": false },
+          { "text": "Une route HTTP est un ensemble de règles utilisées pour organiser les fichiers d'un site web.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quelle est la fonction de \"@app.get(\"/\")\" ?",
+        "answers": [
+          { "text": "\"@app.get(\"/\")\" indique à notre site web ce qu'il doit montrer ou faire quand quelqu'un va à la page d'accueil.", "correct": true },
+          { "text": "\"@app.get(\"/\")\" est utilisé pour modifier la police de caractères sur une page web.", "correct": false },
+          { "text": "\"@app.get(\"/\")\" est utilisé pour ajouter des boutons interactifs à une page web.", "correct": false },
+          { "text": "\"@app.get(\"/\")\" est utilisé pour envoyer des emails automatiques depuis un site web.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+
+  {
+    "quizzes": [
+      {
+        "question": "Qu'est-ce qu'une fonction dans un programme ?",
+        "answers": [
+          { "text": "Une fonction est une partie du code qui peut faire une tâche spécifique chaque fois qu'on l'appelle.", "correct": true },
+          { "text": "Une fonction est une série d'images utilisées pour animer un site web.", "correct": false },
+          { "text": "Une fonction est un outil pour dessiner des formes géométriques dans un programme.", "correct": false },
+          { "text": "Une fonction est une condition logique utilisée pour effectuer des tests dans un programme.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi définit-on une fonction \"read_index()\" ?",
+        "answers": [
+          { "text": "On définit \"read_index()\" pour dire au site web quoi afficher aux visiteurs de la page d'accueil.", "correct": true },
+          { "text": "La fonction \"read_index()\" est utilisée pour changer la couleur de fond d'une page web.", "correct": false },
+          { "text": "La fonction \"read_index()\" est utilisée pour ajouter des images à une page web.", "correct": false },
+          { "text": "La fonction \"read_index()\" est utilisée pour envoyer des emails automatiques depuis un site web.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'un dictionnaire Python ?",
+        "answers": [
+          { "text": "Un dictionnaire Python est une collection de choses où chaque chose est associée à une clé, un peu comme un dictionnaire de mots et leurs définitions.", "correct": true },
+          { "text": "Un dictionnaire Python est une fonction utilisée pour trier des données dans un programme.", "correct": false },
+          { "text": "Un dictionnaire Python est un outil pour stocker des images dans un programme.", "correct": false },
+          { "text": "Un dictionnaire Python est une structure de données utilisée pour organiser des conditions logiques dans un programme.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi utilise-t-on un dictionnaire dans \"read_index()\" ?",
+        "answers": [
+          { "text": "On utilise un dictionnaire dans \"read_index()\" pour organiser l'information que notre site web enverra à quelqu'un qui visite la page d'accueil.", "correct": true },
+          { "text": "Un dictionnaire est utilisé dans \"read_index()\" pour afficher des vidéos sur une page web.", "correct": false },
+          { "text": "Un dictionnaire est utilisé dans \"read_index()\" pour ajouter des liens hypertextes à une page web.", "correct": false },
+          { "text": "Un dictionnaire est utilisé dans \"read_index()\" pour effectuer des calculs mathématiques sur une page web.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que la sérialisation JSON ?",
+        "answers": [
+          { "text": "La sérialisation JSON est une manière de transformer des informations (comme celles dans notre dictionnaire) en un format que les sites web peuvent envoyer et recevoir facilement.", "correct": true },
+          { "text": "La sérialisation JSON est un outil pour dessiner des graphiques dans un programme.", "correct": false },
+          { "text": "La sérialisation JSON est une fonction utilisée pour définir des couleurs dans un programme.", "correct": false },
+          { "text": "La sérialisation JSON est une condition logique utilisée pour vérifier les erreurs dans un programme.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  {
+    "quizzes": [
+      {
+        "question": "Pourquoi retourne-t-on {\"Hello\": \"World\"} dans notre fonction ?",
+        "answers": [
+          { "text": "On retourne {\"Hello\": \"World\"} pour montrer un message simple aux visiteurs de la page d'accueil, leur disant \"Hello World\" de façon numérique.", "correct": true },
+          { "text": "On retourne {\"Hello\": \"World\"} pour envoyer une demande de connexion à une base de données.", "correct": false },
+          { "text": "On retourne {\"Hello\": \"World\"} pour afficher une image de chat sur la page d'accueil.", "correct": false },
+          { "text": "On retourne {\"Hello\": \"World\"} pour jouer un fichier audio lorsque quelqu'un visite la page d'accueil.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment FastAPI aide-t-il à rendre les sites web plus rapides ?",
+        "answers": [
+          { "text": "FastAPI aide à rendre les sites web plus rapides en utilisant des méthodes modernes pour traiter les demandes des visiteurs efficacement.", "correct": true },
+          { "text": "FastAPI rend les sites web plus rapides en diminuant la qualité des images utilisées sur les pages.", "correct": false },
+          { "text": "FastAPI rend les sites web plus rapides en augmentant le nombre de publicités affichées sur les pages.", "correct": false },
+          { "text": "FastAPI rend les sites web plus rapides en limitant le nombre de visiteurs pouvant accéder aux pages simultanément.", "correct": false }
+        ]
+      }
+    ]
+  }
+

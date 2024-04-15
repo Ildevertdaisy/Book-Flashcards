@@ -1,0 +1,67 @@
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'une bibliothèque en informatique ?",
+            "answers": [
+                {"text": "C'est un ensemble de codes prêts à l'emploi que les programmeurs peuvent utiliser dans leurs projets.", "correct": true},
+                {"text": "C'est un endroit où les livres sont rangés dans une librairie.", "correct": false},
+                {"text": "C'est un type de code réservé aux bibliothèques publiques.", "correct": false},
+                {"text": "C'est une collection de matériel informatique dans un centre de données.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi y a-t-il beaucoup de versions différentes pour les bibliothèques en Python ?",
+            "answers": [
+                {"text": "Parce que les programmeurs améliorent constamment les bibliothèques en ajoutant de nouvelles fonctions ou en corrigeant des erreurs.", "correct": true},
+                {"text": "Parce que les bibliothèques en Python sont rarement mises à jour.", "correct": false},
+                {"text": "Parce qu'il y a des conflits internes entre les développeurs de Python.", "correct": false},
+                {"text": "Parce que Python est un langage de programmation obsolète.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un environnement virtuel en programmation Python ?",
+            "answers": [
+                {"text": "C'est comme une boîte spéciale dans l'ordinateur où on peut mettre tout ce dont on a besoin pour un projet, sans mélanger avec d'autres projets.", "correct": true},
+                {"text": "C'est une simulation de la réalité virtuelle pour tester des applications.", "correct": false},
+                {"text": "C'est un système d'exploitation entièrement basé sur le cloud.", "correct": false},
+                {"text": "C'est une machine virtuelle qui exécute du code Python à distance.", "correct": false}
+            ]
+        },
+        {
+            "question": "À quoi sert un environnement virtuel ?",
+            "answers": [
+                {"text": "Il sert à organiser et séparer les outils et versions pour chaque projet Python, pour éviter les mélanges et conflits.", "correct": true},
+                {"text": "Il sert à créer une copie exacte de l'ordinateur principal.", "correct": false},
+                {"text": "Il sert à exécuter des applications dans un environnement sécurisé.", "correct": false},
+                {"text": "Il sert à tester des logiciels sur différentes plateformes.", "correct": false}
+            ]
+        },
+        {
+            "question": "Est-ce que l'environnement virtuel crée une isolation complète ?",
+            "answers": [
+                {"text": "Non, ce n'est pas une isolation complète, mais il aide beaucoup à garder les projets bien organisés.", "correct": true},
+                {"text": "Oui, il crée une isolation totale entre le projet et le reste du système.", "correct": false},
+                {"text": "Oui, il rend impossible l'accès aux autres applications sur l'ordinateur.", "correct": false},
+                {"text": "Non, il ne fait aucune différence par rapport à l'environnement principal de l'ordinateur.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important de garder les projets Python bien organisés ?",
+            "answers": [
+                {"text": "Pour s'assurer que le code fonctionne correctement et pour éviter les problèmes avec différentes versions des bibliothèques.", "correct": true},
+                {"text": "Pour suivre les règles strictes imposées par Python.", "correct": false},
+                {"text": "Pour impressionner les autres programmeurs avec des structures de dossiers sophistiquées.", "correct": false},
+                {"text": "Pour faciliter la navigation dans les fichiers du projet lors de la présentation à un client.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que doit-on faire si on veut utiliser plusieurs bibliothèques dans un projet Python ?",
+            "answers": [
+                {"text": "Il est conseillé de créer un environnement virtuel pour ce projet, pour gérer facilement toutes les bibliothèques et leurs versions.", "correct": true},
+                {"text": "Il faut installer toutes les bibliothèques dans le répertoire principal de Python.", "correct": false},
+                {"text": "Il faut demander à un administrateur système de gérer les bibliothèques pour vous.", "correct": false},
+                {"text": "Il faut les télécharger directement depuis Internet à chaque fois qu'on en a besoin.", "correct": false}
+            ]
+        }
+    ]
+}

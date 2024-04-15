@@ -1,0 +1,126 @@
+{
+    "quizzes": [
+      {
+        "question": "C'est quoi un module Python ?",
+        "answers": [
+          { "text": "Un module Python est un fichier avec du code qui peut faire certaines tâches.", "correct": true },
+          { "text": "Un module Python est un outil utilisé pour créer des dessins en 3D.", "correct": false },
+          { "text": "Un module Python est une fonction mathématique complexe utilisée pour résoudre des équations.", "correct": false },
+          { "text": "Un module Python est un type de serpents vivant en Amérique du Sud.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi utiliserait-on uvicorn avec FastAPI ?",
+        "answers": [
+          { "text": "On utilise uvicorn pour permettre à notre site web de traiter des demandes rapidement et de manière asynchrone.", "correct": true },
+          { "text": "On utilise uvicorn pour convertir notre code Python en un format lisible par les humains.", "correct": false },
+          { "text": "On utilise uvicorn pour faire pousser des plantes tropicales dans notre jardin.", "correct": false },
+          { "text": "On utilise uvicorn pour traduire notre site web dans différentes langues.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une demande asynchrone ?",
+        "answers": [
+          { "text": "Une demande asynchrone permet au site web de faire plusieurs choses en même temps sans devoir attendre.", "correct": true },
+          { "text": "Une demande asynchrone est une requête envoyée à un site web qui ne reçoit jamais de réponse.", "correct": false },
+          { "text": "Une demande asynchrone est une question posée à un serveur qui est traitée lentement.", "correct": false },
+          { "text": "Une demande asynchrone est une fonction JavaScript utilisée pour créer des animations sur une page web.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que uvicorn ?",
+        "answers": [
+          { "text": "Uvicorn est un serveur qui aide à faire fonctionner des sites web créés avec FastAPI.", "correct": true },
+          { "text": "Uvicorn est une créature mythique vivant dans les profondeurs de l'océan.", "correct": false },
+          { "text": "Uvicorn est un ingrédient utilisé pour fabriquer des potions magiques.", "correct": false },
+          { "text": "Uvicorn est un style de danse traditionnelle originaire d'Europe de l'Est.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment lance-t-on notre application FastAPI pour le développement ?",
+        "answers": [
+          { "text": "On lance l'application en utilisant une commande spéciale avec uvicorn.", "correct": true },
+          { "text": "On lance l'application en lançant un dé pour décider quelle fonctionnalité développer en premier.", "correct": false },
+          { "text": "On lance l'application en appuyant sur un bouton magique qui crée automatiquement le site web.", "correct": false },
+          { "text": "On lance l'application en récitant une incantation magique pour invoquer le pouvoir de FastAPI.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+  {
+    "quizzes": [
+      {
+        "question": "Quelle est la commande pour exécuter une application FastAPI avec uvicorn ?",
+        "answers": [
+          { "text": "La commande est `uvicorn <nom_du_module>:<nom_de_variable> --reload --port <numéro_de_port>`.", "correct": true },
+          { "text": "La commande est `uvicorn run_server.py:app --reload --port 8000`.", "correct": false },
+          { "text": "La commande est `run_server.py --uvicorn --reload --port 8000`.", "correct": false },
+          { "text": "La commande est `start_server --uvicorn --reload --port 8000`.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi ajoute-t-on `--reload` dans la commande uvicorn ?",
+        "answers": [
+          { "text": "On ajoute `--reload` pour que le serveur redémarre automatiquement quand on change le code.", "correct": true },
+          { "text": "On ajoute `--reload` pour recharger automatiquement les pages du navigateur.", "correct": false },
+          { "text": "On ajoute `--reload` pour installer de nouvelles dépendances dans le projet.", "correct": false },
+          { "text": "On ajoute `--reload` pour accélérer le temps de chargement des pages web.", "correct": false }
+        ]
+      },
+      {
+        "question": "À quoi sert l'option `--port` dans la commande uvicorn ?",
+        "answers": [
+          { "text": "L'option `--port` sert à choisir sur quel numéro de port le serveur doit écouter.", "correct": true },
+          { "text": "L'option `--port` sert à spécifier le chemin du fichier à exécuter.", "correct": false },
+          { "text": "L'option `--port` sert à définir le type de serveur à utiliser.", "correct": false },
+          { "text": "L'option `--port` sert à activer le mode de débogage du serveur.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que WSGI ?",
+        "answers": [
+          { "text": "WSGI est une interface standard pour les serveurs web pour communiquer avec des applications web en Python.", "correct": true },
+          { "text": "WSGI est une bibliothèque Python utilisée pour créer des interfaces graphiques.", "correct": false },
+          { "text": "WSGI est un protocole de communication utilisé pour transférer des fichiers entre serveurs.", "correct": false },
+          { "text": "WSGI est un framework Python pour le développement d'applications web.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi utiliserait-on gunicorn avec uvicorn ?",
+        "answers": [
+          { "text": "On les utilise ensemble pour rendre notre serveur web plus rapide et prêt pour être utilisé par beaucoup de gens.", "correct": true },
+          { "text": "On les utilise ensemble pour transformer du code Python en un format exécutable.", "correct": false },
+          { "text": "On les utilise ensemble pour créer des interfaces utilisateur interactives.", "correct": false },
+          { "text": "On les utilise ensemble pour automatiser le déploiement de sites web.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+
+  {
+    "quizzes": [
+      {
+        "question": "Qu'est-ce que cela signifie d'exécuter une application en \"phase de développement\" ?",
+        "answers": [
+          { "text": "Cela signifie qu'on est en train de tester et de modifier notre application avant qu'elle soit complètement prête.", "correct": true },
+          { "text": "Cela signifie qu'on exécute l'application sur un serveur de production.", "correct": false },
+          { "text": "Cela signifie qu'on utilise une version obsolète de l'application.", "correct": false },
+          { "text": "Cela signifie qu'on est en train de surveiller l'application en production.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi est-il important de pouvoir exécuter une application FastAPI de manière asynchrone ?",
+        "answers": [
+          { "text": "C'est important pour que l'application puisse gérer beaucoup de demandes en même temps de manière efficace.", "correct": true },
+          { "text": "C'est important pour limiter l'accès à l'application à une seule demande à la fois.", "correct": false },
+          { "text": "C'est important pour augmenter la charge sur le serveur et ralentir les demandes.", "correct": false },
+          { "text": "C'est important pour empêcher l'application de répondre aux demandes des utilisateurs.", "correct": false }
+        ]
+      }
+    ]
+  }
+  

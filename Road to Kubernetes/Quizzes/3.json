@@ -1,0 +1,67 @@
+{}{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'un programme ou une application ?",
+            "answers": [
+                {"text": "C'est un ensemble d'instructions que l'ordinateur suit pour faire quelque chose d'utile.", "correct": true},
+                {"text": "C'est un fichier texte contenant des données.", "correct": false},
+                {"text": "C'est un dispositif matériel utilisé pour stocker des informations.", "correct": false},
+                {"text": "C'est une technique pour accélérer la vitesse d'exécution des programmes.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi dit-on que déployer une application peut être compliqué ?",
+            "answers": [
+                {"text": "Parce qu'il faut s'assurer que l'application fonctionne bien sur tous les ordinateurs ou serveurs où elle sera utilisée.", "correct": true},
+                {"text": "Parce que les applications sont trop simples à déployer.", "correct": false},
+                {"text": "Parce que les applications sont toujours compatibles avec tous les systèmes d'exploitation.", "correct": false},
+                {"text": "Parce que les applications sont généralement bien documentées.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un container dans le monde informatique ?",
+            "answers": [
+                {"text": "C'est une boîte virtuelle qui contient tout ce dont une application a besoin pour fonctionner.", "correct": true},
+                {"text": "C'est un outil pour dessiner des formes géométriques en 3D.", "correct": false},
+                {"text": "C'est un dispositif pour stocker des aliments dans une cuisine.", "correct": false},
+                {"text": "C'est un format de fichier utilisé pour compresser des données.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi les containers sont-ils utiles ?",
+            "answers": [
+                {"text": "Ils rendent plus facile l'envoi d'une application d'un ordinateur à un autre sans problèmes.", "correct": true},
+                {"text": "Ils sont principalement utilisés pour stocker des liquides.", "correct": false},
+                {"text": "Ils servent à transporter des marchandises par voie maritime.", "correct": false},
+                {"text": "Ils sont utilisés pour cultiver des plantes à l'intérieur.", "correct": false}
+            ]
+        },
+        {
+            "question": "Est-ce que toutes les applications sont faciles à déployer ?",
+            "answers": [
+                {"text": "Non, certaines peuvent être plus compliquées à déployer que d'autres, peu importe leur taille.", "correct": true},
+                {"text": "Oui, toutes les applications sont faciles à déployer.", "correct": false},
+                {"text": "Non, seules les applications très simples sont difficiles à déployer.", "correct": false},
+                {"text": "Oui, il n'y a aucune difficulté à déployer une application.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'on doit apprendre avant de comprendre les containers ?",
+            "answers": [
+                {"text": "Il faut d'abord apprendre comment construire des applications de base.", "correct": true},
+                {"text": "Il faut apprendre à utiliser des logiciels de design graphique.", "correct": false},
+                {"text": "Il faut apprendre à cuisiner.", "correct": false},
+                {"text": "Il faut apprendre à jouer d'un instrument de musique.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important d'apprendre à construire des applications ?",
+            "answers": [
+                {"text": "Parce que savoir les construire est la première étape avant de pouvoir les déployer pour que d'autres personnes puissent les utiliser.", "correct": true},
+                {"text": "Parce que les applications construites sont généralement très lucratives.", "correct": false},
+                {"text": "Parce que les applications sont toujours construites par des robots.", "correct": false},
+                {"text": "Parce que construire des applications est une tâche très facile.", "correct": false}
+            ]
+        }
+    ]
+}

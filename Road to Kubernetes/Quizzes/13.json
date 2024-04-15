@@ -1,0 +1,151 @@
+{
+    "quizzes": [
+      {
+        "question": "Pourquoi est-il important d'avoir un fichier `requirements.txt` dans notre projet Python ?",
+        "answers": [
+          { "text": "Pour pouvoir recréer les conditions nécessaires pour faire fonctionner notre code sur d'autres machines.", "correct": true },
+          { "text": "Le fichier `requirements.txt` est essentiel pour exécuter du code Python en ligne de commande.", "correct": false },
+          { "text": "Avoir un fichier `requirements.txt` permet de compiler notre code en un exécutable unique.", "correct": false },
+          { "text": "C'est une convention Python, mais il n'est pas nécessaire de l'utiliser.", "correct": false }
+        ]
+      },
+      {
+        "question": "Que peut-on inclure dans un fichier de besoins plus complexe que juste les noms des paquets ?",
+        "answers": [
+          { "text": "On peut inclure des numéros de version, des gammes de versions, ou même des références à des dépôts Git.", "correct": true },
+          { "text": "Seuls les noms des paquets peuvent être inclus dans un fichier de besoins.", "correct": false },
+          { "text": "Il est impossible d'inclure des informations supplémentaires dans un fichier `requirements.txt`.", "correct": false },
+          { "text": "Les commentaires et la documentation peuvent être ajoutés pour plus de clarté.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quel outil peut aider à gérer des fichiers de besoins complexes pour Python ?",
+        "answers": [
+          { "text": "Le paquet open-source Python appelé pip-tools.", "correct": true },
+          { "text": "pip ne peut gérer que des fichiers de besoins simples, sans options avancées.", "correct": false },
+          { "text": "Le fichier `requirements.txt` lui-même est suffisant pour gérer les besoins complexes.", "correct": false },
+          { "text": "L'utilisation de Docker est la seule solution pour gérer des besoins complexes.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quelles sont les deux options que nous avons une fois les besoins de notre environnement établis ?",
+        "answers": [
+          { "text": "(1) Détruire l'environnement virtuel et recommencer, ou (2) commencer à écrire notre code FastAPI.", "correct": true },
+          { "text": "Continuer à travailler dans l'environnement existant indépendamment des besoins.", "correct": false },
+          { "text": "Exporter les besoins dans un fichier texte et les conserver pour référence future.", "correct": false },
+          { "text": "Créer un environnement virtuel distinct pour chaque paquet installé.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi pourrait-on vouloir détruire l'environnement virtuel et recommencer ?",
+        "answers": [
+          { "text": "Pour apprendre à quel point il est facile de configurer notre environnement de travail.", "correct": true },
+          { "text": "Pour réduire la consommation de ressources système.", "correct": false },
+          { "text": "Pour éviter les conflits de version entre les paquets installés.", "correct": false },
+          { "text": "Parce que c'est une étape nécessaire avant de pouvoir exécuter du code Python.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  {
+    "quizzes": [
+      {
+        "question": "Où peut-on trouver plus d'informations sur pip-tools ?",
+        "answers": [
+          { "text": "Sur le site https://github.com/jazzband/pip-tools.", "correct": true },
+          { "text": "Sur le site officiel de Python.", "correct": false },
+          { "text": "Dans la documentation de Django.", "correct": false },
+          { "text": "En effectuant une recherche sur Google.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'un dépôt Git dans le contexte d'un fichier de besoins Python ?",
+        "answers": [
+          { "text": "C'est un lien vers un projet ou une bibliothèque stockée sur GitHub que l'on peut inclure directement dans notre projet.", "correct": true },
+          { "text": "Un dépôt Git est un fichier de configuration pour le suivi des versions de notre projet.", "correct": false },
+          { "text": "C'est un fichier de besoins spécifique à Git.", "correct": false },
+          { "text": "Un dépôt Git est une section réservée à la gestion des dépendances dans un fichier `requirements.txt`.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment décide-t-on entre détruire l'environnement virtuel ou commencer à coder ?",
+        "answers": [
+          { "text": "Cela dépend de notre expérience et de ce qu'on veut apprendre.", "correct": true },
+          { "text": "On décide en fonction du nombre de dépendances requises par le projet.", "correct": false },
+          { "text": "On commence toujours par détruire l'environnement virtuel avant de coder.", "correct": false },
+          { "text": "La décision est prise en fonction du système d'exploitation utilisé.", "correct": false }
+        ]
+      },
+      {
+        "question": "Que signifie 'reproduire les conditions nécessaires' pour un projet Python ?",
+        "answers": [
+          { "text": "Cela signifie s'assurer que le même environnement et les mêmes dépendances sont disponibles pour que le code fonctionne correctement.", "correct": true },
+          { "text": "Reproduire les conditions nécessaires consiste à copier-coller le code depuis un autre projet similaire.", "correct": false },
+          { "text": "Il s'agit de créer des conditions de test pour évaluer le fonctionnement du projet.", "correct": false },
+          { "text": "Cela implique de reproduire les bogues rencontrés dans un environnement de développement.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une gamme de versions dans un fichier `requirements.txt` ?",
+        "answers": [
+          { "text": "C'est quand on spécifie qu'on a besoin d'une version d'un paquet qui se situe entre deux versions spécifiques.", "correct": true },
+          { "text": "Une gamme de versions indique les versions précises des paquets à installer.", "correct": false },
+          { "text": "C'est une liste de versions de paquets qui ne sont pas compatibles avec notre projet.", "correct": false },
+          { "text": "Une gamme de versions est une version spécifique d'un paquet incluse dans le fichier `requirements.txt`.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+
+  {
+    "quizzes": [
+      {
+        "question": "Quel avantage y a-t-il à utiliser pip-tools pour notre fichier de besoins ?",
+        "answers": [
+          { "text": "Pip-tools peut aider à organiser et à mettre à jour les dépendances de manière plus efficace.", "correct": true },
+          { "text": "Pip-tools garantit l'absence d'erreurs dans notre code.", "correct": false },
+          { "text": "Pip-tools fournit une interface graphique conviviale pour gérer les dépendances.", "correct": false },
+          { "text": "Pip-tools permet d'exécuter des tests automatisés sur notre code.", "correct": false }
+        ]
+      },
+      {
+        "question": "Comment savoir quel choix faire entre détruire l'environnement virtuel et écrire du code ?",
+        "answers": [
+          { "text": "On doit considérer notre niveau de confort avec la configuration de l'environnement et notre désir d'apprendre.", "correct": true },
+          { "text": "On devrait toujours détruire l'environnement virtuel avant d'écrire du code.", "correct": false },
+          { "text": "La décision dépend du temps dont on dispose pour travailler sur le projet.", "correct": false },
+          { "text": "On doit choisir en fonction de la complexité du code que l'on prévoit d'écrire.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi utiliser des références à des dépôts Git dans nos fichiers de besoins ?",
+        "answers": [
+          { "text": "Pour inclure des versions spécifiques ou des versions non publiées de bibliothèques directement dans notre projet.", "correct": true },
+          { "text": "Pour utiliser des fonctionnalités avancées de suivi des versions dans Git.", "correct": false },
+          { "text": "Pour éviter les conflits de versions entre les différentes dépendances.", "correct": false },
+          { "text": "Pour partager notre code avec d'autres développeurs via Git.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'apprend-on en configurant un environnement virtuel pour la première fois ?",
+        "answers": [
+          { "text": "On apprend comment préparer un environnement de développement isolé pour notre projet.", "correct": true },
+          { "text": "On découvre les bases de la programmation Python.", "correct": false },
+          { "text": "On acquiert des compétences avancées en gestion de projet.", "correct": false },
+          { "text": "On comprend comment déployer notre application sur un serveur distant.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quel est le but final de préparer un fichier `requirements.txt` pour notre projet ?",
+        "answers": [
+          { "text": "Le but est de faciliter la collaboration et le déploiement en s'assurant que tout le monde peut configurer un environnement identique.", "correct": true },
+          { "text": "Le fichier `requirements.txt` permet de stocker des informations de licence sur nos dépendances.", "correct": false },
+          { "text": "Le fichier `requirements.txt` garantit que notre code respecte les normes de qualité Python.", "correct": false },
+          { "text": "Le but est de réduire la taille du code en incluant uniquement les dépendances nécessaires.", "correct": false }
+        ]
+      }
+    ]
+  }
+  

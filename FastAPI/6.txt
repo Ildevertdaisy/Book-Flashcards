@@ -1,0 +1,674 @@
+#1
+
+Chapter 5. Pydantic, Type Hints, and Models Tour
+Data validation and settings management using Python type hints.
+
+Fast and extensible, Pydantic plays nicely with your linters/IDE/brain. Define how data should be in pure, canonical Python 3.6+; validate it with Pydantic.
+
+Samuel Colvin, developer of Pydantic
+
+#2
+
+Preview
+FastAPI stands largely on a Python package called Pydantic. This uses models (Python object classes) to define data structures. These are heavily used in FastAPI applications and are a real advantage when writing larger applications.
+
+
+#3
+
+Type Hinting
+It’s time to learn a little more about Python type hints.
+
+Chapter 2 mentioned that, in many computer languages, a variable points directly to a value in memory. This requires the programmer to declare its type, so the size and bits of the value can be determined. In Python, variables are just names associated with objects, and it’s the objects that have types.
+
+
+#4
+
+In standard programming, a variable is usually associated with the same object. If we associate a type hint with that variable, we can avoid some programming mistakes. So Python added type hinting to the language, in the standard typing module. The Python interpreter ignores the type hint syntax and runs the program as though it isn’t there. Then what’s the point?
+
+You might treat a variable as a string in one line, and forget later and assign it an object of a different type. Although compilers for other languages would complain, Python won’t. The standard Python interpreter will catch normal syntax errors and runtime exceptions, but not mixing types for a variable. Helper tools like mypy pay attention to type hints and warn you about any mismatches.
+
+#5
+
+Also, the hints are available to Python developers, who can write tools that do more than type error checking. The following sections describe how the Pydantic package was developed to address needs that weren’t obvious. Later, you’ll see how its integration with FastAPI makes a lot of web development issues much easier to handle.
+
+
+#6
+
+By the way, what do type hints look like? There’s one syntax for variables and another for function return values.
+
+Variable type hints may include only the type:
+
+name: type
+
+or also initialize the variable with a value:
+
+name: type = value
+
+
+The type can be one of the standard Python simple types like int or str, or collection types like tuple, list, or dict:
+
+thing: str = "yeti"
+
+
+#7
+
+NOTE
+Before Python 3.9, you need to import capitalized versions of these standard type names from the typing module:
+
+from typing import Str
+thing: Str = "yeti"
+
+#8
+
+Here are some examples with initializations:
+
+physics_magic_number: float = 1.0/137.03599913
+hp_lovecraft_noun: str = "ichor"
+exploding_sheep: tuple = "sis", "boom", bah!"
+responses: dict = {"Marco": "Polo", "answer": 42}
+You can also include subtypes of collections:
+
+name: dict[keytype, valtype] = {key1: val1, key2: val2}
+
+#9
+
+The typing module has useful extras for subtypes; the most common are as follows:
+
+Any
+Any type
+
+Union
+Any type of those specified, such as Union[str, int].
+
+NOTE
+In Python 3.10 and up, you can say type1 | type2 instead of Union[type1, type2].
+
+#10
+
+Examples of Pydantic definitions for a Python dict include the following:
+
+from typing import Any
+responses: dict[str, Any] = {"Marco": "Polo", "answer": 42}
+Or, a little more specific:
+
+from typing import Union
+responses: dict[str, Union[str, int]] = {"Marco": "Polo", "answer": 42}
+
+#11
+
+or (Python 3.10 and up):
+
+responses: dict[str, str | int] = {"Marco": "Polo", "answer": 42}
+Notice that a type-hinted variable line is legal Python, but a bare variable line is not:
+
+$ python
+...
+>>> thing0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name thing0 is not defined
+>>> thing0: str
+
+#12
+
+Also, incorrect type uses are not caught by the regular Python interpreter:
+
+$ python
+...
+>>> thing1: str = "yeti"
+>>> thing1 = 47
+But they will be caught by mypy. If you don’t already have it, run pip install mypy. Save those two preceding lines to a file called stuff.py,1 and then try this:
+
+$ mypy stuff.py
+stuff.py:2: error: Incompatible types in assignment
+(expression has type "int", variable has type "str")
+Found 1 error in 1 file (checked 1 source file)
+
+
+#13
+
+A function return type hint uses an arrow instead of a colon:
+
+function(args) -> type:
+Here’s a Pydantic example of a function return:
+
+def get_thing() -> str:
+   return "yeti"
+You can use any type, including classes that you’ve defined or combinations of them. You’ll see that in a few pages.
+
+#14
+
+
+Data Grouping
+Often we need to keep a related group of variables together rather than passing around lots of individual variables. How do we integrate multiple variables as a group and keep the type hints?
+
+Let’s leave behind our tepid greeting example from previous chapters and start using richer data from now on. As in the rest of this book, we’ll use examples of cryptids (imaginary creatures) and the (also imaginary) explorers who seek them. Our initial cryptid definitions will include only string variables for the following:
+
+name
+Key
+
+country
+Two-character ISO country code (3166-1 alpha 2) or * = all
+
+area
+Optional; United States state or other country subdivision
+
+description
+Free-form
+
+aka
+Also known as…​
+
+#15
+
+And explorers will have the following:
+
+name
+Key
+
+country
+Two-character ISO country code
+
+description
+Free-form
+
+Python’s historic data grouping structures (beyond the basic int, string, and such) are listed here:
+
+tuple
+An immutable sequence of objects
+
+list
+A mutable sequence of objects
+
+set
+Mutable distinct objects
+
+dict
+Mutable key-value object pairs (the key needs to be of an immutable type)
+
+Tuples (Example 5-1) and lists (Example 5-2) let you access a member variable only by its offset, so you have to remember what went where.
+
+#16
+
+Example 5-1. Using a tuple
+>>> tuple_thing = ("yeti", "CN", "Himalayas",
+    "Hirsute Himalayan", "Abominable Snowman")
+>>> print("Name is", tuple_thing[0])
+Name is yeti
+Example 5-2. Using a list
+>>> list_thing = ["yeti", "CN", "Himalayas",
+    "Hirsute Himalayan", "Abominable Snowman"]
+>>> print("Name is", list_thing[0])
+Name is yeti
+Example 5-3 shows that you can get a little more explanatory by defining names for the integer offsets.
+
+
+#17
+
+Example 5-3. Using tuples and named offsets
+>>> NAME = 0
+>>> COUNTRY = 1
+>>> AREA = 2
+>>> DESCRIPTION = 3
+>>> AKA = 4
+>>> tuple_thing = ("yeti", "CN", "Himalayas",
+    "Hirsute Himalayan", "Abominable Snowman")
+>>> print("Name is", tuple_thing[NAME])
+Name is yeti
+Dictionaries are a little better in Example 5-4, giving you access by descriptive keys.
+
+#18
+
+
+Example 5-4. Using a dictionary
+>>> dict_thing = {"name": "yeti",
+...     "country": "CN",
+...     "area": "Himalayas",
+...     "description": "Hirsute Himalayan",
+...     "aka": "Abominable Snowman"}
+>>> print("Name is", dict_thing["name"])
+Name is yeti
+Sets contain only unique values, so they’re not very helpful for clustering various variables.
+
+In Example 5-5, a named tuple is a tuple that gives you access by integer offset or name.
+
+
+#19
+
+Example 5-5. Using a named tuple
+>>> from collections import namedtuple
+>>> CreatureNamedTuple = namedtuple("CreatureNamedTuple",
+...     "name, country, area, description, aka")
+>>> namedtuple_thing = CreatureNamedTuple("yeti",
+...     "CN",
+...     "Himalaya",
+...     "Hirsute HImalayan",
+...     "Abominable Snowman")
+>>> print("Name is", namedtuple_thing[0])
+Name is yeti
+>>> print("Name is", namedtuple_thing.name)
+Name is yeti
+NOTE
+You can’t say namedtuple_thing["name"]. It’s a tuple, not a dict, so the index needs to be an integer.
+
+Example 5-6 defines a new Python class and adds all the attributes with self. But you’ll need to do a lot of typing just to define them.
+
+#20
+
+Example 5-6. Using a standard class
+>>> class CreatureClass():
+...     def __init__(self,
+...       name: str,
+...       country: str,
+...       area: str,
+...       description: str,
+...       aka: str):
+...         self.name = name
+...         self.country = country
+...         self.area = area
+...         self.description = description
+...         self.aka = aka
+...
+>>> class_thing = CreatureClass(
+...     "yeti",
+...     "CN",
+...     "Himalayas"
+...     "Hirsute Himalayan",
+...     "Abominable Snowman")
+>>> print("Name is", class_thing.name)
+Name is yeti
+
+NOTE
+You might think, what’s so bad about that? With a regular class, you can add more data (attributes), but especially behavior (methods). You might decide, one madcap day, to add a method that looks up an explorer’s favorite songs. (This wouldn’t apply to a creature.2) But the use case here is just to move a clump of data undisturbed among the layers, and to validate on the way in and out. Also, methods are square pegs that would struggle to fit in the round holes of a database.
+
+#21
+
+Does Python have anything similar to what other computer languages call a record or a struct (a group of names and values)? A recent addition to Python is the dataclass. Example 5-7 shows how all that self stuff disappears with dataclasses.
+
+Example 5-7. Using a dataclass
+>>> from dataclasses import dataclass
+>>>
+>>> @dataclass
+... class CreatureDataClass():
+...     name: str
+...     country: str
+...     area: str
+...     description: str
+...     aka: str
+...
+>>> dataclass_thing = CreatureDataClass(
+...     "yeti",
+...     "CN",
+...     "Himalayas"
+...     "Hirsute Himalayan",
+...     "Abominable Snowman")
+>>> print("Name is", dataclass_thing.name)
+Name is yeti
+
+#22
+
+This is pretty good for the keeping-variables-together part. But we want more, so let’s ask Santa for these:
+
+- A union of possible alternative types
+
+- Missing/optional values
+
+- Default values
+
+- Data validation
+
+- Serialization to and from formats like JSON
+
+#23
+
+Alternatives
+It’s tempting to use Python’s built-in data structures, especially dictionaries. But you’ll inevitably find that dictionaries are a bit too “loose.” Freedom comes at a price. You need to check everything:
+
+- Is the key optional?
+
+- If the key is missing, is there a default value?
+
+- Does the key exist?
+
+- If so, is the key’s value of the right type?
+
+- If so, is the value in the right range or matching a pattern?
+
+
+
+#24
+
+At least three solutions address at least some of these requirements:
+
+Dataclasses
+Part of standard Python.
+
+attrs
+Third party, but a superset of dataclasses.
+
+Pydantic
+Also third party, but integrated into FastAPI, so an easy choice if you’re already using FastAPI. And if you’re reading this book, that’s likely.
+
+A handy comparison of the three is on YouTube. One takeaway is that Pydantic stands out for validation, and its integration with FastAPI catches many potential data errors. Another is that Pydantic relies on inheritance (from the BaseModel class), and the other two use Python decorators to define their objects. This is more a matter of style.
+
+#25
+
+In another comparison, Pydantic outperformed older validation packages like marshmallow and the intriguingly named Voluptuous. Another big plus for Pydantic is that it uses standard Python type hint syntax; older libraries pre-dated type hints and rolled their own.
+
+So I’m going with Pydantic in this book, but you may find uses for either of the alternatives if you’re not using FastAPI.
+
+#26
+
+Pydantic provides ways to specify any combination of these checks:
+
+- Required versus optional
+
+- Default value if unspecified but required
+
+- The data type or types expected
+
+- Value range restrictions
+
+- Other function-based checks if needed
+
+- Serialization and deserialization
+
+#27
+
+A Simple Example
+You’ve seen how to feed a simple string to a web endpoint via the URL, a query parameter, or the HTTP body. The problem is that you usually request and receive groups of data, of many types. That’s where Pydantic models first appear in FastAPI.
+
+This initial example will use three files:
+
+- model.py defines a Pydantic model.
+
+- data.py is a fake data source, defining an instance of a model.
+
+- web.py defines a FastAPI web endpoint that returns the fake data.
+
+#28
+
+
+For simplicity in this chapter, let’s keep all the files in the same directory. In later chapters that discuss larger websites, we’ll separate them into their respective layers. First, define the model for a creature in Example 5-8.
+
+Example 5-8. Define a creature model: model.py
+from pydantic import BaseModel
+
+class Creature(BaseModel):
+    name: str
+    country: str
+    area: str
+    description: str
+    aka: str
+
+thing = Creature(
+    name="yeti",
+    country="CN",
+    area="Himalayas",
+    description="Hirsute Himalayan",
+    aka="Abominable Snowman")
+)
+print("Name is", thing.name)
+
+
+#29
+
+The Creature class inherits from Pydantic’s BaseModel. That : str part after name, country, area, description, and aka is a type hint that each is a Python string.
+
+NOTE
+In this example, all fields are required. In Pydantic, if Optional is not in the type description, the field must have a value.
+
+In Example 5-9, pass the arguments in any order if you include their names.
+
+#30
+
+Example 5-9. Create a creature
+>>> thing = Creature(
+...     name="yeti",
+...     country="CN",
+...     area="Himalayas"
+...     description="Hirsute Himalayan",
+...     aka="Abominable Snowman")
+>>> print("Name is", thing.name)
+Name is yeti
+For now, Example 5-10 defines a teeny source of data; in later chapters, databases will do this. The type hint list[Creature] tells Python that this is a list of Creature objects only.
+
+#31
+
+Example 5-10. Define fake data in data.py
+from model import Creature
+
+_creatures: list[Creature] = [
+    Creature(name="yeti",
+             country="CN",
+             area="Himalayas",
+             description="Hirsute Himalayan",
+             aka="Abominable Snowman"
+             ),
+    Creature(name="sasquatch",
+             country="US",
+             area="*",
+             description="Yeti's Cousin Eddie",
+             aka="Bigfoot")
+]
+
+def get_creatures() -> list[Creature]:
+    return _creatures
+(We’re using "*" for Bigfoot’s area because he’s almost everywhere.)
+
+This code imports the model.py that we just wrote. It does a little data hiding by calling its list of Creature objects _creatures, and providing the get_creatures() function to return them.
+
+#32
+
+Example 5-11 lists web.py, a file that defines a FastAPI web endpoint.
+
+Example 5-11. Define a FastAPI web endpoint: web.py
+from model import Creature
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/creature")
+def get_all() -> list[Creature]:
+    from data import get_creatures
+    return get_creatures()
+Now fire up this one-endpoint server in Example 5-12.
+
+#33
+
+Example 5-12. Start Uvicorn
+$ uvicorn creature:app
+INFO:     Started server process [24782]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+In another window, Example 5-13 accesses the web application with the HTTPie web client (try your browser or the Requests module if you like too).
+
+#34
+
+Example 5-13. Test with HTTPie
+$ http http://localhost:8000/creature
+HTTP/1.1 200 OK
+content-length: 183
+content-type: application/json
+date: Mon, 12 Sep 2022 02:21:15 GMT
+server: uvicorn
+
+[
+    {
+        "aka": "Abominable Snowman",
+        "area": "Himalayas",
+        "country": "CN",
+        "name": "yeti",
+        "description": "Hirsute Himalayan"
+    },
+    {
+        "aka": "Bigfoot",
+        "country": "US",
+        "area": "*",
+        "name": "sasquatch",
+        "description": "Yeti's Cousin Eddie"
+    }
+FastAPI and Starlette automatically convert the original Creature model object list into a JSON string. This is the default output format in FastAPI, so we don’t need to specify it.
+
+Also, the window in which you originally started the Uvicorn web server should have printed a log line:
+
+INFO:     127.0.0.1:52375 - "GET /creature HTTP/1.1" 200 OK
+
+
+#35
+
+Validate Types
+The previous section showed how to do the following:
+
+- Apply type hints to variables and functions
+
+- Define and use a Pydantic model
+
+- Return a list of models from a data source
+
+- Return the model list to a web client, automatically converting the model list to JSON
+
+Now, let’s really put it to work validating data.
+
+
+#36
+
+Try assigning a value of the wrong type to one or more of the Creature fields. Let’s use a standalone test for this (Pydantic doesn’t apply on any web code; it’s a data thing).
+
+Example 5-14 lists test1.py.
+
+Example 5-14. Test the Creature model
+from model import Creature
+
+dragon = Creature(
+    name="dragon",
+    description=["incorrect", "string", "list"],
+    country="*" ,
+    area="*",
+    aka="firedrake")
+Now try the test in Example 5-15.
+Example 5-15. Run the test
+$ python test1.py
+Traceback (most recent call last):
+  File ".../test1.py", line 3, in <module>
+    dragon = Creature(
+  File "pydantic/main.py", line 342, in
+    pydantic.main.BaseModel.init
+    pydantic.error_wrappers.ValidationError:
+    1 validation error for Creature description
+  str type expected (type=type_error.str)
+
+This finds that we’ve assigned a list of strings to the description field, and it wants a plain old string.
+
+#37
+
+Validate Values
+Even if the value’s type matches its specification in the Creature class, more checks may need to pass. Some restrictions can be placed on the value itself:
+
+Integer (conint) or float:
+
+gt
+Greater than
+
+lt
+Less than
+
+ge
+Greater than or equal to
+
+le
+Less than or equal to
+
+multiple_of
+An integer multiple of a value
+
+String (constr):
+
+min_length
+Minimum character (not byte) length
+
+max_length
+Maximum character length
+
+to_upper
+Convert to uppercase
+
+to_lower
+Convert to lowercase
+
+regex
+Match a Python regular expression
+
+Tuple, list, or set:
+
+min_items
+Minimum number of elements
+
+max_items
+Maximum number of elements
+
+These are specified in the type parts of the model.
+
+
+
+#38
+
+Example 5-16 ensures that the name field is always at least two characters long. Otherwise, "" (an empty string) is a valid string.
+
+Example 5-16. See a validation failure
+>>> from pydantic import BaseModel, constr
+>>>
+>>> class Creature(BaseModel):
+...     name: constr(min_length=2)
+...     country: str
+...     area: str
+...     description: str
+...     aka: str
+...
+>>> bad_creature = Creature(name="!",
+...     description="it's a raccoon",
+...     area="your attic")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "pydantic/main.py", line 342,
+  in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError:
+1 validation error for Creature name
+  ensure this value has at least 2 characters
+  (type=value_error.any_str.min_length; limit_value=2)
+
+#39
+
+That constr means a constrained string. Example 5-17 uses an alternative, the Pydantic Field specification.
+
+Example 5-17. Another validation failure, using Field
+>>> from pydantic import BaseModel, Field
+>>>
+>>> class Creature(BaseModel):
+...     name: str = Field(..., min_length=2)
+...     country: str
+...     area: str
+...     description: str
+...     aka: str
+...
+>>> bad_creature = Creature(name="!",
+...     area="your attic",
+...     description="it's a raccoon")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "pydantic/main.py", line 342,
+  in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError:
+1 validation error for Creature name
+  ensure this value has at least 2 characters
+  (type=value_error.any_str.min_length; limit_value=2)
+That ... argument to Field() means that a value is required, and that there’s no default value.
+
+This is a minimal introduction to Pydantic. The main takeaway is that it lets you automate the validation of your data. You’ll see how useful this is when getting data from either the Web or Data layers.
+
+#40
+
+Review
+Models are the best way to define data that will be passed around in your web application. Pydantic leverages Python’s type hints to define data models to pass around in your application. Coming next: defining dependencies to separate specific details from your general code.

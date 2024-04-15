@@ -1,0 +1,715 @@
+#70
+
+Since the post-receive hook is just a bash script, we can call this hook at any time to ensure it’s working properly. Any time you make changes to this hook, it’s recommended that you call it immediately to ensure it’s working properly, and code changes are being applied, as shown in the following listing.
+
+Listing 3.14 Verifying the post-receive hook
+export PY_GIT_DIR=/var/repos/roadtok8s/py.git
+export JS_GIT_DIR=/var/repos/roadtok8s/js.git
+ 
+bash $PY_GIT_DIR/hooks/post-receive
+bash $JS_GIT_DIR/hooks/post-receive
+
+
+#71
+
+
+If you see the error error: pathspec 'HEAD' did not match any file(s) known to git, there’s a good chance you did not push your code from your local computer into your VM.
+
+#72
+
+If you see an error or not, let’s verify that we can push our code to our server right now with the code in the following listing.
+
+Listing 3.15 Pushing code to server from local computer
+cd ~/dev/roadtok8s/py
+git push vm main
+ 
+cd ~/dev/roadtok8s/js
+git push vm main
+
+
+#73
+
+Once that’s pushed, you can verify the code on your server by running the following SSH commands:
+
+ssh root@<your-ip> ls -la /opt/projects/roadtok8s/py
+ssh root@<your-ip> ls -la /opt/projects/roadtok8s/js
+
+At this point, we have all of the code on our machine, and we have a method for continuously installing and updating that code. The next step is to install the various software dependencies for our projects so they can actually run.
+
+
+#74
+
+
+3.4 Installing the apps' dependencies
+Earlier in this chapter, we saw how easy it can be to install NGINX to run a simple website. To have a more powerful and full-featured website, we are going to need to install a lot more software dependencies. More software dependencies mean more complexity, and more complexity means more things can go wrong. We will start to mitigate these potential problems by setting up specific environments for each project.
+
+
+#75
+
+
+Since we have two different applications with two different runtimes, we will need to approach the installation of dependencies differently. For our Python project, we will use a virtual environment and the Python Package Tool (pip) with a specific version of Python 3. For our Node.js project, we will use the Node Version Manager (nvm) to install a specific version of Node.js and the corresponding Node Package Manager (npm).
+
+
+#76
+
+The runtime requirements for our two projects are as follows. Verify each version with the commands next to it:
+
+- Python 3 version 3.8 or higher—Verify this in your SSH session with python3 --version.
+- Node.js version 16.14 or higher—Verify this with node --version.
+
+
+
+#77
+
+
+Since we used Ubuntu 20.04, Python 3.8 should already be installed where Node.js is not. Regardless of what is currently installed, we are going to run through the process of installing different versions of Python and Node.js, so you’re better prepared for long-term usage of these tools.
+
+#78
+
+3.4.1 Installing Python 3 and our FastAPI project
+The Python standard library has a lot of built-in features that make it ideally suited for web development. However, the standard library is not enough to build a full-featured web application, and some Linux-based machines do not have the full standard library of Python installed by default (unlike the macOS and Windows equivalents). To extend the capabilities of Python and prepare for a production-ready environment, we will need to install additional libraries on our Linux-based system because some of the standard library is not available on Linux machines without additional OS-level installations—for example, venv (https://docs.python.org/3/library/venv.html).
+
+
+#79
+
+Python 3 is installed by default on Ubuntu systems; the newer the version of Ubuntu, the newer the default Python 3 installation will likely be. As always, we verify the version of Python on our system with python3 --version (or python --version for virtual environments) to ensure that our code can run with this version. Regardless of what version of Python 3 is installed currently, we are going to install the latest version along with a few other packages using the apt package manager:
+
+python3—This package provides the python3 command, which is used to run Python 3.
+python3-venv—This package provides the venv module, which is used to create virtual environments.
+python3-pip—This package provides the pip tool, which is used to install Python packages.
+build-essential—This package provides the gcc tool, which is used to compile Python packages.
+
+
+
+#80
+
+
+Each one of these packages is required to configure our Python application’s environment and versions in a way that’s suited for production use, as shown in the following listing. These packages will be installed once again when we start using containers with our Python application as well.
+
+Listing 3.16 Standard Linux Python development packages
+sudo apt update #Always run this before installing new packages.
+sudo apt install python3 python3-pip python3-venv build-essential -y #Using -y will automatically answer yes to any prompts.
+
+
+#81
+
+While installing, you may see a warning about Daemons using outdated libraries. If you do, hit Enter or Return to continue. Daemons are background processes that run on your machine that are updated from time to time, and this potential warning is an example of that.
+
+#82
+
+After the Python installation completes, you should run sudo system reboot to restart your machine. This will ensure that all of the new packages are loaded and outdated daemons are refreshed. Running sudo system reboot will also end the SSH session, so you’ll have to reconnect to continue. Rebooting after installs like this is not always necessary, but since we changed global Python 3 settings, it’s a good idea to reboot. Once our system is restarted, verify that Python 3 with python3 --version is installed and that the version is 3.10 or greater.
+
+
+#83
+
+At this point, your mental alarm bells might be ringing because of the line Python . . . version is 3.10 or greater. This installation process will help us in deploying our basic Python application, but it leaves us with the question: Why did we not specify the exact version of Python we need? Installing specific versions of programming languages on VMs, including Python, is far outside the scope of this book. We actually solve this versioning installation problem directly when we start using containers later in this book. The reason that we are not installing a specific version of Python 3 is that there are far too many possible ways to install Python 3, and our code just needs Python 3.8 or higher to run in production.
+
+#84
+
+It is now time to create a Python virtual environment to help isolate our Python project’s software requirements from the system at large (see listing 3.17). To do this, we will create a dedicated place in the /opt/venv directory for our virtual environment. Removing the virtual environment from the project code will help us keep our project directory clean and organized, but it is ultimately optional, just as it is on your local machine. We will use the /opt/venv location time and time again throughout this book, as it is my preferred location for virtual environments on Linux-based systems as well as in Docker containers.
+
+Listing 3.17 Creating the server-side virtual environment
+python3 -m venv /opt/venv/
+
+#85
+
+Going forward, we can use absolute paths to reference the available executables within our virtual environment. Here are a few examples of commands we will likely use in the future:
+
+- /opt/venv/bin/python—This is the path to the Python 3 executable.
+- /opt/venv/bin/pip—This is the path to the pip executable.
+- /opt/venv/bin/gunicorn—This is the path to the gunicorn executable.
+
+
+#86
+
+In production, using absolute paths will help mitigate problems that may occur because of system-wide Python installations as well as Python package version conflicts. What’s more, if you use consistent paths and locations for your projects, you will end up writing less configuration code and get your projects running faster and more reliably. Absolute paths are key to a repeatable and successful production environment.
+
+#87
+
+Now, we have the conditions to install our Python project’s dependencies using pip from the virtual environment’s Python 3 executable. We will use the requirements.txt file that we pushed and checked out with Git earlier in this chapter, located at /opt/venv/roadtok8s/py/src/requirements.txt. See the following listing.
+
+Listing 3.18 Installing Python packages with absolute paths
+/opt/venv/bin/python -m pip install -r \
+    /opt/venv/roadtok8s/py/src/requirements.txt
+
+#88
+
+We are almost ready to start running this application on the server, but before we do, I want to update my post-receive hook for Git so the command in listing 3.18 will run every time we push our code to our remote repository. This will ensure that our production environment is always up to date with the latest code and dependencies.
+
+#89
+
+Update the Git hook for the Python app
+Let’s have a look at another practical use case for Git hooks: installing application software. To do this, we can use the command from listing 3.18 in our post-receive hook specifically because we used absolute paths to the Python executable and the requirements.txt file, as shown in the following listing.
+
+Listing 3.19 Updating the Git hook for the Python app
+export WORK_TREE=/opt/projects/roadtok8s/py
+export GIT_DIR=/var/repos/roadtok8s/py.git
+ 
+cat <<EOF > "$GIT_DIR/hooks/post-receive"
+#!/bin/bash
+git --work-tree=$WORK_TREE --git-dir=$GIT_DIR checkout HEAD -f
+ 
+# Install the Python Requirements
+/opt/venv/bin/python -m pip install -r $WORK_TREE/src/requirements.txt
+EOF
+
+
+#90
+
+
+In this case, we overwrite the original post-receive hook with the contents of listing 3.19. If you want to verify this hook works, just run bash /var/repos/roadtok8s/py.git/hooks/post-receive, and you should see the output from the pip command. With all the dependencies installed for our Python application, we are ready to run the code!
+
+#91
+
+Run the Python application
+We have reached a great moment in our journey: we have a Python application that we can run on our server. It’s time to run the application, see if it works, and verify we can access it from our browser. Both things should be true, but there’s only one way to find out.
+
+#92
+
+First, let’s discuss the Python packages we need to run a production-ready Python application:
+
+- gunicorn—Gunicorn is a Python-based Web Server Gateway Interface (WSGI) HTTP Server. In other words, gunicorn turns HTTP requests into Python code. Gunicorn is a great choice for production because it is a mature, stable, and fast HTTP server. Gunicorn is flexible, so you can use it with nearly any Python web framework: FastAPI, Flask, Django, Bottle, Tornado, Sanic, and many others. With gunicorn, you could even create your own Python web framework from scratch.
+- uvicorn—Uvicorn is a Python-based Asynchronous Gateway Interface (ASGI) HTTP Server. ASGI is a Python specification for asynchronous HTTP servers. For local development, we can use uvicorn directly. When we go into production, we just use the gunicorn server with the uvicorn worker class.
+
+#93
+
+The baseline configuration we’ll need for gunicorn is the following:
+
+- --worker-class uvicorn.workers.UvicornWorker_—This tells gunicorn to use the uvicorn worker class which is required for FastAPI applications (and potentially other ASGI applications).
+- --chdir /opt/projects/roadtok8s/py/src—This tells gunicorn to change to the src directory before running the application. You could change the directory prior to running the application, but using the --chidr is my preferred option to follow.
+- main:app—This tells gunicorn to look in main.py and find the app variable, because app is an instance of the FastAPI() application class. Because of the chdir flag, we don’t need to specify the full path to the main.py file.
+- --bind "0.0.0.0:8888"—This tells gunicorn two primary things: use PORT 8888 on our local server and listen on all IP addresses. Binding gunicorn in this way means we should be able to access the application from our browser using our server’s public IP address and port 8888.
+- --pid /var/run/roadtok8s-py.pid—This tells gunicorn to write the process ID (PID) to the file /var/run/roadtok8s-py.pid. This is useful for stopping the application later on.
+
+#94
+
+Let’s now run this baseline configuration and see if it works, as shown in the following listing.
+
+Listing 3.20 Command to run the Python application
+/opt/venv/bin/gunicorn \
+    --worker-class uvicorn.workers.UvicornWorker \
+    --chdir /opt/projects/roadtok8s/py/src/ \
+    main:app \
+    --bind "0.0.0.0:8888" \
+    --pid /var/run/roadtok8s-py.pid
+
+
+#95
+
+
+Once you run this command, your application should start and return a domain of http://0.0.0.0:8888, which matches what we used to bind gunicorn to. If you have another application running on the specified port, this domain will not appear, but rather you will get an error. If all went well, you should see the same output as in figure 3.9.
+
+Figure 3.9 Running the Python application output
+
+#96
+
+
+You might be tempted to open your local browser to http://0.0.0.0:8888, but this will not work because this is running on cloud-based server. What we can do, thanks to the mapping of 0.0.0.0, is open our browser to http://<your-ip>:8888 and see the application running identically to your local version; see figure 3.10 for a live server example.
+
+Figure 3.10 Python server running on port 8888.
+
+
+#97
+
+Congratulations! You have successfully run a Python application on a cloud-based server. We still have more to improve on this application, but we have a great foundation to build upon. Before we can continue, we must stop this server so we can make other changes to the server, including installing Node.js and our Express.js application.
+
+#98
+
+
+To stop this application, we have three different options:
+
+- Restart the VM (sudo system reboot).
+- Use Ctrl+C on our keyboard as we would during local development.
+- Use the process ID that is stored in the aforementioned /var/run/roadtok8s-py.pid path. We can run kill -9 $(cat /var/run/roadtok8s-py.pid) to stop the application with the contents of this file if it exists. Do not remove the PID file because that will not stop the application.
+
+
+#99
+
+Now it’s time to move over to our Node.js application. We’ll install Node.js and our Express.js application on the same server as our Python application. Doing so makes implementation significantly easier but scaling significantly harder. Gracefully scaling these applications is one of the core reasons to adopt Kubernetes.
+
+#100
+
+3.4.2 Installing Node.js and our Express.js app
+Running multiple application runtimes on our machine is something we have now done twice with NGINX and Python 3. In this section, we’ll configure our environment for our Node.js and Express.js application. Configuring environments can be tedious because each tool has a different set of dependencies to get running correctly, and then each application has a different set of requirements to get running, too. Node.js is no different.
+
+
+#101
+
+Much like our local development environment, we’ll need to install the latest LTS version of Node.js to ensure our application works correctly. The approach we’ll take to do this is by using the Node Version Manager (nvm). nvm makes it incredibly simple to install various versions of Node.js and the associated Node Package Manager (npm).
+
+#102
+
+Before we install nvm, your intuition might be to take the Linux-based approach using the apt package manager and the command apt-get install nodejs. While a lot of times this can be a suitable approach, just as we saw with Python, apt-get may install a version that’s just too far out of date. At the time of writing this book, apt-get install nodejs installs a much older version of Node.js (version 12.22.9) than the one we need to safely run our application.
+
+With that said, let’s install nvm and the latest LTS version of Node.js using the Linux package curl along with an official nvm installation script.
+
+#103
+
+Installing the Node Version Manager
+The Node Version Manager installation script and related documentation can be found at http://nvm.sh. Here’s the process for how we’ll install it:
+
+- Declare a bash variable NVM_VERSION and set it to the version of nvm we want to install, and in this case, we’ll use v0.39.3.
+- curl -o- <your-url>—Using curl -o- will open a URL for us and output the response to the terminal. This is a bit like echo 'my statement' but for URLs. Using this will allow us to chain commands together with a pipe |.
+- bash—We’ll pipe the response from the URL and tell the command line (in this case, the bash shell) to run the script.
+
+#104
+
+Let’s see how this command looks in practice, as shown in the following listing.
+
+Listing 3.21 Installing the Node Version Manager
+export NVM_VERSION="v0.39.3" #Replace v0.39.3 with the version of nvm you want to install.
+curl -o- \
+    https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION/install.sh \
+    | bash
+
+After the installation finishes, your results should correspond to figure 3.11.
+
+Figure 3.11 Installing the Node Version Manager output
+
+
+#105
+
+To use nvm right away, you need to either
+
+- Close and reopen your SSH connection.
+- Reload your bash profile with source ~/.bashrc.
+- Both of these ways are valid and will work, but I tend to reload my bash profile because it’s a bit faster. The bash profile is essentially a file with a bunch of user-related configuration settings for commands and shortcuts.
+
+#106
+
+With nvm installed and ready, let’s verify it works and install the latest LTS version of Node.js (at the time of writing this book, v18.15.0) using nvm install.
+
+Listing 3.22 Verifying nvm is installed
+nvm --version #If this fails, try to exit your SSH session and reconnect.
+nvm install --lts  #Option 1 for installing the latest LTS version of Node.js
+nvm install 18.15.0  #Option 2 for installing a specific version of Node.js
+
+As nvm completes, you should see the following output (figure 3.12).
+
+Figure 3.12 Installing Node.js via nvm output
+
+
+
+#107
+
+Assuming the Node.js installation via nvm was successful, your system should now have the following commands:
+
+- node—The Node.js runtime; check the version installed with node –version.
+- npm—The Node Package Manager; check the version installed with npm –version.
+- npx—A utility for running Node.js packages; check the version installed with npx –version.
+
+
+#108
+
+Now you have a repeatable way to install Node.js and the associated tools on your machine. This is a great way to ensure that you can install the same version of Node.js on any Linux machine you need to. nvm is supported on other operating systems, too; it’s just not as easy to install as it is on Linux and Ubuntu. We can now finally get our Express.js dependencies installed and run our application.
+
+#109
+
+Install our application dependencies
+As we discussed in chapter 2, we’ll be using npm to install our application dependencies for our Express.js application. We’ll start by navigating to our application directory in /opt/projects/roadtok8s/js/, update the global version of npm, install our dependencies declared in package.json and then verify the dependencies were installed correctly with npm list, as shown in the following listing.
+
+Listing 3.23 Installing Express.js app dependencies
+cd /opt/projects/roadtok8s/js
+npm install -g npm@latest
+npm install
+npm list
+
+#110
+Just as before, this will create a node_modules directory in our application directory. With Node.js applications, we do not change the location of the node_modules like we did with the venv location for our Python project because Node.js applications do not require this step, for better or worse. We can now finally get our Express.js dependencies; let’s update our post-receive hook to install them each time a new commit is pushed to our repository.
+
+#111
+
+Update the Git hook for the JavaScript app
+Once again, we are tasked with updating our post-receive hook to install our application dependencies. In the following listing, we’ll use the npm command to install our dependencies.
+
+Listing 3.24 Updating the Git hook for the Node app
+export WORK_TREE=/opt/projects/roadtok8s/js
+export GIT_DIR=/var/repos/roadtok8s/js.git
+ 
+cat <<EOF > "$GIT_DIR/hooks/post-receive"
+#!/bin/bash
+git --work-tree=$WORK_TREE --git-dir=$GIT_DIR checkout HEAD -f
+ 
+# Install the Node.js Requirements
+cd $WORK_TREE
+npm install
+ 
+EOF
+
+#112
+
+In this case, we overwrite the original post-receive hook with the contents of listing 3.24. If you want to verify this hook works, run bash /var/repos/roadtok8s/js.git/hooks/post-receive, and you should see the output from the npm install command. With all the dependencies installed for our Express.js application, we are ready to run the code!
+
+#113
+3.4.3 Running the Express.js application
+In production environments, I prefer using absolute paths to the modules we intend to run. In our case, we will be running the main.js module in the src directory of our JavaScript application. We will also declare a PORT here as a way to ensure our application is flexible to the PORT changing, as this will come in handy when we start shutting off ports in later sections The command is as simple as the following listing.
+
+Listing 3.25 Running the Node.js application
+PORT=5000 node /opt/projects/roadtok8s/js/src/main.js
+
+#114
+
+Now you should be able to open your browser at http://<your-ip-address>:5000 and see figure 3.13.
+
+Figure 3.13 Express.js Hello World
+
+Congratulations! You have successfully installed Node.js and connected it to the outside world.
+
+#115
+
+To stop this application, we have three different options:
+
+- Restart the VM (sudo system reboot).
+- Use Ctrl+C on our keyboard as we would during local development.
+- Use the process ID that is stored in the same directory as our main.py module at /opt/projects/roadtok8s/js/src/main.pid. This is a slightly different location than the Python-based one, but the concept is the same. Run kill -9 $(cat /opt/projects/roadtok8s/js/src/main.pid).
+
+#116
+
+At this point, we should have the ability to run two different runtimes for two different applications. The problem we face is ensuring these runtimes actually run without our manual input. To do this, we will use a tool called Supervisor.
+
+#117
+
+3.5 Run multiple applications in the background with Supervisor
+Supervisor is a simple way to turn our application run commands into background processes that will start, stop, or restart when our system does or when we need them to. Supervisor is certainly not the only way to do this, but it is rather approachable.
+
+#118
+
+The setup process for any given application to be managed by Supervisor goes like this:
+
+- Create a Supervisor configuration file for the application in /etc/supervisor/conf.d/.
+- Update the Supervisor configuration file with the correct information for the application (e.g., working directory, command to run, logging locations, etc.).
+- Update the git post-receive hook for various Supervisor-based commands to ensure the correct version of the application is running.
+
+Let’s start by installing Supervisor and creating a configuration file for our Python application.
+
+
+#119
+
+3.5.1 Installing Supervisor
+Installing Supervisor is just as easy as installing NGINX by using the apt package manager, as shown in the following listing.
+
+Listing 3.26 Installing Supervisor on Ubuntu
+sudo apt update
+sudo apt install supervisor -y
+
+Installing Supervisor will create a new folder for us located at /etc/supervisor/conf.d/. This is where we will store our configuration files for each application we want to manage with Supervisor.
+
+
+#120
+
+Here are a few useful commands to remember when working with Supervisor:
+
+- sudo supervisorctl status—List all of the applications currently being managed by Supervisor.
+- sudo supervisorctl update—Update the configuration files for Supervisor. This is the same as sudo supervisorctl reread && sudo supervisorctl update.
+- sudo supervisorctl reread—Read the configuration files for Supervisor.
+- sudo supervisorctl start <app-name>—Start the application with the name <app-name>.
+- sudo supervisorctl stop <app-name>—Stop the application with the name <app-name>.
+- sudo supervisorctl restart <app-name>—Restart the application with the name <app-name>.
+
+We use a few of these commands as we configure our applications.
+
+#121
+
+3.5.2 Configure Supervisor for apps
+To configure Supervisor for any given application, we’ll need to do the following within a configuration file:
+
+- Name the Supervisor process ([program:yourname]).
+- Define the working directory for the application (directory=/path/to/your/app).
+- Define the command to run the application (command=/path/to/your/command).
+- Decide if the application should start automatically, restart automatically, and how many times it should retry to start. (autostart=true, autorestart=true, startretries=3).
+- Define the logging location for the application in relation to stdout and stderr. (stderr_logfile=/path/to/your/log, stdout_logfile=/path/to/your/log).
+
+
+
+#122
+
+Let’s start with the Python application by creating a configuration file for it. Supervisor configuration is as shown in the following listing.
+
+Listing 3.27 Supervisor configuration for Python
+export APP_CMD="/opt/venv/bin/gunicorn \
+    --worker-class uvicorn.workers.UvicornWorker \
+    main:app --bind "0.0.0.0:8888" \
+    --pid /var/run/roadtok8s-py.pid"
+cat << EOF > /etc/supervisor/conf.d/roadtok8s-py.conf
+[program:roadtok8s-py]
+directory=/opt/projects/roadtok8s/py/src
+command=$APP_CMD
+autostart=true
+autorestart=true
+startretries=3
+stderr_logfile=/var/log/supervisor/roadtok8s/py/stderr.log
+stdout_logfile=/var/log/supervisor/roadtok8s/py/stdout.log
+EOF
+
+
+#123
+
+Looking at this configuration should be rather intuitive at this point. Let’s create our Nodejs configuration file, as shown in the following listing.
+
+Listing 3.28 Supervisor configuration for Node.js
+export NODE_PATH=$(which node)  #Gets the path to the Node.js executable based on your system’s configuration
+cat << EOF > /etc/supervisor/conf.d/roadtok8s-js.conf
+[program:roadtok8s-js]
+directory=/opt/projects/roadtok8s/js/src
+command=$NODE_PATH main.js
+autostart=true
+autorestart=true
+startretries=3
+stderr_logfile=/var/log/supervisor/roadtok8s/js/stderr.log
+stdout_logfile=/var/log/supervisor/roadtok8s/js/stdout.log
+EOF
+
+
+#124
+
+With both of these configurations in place, we need to create the directories for our output log files, as shown in the following listing.
+
+Listing 3.29 Creating log directories
+sudo mkdir -p /var/log/supervisor/roadtok8s/py
+sudo mkdir -p /var/log/supervisor/roadtok8s/js
+
+
+#125
+
+Now we have all the conditions necessary to run these applications via Supervisor. Let’s run the following commands to update the Supervisor configuration and start the applications.
+
+Listing 3.30 Updating the Supervisor Configuration
+sudo supervisorctl update
+
+
+Figure 3.14 shows the output from this command.
+
+Figure 3.14 Supervisor processes added
+
+
+#126
+
+Since we declared autostart=true in our configuration files, the applications should start automatically. Let’s verify that they are running in the following listing.
+
+Listing 3.31 Checking Supervisor status
+sudo supervisorctl status
+
+If we configured everything correctly, we should see the following (figure 3.15).
+
+Figure 3.15 Supervisor status output
+
+
+#127
+
+We should also be able to verify that our applications are running at
+
+- http://<your-ip>:8888 (Python via Gunicorn)
+- http://<your-ip>:3000 (Express via Node.js)
+
+
+To start, stop, restart, or get the status of any Supervisor-managed application, it’s as simple as: sudo supervisorctl <verb> <app-name> where <app-name> is either roadtok8s-py or roadtok8s-js. Here are a few examples:
+
+- sudo supervisorctl start roadtok8s-py
+- sudo supervisorctl stop roadtok8s-py
+- sudo supervisorctl restart roadtok8s-js
+- sudo supervisorctl status
+
+
+#128
+
+The final step in this process is to update our post-receive hooks to restart either of these applications after the commit is pushed and the installations are complete, as shown in the following listings.
+
+Listing 3.32 Supervisor post-receive hook
+export WORK_TREE=/opt/projects/roadtok8s/py
+export GIT_DIR=/var/repos/roadtok8s/py.git
+ 
+cat <<EOF > "$GIT_DIR/hooks/post-receive"
+#!/bin/bash
+git --work-tree=$WORK_TREE --git-dir=$GIT_DIR checkout HEAD -f
+ 
+# Install the Python Requirements
+/opt/venv/bin/python -m pip install -r $WORK_TREE/src/requirements.txt
+ 
+# Restart the Python Application in Supervisor
+sudo supervisorctl restart roadtok8s-py
+EOF
+
+
+
+#129
+
+Listing 3.33. Supervisor post-receive hook update for Node.js
+export WORK_TREE=/opt/projects/roadtok8s/js
+export GIT_DIR=/var/repos/roadtok8s/js.git
+ 
+cat <<EOF > "$GIT_DIR/hooks/post-receive"
+#!/bin/bash
+git --work-tree=$WORK_TREE --git-dir=$GIT_DIR checkout HEAD -f
+ 
+# Install the Node.js Requirements
+cd $WORK_TREE
+npm install
+ 
+# Restart the Node.js Application in Supervisor
+sudo supervisorctl restart roadtok8s-js
+EOF
+
+Now that we have these applications always running, we need to start thinking about how they can be accessed. To do this, we’ll implement NGINX as a reverse proxy to direct traffic to the correct application depending on the URL instead of using a port number. After we do that, we’ll implement a firewall to limit access to this VM only to the ports we need.
+
+
+#130
+
+3.6 Serve multiple applications with NGINX and a firewall
+NGINX is much more than a tool to serve static websites; it can also be used to forward traffic upward to another application. In our case, this other application will exist on the same server as NGINX, but the application could, in theory, exist nearly anywhere as long as NGINX can reach it (e.g., through either a public or private IP address).
+
+#131
+
+This process is called setting up a reverse proxy. The point of using reverse proxies is so we can redirect traffic, hide applications that may be running on a server (e.g., Python or Node.js), implement a load balancer, and much more.
+
+#132
+
+Load balancing is merely the process of forwarding traffic to a server that can handle the traffic. If the server cannot handle the traffic, the load balancer will forward the traffic to another server if it can. Load balancing can get more complex than this, but that’s the general idea. NGINX is designed to handle load balancing as well, but it’s a concept we won’t dive too deep into in this book.
+
+
+#133
+
+
+3.6.1 Configuring NGINX as a reverse proxy
+We want to configure NGINX so it forwards traffic to our Supervisor-based applications running at the following locations:
+
+- http://localhost:8888 (Python via gunicorn)
+- http://localhost:3000 (Express via Node.js)
+
+It should be pointed out that these are localhost domain names (DNS), but they could easily be IP addresses or other public domain names.
+
+#134
+
+We configured both applications to run on this server (localhost) and on the default ports for each application. We can configure NGINX to forward traffic to these applications by adding the following to our NGINX configuration file, as shown in the following listing.
+
+Listing 3.34 NGINX reverse proxy configuration
+
+cat <<EOF > /etc/nginx/sites-available/roadtok8s
+server {
+    listen 80;
+    server_name localhost;
+ 
+    location / { #Location / will be the root index for this server that gets forwarded to the Python application.
+        proxy_pass http://localhost:8888;
+    }
+ 
+    location /js/ { #Location /js/ with the trailing slash will be forwarded to the Express.js application. If you omit the trailing slash, the Express.js application may not function properly.
+        proxy_pass http://localhost:3000/;
+    }
+}
+EOF
+
+
+#135
+
+The location /etc/nginx/sites-available/roadtok8s lets NGINX know this is a potential configuration file. We can enable this configuration by creating a symbolic link to the file in /etc/nginx/sites-enabled/. We do that by executing the code in the following listing.
+
+Listing 3.35 Creating a symbolic link to the NGINX configuration file
+sudo ln -s /etc/nginx/sites-available/roadtok8s \
+    /etc/nginx/sites-enabled/roadtok8s
+
+
+
+#136
+
+After we create this symbolic link, we need to remove the default configuration file that NGINX creates when installed by using sudo rm /etc/nginx/sites-enabled/default, and then we’ll restart NGINX with sudo systemctl restart nginx. systemctl is a built-in process manager, much like Supervisor that NGINX uses by default (systemctl is a bit more complex than Supervisor to configure, which is why we didn’t use it earlier in the chapter).
+
+
+#137
+
+Now open up your browser to the following locations:
+
+- http://<your-ip>; will be served via Python and gunicorn.
+- http://<your-ip>/js (including no trailing slash) will be served via Express via Node.js.
+
+We now have a robust way to route traffic to our applications, but there’s one glaring hole: our PORTs are still accessible, too! Let’s fix this by installing a firewall.
+
+#138
+
+3.6.2 Installing Uncomplicated Firewall
+Adding a firewall to the VM is highly recommended because we want to deny all traffic that is not one of the following:
+
+- HTTP traffic via port 80
+- HTTPS traffic via port 443
+- SSH traffic via port 22
+
+
+#139
+
+Uncomplicated Firewall (UFW) is a simple and effective way to only allow for the previous PORTs to be available to the outside internet. In other words, UFW will automatically block access to any ports you do not need to keep open. We will block all ports except for the ones NGINX uses (80 and 443) and for our SSH (22) connections.
+
+Let’s install UFW:
+sudo apt update #Whenever installing, update apt packages.
+sudo apt install ufw -y #Install UFW if it’s not already installed.
+
+By default, UFW is disabled. Before we enable it, we need to configure it to allow for SSH and NGINX traffic.
+
+
+#140
+
+UFW has a lot of great features that one might take advantage of, but for our purposes, we’ll just allow for SSH and NGINX traffic. We want SSH traffic to be allowed so we can still access our VM via SSH and perform pushes via Git. We also want to allow all NGINX-based traffic to ensure our web applications are accessible. To do this, here are the commands we’ll run
+sudo ufw allow ssh
+sudo ufw allow 'Nginx Full'
+
+If you forget to allow SSH traffic, your current SSH session will end, and you may lose access forever. If this happens, you’ll need to delete your VM and start over.
+
+#141
+
+Nginx Full allows for both HTTP and HTTPS traffic, which maps to ports 80 and 443, respectively. We won’t run HTTPs at this time but it’s ready and available if we ever need to.
+
+After running each of these commands, you will see the output Rules Updated or Rules Updated (v6) as a response.
+
+Before we enable these changes, let’s verify the current UFW configuration:
+ufw show added
+
+
+#142
+
+This should respond with
+
+Added user rules (see 'ufw status' for running firewall):
+ufw allow 22/tcp
+ufw allow 'Nginx Full'
+
+Now, we can enable our firewall:
+
+sudo ufw enable
+
+This will almost certainly respond with
+
+Command may disrupt existing ssh connections. Proceed with operation (y|n)?
+
+
+#143
+
+You should respond with y and press Enter with a result of Firewall is active and enabled on system startup.
+
+If all went well, your firewall is now active, and your security has been improved. There are certainly other steps you might consider taking to further secure your VM, but those steps are outside the context of this book.
+
+Now that we have a firewall in place, we can test our NGINX configuration by opening up a new browser window and navigating to http://<your-ip> and http://<your-ip>/js. You should see the same results as before.
+
+#144
+
+The first time I ever deployed an application was using a variation of what we did in this chapter. It served me well for many years and served others well during that same time. I even had my database running on the same machine.
+
+At this point, you should feel a little uneasy with the brittle nature of this setup. It technically works, but we have a major problem that needs to be addressed: if this machine goes down, the entire production stack does, too. In other words, this machine is a single point of failure, and here’s why. The machine is
+
+- Hosting the production Git repos
+- Building and updating application dependencies and environments
+- Running two primary applications in the background
+- Hosting and running the NGINX web server
+
+
+#145
+
+Here’s a few things you might think of to help mitigate this problem:
+
+- Upgrade this machine and make it more powerful.
+- Back up this machine and its configuration so we can quickly provision another one if this one goes down.
+- Create a replica of this machine and use a load balancer to distribute traffic between the two.
+
+#146
+
+While these ideas might help, they do not solve the underlying problem. The best solution is to break up each component of our production stack into dedicated machines or services that can run independently of each other.
+
+What’s interesting is that we essentially configured a remote development environment that happens to have production-like qualities that the public can interact with. If we removed public access (via UFW) and just allowed SSH access, we would now have a powerful way to write our code from nearly any device using just SSH, a username, and a password.
+

@@ -1,0 +1,36 @@
+#1
+
+Part I. What’s New?
+The world has benefited greatly from the invention of the World Wide Web by Sir Tim Berners-Lee,1 and the Python programming language by Guido van Rossum.
+
+The only tiny problem is that a nameless computer book publisher often puts spiders and snakes on its relevant web and Python covers. If only the web had been named the World Wide Woof (cross-threads in weaving, also called weft), and Python were Pooch, this book might have had a cover like Figure I-1.
+
+
+#2
+
+
+Figure I-1. FastAPI: Modern Pooch Woof Development
+But I digress.2 This book is about the following:
+
+The web
+An especially productive technology, how it has changed, and how to develop software for it now
+
+Python
+An especially productive web development language
+
+FastAPI
+An especially productive Python web framework
+
+
+#3
+
+
+The two chapters in this first part discuss emerging topics in the web and in Python: services and APIs; concurrency; layered architectures; and big, big data.
+
+Part II is a high-level tour of FastAPI, a fresh Python web framework that has good answers to the questions posed in Part I.
+
+Part III rummages deeper through the FastAPI toolbox, including tips learned during production development.
+
+Finally, Part IV provides a gallery of FastAPI web examples. They use a common data source—imaginary creatures—that may be a little more interesting and cohesive than the usual random expositions. These should give you a starting point for particular applications.
+
+

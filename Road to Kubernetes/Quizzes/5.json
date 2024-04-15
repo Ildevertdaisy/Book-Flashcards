@@ -1,0 +1,79 @@
+{
+    "quizzes": [
+        {
+            "question": "Quelle est la première chose à faire pour créer un site web avec FastAPI ?",
+            "answers": [
+                {"text": "Il faut installer et configurer les outils nécessaires dans l'ordre présenté.", "correct": true},
+                {"text": "Il faut écrire le code HTML pour les pages du site web.", "correct": false},
+                {"text": "Il faut choisir un nom de domaine pour le site web.", "correct": false},
+                {"text": "Il faut contacter un hébergeur web pour obtenir de l'espace de stockage.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un environnement virtuel en informatique ?",
+            "answers": [
+                {"text": "C'est un espace isolé sur l'ordinateur où on peut installer et utiliser des outils spécifiques pour un projet sans affecter les autres projets.", "correct": true},
+                {"text": "C'est une simulation d'un environnement réel pour tester des logiciels.", "correct": false},
+                {"text": "C'est une version en ligne d'un système d'exploitation.", "correct": false},
+                {"text": "C'est un réseau privé virtuel utilisé pour sécuriser les connexions internet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi créer un environnement virtuel pour un projet Python ?",
+            "answers": [
+                {"text": "Pour garder les outils et bibliothèques organisés et séparés des autres projets.", "correct": true},
+                {"text": "Pour permettre l'accès à distance aux fichiers du projet.", "correct": false},
+                {"text": "Pour rendre le projet visible sur Internet.", "correct": false},
+                {"text": "Pour accélérer l'exécution du code Python.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'il faut avoir installé sur son ordinateur pour suivre ce guide ?",
+            "answers": [
+                {"text": "Il faut avoir Python déjà installé sur l'ordinateur.", "correct": true},
+                {"text": "Il faut avoir un éditeur de texte avancé installé.", "correct": false},
+                {"text": "Il faut avoir un compte GitHub.", "correct": false},
+                {"text": "Il faut avoir une connexion Internet haut débit.", "correct": false}
+            ]
+        },
+        {
+            "question": "Si on connaît déjà Python, peut-on utiliser d'autres outils que ceux recommandés ?",
+            "answers": [
+                {"text": "Oui, si on est expérimenté, on peut choisir d'utiliser d'autres outils.", "correct": true},
+                {"text": "Non, il est impératif de suivre exactement les outils recommandés.", "correct": false},
+                {"text": "Oui, mais uniquement si on a une autorisation spéciale.", "correct": false},
+                {"text": "Non, car cela pourrait causer des problèmes de compatibilité.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que faire si on est débutant en Python et qu'on veut créer un site web ?",
+            "answers": [
+                {"text": "Il est recommandé de suivre la configuration proposée jusqu'à ce qu'on en apprenne plus sur Python.", "correct": true},
+                {"text": "Il faut abandonner l'idée de créer un site web.", "correct": false},
+                {"text": "Il faut demander de l'aide à un expert en Python.", "correct": false},
+                {"text": "Il faut suivre un cours intensif sur le langage Python.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quel est l'objectif de suivre les étapes présentées pour la création d'un site web ?",
+            "answers": [
+                {"text": "Pour apprendre à installer et utiliser les outils nécessaires pour développer un site web.", "correct": true},
+                {"text": "Pour obtenir un certificat de compétence en développement web.", "correct": false},
+                {"text": "Pour gagner du temps en évitant de chercher des solutions par soi-même.", "correct": false},
+                {"text": "Pour se conformer aux normes de développement web.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important d'apprendre à bien configurer son projet Python dès le début ?",
+            "answers": [
+                {"text": "Pour s'assurer que le projet fonctionne correctement et pour faciliter son développement.", "correct": true},
+                {"text": "Pour impressionner les collègues et les clients avec des compétences techniques avancées.", "correct": false},
+                {"text": "Pour réduire les coûts de développement du projet.", "correct": false},
+                {"text": "Pour éviter d'avoir à modifier le code une fois qu'il est écrit.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+

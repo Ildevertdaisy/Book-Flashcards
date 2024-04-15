@@ -1,0 +1,85 @@
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que Node.js ?",
+            "answers": [
+                {"text": "Node.js est un framework JavaScript pour le développement d'applications mobiles.", "correct": false},
+                {"text": "Node.js est un environnement d'exécution JavaScript côté serveur.", "correct": false},
+                {"text": "Node.js est un outil qui permet de créer des sites web en utilisant JavaScript.", "correct": true},
+                {"text": "Node.js est un langage de programmation orienté vers les statistiques.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que Python ?",
+            "answers": [
+                {"text": "Python est un langage de programmation pour créer des applications mobiles.", "correct": false},
+                {"text": "Python est un langage de programmation pour le développement de jeux vidéo.", "correct": false},
+                {"text": "Python est un langage de programmation qu'on peut utiliser pour créer différents types de programmes, y compris des sites web.", "correct": true},
+                {"text": "Python est un framework pour la gestion de bases de données.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi Node.js et Python sont-ils populaires ?",
+            "answers": [
+                {"text": "Parce qu'ils sont difficiles à utiliser.", "correct": false},
+                {"text": "Parce qu'ils sont peu flexibles.", "correct": false},
+                {"text": "Parce qu'ils sont faciles à utiliser et ont beaucoup de points communs pour créer des applications.", "correct": true},
+                {"text": "Parce qu'ils sont uniquement adaptés pour les jeux vidéo.", "correct": false}
+            ]
+        },
+        {
+            "question": "Node.js et Python, sont-ils identiques ?",
+            "answers": [
+                {"text": "Oui, ils sont totalement identiques.", "correct": false},
+                {"text": "Non, ils ont des caractéristiques communes mais aussi des différences importantes.", "correct": true},
+                {"text": "Oui, ils sont utilisés de la même manière.", "correct": false},
+                {"text": "Non, Node.js est basé sur Java tandis que Python est basé sur C++.", "correct": false}
+            ]
+        },
+        {
+            "question": "Peut-on déployer des applications avec Node.js et Python ?",
+            "answers": [
+                {"text": "Non, il est impossible de déployer des applications avec ces deux technologies.", "correct": false},
+                {"text": "Oui, mais cela nécessite des ajustements spécifiques pour chacune des technologies.", "correct": true},
+                {"text": "Non, ces technologies sont uniquement destinées à la création de sites web statiques.", "correct": false},
+                {"text": "Oui, mais uniquement avec Node.js.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un langage de programmation ?",
+            "answers": [
+                {"text": "C'est un outil qui permet aux développeurs de créer des logiciels et des applications en écrivant des instructions.", "correct": true},
+                {"text": "C'est un logiciel utilisé pour naviguer sur Internet.", "correct": false},
+                {"text": "C'est une méthode de communication entre différents programmes informatiques.", "correct": false},
+                {"text": "C'est un outil pour tester la performance des applications web.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un site web ?",
+            "answers": [
+                {"text": "C'est un ensemble de pages sur Internet qui contient des informations ou des fonctionnalités que l'on peut utiliser avec un navigateur web.", "correct": true},
+                {"text": "C'est une application mobile qui permet de naviguer sur Internet.", "correct": false},
+                {"text": "C'est un logiciel utilisé pour stocker des données en ligne.", "correct": false},
+                {"text": "C'est un outil pour développer des jeux vidéo en ligne.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important d'ajuster notre façon de penser quand on déploie des applications en Node.js ou en Python ?",
+            "answers": [
+                {"text": "Parce que chaque langage a ses propres spécificités et nécessite des méthodes différentes pour la mise en ligne.", "correct": true},
+                {"text": "Parce que Node.js et Python sont identiques et ne nécessitent pas d'ajustements spécifiques.", "correct": false},
+                {"text": "Parce qu'il n'est pas nécessaire d'ajuster notre façon de penser lors du déploiement d'applications en Node.js ou en Python.", "correct": false},
+                {"text": "Parce que le déploiement d'applications en Node.js ou en Python est un processus automatique.", "correct": false}
+            ]
+        },
+        {
+            "question": "Ce livre est-il la seule source pour apprendre à construire et déployer des applications en Node.js ou en Python ?",
+            "answers": [
+                {"text": "Oui, ce livre est la seule source disponible pour apprendre à construire et déployer des applications en Node.js ou en Python.", "correct": false},
+                {"text": "Non, le livre vise à fournir des bases, mais il y a beaucoup d'autres ressources pour apprendre davantage.", "correct": true},
+                {"text": "Non, mais il est recommandé de ne pas utiliser d'autres ressources.", "correct": false},
+                {"text": "Oui, mais il est recommandé de ne pas utiliser d'autres ressources.", "correct": false}
+            ]
+        }
+    ]
+}

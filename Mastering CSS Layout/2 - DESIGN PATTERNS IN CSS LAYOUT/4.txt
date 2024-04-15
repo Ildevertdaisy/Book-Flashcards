@@ -1,0 +1,108 @@
+
+
+To teach children under 10 about the Split Design Pattern in web design, here are 9 quizzes in French that simplify the concept:
+
+1. **Question**: Qu'est-ce que le design web ?  
+   **Réponse**: C'est l'art de créer des pages sur internet pour que les gens puissent les voir et les utiliser.
+
+2. **Question**: Qu'est-ce qu'un modèle de conception dans le design web ?  
+   **Réponse**: C'est une idée qui aide à organiser les choses sur une page web pour qu'elle soit facile et agréable à utiliser.
+
+3. **Question**: Qu'est-ce que le modèle de conception "divisé" ?  
+   **Réponse**: C'est une manière d'arranger une page web en deux parties pour montrer différentes informations côte à côte.
+
+4. **Question**: Pourquoi utilise-t-on le modèle de conception "divisé" ?  
+   **Réponse**: Pour aider les gens à comprendre rapidement les différentes options ou idées présentées sur une page web.
+
+5. **Question**: Peux-tu donner un exemple où on pourrait utiliser le modèle de conception "divisé" ?  
+   **Réponse**: Sur une page qui montre deux choix, comme entre deux jeux différents, pour que tu puisses choisir lequel te plaît le plus.
+
+6. **Question**: Quel est le but principal du modèle de conception "divisé" ?  
+   **Réponse**: De rendre la page web claire et facile à comprendre en séparant visuellement les différentes parties.
+
+7. **Question**: Est-ce que le modèle "divisé" peut aider à rendre une page web plus jolie ?  
+   **Réponse**: Oui, parce qu'il organise l'information d'une manière qui est simple et attrayante.
+
+8. **Question**: Quand tu vois une page web avec le modèle "divisé", comment sais-tu quels sont les choix ?  
+   **Réponse**: Les choix sont montrés côte à côte, donc tu peux voir facilement les différentes options.
+
+9. **Question**: Pourquoi est-il important de bien choisir comment organiser une page web ?  
+   **Réponse**: Pour que les personnes qui visitent le site puissent trouver ce qu'elles cherchent et aiment utiliser le site.
+
+These quizzes are designed to make the concept of the Split Design Pattern understandable to young learners by using clear, age-appropriate language and examples they can relate to.
+
+
+
+
+Explaining the Split Design Pattern to children under 10 in an accessible way, here are 8 quizzes in French with simple, clear answers:
+
+1. **Question**: Qu'est-ce que le modèle de conception "Divisé" dans la création de sites web ?  
+   **Réponse**: C'est quand on met deux éléments côte à côte sur une page, comme deux parties d'une histoire.
+
+2. **Question**: Pourquoi utiliserait-on le modèle de conception "Divisé" sur une page web ?  
+   **Réponse**: Pour organiser les informations de manière équilibrée et rendre la page facile à regarder et à utiliser.
+
+3. **Question**: Quel est un exemple d'utilisation du modèle "Divisé" ?  
+   **Réponse**: Comme quand on a une partie principale pour le contenu et une barre latérale pour des informations supplémentaires.
+
+4. **Question**: Comment le modèle "Divisé" aide-t-il à voir les informations sur un site web ?  
+   **Réponse**: Il aide à séparer clairement les différentes parties de la page pour que tout soit facile à trouver.
+
+5. **Question**: Que signifie avoir un "Contenu Principal" et une "Barre Latérale" sur une page web ?  
+   **Réponse**: Cela signifie qu'il y a deux sections distinctes : une pour l'information principale et une autre pour des détails ou des options supplémentaires.
+
+6. **Question**: Est-ce que les deux parties dans le modèle "Divisé" sont toujours de la même taille ?  
+   **Réponse**: Non, elles peuvent être de tailles différentes pour mettre en avant l'une plus que l'autre.
+
+7. **Question**: Peut-on trouver le modèle "Divisé" dans des livres ou des magazines ?  
+   **Réponse**: Oui, c'est comme quand une page est partagée en deux pour montrer deux sujets différents ou des images à côté du texte.
+
+8. **Question**: Pourquoi est-il important de bien organiser une page web ?  
+   **Réponse**: Pour que ceux qui visitent le site puissent comprendre facilement ce qu'ils voient et trouver ce qu'ils cherchent.
+
+These quizzes are designed to introduce young learners to web design concepts in a language they can understand, explaining the purpose and application of the split design pattern in web layouts.
+
+
+
+Introducing the split design pattern to children under 10 through the context of a hypothetical HTML snippet, here are six quizzes in French designed to be simple yet informative:
+
+1. **Question**: Qu'est-ce qu'un "snippet HTML" ?  
+   **Réponse**: C'est un petit morceau de code qui nous montre comment créer des parties sur une page internet.
+
+2. **Question**: Dans notre exemple, que représentent les deux éléments "div" ?  
+   **Réponse**: Ils montrent deux parties d'une page web : le contenu principal et une barre latérale, mis côte à côte.
+
+3. **Question**: Qu'est-ce que le "contenu principal" sur un site web ?  
+   **Réponse**: C'est la partie la plus importante de la page, où on trouve les informations principales que le site veut partager.
+
+4. **Question**: Et une "barre latérale", c'est quoi ?  
+   **Réponse**: C'est une partie sur le côté de la page qui peut montrer des informations supplémentaires, comme des liens ou des annonces.
+
+5. **Question**: Comment le modèle de conception "divisé" est-il utilisé sur les sites web ou les applications ?  
+   **Réponse**: Il est utilisé pour placer un panneau à côté d'un autre ou un groupe de contenu à côté d'un autre groupe de contenu.
+
+6. **Question**: Pourquoi est-ce utile d'avoir des parties de contenu côte à côte sur une page web ?  
+   **Réponse**: Pour organiser l'information de manière claire et rendre la page facile à utiliser et à comprendre.
+
+These quizzes aim to demystify web design concepts for young learners, explaining how elements can be arranged on a webpage in an engaging and accessible manner.
+
+
+
+To explain the split design pattern on a blogging website to children under 10, here are 4 quizzes in French designed to be simple and engaging:
+
+1. **Question**: Qu'est-ce qu'un site web de blog ?  
+   **Réponse**: C'est un site internet où on peut lire des articles ou des histoires écrites par des personnes.
+
+2. **Question**: Dans l'exemple d'un site de blog, qu'est-ce qu'on peut trouver sur un côté de la page ?  
+   **Réponse**: On peut voir une liste des derniers articles publiés.
+
+3. **Question**: Et qu'est-ce qu'on pourrait trouver de l'autre côté de la page sur le même site ?  
+   **Réponse**: Il pourrait y avoir une section pour les articles populaires ou recommandés.
+
+4. **Question**: Pourquoi est-ce qu'on utilise le modèle de conception "divisé" sur un site web de blog ?  
+   **Réponse**: Pour organiser le site de manière claire, en montrant différents types d'articles en même temps, rendant la lecture facile et agréable.
+
+These quizzes aim to help young learners grasp how web design can organize information clearly and attractively, using the example of a blogging website to illustrate the split design pattern.
+
+
+

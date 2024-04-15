@@ -1,0 +1,169 @@
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'un environnement virtuel en informatique ?",
+            "answers": [
+                {"text": "C'est comme une boîte spéciale sur l'ordinateur où on peut mettre et organiser nos outils de programmation pour un projet.", "correct": true},
+                {"text": "C'est un espace virtuel où l'on peut interagir avec d'autres utilisateurs sur Internet.", "correct": false},
+                {"text": "C'est un mode de réalité augmentée où des éléments virtuels sont superposés au monde réel.", "correct": false},
+                {"text": "C'est un programme de simulation de laboratoire utilisé en sciences informatiques.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi utilisons-nous un environnement virtuel pour nos projets Python ?",
+            "answers": [
+                {"text": "Pour garder tout bien rangé et éviter que les différents projets se mélangent.", "correct": true},
+                {"text": "Pour créer des mondes virtuels pour nos jeux vidéo.", "correct": false},
+                {"text": "Pour tester des logiciels dans un environnement isolé.", "correct": false},
+                {"text": "Pour exécuter plusieurs systèmes d'exploitation simultanément sur un même ordinateur.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que venv en Python ?",
+            "answers": [
+                {"text": "C'est l'outil que Python utilise pour créer des environnements virtuels.", "correct": true},
+                {"text": "C'est une bibliothèque Python pour la manipulation des fichiers XML.", "correct": false},
+                {"text": "C'est un framework pour le développement d'applications web en Python.", "correct": false},
+                {"text": "C'est un éditeur de texte populaire utilisé par les développeurs Python.", "correct": false}
+            ]
+        },
+        {
+            "question": "Où met-on notre projet Python sur l'ordinateur ?",
+            "answers": [
+                {"text": "Dans un dossier spécial où on veut garder tous nos fichiers de projet.", "correct": true},
+                {"text": "Dans le dossier système de Python où sont stockées toutes les bibliothèques.", "correct": false},
+                {"text": "Dans le répertoire principal de l'utilisateur sur l'ordinateur.", "correct": false},
+                {"text": "Dans le cloud, pour un accès facile depuis n'importe où.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment crée-t-on un dossier pour notre projet Python sur l'ordinateur ?",
+            "answers": [
+                {"text": "On utilise une commande spéciale dans un endroit appelé l'interface de ligne de commande ou CLI.", "correct": true},
+                {"text": "On utilise un logiciel de gestion de fichiers graphique comme Finder ou Explorateur de fichiers.", "correct": false},
+                {"text": "On utilise une fonction spéciale dans notre éditeur de texte préféré.", "correct": false},
+                {"text": "On demande à un administrateur système de le faire pour nous.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quel programme utilisons-nous pour créer notre dossier de projet Python sur macOS ou Linux ?",
+            "answers": [
+                {"text": "On utilise quelque chose appelé Terminal.", "correct": true},
+                {"text": "On utilise l'Explorateur de fichiers.", "correct": false},
+                {"text": "On utilise le Terminal Windows.", "correct": false},
+                {"text": "On utilise un éditeur de texte comme Visual Studio Code.", "correct": false}
+            ]
+        },
+        {
+            "question": "Et sur Windows, quel programme peut-on utiliser pour faire la même chose ?",
+            "answers": [
+                {"text": "On peut utiliser PowerShell ou le Sous-système Windows pour Linux (WSL).", "correct": true},
+                {"text": "On utilise le Terminal macOS ou Linux via une machine virtuelle.", "correct": false},
+                {"text": "On utilise l'Explorateur de fichiers.", "correct": false},
+                {"text": "On utilise le Terminal Windows.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment appelle-t-on l'endroit sur l'ordinateur où on écrit des commandes pour créer des dossiers ou gérer des fichiers ?",
+            "answers": [
+                {"text": "L'interface de ligne de commande, ou CLI.", "correct": true},
+                {"text": "Le bureau.", "correct": false},
+                {"text": "Le gestionnaire de tâches.", "correct": false},
+                {"text": "Le menu Démarrer.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi crée-t-on un dossier séparé pour le code source de notre projet Python ?",
+            "answers": [
+                {"text": "Pour organiser notre projet et savoir où se trouve notre travail important.", "correct": true},
+                {"text": "Pour économiser de l'espace disque sur l'ordinateur.", "correct": false},
+                {"text": "Pour éviter les fuites de données sensibles.", "correct": false},
+                {"text": "Pour permettre le partage facile du code avec d'autres utilisateurs.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle commande utilise-t-on pour créer un nouveau dossier sur l'ordinateur ?",
+            "answers": [
+                {"text": "On utilise la commande mkdir.", "correct": true},
+                {"text": "On utilise la commande createfolder.", "correct": false},
+                {"text": "On utilise la commande newdir.", "correct": false},
+                {"text": "On utilise la commande newfolder.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'un dossier de code source ?",
+            "answers": [
+                {"text": "C'est l'endroit où on garde tous nos fichiers de programmation pour le projet.", "correct": true},
+                {"text": "C'est un fichier compressé contenant tous les fichiers du projet.", "correct": false},
+                {"text": "C'est un espace de stockage en ligne pour partager du code avec d'autres développeurs.", "correct": false},
+                {"text": "C'est un répertoire dédié au stockage des fichiers de données de l'application.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important de bien choisir l'endroit où on met notre projet Python sur l'ordinateur ?",
+            "answers": [
+                {"text": "Pour facilement retrouver et travailler sur notre projet.", "correct": true},
+                {"text": "Pour maximiser les performances de l'ordinateur lors de l'exécution du code.", "correct": false},
+                {"text": "Pour garantir la sécurité des fichiers du projet.", "correct": false},
+                {"text": "Pour automatiser les tâches de déploiement du projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le Terminal pour les utilisateurs de macOS et Linux ?",
+            "answers": [
+                {"text": "C'est un programme qui permet d'écrire des commandes pour faire des actions sur l'ordinateur.", "correct": true},
+                {"text": "C'est un éditeur de texte spécialisé pour la programmation.", "correct": false},
+                {"text": "C'est un environnement de développement intégré (IDE) pour les langages de programmation.", "correct": false},
+                {"text": "C'est un système d'exploitation alternatif à macOS et Linux.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que PowerShell pour les utilisateurs de Windows ?",
+            "answers": [
+                {"text": "C'est comme le Terminal mais pour Windows, où on peut aussi écrire des commandes.", "correct": true},
+                {"text": "C'est un langage de programmation utilisé spécifiquement pour le développement Windows.", "correct": false},
+                {"text": "C'est un gestionnaire de packages pour installer des logiciels sur Windows.", "correct": false},
+                {"text": "C'est un service cloud de Microsoft pour le stockage de fichiers.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le Sous-système Windows pour Linux (WSL) ?",
+            "answers": [
+                {"text": "C'est un outil spécial pour Windows qui permet d'utiliser des commandes comme si on était sur Linux.", "correct": true},
+                {"text": "C'est un système d'exploitation open source développé par Microsoft.", "correct": false},
+                {"text": "C'est un logiciel de virtualisation permettant d'exécuter Linux sur Windows.", "correct": false},
+                {"text": "C'est un environnement de développement intégré pour programmer en Python sur Windows.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment sait-on dans quel dossier on se trouve quand on utilise le Terminal ou PowerShell ?",
+            "answers": [
+                {"text": "On peut voir le chemin du dossier actuel juste avant l'endroit où on écrit les commandes.", "correct": true},
+                {"text": "On le sait automatiquement car le dossier est indiqué en haut de la fenêtre du Terminal ou de PowerShell.", "correct": false},
+                {"text": "On doit taper une commande spéciale pour afficher le chemin du dossier actuel.", "correct": false},
+                {"text": "On peut voir le chemin du dossier actuel en survolant un bouton dans l'interface graphique.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi organisons-nous nos fichiers et dossiers de projet dès le début ?",
+            "answers": [
+                {"text": "Pour rendre notre travail plus facile à gérer et à comprendre plus tard.", "correct": true},
+                {"text": "Parce que c'est une étape obligatoire imposée par les standards de développement.", "correct": false},
+                {"text": "Pour économiser de l'espace disque sur l'ordinateur.", "correct": false},
+                {"text": "Pour faciliter la collaboration avec d'autres développeurs sur le projet.", "correct": false}
+            ]
+        }
+    ]
+}

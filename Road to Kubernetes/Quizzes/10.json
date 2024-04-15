@@ -1,0 +1,164 @@
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que le Python Package Manager (pip) ?",
+            "answers": [
+                {"text": "C'est un outil qui permet de créer des packages Python.", "correct": false},
+                {"text": "C'est un outil qui permet d'installer d'autres outils et bibliothèques pour nos projets Python.", "correct": true},
+                {"text": "C'est un outil qui permet de vérifier la syntaxe des scripts Python.", "correct": false},
+                {"text": "C'est un outil qui permet de déboguer des erreurs dans le code Python.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi doit-on activer l'environnement virtuel avant d'utiliser pip ?",
+            "answers": [
+                {"text": "Pour garantir une meilleure compatibilité avec d'autres environnements virtuels.", "correct": false},
+                {"text": "Pour s'assurer que les outils et bibliothèques s'installent dans cet espace spécial et ne se mélangent pas avec d'autres projets.", "correct": true},
+                {"text": "Pour accélérer le processus d'installation des packages.", "correct": false},
+                {"text": "Pour permettre à pip de fonctionner avec des privilèges d'administration.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment sait-on que notre environnement virtuel est activé quand on utilise le terminal ou PowerShell ?",
+            "answers": [
+                {"text": "Il y a un indicateur, comme $(venv), qui montre que l'environnement virtuel est activé.", "correct": true},
+                {"text": "Le fond de la console devient vert.", "correct": false},
+                {"text": "Le nom d'utilisateur change pour indiquer l'environnement virtuel actif.", "correct": false},
+                {"text": "La version de Python utilisée est affichée à côté du prompt.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important de mettre à jour pip dans notre environnement virtuel ?",
+            "answers": [
+                {"text": "Pour s'assurer que notre code Python est compatible avec la dernière version de pip.", "correct": false},
+                {"text": "Pour s'assurer qu'on utilise la version la plus récente et la plus sécurisée de pip.", "correct": true},
+                {"text": "Pour pouvoir désinstaller facilement des packages installés.", "correct": false},
+                {"text": "Pour bénéficier de nouvelles fonctionnalités de pip.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment met-on à jour pip dans notre environnement virtuel ?",
+            "answers": [
+                {"text": "On utilise la commande `pip update`.", "correct": false},
+                {"text": "On utilise la commande `pip upgrade`.", "correct": false},
+                {"text": "On utilise la commande `python -m pip install --upgrade pip`.", "correct": true},
+                {"text": "On utilise la commande `pip install --upgrade pip`.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle commande utilise-t-on pour installer FastAPI dans notre projet Python ?",
+            "answers": [
+                {"text": "On tape `pip install FastAPI`.", "correct": false},
+                {"text": "On tape `python -m pip install FastAPI`.", "correct": true},
+                {"text": "On tape `install FastAPI`.", "correct": false},
+                {"text": "On tape `python install FastAPI`.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi utiliser l'interpréteur Python de l'environnement virtuel pour exécuter pip ?",
+            "answers": [
+                {"text": "Pour s'assurer que pip fonctionne dans l'environnement virtuel et installe les bibliothèques au bon endroit.", "correct": true},
+                {"text": "Pour accéder à une version personnalisée de pip installée dans l'environnement virtuel.", "correct": false},
+                {"text": "Pour exécuter pip avec des privilèges d'administration.", "correct": false},
+                {"text": "Pour accélérer le processus d'installation des packages.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une dépendance tierce dans un projet Python ?",
+            "answers": [
+                {"text": "C'est une dépendance installée automatiquement par Python.", "correct": false},
+                {"text": "C'est un outil ou une bibliothèque créée par quelqu'un d'autre que l'on peut utiliser dans notre projet.", "correct": true},
+                {"text": "C'est une dépendance qui n'est pas recommandée pour les projets Python.", "correct": false},
+                {"text": "C'est une dépendance qui nécessite une licence tierce pour être utilisée.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que signifie installer des dépendances pour notre projet ?",
+            "answers": [
+                {"text": "Cela signifie ajouter des outils et des bibliothèques supplémentaires dont notre projet a besoin pour fonctionner.", "correct": true},
+                {"text": "Cela signifie rendre notre projet dépendant d'autres projets Python.", "correct": false},
+                {"text": "Cela signifie limiter l'accès à notre projet à certains utilisateurs.", "correct": false},
+                {"text": "Cela signifie créer des copies locales de nos fichiers de dépendances.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi doit-on choisir soigneusement les dépendances que l'on ajoute à notre projet ?",
+            "answers": [
+                {"text": "Pour garantir une meilleure performance de notre projet.", "correct": false},
+                {"text": "Pour s'assurer qu'elles sont utiles, sûres et ne causent pas de problèmes avec d'autres parties de notre projet.", "correct": true},
+                {"text": "Pour rendre notre projet compatible avec un plus grand nombre d'environnements.", "correct": false},
+                {"text": "Pour éviter d'avoir à mettre à jour nos dépendances régulièrement.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'arrive-t-il si on n'active pas l'environnement virtuel avant d'installer des dépendances ?",
+            "answers": [
+                {"text": "Les dépendances pourraient s'installer au mauvais endroit et causer des conflits ou des problèmes dans d'autres projets.", "correct": true},
+                {"text": "Les dépendances ne s'installeront pas correctement et provoqueront des erreurs de syntaxe.", "correct": false},
+                {"text": "L'installation des dépendances écrasera les fichiers système de Python.", "correct": false},
+                {"text": "L'environnement virtuel refusera d'exécuter le script d'installation des dépendances.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment vérifie-t-on la version de Python utilisée dans notre environnement virtuel ?",
+            "answers": [
+                {"text": "On utilise la commande `python --version` avec l'environnement virtuel activé.", "correct": false},
+                {"text": "On utilise la commande `python -V` avec l'environnement virtuel activé.", "correct": false},
+                {"text": "On utilise la commande `python -v` avec l'environnement virtuel activé.", "correct": false},
+                {"text": "On utilise la commande `python --version` avec l'environnement virtuel activé.", "correct": true}
+            ]
+        },
+        {
+            "question": "Quelle est l'importance de connaître la version de Python de notre environnement virtuel ?",
+            "answers": [
+                {"text": "Cela nous aide à comprendre quelles dépendances nous pouvons installer et si elles sont compatibles avec notre projet.", "correct": true},
+                {"text": "Cela nous permet de vérifier la sécurité de notre environnement virtuel.", "correct": false},
+                {"text": "Cela nous permet de choisir les modules Python les plus récents pour notre projet.", "correct": false},
+                {"text": "Cela nous permet de contrôler la fréquence des mises à jour de Python.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que doit-on faire avant de commencer à programmer notre projet Python ?",
+            "answers": [
+                {"text": "On doit configurer notre environnement virtuel et installer toutes les dépendances nécessaires.", "correct": true},
+                {"text": "On doit écrire un cahier des charges détaillé pour notre projet.", "correct": false},
+                {"text": "On doit choisir un IDE spécifique pour notre projet.", "correct": false},
+                {"text": "On doit installer tous les packages Python disponibles sur PyPI.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quel est l'avantage d'utiliser FastAPI pour un projet web en Python ?",
+            "answers": [
+                {"text": "FastAPI rend le développement de sites web rapides et interactifs plus facile grâce à ses outils et fonctionnalités.", "correct": true},
+                {"text": "FastAPI garantit une sécurité maximale pour nos applications web.", "correct": false},
+                {"text": "FastAPI permet d'utiliser des langages de programmation autres que Python pour le backend.", "correct": false},
+                {"text": "FastAPI offre une intégration complète avec les bases de données NoSQL.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment peut-on s'assurer que toutes les bibliothèques nécessaires sont installées pour notre projet ?",
+            "answers": [
+                {"text": "En utilisant pip dans notre environnement virtuel pour installer chaque dépendance spécifiée.", "correct": true},
+                {"text": "En téléchargeant manuellement chaque bibliothèque depuis le site web du projet.", "correct": false},
+                {"text": "En utilisant la commande `python install` dans le terminal.", "correct": false},
+                {"text": "En ajoutant simplement les noms des bibliothèques au fichier `requirements.txt`.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle est la première étape après avoir configuré notre environnement virtuel pour un nouveau projet Python ?",
+            "answers": [
+                {"text": "Activer l'environnement virtuel et commencer à installer les dépendances nécessaires avec pip.", "correct": true},
+                {"text": "Écrire le code source de notre projet.", "correct": false},
+                {"text": "Configurer les variables d'environnement spécifiques à notre projet.", "correct": false},
+                {"text": "Créer un fichier README pour documenter notre projet.", "correct": false}
+            ]
+        }
+    ]
+}

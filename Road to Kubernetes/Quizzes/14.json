@@ -1,0 +1,66 @@
+{
+    "quizzes": [
+      {
+        "question": "Pourquoi FastAPI est-il populaire pour créer des sites web avec Python ?",
+        "answers": [
+          { "text": "Parce qu'il est simple à utiliser et qu'il est fait pour créer des API, ce qui aide les sites web à gérer beaucoup de demandes et réponses rapidement.", "correct": true },
+          { "text": "FastAPI est populaire en raison de ses fonctionnalités avancées de conception de bases de données.", "correct": false },
+          { "text": "FastAPI est préféré pour son intégration facile avec les applications mobiles.", "correct": false },
+          { "text": "FastAPI est célèbre pour son éditeur de code intégré.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une API ?",
+        "answers": [
+          { "text": "C'est une façon pour les programmes informatiques de parler entre eux et de s'échanger des informations.", "correct": true },
+          { "text": "Une API est une méthode de cryptage pour sécuriser les données.", "correct": false },
+          { "text": "Une API est un outil pour concevoir des interfaces utilisateur graphiques.", "correct": false },
+          { "text": "API signifie 'Automated Program Interface', un moyen de créer des programmes automatisés.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que la programmation asynchrone, une caractéristique de FastAPI ?",
+        "answers": [
+          { "text": "C'est une manière de programmer qui permet de faire plusieurs choses en même temps, ce qui rend les sites web plus rapides.", "correct": true },
+          { "text": "La programmation asynchrone est une méthode pour écrire des programmes qui se déroulent étape par étape.", "correct": false },
+          { "text": "La programmation asynchrone est une méthode pour créer des programmes qui n'ont pas besoin de connexion Internet.", "correct": false },
+          { "text": "La programmation asynchrone est une technique pour détecter et corriger les erreurs de syntaxe dans le code.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce qu'une REST API ?",
+        "answers": [
+          { "text": "C'est un type spécial d'API utilisé sur Internet pour envoyer et recevoir des données d'une manière organisée.", "correct": true },
+          { "text": "Une REST API est une API conçue exclusivement pour les appareils mobiles.", "correct": false },
+          { "text": "Une REST API est une API destinée à la réalité virtuelle et augmentée.", "correct": false },
+          { "text": "Une REST API est une API utilisée uniquement pour les calculs mathématiques avancés.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi les développeurs aiment-ils utiliser FastAPI pour les REST API ?",
+        "answers": [
+          { "text": "Parce que FastAPI peut gérer beaucoup de demandes et réponses rapidement, ce qui est important pour les sites web modernes.", "correct": true },
+          { "text": "FastAPI est préféré pour son interface utilisateur intuitive pour la conception d'API.", "correct": false },
+          { "text": "FastAPI est célèbre pour ses capacités de modélisation 3D avancées.", "correct": false },
+          { "text": "Les développeurs choisissent FastAPI pour sa compatibilité avec les jeux vidéo en ligne.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+  
+
+  {
+    "quizzes": [
+      {
+        "question": "Qu'est-ce que cela signifie quand on dit que FastAPI a une approche \"API-first\" ?",
+        "answers": [
+          { "text": "Cela signifie que FastAPI est spécialement conçu pour faciliter la création d'APIs, en mettant l'accent sur la communication entre différents programmes informatiques.", "correct": true },
+          { "text": "L'approche 'API-first' de FastAPI se réfère à sa priorité à créer des interfaces graphiques conviviales.", "correct": false },
+          { "text": "FastAPI adopte une approche 'API-first' en priorisant le développement d'applications mobiles.", "correct": false },
+          { "text": "Cela signifie que FastAPI est conçu pour les API en tant qu'après-pensée, après le développement des fonctionnalités principales.", "correct": false }
+        ]
+      }
+    ]
+  }
+  

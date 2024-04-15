@@ -1,0 +1,405 @@
+#1
+
+Chapter 4. Async, Concurrency, and Starlette Tour
+Starlette is a lightweight ASGI framework/toolkit, which is ideal for building async web services in Python.
+
+Tom Christie, creator of Starlette
+
+#2
+
+Preview
+The previous chapter briefly introduced the first things a developer would encounter on writing a new FastAPI application. This chapter emphasizes FastAPI’s underlying Starlette library, particularly its support of async processing. After an overview of multiple ways of “doing more things at once” in Python, you’ll see how its newer async and await keywords have been incorporated into Starlette and FastAPI.
+
+#3
+
+Starlette
+Much of FastAPI’s web code is based on the Starlette package, which was created by Tom Christie. It can be used as a web framework in its own right or as a library for other frameworks, such as FastAPI. Like any other web framework, Starlette handles all the usual HTTP request parsing and response generation. It’s similar to Werkzeug, the package that underlies Flask.
+
+#4
+
+But its most important feature is its support of the modern Python asynchronous web standard: ASGI. Until now, most Python web frameworks (like Flask and Django) have been based on the traditional synchronous WSGI standard. Because web applications so frequently connect to much slower code (e.g., database, file, and network access), ASGI avoids the blocking and busy waiting of WSGI-based applications.
+
+As a result, Starlette and frameworks that use it are the fastest Python web packages, rivaling even Go and Node.js applications.
+
+#5
+
+Types of Concurrency
+Before getting into the details of the async support provided by Starlette and FastAPI, it’s useful to know the multiple ways we can implement concurrency.
+
+In parallel computing, a task is spread across multiple dedicated CPUs at the same time. This is common in “number-crunching” applications like graphics and machine learning.
+
+
+#6
+
+In concurrent computing, each CPU switches among multiple tasks. Some tasks take longer than others, and we want to reduce the total time needed. Reading a file or accessing a remote network service is literally thousands to millions of times slower than running calculations in the CPU.
+
+Web applications do a lot of this slow work. How can we make web servers, or any servers, run faster? This section discusses some possibilities, from system-wide down to the focus of this chapter: FastAPI’s implementation of Python’s async and await.
+
+#7
+
+Distributed and Parallel Computing
+If you have a really big application—one that would huff and puff on a single CPU—you can break it into pieces and make those pieces run on separate CPUs in a single machine or on multiple machines. You can do this in many, many ways, and if you have such an application, you already know a number of them. Managing all these pieces is more complex and expensive than managing a single server.
+
+In this book, the focus is on small- to medium-sized applications that could fit on a single box. And these applications can have a mixture of synchronous and asynchronous code, nicely managed by FastAPI.
+
+#8
+
+Operating System Processes
+An operating system (or OS, because typing hurts) schedules resources: memory, CPUs, devices, networks, and so on. Every program that it runs executes its code in one or more processes. The OS provides each process with managed, protected access to resources, including when they can use the CPU.
+
+
+#9
+
+Most systems use preemptive process scheduling, not allowing any process to hog the CPU, memory, or any other resource. An OS continually suspends and resumes processes, according to its design and settings.
+
+For developers, the good news is: not your problem! But the bad news (which usually seems to shadow the good) is: you can’t do much to change it, even if you want to.
+
+With CPU-intensive Python applications, the usual solution is to use multiple processes and let the OS manage them. Python has a multiprocessing module for this.
+
+#10
+
+Operating System Threads
+You can also run threads of control within a single process. Python’s threading package manages these.
+
+Threads are often recommended when your program is I/O bound, and multiple processes are recommended when you’re CPU bound. But threads are tricky to program and can cause errors that are hard to find. In Introducing Python, I likened threads to ghosts wafting around in a haunted house: independent and invisible, detected only by their effects. Hey, who moved that candlestick?
+
+
+#11
+
+
+Traditionally, Python kept the process-based and thread-based libraries separate.
+
+As you’ll see, you can get the benefits of threads more easily with the newer async functions. FastAPI also manages threads for normal synchronous functions (def, not async def) via threadpools.
+
+#12
+
+Green Threads
+A more mysterious mechanism is presented by green threads such as greenlet, gevent and Eventlet. These are cooperative (not preemptive). They’re similar to OS threads but run in user space (i.e., your program) rather than in the OS kernel. They work by monkey-patching standard Python functions (modifying standard Python functions as they’re running) to make concurrent code look like normal sequential code: they give up control when they would block waiting for I/O.
+
+#13
+
+OS threads are “lighter” (use less memory) than OS processes, and green threads are lighter than OS threads. In some benchmarks, all the async methods were generally faster than their sync counterparts.
+
+NOTE
+After you’ve read this chapter, you may wonder which is better: gevent or asyncio? I don’t think there’s a single preference for all uses. Green threads were implemented earlier (using ideas from the multiplayer game Eve Online). This book features Python’s standard asyncio, which is used by FastAPI, is simpler than threads, and performs well.
+
+
+#14
+
+Callbacks
+Developers of interactive applications like games and graphic user interfaces are probably familiar with callbacks. You write functions and associate them with an event, like a mouse click, keypress, or time. The prominent Python package in this category is Twisted. Its name reflects the reality that callback-based programs are a bit “inside-out” and hard to follow.
+
+#15
+
+Python Generators
+Like most languages, Python usually executes code sequentially. When you call a function, Python runs it from its first line until its end or a return.
+
+But in a Python generator function, you can stop and return from any point, and go back to that point later. The trick is the yield keyword.
+
+
+#16
+
+In one Simpsons episode, Homer crashes his car into a deer statue, followed by three lines of dialogue. Example 4-1 defines a normal Python function to return these lines as a list and have the caller iterate over them.
+
+Example 4-1. Use return
+>>> def doh():
+...     return ["Homer: D'oh!", "Marge: A deer!", "Lisa: A female deer!"]
+...
+>>> for line in doh():
+...     print(line)
+...
+Homer: D'oh!
+Marge: A deer!
+Lisa: A female deer!
+
+#17
+
+This works perfectly when lists are relatively small. But what if we’re grabbing all the dialogue from all the Simpsons episodes? Lists use memory.
+
+Example 4-2 shows how a generator function would dole out the lines.
+
+Example 4-2. Use yield
+>>> def doh2():
+...     yield "Homer: D'oh!"
+...     yield "Marge: A deer!"
+...     yield "Lisa: A female deer!"
+...
+>>> for line in doh2():
+...     print(line)
+...
+Homer: D'oh!
+Marge: A deer!
+Lisa: A female deer!
+
+#18
+
+Instead of iterating over a list returned by the plain function doh(), we’re iterating over a generator object returned by the generator function doh2(). The actual iteration (for...in) looks the same. Python returns the first string from doh2(), but keeps track of where it is for the next iteration, and so on until the function runs out of dialogue.
+
+Any function containing yield is a generator function. Given this ability to go back into the middle of a function and resume execution, the next section looks like a logical adaptation.
+
+#19
+
+Python async, await, and asyncio
+Python’s asyncio features have been introduced over various releases. You’re running at least Python 3.7, when the async and await terms became reserved keywords.
+
+The following examples show a joke that’s funny only when run asynchronously. Run both yourself, because the timing matters.
+
+#20
+
+First, run the unfunny Example 4-3.
+
+Example 4-3. Dullness
+>>> import time
+>>>
+>>> def q():
+...     print("Why can't programmers tell jokes?")
+...     time.sleep(3)
+...
+>>> def a():
+...     print("Timing!")
+...
+>>> def main():
+...     q()
+...     a()
+...
+>>> main()
+Why can't programmers tell jokes?
+Timing!
+You’ll see a three-second gap between the question and answer. Yawn.
+
+
+#21
+
+You’ll see a three-second gap between the question and answer. Yawn.
+
+But the async Example 4-4 is a little different.
+
+Example 4-4. Hilarity
+>>> import asyncio
+>>>
+>>> async def q():
+...     print("Why can't programmers tell jokes?")
+...     await asyncio.sleep(3)
+...
+>>> async def a():
+...     print("Timing!")
+...
+>>> async def main():
+...     await asyncio.gather(q(), a())
+...
+>>> asyncio.run(main())
+Why can't programmers tell jokes?
+Timing!
+
+This time, the answer should pop out right after the question, followed by three seconds of silence—just as though a programmer is telling it. Ha ha! Ahem.
+
+
+#22
+
+NOTE
+I’ve used asyncio.gather() and asyncio.run() in Example 4-4, but there are multiple ways of calling async functions. When using FastAPI, you won’t need to use these.
+
+Python thinks this when running Example 4-4:
+
+1.Execute q(). Well, just the first line right now.
+
+2.OK, you lazy async q(), I’ve set my stopwatch and I’ll come back to you in three seconds.
+
+3.In the meantime I’ll run a(), printing the answer right away.
+
+4.No other await, so back to q().
+
+5.Boring event loop! I’ll sit here aaaand stare for the rest of the three seconds.
+
+6.OK, now I’m done.
+
+
+#23
+
+
+This example uses asyncio.sleep() for a function that takes some time, much like a function that reads a file or accesses a website. You put await in front of the function that might spend most of its time waiting. And that function needs to have async before its def.
+
+NOTE
+If you define a function with async def, its caller must put an await before the call to it. And the caller itself must be declared async def, and its caller must await it, all the way up.
+
+By the way, you can declare a function as async even if it doesn’t contain an await call to another async function. It doesn’t hurt.
+
+
+#24
+
+FastAPI and Async
+After that long field trip over hill and dale, let’s get back to FastAPI and why any of it matters.
+
+Because web servers spend a lot of time waiting, performance can be increased by avoiding some of that waiting—in other words, concurrency. Other web servers use many of the methods mentioned earlier: threads, gevent, and so on. One of the reasons that FastAPI is one of the fastest Python web frameworks is its incorporation of async code, via the underlying Starlette package’s ASGI support, and some of its own inventions.
+
+
+#25
+
+NOTE
+The use of async and await on their own does not make code run faster. In fact, it might be a little slower, from async setup overhead. The main use of async is to avoid long waits for I/O.
+
+Now, let’s look at our earlier web endpoint calls and see how to make them async.
+
+#26
+
+The functions that map URLs to code are called path functions in the FastAPI docs. I’ve also called them web endpoints, and you saw synchronous examples of them in Chapter 3. Let’s make some async ones. As in those earlier examples, we’ll just use simple types like numbers and strings for now. Chapter 5 introduces type hints and Pydantic, which we’ll need to handle fancier data structures.
+
+Example 4-5 revisits the first FastAPI program from the previous chapter and makes it asynchronous.
+
+#27
+
+
+Example 4-5. A shy async endpoint (greet_async.py)
+from fastapi import FastAPI
+import asyncio
+
+app = FastAPI()
+
+@app.get("/hi")
+async def greet():
+    await asyncio.sleep(1)
+    return "Hello? World?"
+
+To run that chunk of web code, you need a web server like Uvicorn.
+
+
+#28
+
+The first way is to run Uvicorn on the command line:
+
+$ uvicorn greet_async:app
+The second, as in Example 4-6, is to call Uvicorn from inside the example code, when it’s run as a main program instead of a module.
+
+Example 4-6. Another shy async endpoint (greet_async_uvicorn.py)
+from fastapi import FastAPI
+import asyncio
+import uvicorn
+
+app = FastAPI()
+
+@app.get("/hi")
+async def greet():
+    await asyncio.sleep(1)
+    return "Hello? World?"
+
+if __name__ == "__main__":
+    uvicorn.run("greet_async_uvicorn:app")
+
+When run as a standalone program, Python names it main. That if __name__... stuff is Python’s way of running it only when called as a main program. Yes, it’s ugly.
+
+#29
+
+This code will pause for one second before returning its timorous greeting. The only difference from a synchronous function that used the standard sleep(1) function is that the web server can handle other requests in the meantime with the async example.
+
+Using asyncio.sleep(1) fakes a real-world function that might take one second, like calling a database or downloading a web page. Later chapters will show examples of such calls from this Web layer to the Service layer, and from there to the Data layer, actually spending that wait time on real work.
+
+#30
+
+FastAPI calls this async greet() path function itself when it receives a GET request for the URL /hi. You don’t need to add an await anywhere. But for any other async def function definitions that you make, the caller must put an await before each call.
+
+NOTE
+FastAPI runs an async event loop that coordinates the async path functions, and a threadpool for synchronous path functions. A developer doesn’t need to know the tricky details, which is a great plus. For example, you don’t need to run methods like asyncio.gather() or asyncio.run(), as in the (standalone, non-FastAPI) joke example earlier.
+
+#31
+
+Using Starlette Directly
+FastAPI doesn’t expose Starlette as much as it does Pydantic. Starlette is largely the machinery humming in the engine room, keeping the ship running smoothly.
+
+But if you’re curious, you could use Starlette directly to write a web application. Example 3-1 in the previous chapter might look like Example 4-7.
+
+Example 4-7. Using Starlette: starlette_hello.py
+from starlette.applications import Starlette
+from starlette.responses import JSONResponse
+from starlette.routing import Route
+
+async def greeting(request):
+    return JSONResponse('Hello? World?')
+
+app = Starlette(debug=True, routes=[
+    Route('/hi', greeting),
+])
+
+#32
+
+Run this web application with this:
+
+$ uvicorn starlette_hello:app
+In my opinion, the FastAPI additions make web API development much easier.
+
+#33
+
+Interlude: Cleaning the Clue House
+You own a small (very small: just you) house-cleaning company. You’ve been living on ramen but just landed a contract that will let you afford much better ramen.
+
+Your client bought an old mansion that was built in the style of the board game Clue and wants to host a character party there soon. But the place is an incredible mess. If Marie Kondo saw the place, she might do the following:
+
+- Scream
+
+- Gag
+
+- Run away
+
+- All of the above
+
+#34
+
+
+Your contract includes a speed bonus. How can you clean the place thoroughly, in the least amount of elapsed time? The best approach would have been to have more Clue Preservation Units (CPUs), but you’re it.
+
+So you can try one of these:
+
+- Do everything in one room, then everything in the next, etc.
+
+- Do a specific task in one room, then the next, etc. Like polishing the silver in the Kitchen and Dining Room, or the pool balls in the Billiard Room.
+
+
+#35
+
+Would your total time for these approaches differ? Maybe. But it might be more important to consider whether you have to wait an appreciable time for any step. An example might be underfoot: after cleaning rugs and waxing floors, they might need to dry for hours before moving furniture back onto them.
+
+#36
+
+So, here’s your plan for each room:
+
+1.Clean all the static parts (windows, etc.).
+
+2.Move all the furniture from the room into the Hall.
+
+3.Remove years of grime from the rug and/or hardwood floor.
+
+4.Do either of these:
+
+    a.Wait for the rug or wax to dry, but wave your bonus goodbye.
+
+    b.Go to the next room now, and repeat. After the last room, move the furniture back into the first room, and so on.
+
+
+#37
+
+The waiting-to-dry approach is the synchronous one, and it might be best if time isn’t a factor and you need a break. The second is async and saves the waiting time for each room.
+
+Let’s assume you choose the async path, because money. You get the old dump to sparkle and receive that bonus from your grateful client. The later party turns out to be a great success, except for these issues:
+
+1.One memeless guest came as Mario.
+
+2.You overwaxed the dance floor in the Ball Room, and a tipsy Professor Plum skated about in his socks, until he sailed into a table and spilled champagne on Miss Scarlet.
+
+#38
+
+Morals of this story:
+
+- Requirements can be conflicting and/or strange.
+
+- Estimating time and effort can depend on many factors.
+
+- Sequencing tasks may be as much art as science.
+
+- You’ll feel great when it’s all done. Mmm, ramen.
+
+#39
+
+Review
+After an overview of ways of increasing concurrency, this chapter expanded on functions that use the recent Python keywords async and await. It showed how FastAPI and Starlette handle both plain old synchronous functions and these new async funky functions.
+
+The next chapter introduces the second leg of FastAPI: how Pydantic helps you define your data.
+

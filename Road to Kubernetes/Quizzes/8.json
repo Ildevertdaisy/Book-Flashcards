@@ -1,0 +1,137 @@
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi crée-t-on un nouveau projet Python ?",
+            "answers": [
+                {"text": "Pour avoir une bonne organisation du code.", "correct": false},
+                {"text": "Pour garder le code de différents projets bien séparé et organisé.", "correct": true},
+                {"text": "Pour expérimenter de nouvelles fonctionnalités de Python.", "correct": false},
+                {"text": "Pour tester la vitesse de Python sur différents projets.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un environnement virtuel en Python ?",
+            "answers": [
+                {"text": "C'est un outil de débogage pour les programmes Python.", "correct": false},
+                {"text": "C'est comme une boîte spéciale pour un projet qui garde tout ce dont il a besoin à part des autres projets.", "correct": true},
+                {"text": "C'est un environnement de développement pour Java.", "correct": false},
+                {"text": "C'est une fonctionnalité avancée de Python pour l'intelligence artificielle.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quand faut-il créer un environnement virtuel pour un projet Python ?",
+            "answers": [
+                {"text": "À chaque fois qu'on commence un nouveau projet.", "correct": true},
+                {"text": "Uniquement lorsqu'on utilise des bibliothèques externes.", "correct": false},
+                {"text": "Seulement si le projet est destiné à être partagé en open source.", "correct": false},
+                {"text": "Jamais, cela n'est pas nécessaire pour les petits projets.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment sait-on quel interpréteur Python utiliser pour notre projet ?",
+            "answers": [
+                {"text": "Cela dépend du nombre de modules utilisés dans le projet.", "correct": false},
+                {"text": "Cela dépend de la version de Python installée sur l'ordinateur.", "correct": false},
+                {"text": "Cela dépend de si on utilise un ordinateur macOS, Linux, ou Windows.", "correct": true},
+                {"text": "Cela dépend du type de projet (web, desktop, etc.).", "correct": false}
+            ]
+        },
+        {
+            "question": "Que fait-on en premier pour créer un environnement virtuel dans un projet Python ?",
+            "answers": [
+                {"text": "On installe toutes les bibliothèques nécessaires au projet.", "correct": false},
+                {"text": "On configure l'interpréteur Python pour le projet.", "correct": false},
+                {"text": "On va dans le dossier du projet avec une commande spéciale dans l'ordinateur.", "correct": true},
+                {"text": "On choisit le nom du dossier de l'environnement virtuel.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle est la commande pour créer un environnement virtuel sur Windows ?",
+            "answers": [
+                {"text": "python3 -m venv venv", "correct": false},
+                {"text": "venv create", "correct": false},
+                {"text": "virtualenv venv", "correct": false},
+                {"text": "python -m venv venv", "correct": true}
+            ]
+        },
+        {
+            "question": "Et quelle commande utilise-t-on pour créer un environnement virtuel sur macOS ou Linux ?",
+            "answers": [
+                {"text": "python -m venv venv", "correct": false},
+                {"text": "virtualenv venv", "correct": false},
+                {"text": "venv create", "correct": false},
+                {"text": "python3 -m venv venv", "correct": true}
+            ]
+        },
+        {
+            "question": "Pourquoi les utilisateurs de macOS et Linux utilisent-ils `python3` au lieu de `python` ?",
+            "answers": [
+                {"text": "Parce que `python3` est plus rapide que `python`.", "correct": false},
+                {"text": "Parce que `python3` est la seule version de Python disponible sur ces systèmes.", "correct": false},
+                {"text": "Parce que sur ces systèmes, `python3` est souvent utilisé pour s'assurer qu'on utilise la version correcte de Python.", "correct": true},
+                {"text": "Parce que `python` est réservé aux scripts shell sur ces systèmes.", "correct": false}
+            ]
+        },
+        {
+            "question": "Où peut-on apprendre plus sur comment configurer Python sur macOS ou Windows ?",
+            "answers": [
+                {"text": "Dans les forums de discussion en ligne sur Python.", "correct": false},
+                {"text": "Dans les sections d'aide des sites web de téléchargement de Python.", "correct": false},
+                {"text": "Dans les annexes A pour macOS et B pour Windows du livre.", "correct": true},
+                {"text": "Dans les vidéos tutorielles sur YouTube sur Python.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quel dossier choisissons-nous pour commencer notre projet Python ?",
+            "answers": [
+                {"text": "Le dossier `python_projects` dans le répertoire utilisateur.", "correct": false},
+                {"text": "Le dossier `documents` sur l'ordinateur.", "correct": false},
+                {"text": "On choisit un dossier spécifique sur notre ordinateur où on veut garder notre projet.", "correct": true},
+                {"text": "Le dossier `python_scripts` sur le bureau.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi est-il important de bien choisir l'endroit où on met notre projet Python sur l'ordinateur ?",
+            "answers": [
+                {"text": "Pour pouvoir le retrouver facilement et garder notre travail organisé.", "correct": true},
+                {"text": "Parce que Python ne fonctionne que dans certains dossiers spécifiques de l'ordinateur.", "correct": false},
+                {"text": "Pour éviter que notre projet soit piraté par des hackers.", "correct": false},
+                {"text": "Parce que cela permet d'accélérer l'exécution du code Python.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle est la première étape pour créer un environnement virtuel dans notre projet Python ?",
+            "answers": [
+                {"text": "Il faut d'abord installer toutes les dépendances requises pour le projet.", "correct": false},
+                {"text": "On doit configurer l'interpréteur Python à utiliser pour le projet.", "correct": false},
+                {"text": "Il faut d'abord naviguer jusqu'au dossier de notre projet avec une commande dans le terminal ou PowerShell.", "correct": true},
+                {"text": "On doit créer un nouveau dossier pour le projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'on fait après avoir créé un dossier pour notre projet Python ?",
+            "answers": [
+                {"text": "On crée un environnement virtuel dedans pour isoler notre projet.", "correct": true},
+                {"text": "On commence à écrire directement le code source du projet.", "correct": false},
+                {"text": "On partage le dossier avec d'autres développeurs.", "correct": false},
+                {"text": "On crée un dépôt Git pour le projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment crée-t-on un dossier pour notre code source en Python ?",
+            "answers": [
+                {"text": "On utilise une commande pour créer un nouveau dossier dans notre projet.", "correct": true},
+                {"text": "On copie un dossier existant et on le renomme.", "correct": false},
+                {"text": "On télécharge un dossier pré-configuré depuis internet.", "correct": false},
+                {"text": "On utilise une application graphique pour créer le dossier.", "correct": false}
+            ]
+        }
+    ]
+}
+

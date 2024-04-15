@@ -1,0 +1,151 @@
+{
+    "quizzes": [
+      {
+        "question": "À quoi sert le fichier `requirements.txt` dans un projet Python ?",
+        "answers": [
+          { "text": "Il sert à lister tous les paquets nécessaires pour le projet.", "correct": true },
+          { "text": "Il sert à stocker des informations de configuration pour le projet.", "correct": false },
+          { "text": "Il sert à enregistrer les erreurs de compilation rencontrées lors de l'installation des paquets.", "correct": false },
+          { "text": "Il sert à répertorier les fonctionnalités à ajouter au projet dans le futur.", "correct": false }
+        ]
+      },
+      {
+        "question": "Que fait-on avec la commande `-f` dans pip ?",
+        "answers": [
+          { "text": "On l'utilise pour dire à pip d'installer tous les paquets listés dans le fichier `requirements.txt`.", "correct": true },
+          { "text": "On l'utilise pour forcer la réinstallation de tous les paquets dans l'environnement virtuel.", "correct": false },
+          { "text": "On l'utilise pour afficher la liste de tous les fichiers associés à un paquet installé.", "correct": false },
+          { "text": "On l'utilise pour filtrer les résultats de recherche lors de l'installation de nouveaux paquets.", "correct": false }
+        ]
+      },
+      {
+        "question": "Peut-on préciser des versions spécifiques des paquets dans le fichier `requirements.txt` ?",
+        "answers": [
+          { "text": "Oui, mais nous n'allons pas le faire cette fois-ci.", "correct": true },
+          { "text": "Non, car cela peut entraîner des conflits lors de l'installation des paquets.", "correct": false },
+          { "text": "Oui, mais uniquement pour les paquets tiers, pas pour les paquets système.", "correct": false },
+          { "text": "Non, car cela rendrait le fichier `requirements.txt` trop compliqué à gérer.", "correct": false }
+        ]
+      },
+      {
+        "question": "Où doit-on se trouver dans l'ordinateur pour installer tous les paquets du fichier `requirements.txt` ?",
+        "answers": [
+          { "text": "Dans la racine du projet, là où se trouve le dossier `venv`.", "correct": true },
+          { "text": "Dans le dossier `venv`, où se trouvent les fichiers binaires des paquets installés.", "correct": false },
+          { "text": "Dans le répertoire utilisateur, où se trouvent les fichiers de configuration globaux de pip.", "correct": false },
+          { "text": "Dans le dossier contenant le fichier `requirements.txt`, peu importe son emplacement.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quelle commande utilise-t-on pour activer l'environnement virtuel avant d'installer les paquets ?",
+        "answers": [
+          { "text": "On utilise `source venv\/bin\/activate` ou `.\\venv\\Scripts\\activate`.", "correct": true },
+          { "text": "On utilise `pipenv activate` pour activer l'environnement virtuel.", "correct": false },
+          { "text": "On utilise `virtualenv venv` pour créer un nouvel environnement virtuel.", "correct": false },
+          { "text": "On utilise `pip install -r requirements.txt` pour installer les paquets sans activer l'environnement virtuel.", "correct": false }
+        ]
+      }
+    ]
+  }
+  
+  {
+    "quizzes": [
+      {
+        "question": "Comment installe-t-on tous les paquets listés dans `requirements.txt` ?",
+        "answers": [
+          { "text": "Avec la commande `python -m pip install -r src/requirements.txt`.", "correct": true },
+          { "text": "Avec la commande `pip install -r requirements.txt`.", "correct": false },
+          { "text": "En utilisant la commande `pip install --requirements requirements.txt`.", "correct": false },
+          { "text": "En exécutant le script `requirements.txt` avec Python.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi doit-on activer l'environnement virtuel avant d'installer les paquets ?",
+        "answers": [
+          { "text": "Pour s'assurer que les paquets s'installent dans l'environnement virtuel et non ailleurs.", "correct": true },
+          { "text": "Pour éviter toute interférence entre les paquets installés et le système hôte.", "correct": false },
+          { "text": "Pour accéder aux fonctionnalités avancées de pip réservées aux environnements virtuels.", "correct": false },
+          { "text": "Pour permettre à pip de générer un rapport détaillé sur l'installation des paquets.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quelle est l'importance de naviguer à la racine du projet avant d'installer les paquets ?",
+        "answers": [
+          { "text": "Pour que pip puisse trouver le fichier `requirements.txt` correctement.", "correct": true },
+          { "text": "Pour éviter toute interférence avec d'autres projets Python installés sur le système.", "correct": false },
+          { "text": "Pour garantir que les paquets s'installent dans le répertoire principal du projet.", "correct": false },
+          { "text": "Pour permettre à pip de créer un environnement virtuel spécifique au projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Que signifie `-r` dans la commande d'installation des paquets ?",
+        "answers": [
+          { "text": "Cela indique à pip de lire le fichier `requirements.txt`.", "correct": true },
+          { "text": "Cela spécifie le répertoire où pip doit installer les paquets.", "correct": false },
+          { "text": "Cela restreint l'installation des paquets aux seuls paquets répertoriés dans `requirements.txt`.", "correct": false },
+          { "text": "Cela réinitialise l'environnement virtuel avant d'installer les paquets.", "correct": false }
+        ]
+      },
+      {
+        "question": "Pourquoi est-il utile d'avoir un fichier `requirements.txt` dans notre projet ?",
+        "answers": [
+          { "text": "Cela simplifie l'installation de tous les paquets nécessaires en une seule commande.", "correct": true },
+          { "text": "Cela permet à pip de générer automatiquement un environnement virtuel pour le projet.", "correct": false },
+          { "text": "Cela garantit que le projet est compatible avec toutes les versions de Python.", "correct": false },
+          { "text": "Cela permet de créer une documentation automatique à partir des dépendances du projet.", "correct": false }
+        ]
+      }
+    ]
+  }
+
+
+  {
+    "quizzes": [
+      {
+        "question": "Que se passerait-il si on oubliait d'activer l'environnement virtuel avant d'installer les paquets ?",
+        "answers": [
+          { "text": "Les paquets pourraient ne pas s'installer correctement dans l'environnement dédié au projet.", "correct": true },
+          { "text": "Les paquets s'installeraient dans l'environnement système, entraînant des conflits.", "correct": false },
+          { "text": "Les paquets s'installeraient automatiquement dans l'environnement virtuel.", "correct": false },
+          { "text": "L'installation des paquets échouerait avec un message d'erreur.", "correct": false }
+        ]
+      },
+      {
+        "question": "Est-ce que le fichier `requirements.txt` est unique pour chaque projet Python ?",
+        "answers": [
+          { "text": "Oui, chaque projet peut avoir ses propres paquets et versions spécifiés.", "correct": true },
+          { "text": "Non, le fichier `requirements.txt` est standard pour tous les projets Python.", "correct": false },
+          { "text": "Le fichier `requirements.txt` est généré automatiquement pour chaque projet.", "correct": false },
+          { "text": "Le contenu du fichier `requirements.txt` est identique pour tous les projets Python.", "correct": false }
+        ]
+      },
+      {
+        "question": "Quel est l'avantage d'installer les paquets via le fichier `requirements.txt` par rapport à l'installation individuelle ?",
+        "answers": [
+          { "text": "Cela permet une installation plus rapide et plus organisée des paquets nécessaires.", "correct": true },
+          { "text": "L'installation via `requirements.txt` garantit une meilleure compatibilité entre les paquets.", "correct": false },
+          { "text": "Les paquets installés via `requirements.txt` sont exempts de bugs et d'erreurs.", "correct": false },
+          { "text": "Le fichier `requirements.txt` inclut des paquets exclusifs disponibles uniquement via cette méthode.", "correct": false }
+        ]
+      },
+      {
+        "question": "Qu'est-ce que cela signifie de \"naviguer à la racine de notre projet\" ?",
+        "answers": [
+          { "text": "Cela signifie aller dans le dossier principal de notre projet sur l'ordinateur.", "correct": true },
+          { "text": "Cela implique l'utilisation d'un navigateur web pour accéder à la documentation du projet.", "correct": false },
+          { "text": "Cela fait référence à l'utilisation des flèches de navigation dans l'interface de développement.", "correct": false },
+          { "text": "Cela indique le processus de défilement à travers les fichiers et les dossiers du projet.", "correct": false }
+        ]
+      },
+      {
+        "question": "Que doit-on faire si on veut ajouter un nouveau paquet à notre projet plus tard ?",
+        "answers": [
+          { "text": "Ajouter le nom du nouveau paquet au fichier `requirements.txt` et réexécuter la commande d'installation.", "correct": true },
+          { "text": "Modifier le fichier `requirements.txt` directement depuis l'interface de développement.", "correct": false },
+          { "text": "Créer un nouveau fichier `new_requirements.txt` pour chaque nouveau paquet.", "correct": false },
+          { "text": "Télécharger manuellement le paquet depuis Internet et l'installer dans le projet.", "correct": false }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,145 @@
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que FastAPI ?",
+            "answers": [
+                {"text": "FastAPI est un framework Python pour créer des APIs rapidement.", "correct": false},
+                {"text": "FastAPI est un outil pour construire des sites web avec Python.", "correct": true},
+                {"text": "FastAPI est un langage de programmation orienté performance.", "correct": false},
+                {"text": "FastAPI est un outil pour développer des applications mobiles.", "correct": false}
+            ]
+        },
+        {
+            "question": "À quoi servent les environnements virtuels en Python ?",
+            "answers": [
+                {"text": "Ils permettent de travailler sur différents projets Python sans mélanger leurs outils et bibliothèques.", "correct": true},
+                {"text": "Ils servent à exécuter du code Python sur des machines virtuelles.", "correct": false},
+                {"text": "Ils facilitent la collaboration entre développeurs sur des projets Python.", "correct": false},
+                {"text": "Ils permettent d'exécuter plusieurs versions de Python sur une même machine.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'Express.js ?",
+            "answers": [
+                {"text": "C'est un outil pour créer des sites web en utilisant JavaScript avec Node.js.", "correct": true},
+                {"text": "C'est un framework JavaScript pour le développement d'applications mobiles.", "correct": false},
+                {"text": "C'est un gestionnaire de packages pour Node.js.", "correct": false},
+                {"text": "C'est une librairie JavaScript pour le traitement d'images côté serveur.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi utiliserait-on Node.js ?",
+            "answers": [
+                {"text": "Pour créer des sites web en utilisant JavaScript côté client.", "correct": false},
+                {"text": "Pour créer des applications mobiles multiplateformes.", "correct": false},
+                {"text": "Pour créer des sites web en utilisant JavaScript côté serveur.", "correct": true},
+                {"text": "Pour développer des jeux vidéo en ligne.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que npm ?",
+            "answers": [
+                {"text": "C'est un outil pour gérer les bibliothèques et les outils nécessaires dans les projets Node.js.", "correct": true},
+                {"text": "C'est un environnement de développement pour les applications web.", "correct": false},
+                {"text": "C'est un langage de programmation utilisé pour créer des applications mobiles.", "correct": false},
+                {"text": "C'est un système de gestion de versions pour le code source.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que Git ?",
+            "answers": [
+                {"text": "C'est un outil pour suivre les changements dans les fichiers de code d'un projet.", "correct": true},
+                {"text": "C'est un langage de programmation utilisé pour créer des applications web.", "correct": false},
+                {"text": "C'est un framework pour le développement d'applications mobiles.", "correct": false},
+                {"text": "C'est un système d'exploitation open-source.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi pousser du code sur GitHub ?",
+            "answers": [
+                {"text": "Pour tester la robustesse du code.", "correct": false},
+                {"text": "Pour sauvegarder le code en ligne et collaborer avec d'autres personnes.", "correct": true},
+                {"text": "Pour compiler le code source en exécutable.", "correct": false},
+                {"text": "Pour générer des rapports sur l'état du code.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une application web ?",
+            "answers": [
+                {"text": "Un programme qu'on peut utiliser avec un navigateur internet.", "correct": true},
+                {"text": "Une application installée sur un serveur web.", "correct": false},
+                {"text": "Un programme exécuté sur un serveur distant.", "correct": false},
+                {"text": "Une interface graphique pour gérer des bases de données.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment crée-t-on une nouvelle application avec Node.js ?",
+            "answers": [
+                {"text": "En utilisant npm pour initialiser le projet.", "correct": true},
+                {"text": "En créant un nouveau fichier JavaScript et en l'exécutant avec Node.js.", "correct": false},
+                {"text": "En téléchargeant et installant les dépendances nécessaires avec npm.", "correct": false},
+                {"text": "En configurant manuellement les fichiers de configuration du serveur.", "correct": false}
+            ]
+        },
+        {
+            "question": "À quoi sert un environnement virtuel dans le développement web ?",
+            "answers": [
+                {"text": "À créer un espace isolé pour un projet, avec ses propres versions d'outils et de bibliothèques.", "correct": true},
+                {"text": "À tester des applications dans des environnements virtuels avant de les déployer.", "correct": false},
+                {"text": "À émuler différents navigateurs pour tester la compatibilité des sites web.", "correct": false},
+                {"text": "À déployer des applications sur des serveurs virtuels pour des tests de performance.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Quelle est la différence entre FastAPI et Express.js ?",
+            "answers": [
+                {"text": "FastAPI utilise Python et est conçu pour des applications web rapides, tandis qu'Express.js utilise JavaScript avec Node.js.", "correct": true},
+                {"text": "Express.js est plus rapide que FastAPI pour le développement web.", "correct": false},
+                {"text": "FastAPI est uniquement destiné aux applications mobiles, tandis qu'Express.js est pour les applications web.", "correct": false},
+                {"text": "Express.js est plus populaire que FastAPI pour les projets de développement web.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment peut-on suivre les modifications apportées à notre code ?",
+            "answers": [
+                {"text": "En utilisant Git pour enregistrer les changements de code au fil du temps.", "correct": true},
+                {"text": "En utilisant des commentaires dans le code pour suivre les modifications.", "correct": false},
+                {"text": "En enregistrant les modifications dans un fichier journal.", "correct": false},
+                {"text": "En envoyant des emails à chaque fois qu'une modification est apportée.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quel est le but de déployer un logiciel en utilisant Kubernetes ?",
+            "answers": [
+                {"text": "Pour mettre en ligne des applications de manière efficace et gérable.", "correct": true},
+                {"text": "Pour tester des applications avant leur déploiement final.", "correct": false},
+                {"text": "Pour développer des applications web plus rapidement.", "correct": false},
+                {"text": "Pour assurer la compatibilité des applications avec différents navigateurs.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important d'isoler les projets Python ?",
+            "answers": [
+                {"text": "Pour éviter les conflits entre les différents outils et bibliothèques utilisés dans chaque projet.", "correct": true},
+                {"text": "Pour accélérer le processus de développement.", "correct": false},
+                {"text": "Pour garantir que tous les projets Python utilisent les mêmes versions d'outils et de bibliothèques.", "correct": false},
+                {"text": "Pour permettre une collaboration plus facile entre développeurs sur différents projets.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le déploiement d'un logiciel ?",
+            "answers": [
+                {"text": "C'est le processus de mise en ligne d'une application pour que les utilisateurs puissent y accéder.", "correct": true},
+                {"text": "C'est le processus de création d'une application à partir de zéro.", "correct": false},
+                {"text": "C'est le processus de test d'une application avant son lancement.", "correct": false},
+                {"text": "C'est le processus de migration d'une application vers une nouvelle infrastructure.", "correct": false}
+            ]
+        }
+    ]
+}

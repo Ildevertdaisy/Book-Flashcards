@@ -1,0 +1,137 @@
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'un dossier appelé `venv` dans un projet Python ?",
+            "answers": [
+                {"text": "C'est un espace spécial qui contient tous les outils et les bibliothèques nécessaires pour notre projet.", "correct": true},
+                {"text": "C'est un dossier pour stocker les fichiers de sauvegarde du projet.", "correct": false},
+                {"text": "C'est un répertoire où se trouvent les fichiers de documentation du projet.", "correct": false},
+                {"text": "C'est un dossier réservé pour les fichiers de configuration du projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi avons-nous besoin d'activer l'environnement virtuel dans notre projet Python ?",
+            "answers": [
+                {"text": "Pour pouvoir utiliser tous les outils et bibliothèques qu'on a mis dans le dossier `venv`.", "correct": true},
+                {"text": "Pour permettre aux autres développeurs de travailler sur le projet.", "correct": false},
+                {"text": "Pour rendre le code du projet accessible au public.", "correct": false},
+                {"text": "Pour éviter les conflits de versions entre les bibliothèques utilisées.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment fait-on pour activer l'environnement virtuel sur un ordinateur Windows ?",
+            "answers": [
+                {"text": "On utilise une commande spéciale qui commence par `.\venv\Scripts\activate`.", "correct": true},
+                {"text": "On tape `source venv/bin/activate` dans le Terminal.", "correct": false},
+                {"text": "On exécute le script `activate.bat` dans le dossier `venv`.", "correct": false},
+                {"text": "On utilise la commande `activate venv` dans PowerShell.", "correct": false}
+            ]
+        },
+        {
+            "question": "Et comment active-t-on l'environnement virtuel sur un Mac ou un Linux ?",
+            "answers": [
+                {"text": "On tape `source venv/bin/activate` dans le Terminal.", "correct": true},
+                {"text": "On utilise une commande spéciale qui commence par `.\venv\Scripts\activate`.", "correct": false},
+                {"text": "On exécute le script `activate` dans le dossier `venv`.", "correct": false},
+                {"text": "On utilise la commande `activate venv` dans le Terminal.", "correct": false}
+            ]
+        },
+        {
+            "question": "Doit-on activer l'environnement virtuel chaque fois qu'on travaille sur notre projet Python ?",
+            "answers": [
+                {"text": "Oui, chaque fois qu'on veut travailler sur le projet, il faut activer l'environnement virtuel.", "correct": true},
+                {"text": "Non, une fois activé, l'environnement virtuel reste actif jusqu'à ce qu'on le désactive manuellement.", "correct": false},
+                {"text": "Non, l'environnement virtuel s'active automatiquement dès qu'on ouvre le fichier principal du projet.", "correct": false},
+                {"text": "Non, il suffit d'activer l'environnement virtuel une seule fois lors de la création du projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que se passe-t-il quand on active l'environnement virtuel de notre projet ?",
+            "answers": [
+                {"text": "On peut utiliser tous les outils spéciaux qu'on a installés juste pour ce projet.", "correct": true},
+                {"text": "Tous les fichiers du projet sont sauvegardés dans le dossier `venv`.", "correct": false},
+                {"text": "Les fichiers du projet sont compilés en exécutables pour une meilleure performance.", "correct": false},
+                {"text": "Les bibliothèques du projet sont mises à jour automatiquement.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un éditeur de texte comme VSCode peut faire avec notre environnement virtuel ?",
+            "answers": [
+                {"text": "Il peut activer automatiquement l'environnement virtuel pour nous.", "correct": true},
+                {"text": "Il peut compiler le code source en un exécutable.", "correct": false},
+                {"text": "Il peut télécharger automatiquement les dépendances du projet.", "correct": false},
+                {"text": "Il peut détecter et corriger les erreurs de syntaxe.", "correct": false}
+            ]
+        },
+        {
+            "question": "Où devons-nous être sur notre ordinateur pour activer l'environnement virtuel de notre projet Python ?",
+            "answers": [
+                {"text": "Il faut être dans le dossier de notre projet, là où se trouve le dossier `venv`.", "correct": true},
+                {"text": "Il faut être dans le dossier système où Python est installé.", "correct": false},
+                {"text": "Il faut être dans le dossier utilisateur de l'ordinateur.", "correct": false},
+                {"text": "Il faut être dans le dossier des fichiers temporaires de l'ordinateur.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important de se situer dans le bon dossier pour activer l'environnement virtuel ?",
+            "answers": [
+                {"text": "Pour que l'ordinateur sache quel environnement virtuel on veut utiliser.", "correct": true},
+                {"text": "Pour éviter les interférences avec d'autres projets Python sur l'ordinateur.", "correct": false},
+                {"text": "Pour accélérer le temps de chargement des dépendances du projet.", "correct": false},
+                {"text": "Pour permettre à Python de localiser correctement les fichiers du projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un Terminal ou PowerShell sur l'ordinateur ?",
+            "answers": [
+                {"text": "C'est un endroit où on peut écrire des commandes pour dire à l'ordinateur quoi faire.", "correct": true},
+                {"text": "C'est une fonctionnalité de Python pour déboguer les erreurs de code.", "correct": false},
+                {"text": "C'est un logiciel d'édition de texte spécialisé pour le langage Python.", "correct": false},
+                {"text": "C'est un programme pour installer des packages Python automatiquement.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Peut-on utiliser l'environnement virtuel sans l'activer ?",
+            "answers": [
+                {"text": "Oui, l'environnement virtuel est toujours actif par défaut.", "correct": false},
+                {"text": "Non, il faut l'activer pour utiliser les outils et bibliothèques qu'il contient.", "correct": true},
+                {"text": "Oui, mais avec des fonctionnalités limitées.", "correct": false},
+                {"text": "Non, il faut désactiver l'environnement virtuel pour l'utiliser.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qui change dans notre ordinateur quand on active l'environnement virtuel ?",
+            "answers": [
+                {"text": "L'ordinateur utilise les versions des outils et bibliothèques qu'on a installées dans `venv`.", "correct": true},
+                {"text": "La résolution de l'écran est modifiée pour s'adapter à l'environnement virtuel.", "correct": false},
+                {"text": "Le système d'exploitation est mis à jour automatiquement.", "correct": false},
+                {"text": "L'ordinateur redémarre pour appliquer les changements.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que doit-on faire si on utilise un autre ordinateur pour travailler sur notre projet Python ?",
+            "answers": [
+                {"text": "Il faut s'assurer que l'environnement virtuel est activé aussi sur cet ordinateur.", "correct": true},
+                {"text": "Il faut réinstaller toutes les bibliothèques et outils nécessaires sur l'autre ordinateur.", "correct": false},
+                {"text": "Il faut désactiver l'environnement virtuel sur l'autre ordinateur.", "correct": false},
+                {"text": "Il faut copier manuellement tous les fichiers du projet sur l'autre ordinateur.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi certains projets Python ont-ils leur propre environnement virtuel ?",
+            "answers": [
+                {"text": "Pour s'assurer que chaque projet a exactement ce dont il a besoin sans interférer avec d'autres projets.", "correct": true},
+                {"text": "Pour simplifier la gestion des fichiers du projet.", "correct": false},
+                {"text": "Pour rendre le code plus sécurisé.", "correct": false},
+                {"text": "Pour permettre à plusieurs projets d'utiliser les mêmes bibliothèques.", "correct": false}
+            ]
+        }
+    ]
+}
