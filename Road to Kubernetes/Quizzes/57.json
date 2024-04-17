@@ -1,1 +1,264 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Quelle est la différence entre sauvegarder un fichier et le suivre avec Git ?",
+      "answers": [
+        {
+          "text": "Sauvegarder enregistre le fichier sur l'ordinateur, suivre avec Git garde une trace des changements faits dans le temps.",
+          "correct": true
+        },
+        {
+          "text": "Sauvegarder crée une nouvelle version du fichier, tandis que suivre avec Git crée une copie de sauvegarde.",
+          "correct": false
+        },
+        {
+          "text": "Sauvegarder envoie le fichier à un répertoire de sauvegarde en ligne, tandis que suivre avec Git le stocke localement.",
+          "correct": false
+        },
+        {
+          "text": "Sauvegarder permet de partager le fichier avec d'autres utilisateurs, tandis que suivre avec Git le rend privé.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on dire à Git de suivre nos fichiers ?",
+      "answers": [
+        {
+          "text": "Pour pouvoir voir comment nos fichiers changent au fil du temps.",
+          "correct": true
+        },
+        {
+          "text": "Pour augmenter la capacité de stockage de notre ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre nos fichiers accessibles à d'autres utilisateurs.",
+          "correct": false
+        },
+        {
+          "text": "Pour automatiser le processus de sauvegarde de nos fichiers.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que la commande `git add <chemin>` fait ?",
+      "answers": [
+        {
+          "text": "Elle dit à Git de commencer à suivre les changements dans un fichier ou dossier spécifique.",
+          "correct": true
+        },
+        {
+          "text": "Elle supprime les fichiers de l'historique de suivi de Git.",
+          "correct": false
+        },
+        {
+          "text": "Elle crée une nouvelle branche dans le dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "Elle réinitialise l'historique de suivi des fichiers spécifiés.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Si nous oublions de suivre nos fichiers avec Git, qu'arrive-t-il ?",
+      "answers": [
+        {
+          "text": "On ne pourra pas voir l'historique des changements de ces fichiers.",
+          "correct": true
+        },
+        {
+          "text": "Les fichiers seront automatiquement suivis lors du prochain commit.",
+          "correct": false
+        },
+        {
+          "text": "Les fichiers seront supprimés du dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "Git enverra une notification pour nous rappeler de suivre les fichiers.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de suivre les fichiers fréquemment avec Git ?",
+      "answers": [
+        {
+          "text": "Pour maintenir un bon historique des changements et faciliter la collaboration.",
+          "correct": true
+        },
+        {
+          "text": "Pour réduire l'espace de stockage utilisé par le dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "Pour accélérer le processus de suivi des fichiers.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre les fichiers disponibles en lecture seule pour les autres utilisateurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"commit\" dans Git ?",
+      "answers": [
+        {
+          "text": "C'est un enregistrement dans Git qui montre les changements faits à certains fichiers à un moment donné.",
+          "correct": true
+        },
+        { "text": "C'est une fusion de branches dans Git.", "correct": false },
+        {
+          "text": "C'est une étiquette attachée à un fichier pour le marquer comme important.",
+          "correct": false
+        },
+        {
+          "text": "C'est une copie de sauvegarde des fichiers effectuée manuellement par l'utilisateur.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Comment sait-on quels fichiers Git suit déjà ?",
+      "answers": [
+        { "text": "En utilisant la commande `git status`, qui montre les fichiers suivis et non suivis.", "correct": true },
+        { "text": "En vérifiant la liste des fichiers dans le dépôt Git en ligne.", "correct": false },
+        { "text": "En regardant les métadonnées des fichiers sur l'ordinateur.", "correct": false },
+        { "text": "En exécutant la commande `git log` pour afficher l'historique des commits.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quand utilise-t-on la commande `git commit` ?",
+      "answers": [
+        { "text": "Après avoir utilisé `git add` pour préparer les fichiers, `git commit` sauvegarde les changements dans l'historique de Git.", "correct": true },
+        { "text": "Pour créer une nouvelle branche dans le dépôt Git.", "correct": false },
+        { "text": "Pour récupérer les modifications effectuées dans un commit précédent.", "correct": false },
+        { "text": "Pour envoyer les changements vers un dépôt distant.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que devrait contenir le message d'un commit Git ?",
+      "answers": [
+        { "text": "Une description courte et claire des changements faits.", "correct": true },
+        { "text": "Un identifiant unique pour suivre le commit.", "correct": false },
+        { "text": "Une liste détaillée de tous les fichiers modifiés.", "correct": false },
+        { "text": "Le nom de l'utilisateur ayant effectué le commit.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si on modifie un fichier après l'avoir suivi avec Git mais avant de faire un commit ?",
+      "answers": [
+        { "text": "Git détectera les modifications et vous pourrez décider de les inclure dans le prochain commit.", "correct": true },
+        { "text": "Les modifications seront automatiquement incluses dans le dernier commit.", "correct": false },
+        { "text": "Les modifications seront ignorées par Git jusqu'au prochain commit.", "correct": false },
+        { "text": "Git affichera une erreur et demandera de refaire l'opération.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que Git suit automatiquement les nouveaux fichiers ajoutés à un projet ?",
+      "answers": [
+        { "text": "Non, il faut utiliser `git add` pour dire à Git de commencer à les suivre.", "correct": true },
+        { "text": "Oui, Git suit automatiquement tous les nouveaux fichiers.", "correct": false },
+        { "text": "Seulement si les nouveaux fichiers sont ajoutés dans un dossier spécifique du projet.", "correct": false },
+        { "text": "Git suit automatiquement les nouveaux fichiers uniquement s'ils ont une extension spécifique.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que fait-on si on veut arrêter de suivre un fichier avec Git ?",
+      "answers": [
+        { "text": "On peut utiliser la commande `git rm` pour le retirer du suivi.", "correct": true },
+        { "text": "En utilisant la commande `git stop` pour arrêter le suivi du fichier.", "correct": false },
+        { "text": "En supprimant manuellement le fichier du dépôt Git.", "correct": false },
+        { "text": "En modifiant le fichier pour le rendre invisible pour Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on suivre les dossiers avec Git ?",
+      "answers": [
+        { "text": "Oui, mais Git suit les fichiers à l'intérieur des dossiers, pas les dossiers vides.", "correct": true },
+        { "text": "Non, Git ne peut suivre que des fichiers individuels.", "correct": false },
+        { "text": "Seulement les dossiers spécifiquement marqués pour le suivi.", "correct": false },
+        { "text": "Uniquement si le dossier contient un fichier `.gitkeep`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'arrive-t-il aux fichiers ignorés par `.gitignore` quand on utilise `git add .` ?",
+      "answers": [
+        { "text": "Ils ne sont pas suivis par Git, même avec `git add .` qui ajoute tous les fichiers du dossier.", "correct": true },
+        { "text": "Ils sont automatiquement ajoutés à l'index Git.", "correct": false },
+        { "text": "Git les suit temporairement jusqu'à ce qu'ils soient ignorés de nouveau.", "correct": false },
+        { "text": "Ils sont ajoutés au dépôt Git sans tenir compte des règles de `.gitignore`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce une bonne idée de vérifier `git status` avant de faire un commit ?",
+      "answers": [
+        { "text": "Pour s'assurer qu'on suit bien tous les fichiers qu'on veut inclure dans le commit.", "correct": true },
+        { "text": "Pour vérifier l'état de la connexion au dépôt distant.", "correct": false },
+        { "text": "Pour voir la liste des commits précédents.", "correct": false },
+        { "text": "Pour afficher une liste des fichiers récemment créés dans le projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire avant de commencer à travailler sur un nouveau projet avec Git ?",
+      "answers": [
+        { "text": "Utiliser `git init` pour initialiser un nouveau dépôt Git dans le dossier du projet.", "correct": true },
+        { "text": "Créer un nouveau fichier `.gitconfig` pour configurer Git.", "correct": false },
+        { "text": "Installer une extension Git dans l'IDE de développement.", "correct": false },
+        { "text": "Créer un nouveau compte utilisateur sur GitLab ou GitHub.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que se passe-t-il si on oublie de faire un commit après avoir suivi des fichiers avec `git add` ?",
+      "answers": [
+        { "text": "Les changements ne seront pas enregistrés dans l'historique de Git jusqu'à ce qu'un commit soit fait.", "correct": true },
+        { "text": "Les fichiers suivis seront automatiquement commités lors du prochain ajout de fichier.", "correct": false },
+        { "text": "Git effectue un commit automatique pour sauvegarder les changements.", "correct": false },
+        { "text": "Les modifications sont perdues et doivent être refaites.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on suivre un fichier, le modifier, puis décider de ne pas inclure ces modifications dans un commit ?",
+      "answers": [
+        { "text": "Oui, mais il faut utiliser des commandes spécifiques pour retirer ces modifications de la zone de préparation (staging area).", "correct": true },
+        { "text": "Non, toutes les modifications suivies sont automatiquement incluses dans le prochain commit.", "correct": false },
+        { "text": "Oui, il suffit de ne pas effectuer de commit après avoir modifié le fichier.", "correct": false },
+        { "text": "Non, une fois un fichier suivi, toutes les modifications sont obligatoirement incluses dans le prochain commit.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment Git aide-t-il les équipes à travailler sur le même projet ?",
+      "answers": [
+        { "text": "En suivant les changements de chacun et en permettant de combiner ces changements de manière organisée.", "correct": true },
+        { "text": "En verrouillant les fichiers pour éviter les conflits de modification.", "correct": false },
+        { "text": "En limitant l'accès aux fichiers pour empêcher les modifications non autorisées.", "correct": false },
+        { "text": "En fusionnant automatiquement toutes les modifications sans nécessiter d'action de la part de l'utilisateur.", "correct": false }
+      ]
+    }
+  ]
+}

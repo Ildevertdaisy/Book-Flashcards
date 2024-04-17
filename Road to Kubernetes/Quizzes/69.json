@@ -1,1 +1,230 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un journal dans Git ?",
+      "answers": [
+        {
+          "text": "C'est une liste qui montre tous les changements qu'on a faits dans notre projet.",
+          "correct": true
+        },
+        {
+          "text": "C'est un outil pour écrire des journaux de bord pendant le développement.",
+          "correct": false
+        },
+        {
+          "text": "C'est un ensemble de règles pour organiser les fichiers dans un dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "C'est un résumé des activités de développement envoyé par email à l'équipe.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'écrire de bons messages de commit dans Git ?",
+      "answers": [
+        {
+          "text": "Pour qu'on puisse comprendre ce qu'on a changé et pourquoi, même après beaucoup de temps.",
+          "correct": true
+        },
+        {
+          "text": "Pour remplir l'historique Git avec des informations inutiles.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre le code source illisible pour les autres développeurs.",
+          "correct": false
+        },
+        {
+          "text": "Pour augmenter la taille du dépôt Git et occuper plus d'espace disque.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on voir l'historique de nos changements dans Git ?",
+      "answers": [
+        { "text": "Avec la commande `git log`.", "correct": true },
+        {
+          "text": "En ouvrant le fichier historique dans un éditeur de texte.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant l'interface graphique de Git.",
+          "correct": false
+        },
+        { "text": "En exécutant la commande `git history`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si on efface notre dossier Git ?",
+      "answers": [
+        {
+          "text": "On perd l'historique de tous les changements qu'on a faits.",
+          "correct": true
+        },
+        {
+          "text": "Le contenu du dossier est automatiquement restauré par Git.",
+          "correct": false
+        },
+        {
+          "text": "On conserve l'historique des commits mais on perd les fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Git crée un nouveau dossier Git avec un historique vide.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi voudrait-on revenir à une version précédente de notre code ?",
+      "answers": [
+        {
+          "text": "Si on a fait une erreur ou si on veut voir comment les choses fonctionnaient avant.",
+          "correct": true
+        },
+        {
+          "text": "Pour ajouter de nouvelles fonctionnalités au projet.",
+          "correct": false
+        },
+        {
+          "text": "Pour tester les performances du code sur différentes versions.",
+          "correct": false
+        },
+        {
+          "text": "Pour éviter de travailler sur le code actuel et se concentrer sur des versions antérieures.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Quelle commande utilise-t-on pour revenir à une version précédente dans Git ?",
+      "answers": [
+        { "text": "C'est un peu compliqué, mais on commence par regarder notre historique avec `git log`, puis on utilise d'autres commandes pour choisir la version à laquelle on veut revenir.", "correct": true },
+        { "text": "Avec la commande `git previous`.", "correct": false },
+        { "text": "En utilisant `git revert` suivi du numéro de version.", "correct": false },
+        { "text": "En créant une nouvelle branche à partir de la version précédente avec `git branch`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que recommencer notre projet Git depuis le début est toujours une bonne idée ?",
+      "answers": [
+        { "text": "Pas toujours, parce qu'on perd notre historique, mais ça peut aider quand on apprend.", "correct": true },
+        { "text": "Oui, c'est toujours une bonne idée pour avoir un projet propre.", "correct": false },
+        { "text": "Non, car cela peut causer des conflits avec les versions précédentes.", "correct": false },
+        { "text": "Oui, car cela garantit que le projet est entièrement propre et sans erreurs.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment recommence-t-on notre projet Git depuis le début ?",
+      "answers": [
+        { "text": "On efface le dossier `.git` et on utilise `git init` pour recommencer.", "correct": true },
+        { "text": "On utilise la commande `git reset --hard` pour tout supprimer.", "correct": false },
+        { "text": "On supprime tous les fichiers du projet et on recommence à partir de zéro.", "correct": false },
+        { "text": "On renomme le dossier `.git` en `.git_old` et on crée un nouveau dossier `.git`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'on fait après avoir effacé notre dossier Git ?",
+      "answers": [
+        { "text": "On ajoute les fichiers qu'on veut suivre avec `git add`, et on enregistre les changements avec `git commit`.", "correct": true },
+        { "text": "On utilise `git init` pour recréer un nouveau dossier Git.", "correct": false },
+        { "text": "On envoie une demande de fusion à tous les collaborateurs avec `git merge`.", "correct": false },
+        { "text": "On supprime également tous les fichiers du projet et on recommence à zéro.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on faire attention avec nos dossiers Git ?",
+      "answers": [
+        { "text": "Parce qu'effacer le mauvais dossier peut causer beaucoup de problèmes.", "correct": true },
+        { "text": "Parce que les dossiers Git sont extrêmement volumineux et peuvent remplir rapidement l'espace disque.", "correct": false },
+        { "text": "Parce que les dossiers Git contiennent des informations sensibles et confidentielles sur le projet.", "correct": false },
+        { "text": "Parce que les dossiers Git sont sujets à des attaques de piratage et doivent être protégés avec des mesures de sécurité spéciales.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un `.gitignore` et pourquoi est-il utile ?",
+      "answers": [
+        { "text": "C'est un fichier où on dit à Git quels fichiers ou dossiers ne pas suivre, pour éviter d'enregistrer des choses qu'on ne veut pas.", "correct": true },
+        { "text": "C'est un fichier utilisé pour sauvegarder des données sensibles dans notre projet Git.", "correct": false },
+        { "text": "C'est un fichier qui stocke des informations sur les utilisateurs autorisés à accéder au dépôt Git.", "correct": false },
+        { "text": "C'est un fichier qui définit le format de nos messages de commit.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment Git nous aide-t-il à travailler sur de grands projets ?",
+      "answers": [
+        { "text": "Il garde une trace de tous les changements, donc on peut voir ce qu'on a fait et revenir en arrière si nécessaire.", "correct": true },
+        { "text": "Il automatise complètement le processus de développement, réduisant ainsi le temps nécessaire pour terminer le projet.", "correct": false },
+        { "text": "Il fournit une plateforme de discussion en ligne pour les membres de l'équipe travaillant sur le projet.", "correct": false },
+        { "text": "Il crée des sauvegardes locales de notre code pour éviter toute perte de données.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que 'commit' signifie dans Git ?",
+      "answers": [
+        { "text": "C'est quand on enregistre officiellement nos changements dans l'historique de Git.", "correct": true },
+        { "text": "C'est quand on fusionne une branche avec une autre dans Git.", "correct": false },
+        { "text": "C'est quand on envoie nos changements à un dépôt distant avec Git.", "correct": false },
+        { "text": "C'est quand on annule tous les changements non enregistrés dans Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire si on veut forcer les changements sur un dépôt distant ?",
+      "answers": [
+        { "text": "On peut utiliser `git push --force`, mais il faut faire très attention car cela peut effacer des changements importants.", "correct": true },
+        { "text": "On crée une nouvelle branche et on y ajoute nos changements avant de fusionner avec la branche principale.", "correct": false },
+        { "text": "On envoie simplement nos changements avec `git push` et Git s'occupe du reste.", "correct": false },
+        { "text": "On demande à un administrateur du dépôt distant de forcer les changements pour nous.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment savoir ce qu'on a changé dans le passé avec Git ?",
+      "answers": [
+        { "text": "On peut utiliser `git log` pour voir l'historique de nos commits.", "correct": true },
+        { "text": "On peut consulter un journal en ligne où Git enregistre tous nos changements.", "correct": false },
+        { "text": "On peut demander à Git de générer un rapport récapitulatif de nos changements passés.", "correct": false },
+        { "text": "On peut utiliser une commande spéciale dans le terminal pour afficher une liste de nos modifications.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Quelle est l'importance des messages de commit ?",
+      "answers": [
+        { "text": "Ils nous aident à comprendre les changements faits, rendant plus facile la collaboration et le suivi des modifications.", "correct": true },
+        { "text": "Ils décrivent le processus de développement du projet de manière exhaustive.", "correct": false },
+        { "text": "Ils servent principalement à divertir les membres de l'équipe pendant les réunions.", "correct": false },
+        { "text": "Ils sont utilisés pour demander de l'aide aux autres membres de l'équipe.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que faire si on veut pratiquer Git sans risquer de perdre des informations importantes ?",
+      "answers": [
+        { "text": "On peut effacer et recommencer notre dépôt Git pour s'exercer, mais on doit éviter de le faire sur des projets importants.", "correct": true },
+        { "text": "On doit créer un nouveau compte Git pour chaque projet sur lequel on souhaite s'exercer.", "correct": false },
+        { "text": "On doit éviter d'utiliser Git pour éviter tout risque de perte de données.", "correct": false },
+        { "text": "On doit pratiquer uniquement sur des copies de sauvegarde de nos projets.", "correct": false }
+      ]
+    }
+  ]
+}

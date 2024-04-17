@@ -1,1 +1,173 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'une \"route\" dans une application web ?",
+      "answers": [
+        {
+          "text": "Une méthode de navigation pour les utilisateurs.",
+          "correct": false
+        },
+        {
+          "text": "Une voie spécifique dans une application web.",
+          "correct": false
+        },
+        {
+          "text": "Une route est un chemin spécifique dans une application web où les utilisateurs peuvent aller pour voir ou faire quelque chose.",
+          "correct": true
+        },
+        {
+          "text": "Une série de chiffres et de lettres aléatoires.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment FastAPI permet-il d'ajouter une nouvelle route ?",
+      "answers": [
+        { "text": "En changeant le nom de l'application.", "correct": false },
+        { "text": "En utilisant un démarreur automatique.", "correct": false },
+        {
+          "text": "Avec FastAPI, on peut ajouter une nouvelle route en utilisant un décorateur spécifique suivi d'une fonction qui répond à cette route.",
+          "correct": true
+        },
+        {
+          "text": "En modifiant le langage de programmation utilisé.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une méthode HTTP GET ?",
+      "answers": [
+        {
+          "text": "Un moyen de transférer des données entre deux ordinateurs.",
+          "correct": false
+        },
+        {
+          "text": "Une méthode pour accéder à des pages web privées.",
+          "correct": false
+        },
+        {
+          "text": "La méthode GET est utilisée pour demander des informations à partir d'une ressource spécifique sur internet.",
+          "correct": true
+        },
+        {
+          "text": "Une façon d'envoyer des messages instantanés.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "À quoi ressemble une nouvelle route dans FastAPI ?",
+      "answers": [
+        { "text": "Une ligne de code totalement vide.", "correct": false },
+        { "text": "Un bloc de texte coloré en bleu.", "correct": false },
+        {
+          "text": "Dans FastAPI, une nouvelle route ressemble à un chemin dans l'URL, comme \"/api/v1/hello-world/\", avec une fonction qui définit ce qui se passe quand on visite cette route.",
+          "correct": true
+        },
+        {
+          "text": "Un lien hypertexte vers la page d'accueil.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une fonction dans le contexte d'une route FastAPI ?",
+      "answers": [
+        {
+          "text": "Un moyen de jouer de la musique en arrière-plan.",
+          "correct": false
+        },
+        {
+          "text": "Un raccourci clavier pour fermer l'application.",
+          "correct": false
+        },
+        {
+          "text": "Une fonction dans FastAPI est un morceau de code qui s'exécute pour répondre à une demande faite à une route spécifique.",
+          "correct": true
+        },
+        {
+          "text": "Un outil pour dessiner des formes géométriques sur l'écran.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi donne-t-on un nom unique à chaque fonction de route dans FastAPI ?",
+            "answers": [
+                {"text": "Pour éviter les collisions de données.", "correct": false},
+                {"text": "Pour rendre les URL plus courtes.", "correct": false},
+                {"text": "On donne un nom unique pour chaque fonction pour s'assurer que l'application sait exactement quelle fonction utiliser pour chaque route.", "correct": true},
+                {"text": "Parce que c'est une convention de nommage standard.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une réponse API-like ?",
+            "answers": [
+                {"text": "Une réponse en langage naturel.", "correct": false},
+                {"text": "Une réponse stockée localement.", "correct": false},
+                {"text": "Une réponse API-like est une réponse structurée sous forme de données, souvent en format JSON, que les applications web peuvent comprendre et utiliser.", "correct": true},
+                {"text": "Une réponse en forme de diagramme.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que fait la fonction \"read_hello_world\" dans notre application FastAPI ?",
+            "answers": [
+                {"text": "Elle envoie un e-mail de bienvenue.", "correct": false},
+                {"text": "Elle calcule le temps écoulé depuis le démarrage de l'application.", "correct": false},
+                {"text": "La fonction \"read_hello_world\" renvoie une réponse sous forme de dictionnaire Python, qui est ensuite convertie en format JSON.", "correct": true},
+                {"text": "Elle génère un rapport d'activité.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que JSON ?",
+            "answers": [
+                {"text": "Un réseau social populaire.", "correct": false},
+                {"text": "Un langage de programmation avancé.", "correct": false},
+                {"text": "JSON est un format de données facile à lire pour les humains et les machines, souvent utilisé pour échanger des informations sur internet.", "correct": true},
+                {"text": "Une technique de cryptage des données.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que représente le chemin \"/api/v1/hello-world/\" dans notre application ?",
+            "answers": [
+                {"text": "Le dossier où sont stockées les images de profil.", "correct": false},
+                {"text": "Le chemin vers le menu principal de l'application.", "correct": false},
+                {"text": "Ce chemin représente une adresse spécifique dans notre application web où les utilisateurs peuvent obtenir une réponse particulière.", "correct": true},
+                {"text": "Un raccourci vers le formulaire de contact.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Comment sait-on quelle partie de notre application FastAPI gère une demande faite à \"/api/v1/hello-world/\" ?",
+            "answers": [
+                {"text": "En consultant la documentation de l'API.", "correct": false},
+                {"text": "En regardant le fichier de configuration de l'application.", "correct": false},
+                {"text": "On le sait grâce à la fonction décorée avec `@app.get(\"/api/v1/hello-world/\")`, qui est définie pour répondre à cette demande.", "correct": true},
+                {"text": "En envoyant un e-mail au support technique.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il utile de retourner un dictionnaire Python dans une fonction FastAPI ?",
+            "answers": [
+                {"text": "Pour afficher des publicités dans l'application.", "correct": false},
+                {"text": "Pour stocker des données sensibles de manière sécurisée.", "correct": false},
+                {"text": "Retourner un dictionnaire Python est utile car FastAPI le convertit automatiquement en format JSON, ce qui est idéal pour créer des réponses compatibles avec les standards web.", "correct": true},
+                {"text": "Pour interagir avec une base de données externe.", "correct": false}
+            ]
+        }
+    ]
+}

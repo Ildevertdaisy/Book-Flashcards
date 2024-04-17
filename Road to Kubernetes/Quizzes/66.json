@@ -1,1 +1,204 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Que fait-on quand notre projet Git ne se passe pas comme prévu ?",
+      "answers": [
+        {
+          "text": "On peut recommencer à zéro en supprimant l'ancien et en créant un nouveau projet Git.",
+          "correct": true
+        },
+        {
+          "text": "On abandonne complètement et on passe à un autre outil de gestion de version.",
+          "correct": false
+        },
+        {
+          "text": "On continue à persévérer sans rien changer.",
+          "correct": false
+        },
+        {
+          "text": "On demande à quelqu'un d'autre de résoudre nos problèmes.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi quelqu'un voudrait-il redémarrer son projet Git ?",
+      "answers": [
+        {
+          "text": "Si on fait des erreurs et qu'on trouve difficile de les corriger, redémarrer peut aider à repartir sur de bonnes bases.",
+          "correct": true
+        },
+        {
+          "text": "Pour faire perdre du temps à son équipe.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on a changé d'avis sur le langage de programmation à utiliser.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on veut tester la patience de ses collègues.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Est-ce que redémarrer un projet Git est une bonne habitude ?",
+      "answers": [
+        {
+          "text": "Non, ce n'est pas l'idéal, mais cela peut aider les débutants à apprendre sans être bloqués par des erreurs.",
+          "correct": true
+        },
+        {
+          "text": "Oui, c'est toujours la meilleure solution en cas de problème.",
+          "correct": false
+        },
+        { "text": "Ça dépend de la phase de la lune.", "correct": false },
+        {
+          "text": "Absolument, ça montre qu'on est capable de prendre des décisions radicales.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'arrive-t-il à l'ancien projet quand on redémarre notre Git ?",
+      "answers": [
+        {
+          "text": "On enlève tout ce qui était là avant et on recommence depuis le début.",
+          "correct": true
+        },
+        {
+          "text": "On garde l'ancien projet mais on l'ajoute à un nouveau projet Git.",
+          "correct": false
+        },
+        {
+          "text": "Rien ne change, juste le nom du projet est modifié.",
+          "correct": false
+        },
+        {
+          "text": "On fusionne l'ancien projet avec le nouveau pour créer un projet mégapuissant.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Redémarrer son projet Git, est-ce une solution à long terme ?",
+      "answers": [
+        {
+          "text": "Non, c'est mieux d'apprendre comment Git fonctionne pour éviter de devoir redémarrer.",
+          "correct": true
+        },
+        { "text": "Oui, c'est la seule solution valable.", "correct": false },
+        { "text": "Ça dépend de la météo.", "correct": false },
+        {
+          "text": "Absolument, on devrait toujours redémarrer dès qu'on rencontre un problème.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que peut-on faire pour éviter de redémarrer notre projet Git ?",
+      "answers": [
+        { "text": "Apprendre davantage sur Git et comment résoudre les problèmes sans tout effacer.", "correct": true },
+        { "text": "Ignorer les problèmes et espérer qu'ils disparaissent d'eux-mêmes.", "correct": false },
+        { "text": "Demander à quelqu'un d'autre de gérer les problèmes pour nous.", "correct": false },
+        { "text": "Faire semblant que les problèmes n'existent pas.", "correct": false }
+      ]
+    },
+    {
+      "question": "Git est-il un outil important à maîtriser ?",
+      "answers": [
+        { "text": "Oui, bien connaître Git peut vraiment aider dans le développement de logiciels.", "correct": true },
+        { "text": "Non, Git n'est pas si important dans le développement de logiciels.", "correct": false },
+        { "text": "Seulement si vous travaillez seul sur des petits projets.", "correct": false },
+        { "text": "C'est mieux de se concentrer sur d'autres outils moins compliqués.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que devrait-on faire si Git nous empêche de progresser dans l'apprentissage ?",
+      "answers": [
+        { "text": "Ne laissez pas Git arrêter votre apprentissage. Il peut être utile de redémarrer le projet pour continuer.", "correct": true },
+        { "text": "Abandonner complètement l'apprentissage du développement de logiciels.", "correct": false },
+        { "text": "Ignorer les problèmes et espérer qu'ils disparaissent d'eux-mêmes.", "correct": false },
+        { "text": "Changer de carrière et devenir agriculteur.", "correct": false }
+      ]
+    },
+    {
+      "question": "Redémarrer un projet Git aide-t-il à apprendre d'autres technologies ?",
+      "answers": [
+        { "text": "Oui, cela peut aider à continuer d'apprendre sans être bloqué par des problèmes Git.", "correct": true },
+        { "text": "Non, redémarrer Git ne fait que compliquer davantage les choses.", "correct": false },
+        { "text": "Seulement si vous êtes déjà un expert en Git.", "correct": false },
+        { "text": "Mieux vaut abandonner l'apprentissage de toute technologie.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle est l'importance de bien gérer son projet Git pour le déploiement de logiciels ?",
+      "answers": [
+        { "text": "Une bonne gestion de Git est cruciale pour le déploiement réussi et le suivi des modifications de logiciels.", "correct": true },
+        { "text": "Ce n'est pas si important, on peut toujours déployer du code sans utiliser Git.", "correct": false },
+        { "text": "Le déploiement de logiciels est toujours facile, Git ou pas.", "correct": false },
+        { "text": "Mieux vaut ne pas se soucier de la gestion de Git, cela complique les choses inutilement.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Comment savoir quand il est temps de redémarrer un projet Git ?",
+      "answers": [
+        { "text": "Si vous vous sentez bloqué et que corriger les erreurs semble trop compliqué.", "correct": true },
+        { "text": "Quand vous avez fini de coder.", "correct": false },
+        { "text": "Lorsque vous avez reçu un e-mail de votre patron.", "correct": false },
+        { "text": "Jamais, vous devriez toujours continuer malgré les problèmes.", "correct": false }
+      ]
+    },
+    {
+      "question": "Git est-il le seul outil pour déployer des logiciels ?",
+      "answers": [
+        { "text": "Non, il y a beaucoup d'autres outils, mais Git est très populaire et utile.", "correct": true },
+        { "text": "Oui, Git est le seul outil utilisé pour déployer des logiciels.", "correct": false },
+        { "text": "Seulement si vous travaillez seul sur des petits projets.", "correct": false },
+        { "text": "C'est mieux de ne pas utiliser Git du tout.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on éviter de redémarrer un projet Git en apprenant plus sur cet outil ?",
+      "answers": [
+        { "text": "Oui, plus vous en savez sur Git, moins vous aurez besoin de redémarrer vos projets.", "correct": true },
+        { "text": "Non, redémarrer Git est toujours nécessaire peu importe votre niveau de connaissance.", "correct": false },
+        { "text": "Mieux vaut abandonner l'apprentissage de Git et recommencer à zéro.", "correct": false },
+        { "text": "Il est préférable de demander à quelqu'un d'autre de gérer vos projets Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie \"rebooter\" un projet Git ?",
+      "answers": [
+        { "text": "Cela signifie effacer tout ce qui était fait et recommencer le projet depuis le début.", "correct": true },
+        { "text": "Cela signifie simplement mettre à jour Git vers la dernière version.", "correct": false },
+        { "text": "Cela signifie rendre le projet Git accessible à distance.", "correct": false },
+        { "text": "Cela signifie ajouter de nouvelles fonctionnalités au projet Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de bien comprendre Git ?",
+      "answers": [
+        { "text": "Parce que c'est un outil puissant pour gérer et déployer des projets de logiciels efficacement.", "correct": true },
+        { "text": "Parce que tout le monde utilise Git et il est important de suivre la tendance.", "correct": false },
+        { "text": "Git n'est pas si important, mieux vaut se concentrer sur d'autres outils.", "correct": false },
+        { "text": "Parce que Git est facile à comprendre sans avoir besoin d'apprendre quoi que ce soit.", "correct": false }
+      ]
+    }
+  ]
+}

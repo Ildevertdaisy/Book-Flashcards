@@ -1,1 +1,292 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que GitHub ?",
+      "answers": [
+        {
+          "text": "Un service de stockage de code en ligne.",
+          "correct": false
+        },
+        { "text": "Un réseau social pour les développeurs.", "correct": false },
+        {
+          "text": "Un site internet où on peut garder notre code de programmation et travailler dessus avec d'autres personnes.",
+          "correct": true
+        },
+        {
+          "text": "Une plateforme pour la gestion des projets artistiques.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi crée-t-on un compte sur GitHub ?",
+      "answers": [
+        {
+          "text": "Pour sauvegarder nos photos de vacances.",
+          "correct": false
+        },
+        { "text": "Pour stocker nos recettes de cuisine.", "correct": false },
+        {
+          "text": "Pour sauvegarder notre travail de programmation sur internet et le partager avec d'autres.",
+          "correct": true
+        },
+        {
+          "text": "Pour apprendre une nouvelle langue en ligne.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"repository\" sur GitHub ?",
+      "answers": [
+        { "text": "Un dossier sur notre ordinateur.", "correct": false },
+        {
+          "text": "Un endroit sur GitHub où on met tout le code d'un projet.",
+          "correct": true
+        },
+        {
+          "text": "Un formulaire de demande d'emploi en ligne.",
+          "correct": false
+        },
+        { "text": "Un outil de gestion de tâches en ligne.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi séparer les projets dans différents \"repositories\" ?",
+      "answers": [
+        {
+          "text": "Pour les mélanger et les rendre plus difficiles à trouver.",
+          "correct": false
+        },
+        {
+          "text": "Pour que chaque projet soit bien organisé et facile à trouver.",
+          "correct": true
+        },
+        {
+          "text": "Pour éviter de partager notre travail avec d'autres.",
+          "correct": false
+        },
+        {
+          "text": "Pour compliquer la collaboration avec d'autres développeurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment crée-t-on un nouveau \"repository\" sur GitHub ?",
+      "answers": [
+        { "text": "En allant sur le site de Facebook.", "correct": false },
+        {
+          "text": "En demandant à un ami de le créer pour nous.",
+          "correct": false
+        },
+        {
+          "text": "En allant sur le site de GitHub et en suivant les instructions pour en créer un nouveau.",
+          "correct": true
+        },
+        {
+          "text": "En écrivant un e-mail au support technique de GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quels sont les détails à renseigner pour créer un \"repository\" sur GitHub ?",
+      "answers": [
+        {
+          "text": "Le nom du projet et la recette de la tarte aux pommes.",
+          "correct": false
+        },
+        {
+          "text": "Le nom du projet et quelques autres détails, mais on peut laisser beaucoup de champs vides ou non cochés.",
+          "correct": true
+        },
+        {
+          "text": "Notre numéro de téléphone et notre adresse postale.",
+          "correct": false
+        },
+        { "text": "La couleur préférée du développeur.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que tous les projets sur GitHub sont visibles par tout le monde ?",
+      "answers": [
+        {
+          "text": "Oui, ils sont tous visibles par tout le monde.",
+          "correct": false
+        },
+        { "text": "Non, ils sont tous privés et cachés.", "correct": false },
+        {
+          "text": "Cela dépend si on choisit de rendre notre \"repository\" public ou privé.",
+          "correct": true
+        },
+        {
+          "text": "Ils ne sont visibles que par les membres du gouvernement.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Peut-on créer un \"repository\" sur GitHub pour n'importe quel type de projet ?",
+      "answers": [
+        {
+          "text": "Non, seuls les projets de jardinage sont autorisés.",
+          "correct": false
+        },
+        {
+          "text": "Oui, on peut créer un \"repository\" pour tous les types de projets de programmation.",
+          "correct": true
+        },
+        {
+          "text": "Non, seuls les projets de cuisine sont autorisés.",
+          "correct": false
+        },
+        {
+          "text": "Oui, mais seulement les projets de tricotage sont autorisés.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il recommandé de mettre un projet par \"repository\" ?",
+      "answers": [
+        {
+          "text": "Pour embrouiller les autres développeurs.",
+          "correct": false
+        },
+        {
+          "text": "Pour que notre travail soit clair et facile à gérer.",
+          "correct": true
+        },
+        {
+          "text": "Pour faire des économies d'espace de stockage.",
+          "correct": false
+        },
+        {
+          "text": "Pour compliquer la sauvegarde de notre code.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela signifie de configurer un \"repository\" local ?",
+      "answers": [
+        {
+          "text": "Cela signifie créer un compte sur GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie préparer un projet sur notre ordinateur avant de le mettre sur GitHub.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie désinstaller GitHub de notre ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie supprimer tous les fichiers de notre projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi laisser des options non cochées lors de la création d'un \"repository\" sur GitHub ?",
+      "answers": [
+        {
+          "text": "Parce que c'est une règle imposée par GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on a déjà configuré notre projet sur notre ordinateur.",
+          "correct": true
+        },
+        {
+          "text": "Parce que ça rend notre projet plus sécurisé.",
+          "correct": false
+        },
+        { "text": "Parce qu'on aime les cases vides.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que créer un \"repository\" sur GitHub est compliqué ?",
+      "answers": [
+        { "text": "Oui, c'est très compliqué.", "correct": false },
+        {
+          "text": "Non, c'est simple si on suit les instructions.",
+          "correct": true
+        },
+        {
+          "text": "Oui, cela nécessite un diplôme en informatique.",
+          "correct": false
+        },
+        { "text": "Non, mais cela prend beaucoup de temps.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi GitHub est-il utile pour les programmeurs ?",
+      "answers": [
+        { "text": "Pour écrire des romans en ligne.", "correct": false },
+        { "text": "Pour partager des vidéos de chatons.", "correct": false },
+        {
+          "text": "Il aide à sauvegarder, partager et collaborer sur des projets de programmation.",
+          "correct": true
+        },
+        {
+          "text": "Pour organiser des soirées entre développeurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que doit-on faire après avoir créé un \"repository\" sur GitHub ?",
+      "answers": [
+        { "text": "Aller faire une sieste.", "correct": false },
+        {
+          "text": "On peut commencer à y ajouter notre code de projet.",
+          "correct": true
+        },
+        { "text": "Rien, le projet est terminé.", "correct": false },
+        { "text": "Attendre qu'il soit supprimé par GitHub.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on modifier un \"repository\" après l'avoir créé sur GitHub ?",
+      "answers": [
+        { "text": "Non, une fois créé, il est figé.", "correct": false },
+        {
+          "text": "Oui, on peut toujours le modifier et ajouter ou supprimer des fichiers.",
+          "correct": true
+        },
+        { "text": "Seulement si on paie un supplément.", "correct": false },
+        {
+          "text": "Seulement si on envoie une demande au support technique de GitHub.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Est-ce que tout le monde peut voir notre code si on met notre \"repository\" en public ?",
+            "answers": [
+                { "text": "Non, seules les personnes ayant un compte premium peuvent le voir.", "correct": false },
+                { "text": "Oui, si le \"repository\" est public, tout le monde peut voir notre code.", "correct": true },
+                { "text": "Seulement les membres de notre famille peuvent le voir.", "correct": false },
+                { "text": "Uniquement les extraterrestres peuvent y accéder.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce que cela signifie de \"pousser\" notre code sur GitHub ?",
+            "answers": [
+                { "text": "Cela signifie reculer notre code vers une version précédente.", "correct": false },
+                { "text": "Cela signifie transférer notre code de notre ordinateur à GitHub pour le sauvegarder ou le partager.", "correct": true },
+                { "text": "Cela signifie envoyer notre code à nos amis par courrier postal.", "correct": false },
+                { "text": "Cela signifie supprimer notre code de GitHub.", "correct": false }
+            ]
+        }
+    ]
+}

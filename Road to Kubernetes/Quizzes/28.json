@@ -1,1 +1,241 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Comment commence-t-on un nouveau projet Node.js ?",
+      "answers": [
+        {
+          "text": "On commence avec la commande `npm init` dans le dossier racine du projet.",
+          "correct": true
+        },
+        {
+          "text": "On commence avec la commande `node new` dans le dossier de projet.",
+          "correct": false
+        },
+        {
+          "text": "On commence avec la commande `create-node-app` dans le dossier de projet.",
+          "correct": false
+        },
+        {
+          "text": "On commence avec la commande `start-node-project` dans le dossier racine du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que `npm init` fait pour ton projet ?",
+      "answers": [
+        {
+          "text": "Ça aide à configurer le projet en posant des questions pour le début.",
+          "correct": true
+        },
+        {
+          "text": "Ça installe automatiquement tous les packages nécessaires pour le projet.",
+          "correct": false
+        },
+        {
+          "text": "Ça crée un nouveau répertoire pour le projet.",
+          "correct": false
+        },
+        {
+          "text": "Ça compile le code JavaScript pour le rendre exécutable.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Où les informations de configuration du projet sont-elles enregistrées ?",
+      "answers": [
+        {
+          "text": "Dans un fichier appelé `package.json` dans le dossier du projet.",
+          "correct": true
+        },
+        {
+          "text": "Dans un fichier nommé `config.json` dans le dossier racine du projet.",
+          "correct": false
+        },
+        {
+          "text": "Dans un fichier nommé `project-config.json` dans le dossier de projet.",
+          "correct": false
+        },
+        {
+          "text": "Dans un fichier nommé `settings.json` dans le dossier du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quel genre d'informations trouve-t-on dans le fichier `package.json` ?",
+      "answers": [
+        {
+          "text": "Le nom du projet, la version, la description, le fichier principal, les scripts, l'auteur, et la licence.",
+          "correct": true
+        },
+        {
+          "text": "Un résumé détaillé de tous les fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Les informations sur les utilisateurs qui ont contribué au projet.",
+          "correct": false
+        },
+        {
+          "text": "Les étapes pour installer le projet sur différents systèmes d'exploitation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi changerait-on le nom du projet dans `package.json` ?",
+      "answers": [
+        {
+          "text": "Parce que le nom par défaut peut être trop générique, alors on choisit un nom plus spécifique pour le projet.",
+          "correct": true
+        },
+        {
+          "text": "Pour éviter les conflits de noms avec d'autres projets sur le même serveur.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre le projet plus difficile à trouver par les utilisateurs potentiels.",
+          "correct": false
+        },
+        {
+          "text": "Parce que le nom par défaut est toujours incorrect et doit être ajusté manuellement.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'un script dans le contexte de `package.json` ?",
+            "answers": [
+                {"text": "C'est une commande ou une série de commandes que tu peux exécuter pour ton projet.", "correct": true},
+                {"text": "C'est un fichier JavaScript qui contrôle le comportement du package.json.", "correct": false},
+                {"text": "C'est une liste des packages installés dans le projet.", "correct": false},
+                {"text": "C'est une description détaillée du projet à inclure dans le fichier README.md.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que la commande `test` dans `scripts` fait habituellement ?",
+            "answers": [
+                {"text": "Elle exécute des tests pour vérifier que ton code fonctionne correctement, mais tu dois la configurer.", "correct": true},
+                {"text": "Elle initialise un nouveau test framework pour le projet.", "correct": false},
+                {"text": "Elle crée un nouveau dossier de test dans le projet.", "correct": false},
+                {"text": "Elle compile le code source du projet pour l'environnement de production.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi reçoit-on un message d'erreur avec le script `test` par défaut ?",
+            "answers": [
+                {"text": "Parce que par défaut, il n'y a pas de test spécifié pour le projet.", "correct": true},
+                {"text": "Parce que la syntaxe du script `test` est incorrecte.", "correct": false},
+                {"text": "Parce que le package.json est mal configuré.", "correct": false},
+                {"text": "Parce que le répertoire de tests est introuvable.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment sait-on que `npm init` a fini de configurer le projet ?",
+            "answers": [
+                {"text": "On voit un résumé de la configuration dans le terminal, prêt à être écrit dans `package.json`.", "correct": true},
+                {"text": "On reçoit un e-mail de confirmation de la part de npm.", "correct": false},
+                {"text": "On voit une notification dans le navigateur web.", "correct": false},
+                {"text": "On trouve un nouveau fichier de configuration créé dans le dossier de projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle commande pourrait-on utiliser pour modifier le nom du projet dans `package.json` ?",
+            "answers": [
+                {"text": "On peut ouvrir `package.json` dans un éditeur de texte et changer la valeur de \"name\" manuellement.", "correct": true},
+                {"text": "On utilise la commande `npm rename` suivie du nouveau nom de projet.", "correct": false},
+                {"text": "On utilise la commande `npm set-name` suivie du nouveau nom de projet.", "correct": false},
+                {"text": "On édite le nom du projet dans le fichier `package.json` et on exécute `npm update`.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi choisirait-on un nom de projet spécifique comme \"roadtok8s\" ?",
+            "answers": [
+                {"text": "Pour rendre le projet facile à identifier, surtout si on travaille sur plusieurs projets.", "correct": true},
+                {"text": "Pour suivre la dernière tendance dans le choix des noms de projet.", "correct": false},
+                {"text": "Pour éviter les conflits avec d'autres projets portant le même nom.", "correct": false},
+                {"text": "Pour refléter la spécialisation du projet dans le domaine de la construction de routes vers Kubernetes.", "correct": false}
+            ]
+        },
+        {
+            "question": "Est-ce que `npm init` crée des fichiers ou dossiers supplémentaires dans le projet ?",
+            "answers": [
+                {"text": "Non, `npm init` configure seulement `package.json` sans créer de fichiers ou dossiers supplémentaires.", "correct": true},
+                {"text": "Oui, `npm init` crée automatiquement un dossier de configuration pour le projet.", "correct": false},
+                {"text": "Non, `npm init` crée uniquement un fichier README.md dans le dossier du projet.", "correct": false},
+                {"text": "Oui, `npm init` crée un dossier de dépendances pour stocker les packages installés.", "correct": false}
+            ]
+        },
+        {
+            "question": "Peut-on exécuter des commandes pour le projet directement après avoir utilisé `npm init` ?",
+            "answers": [
+                {"text": "Oui, mais seulement après avoir configuré les scripts nécessaires dans `package.json`.", "correct": true},
+                {"text": "Non, `npm init` bloque temporairement l'accès aux commandes pour éviter les erreurs.", "correct": false},
+                {"text": "Oui, `npm init` active automatiquement les scripts pour exécuter des commandes.", "correct": false},
+                {"text": "Non, `npm init` nécessite un redémarrage du système pour que les commandes soient prises en compte.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que la \"version\" dans `package.json` signifie ?",
+            "answers": [
+                {"text": "Elle indique la version actuelle de ton projet, utile pour le suivi des mises à jour et des modifications.", "correct": true},
+                {"text": "Elle spécifie la version de Node.js requise pour exécuter le projet.", "correct": false},
+                {"text": "Elle désigne la version de npm utilisée pour installer les dépendances.", "correct": false},
+                {"text": "Elle identifie la version de l'environnement de développement utilisé pour le projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que signifie le champ \"main\" dans `package.json` ?",
+            "answers": [
+                {"text": "Cela indique le fichier principal de ton projet, où débute l'exécution du code.", "correct": true},
+                {"text": "Cela spécifie le chemin vers le dossier principal du projet.", "correct": false},
+                {"text": "Cela définit le nom du fichier de configuration principal du projet.", "correct": false},
+                {"text": "Cela désigne le fichier contenant les tests unitaires principaux du projet.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "À quoi sert le champ \"license\" dans `package.json` ?",
+            "answers": [
+                {"text": "Il indique sous quelle licence le projet est distribué, ce qui peut affecter comment les autres peuvent l'utiliser.", "correct": true},
+                {"text": "Il spécifie la version de la licence du langage de programmation utilisé dans le projet.", "correct": false},
+                {"text": "Il définit la langue utilisée dans le code source du projet.", "correct": false},
+                {"text": "Il identifie le type de système d'exploitation sur lequel le projet peut être exécuté.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment pourrait-on ajouter une description à notre projet dans `package.json` ?",
+            "answers": [
+                {"text": "En ajoutant un texte entre guillemets après \"description\" dans le fichier `package.json`.", "correct": true},
+                {"text": "En spécifiant la description dans le champ \"projets\" du fichier `package.json`.", "correct": false},
+                {"text": "En ajoutant une balise <description> dans le fichier `package.json`.", "correct": false},
+                {"text": "En créant un fichier séparé appelé `description.json` dans le dossier du projet.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+
+
+

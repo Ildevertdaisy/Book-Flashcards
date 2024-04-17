@@ -1,1 +1,229 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'une \"erreur\" en informatique ?",
+      "answers": [
+        {
+          "text": "Quand quelque chose ne fonctionne pas comme prévu.",
+          "correct": true
+        },
+        {
+          "text": "C'est une anomalie inattendue dans le code.",
+          "correct": false
+        },
+        {
+          "text": "Une erreur est une caractéristique normale du développement logiciel.",
+          "correct": false
+        },
+        {
+          "text": "C'est un processus de débogage dans un programme.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Si on voit \"main n'est pas une branche valide\", qu'est-ce que cela signifie ?",
+      "answers": [
+        {
+          "text": "Cela veut dire que le nom de la branche qu'on essaie d'utiliser n'est pas reconnu ou n'existe pas.",
+          "correct": true
+        },
+        {
+          "text": "Il y a une erreur de syntaxe dans le code source.",
+          "correct": false
+        },
+        {
+          "text": "La branche principale du projet est corrompue.",
+          "correct": false
+        },
+        {
+          "text": "Il y a un conflit de fusion entre les branches.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on voir sur quelle branche on travaille ?",
+      "answers": [
+        {
+          "text": "En utilisant la commande qui montre la branche actuelle sur notre ordinateur.",
+          "correct": true
+        },
+        {
+          "text": "En regardant le fichier README du projet.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant un éditeur de texte pour parcourir le code source.",
+          "correct": false
+        },
+        { "text": "En demandant à un collègue de travail.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"remote\" en programmation ?",
+      "answers": [
+        {
+          "text": "C'est une version de notre projet qui est gardée sur internet, pas sur notre ordinateur.",
+          "correct": true
+        },
+        { "text": "Un processus de débogage à distance.", "correct": false },
+        { "text": "Un composant matériel d'un ordinateur.", "correct": false },
+        { "text": "Une méthode de cryptage des données.", "correct": false }
+      ]
+    },
+    {
+      "question": "Si \"origin\" n'est pas un remote valide, que peut-on faire ?",
+      "answers": [
+        {
+          "text": "On peut vérifier quels remotes sont configurés avec une commande spéciale.",
+          "correct": true
+        },
+        {
+          "text": "Ignorer le problème et continuer à travailler localement.",
+          "correct": false
+        },
+        {
+          "text": "Demander de l'aide sur un forum en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Réinitialiser toutes les branches du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela veut dire de \"pousser\" son projet sur GitHub ?",
+      "answers": [
+        {
+          "text": "Cela signifie envoyer son code de son ordinateur à GitHub pour le sauvegarder en ligne.",
+          "correct": true
+        },
+        {
+          "text": "Publier une nouvelle version de son projet sur GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Télécharger du code depuis GitHub vers son ordinateur local.",
+          "correct": false
+        },
+        {
+          "text": "Partager des ressources multimédias sur GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de sauvegarder son code sur GitHub ?",
+      "answers": [
+        {
+          "text": "Pour le partager avec d'autres et le protéger en cas de problème avec notre ordinateur.",
+          "correct": true
+        },
+        {
+          "text": "Pour garantir que le code ne sera jamais modifié.",
+          "correct": false
+        },
+        {
+          "text": "Pour augmenter la vitesse d'exécution du code.",
+          "correct": false
+        },
+        {
+          "text": "Pour réduire la taille des fichiers de code.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelles étapes doit-on suivre pour résoudre des erreurs quand on utilise Git ?",
+      "answers": [
+        {
+          "text": "Vérifier la branche sur laquelle on est et les remotes configurés.",
+          "correct": true
+        },
+        {
+          "text": "Ignorer les erreurs et espérer qu'elles disparaissent.",
+          "correct": false
+        },
+        {
+          "text": "Supprimer toutes les branches du projet.",
+          "correct": false
+        },
+        { "text": "Réinstaller Git sur l'ordinateur.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire si on réussit à envoyer notre code sur GitHub ?",
+      "answers": [
+        {
+          "text": "On peut se féliciter car notre code est maintenant en sécurité et partageable.",
+          "correct": true
+        },
+        {
+          "text": "Chercher des erreurs intentionnelles dans le code avant de le partager.",
+          "correct": false
+        },
+        {
+          "text": "Réinitialiser toutes les branches du projet.",
+          "correct": false
+        },
+        {
+          "text": "Ignorer le code et passer à un autre projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour voir la branche actuelle sur Git ?",
+      "answers": [
+        {
+          "text": "On utilise une commande qui nous montre la branche sur laquelle on travaille.",
+          "correct": true
+        },
+        { "text": "La commande 'git branch list'.", "correct": false },
+        { "text": "La commande 'git status'.", "correct": false },
+        { "text": "La commande 'git push'.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment vérifie-t-on quels \"remotes\" sont configurés dans notre projet Git ?",
+      "answers": [
+        {
+          "text": "Avec une commande qui liste tous les remotes configurés.",
+          "correct": true
+        },
+        {
+          "text": "En examinant le fichier README du projet.",
+          "correct": false
+        },
+        { "text": "En demandant à un collègue de travail.", "correct": false },
+        {
+          "text": "En utilisant l'option 'remote' dans Git GUI.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi pousser notre code dans un autre projet ?",
+      "answers": [
+        {
+          "text": "Pour progresser étape par étape vers la mise en ligne de notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Pour éviter que d'autres développeurs contribuent au projet.",
+          "correct": false
+        },
+        {
+          "text": "Pour fusionner tous les projets disponibles en un seul.",
+          "correct": false
+        },
+        {
+          "text": "Pour tester la capacité de stockage du serveur.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

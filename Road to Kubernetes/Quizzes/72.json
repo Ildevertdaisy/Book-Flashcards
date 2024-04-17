@@ -1,1 +1,358 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que `git init` fait dans un projet ?",
+      "answers": [
+        {
+          "text": "Il commence le suivi du projet avec Git, comme ouvrir un nouveau livre pour écrire l'histoire du code.",
+          "correct": true
+        },
+        {
+          "text": "Il supprime tous les fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Il partage le projet avec d'autres développeurs.",
+          "correct": false
+        },
+        { "text": "Il renomme le projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment dit-on à Git quels fichiers il doit surveiller ?",
+      "answers": [
+        {
+          "text": "Avec `git add` et le chemin du fichier ou du dossier.",
+          "correct": true
+        },
+        { "text": "Avec `git push`.", "correct": false },
+        { "text": "Avec `git commit`.", "correct": false },
+        { "text": "Avec `git pull`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on veut dire à Git de se souvenir des changements faits, on utilise quelle commande ?",
+      "answers": [
+        {
+          "text": "`git commit -m \"message\"`, pour enregistrer les changements avec une petite note.",
+          "correct": true
+        },
+        {
+          "text": "`git reset`, pour revenir en arrière à un moment précis.",
+          "correct": false
+        },
+        {
+          "text": "`git push`, pour envoyer nos changements vers un endroit sûr.",
+          "correct": false
+        },
+        {
+          "text": "`git pull`, pour récupérer les changements depuis un endroit sûr.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que fait la commande `git push` ?",
+      "answers": [
+        {
+          "text": "Elle envoie nos changements vers un endroit sûr sur internet pour ne pas les perdre.",
+          "correct": true
+        },
+        {
+          "text": "Elle récupère les changements depuis un endroit sûr sur internet.",
+          "correct": false
+        },
+        {
+          "text": "Elle supprime tous les fichiers du projet.",
+          "correct": false
+        },
+        { "text": "Elle renomme le projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Et `git pull`, c'est pour quoi ?",
+      "answers": [
+        {
+          "text": "Pour récupérer les changements depuis cet endroit sûr sur internet, au cas où on les aurait besoin.",
+          "correct": true
+        },
+        {
+          "text": "Pour envoyer nos changements vers un endroit sûr sur internet.",
+          "correct": false
+        },
+        {
+          "text": "Pour effacer tous les fichiers du projet.",
+          "correct": false
+        },
+        { "text": "Pour renommer le projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on voir l'histoire de tout ce qu'on a changé ?",
+      "answers": [
+        {
+          "text": "Avec `git log`, qui montre la liste des changements qu'on a enregistrés.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant `git add` pour ajouter les fichiers au suivi.",
+          "correct": false
+        },
+        {
+          "text": "En regardant simplement les fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Avec `git commit` pour enregistrer les changements.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Si on veut voir en détail un changement spécifique, on utilise quelle commande ?",
+      "answers": [
+        {
+          "text": "`git show` et l'identifiant du changement pour voir tous les détails.",
+          "correct": true
+        },
+        {
+          "text": "`git log` pour voir la liste des changements.",
+          "correct": false
+        },
+        {
+          "text": "`git reset` pour revenir en arrière à ce moment-là.",
+          "correct": false
+        },
+        {
+          "text": "`git push` pour envoyer nos changements vers un endroit sûr.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment revenir à une version précédente de notre code ?",
+      "answers": [
+        {
+          "text": "Avec `git reset` et l'identifiant du changement pour retourner à ce moment-là.",
+          "correct": true
+        },
+        {
+          "text": "Avec `git add` pour ajouter les fichiers au suivi.",
+          "correct": false
+        },
+        {
+          "text": "Avec `git commit` pour enregistrer les changements.",
+          "correct": false
+        },
+        {
+          "text": "Avec `git push` pour envoyer nos changements vers un endroit sûr.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la différence entre `git reset` et `git reset --hard` ?",
+      "answers": [
+        {
+          "text": "`git reset` revient en arrière mais garde les changements récents comme non enregistrés, tandis que `git reset --hard` efface tout jusqu'à ce point, donc il faut être très prudent.",
+          "correct": true
+        },
+        {
+          "text": "`git reset` supprime tous les fichiers du projet.",
+          "correct": false
+        },
+        { "text": "`git reset` renomme le projet.", "correct": false },
+        {
+          "text": "`git reset` envoie nos changements vers un endroit sûr sur internet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'écrire un bon message avec `git commit` ?",
+      "answers": [
+        {
+          "text": "Pour se rappeler et expliquer ce qu'on a fait, surtout quand on regarde en arrière.",
+          "correct": true
+        },
+        { "text": "Pour renommer le projet.", "correct": false },
+        {
+          "text": "Pour envoyer nos changements vers un endroit sûr sur internet.",
+          "correct": false
+        },
+        { "text": "Pour ajouter les fichiers au suivi.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"remote repository\" ?",
+      "answers": [
+        {
+          "text": "C'est un endroit sur internet où on peut sauvegarder notre code.",
+          "correct": true
+        },
+        {
+          "text": "C'est un dossier sur notre propre ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier de configuration pour Git.",
+          "correct": false
+        },
+        {
+          "text": "C'est un endroit sur notre propre ordinateur où on peut sauvegarder notre code.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi devrait-on parfois redémarrer notre projet Git avec `git init` ?",
+      "answers": [
+        {
+          "text": "Si on fait des erreurs en apprenant, redémarrer peut aider à pratiquer sans stress.",
+          "correct": true
+        },
+        {
+          "text": "Pour partager le projet avec d'autres développeurs.",
+          "correct": false
+        },
+        { "text": "Pour renommer le projet.", "correct": false },
+        {
+          "text": "Pour récupérer les changements depuis un endroit sûr sur internet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quels fichiers ou dossiers Git ne suit-il pas automatiquement ?",
+      "answers": [
+        {
+          "text": "Ceux qu'on dit d'ignorer avec un fichier `.gitignore`.",
+          "correct": true
+        },
+        { "text": "Tous les fichiers du projet.", "correct": false },
+        { "text": "Aucun fichier ou dossier.", "correct": false },
+        {
+          "text": "Les fichiers avec des extensions spécifiques seulement.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi pourrait-on vouloir ignorer certains fichiers avec `.gitignore` ?",
+      "answers": [
+        {
+          "text": "Pour ne pas suivre ou partager des choses non nécessaires ou privées.",
+          "correct": true
+        },
+        { "text": "Pour rendre le projet plus lent.", "correct": false },
+        { "text": "Pour renommer le projet.", "correct": false },
+        {
+          "text": "Pour supprimer certains fichiers du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on partager notre code avec d'autres ?",
+      "answers": [
+        {
+          "text": "En utilisant `git push` pour envoyer notre code à un \"remote repository\" comme GitHub.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant `git pull` pour récupérer le code des autres.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant `git reset` pour revenir à une version précédente.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant `git commit` pour enregistrer les changements localement.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment `git pull` aide-t-il quand on travaille en équipe ?",
+      "answers": [
+        {
+          "text": "Ça permet de récupérer le travail des autres pour que tout le monde ait la dernière version du projet.",
+          "correct": true
+        },
+        {
+          "text": "Ça permet d'effacer les changements locaux et de revenir à une version précédente.",
+          "correct": false
+        },
+        {
+          "text": "Ça permet de renommer le projet en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Ça permet d'ajouter de nouveaux fichiers au suivi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que signifie \"commit history\" dans Git ?",
+      "answers": [
+        {
+          "text": "L'histoire de tous les changements enregistrés qu'on a fait dans notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Une liste de tous les fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Un résumé des changements qu'on a apportés.",
+          "correct": false
+        },
+        {
+          "text": "Une liste des développeurs qui ont contribué au projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quand utiliser `git reset --hard` ?",
+      "answers": [
+        {
+          "text": "Seulement quand on est sûr de vouloir effacer des changements, car c'est irréversible.",
+          "correct": true
+        },
+        {
+          "text": "Quand on veut revenir à une version précédente du code.",
+          "correct": false
+        },
+        {
+          "text": "Quand on veut ajouter de nouveaux fichiers au suivi.",
+          "correct": false
+        },
+        { "text": "Quand on veut renommer le projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on voir un résumé de ce qu'on a changé ?",
+      "answers": [
+        {
+          "text": "Avec `git log`, qui donne une liste de tous nos \"commits\" avec des messages expliquant les changements.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant `git add` pour ajouter les fichiers au suivi.",
+          "correct": false
+        },
+        {
+          "text": "En regardant simplement les fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Avec `git commit` pour enregistrer les changements.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

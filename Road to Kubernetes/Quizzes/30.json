@@ -1,1 +1,240 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que npm ?",
+      "answers": [
+        {
+          "text": "Npm est un outil qui installe et gère des programmes supplémentaires pour les projets JavaScript.",
+          "correct": true
+        },
+        {
+          "text": "Npm est un environnement de développement pour la programmation web.",
+          "correct": false
+        },
+        {
+          "text": "Npm est un éditeur de texte utilisé pour coder en JavaScript.",
+          "correct": false
+        },
+        {
+          "text": "Npm est un serveur web pour héberger des projets JavaScript en production.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi npm est-il comparé à pip de Python ?",
+      "answers": [
+        {
+          "text": "Comme pip avec Python, npm est utilisé pour installer des outils, mais il est plus strict sur comment il gère ces installations.",
+          "correct": true
+        },
+        {
+          "text": "Npm est moins performant que pip, mais il est plus facile à utiliser.",
+          "correct": false
+        },
+        {
+          "text": "Npm est spécifique à JavaScript, tandis que pip est spécifique à Python.",
+          "correct": false
+        },
+        {
+          "text": "Pip installe uniquement des packages, tandis que npm installe des packages et des modules.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que facilite npm dans la gestion des projets ?",
+      "answers": [
+        {
+          "text": "Npm facilite la gestion des outils supplémentaires nécessaires pour un projet, sans avoir besoin d'autres outils tiers.",
+          "correct": true
+        },
+        {
+          "text": "Npm facilite la création de projets JavaScript, en fournissant des modèles prédéfinis.",
+          "correct": false
+        },
+        {
+          "text": "Npm facilite la collaboration entre développeurs en fournissant un système de contrôle de version intégré.",
+          "correct": false
+        },
+        {
+          "text": "Npm facilite l'hébergement des projets en fournissant un service cloud dédié.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'on trouve dans le dossier `node_modules/` ?",
+      "answers": [
+        {
+          "text": "Il contient tous les outils supplémentaires installés pour notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Il contient les fichiers de configuration de notre projet.",
+          "correct": false
+        },
+        {
+          "text": "Il contient les fichiers de documentation générés automatiquement.",
+          "correct": false
+        },
+        {
+          "text": "Il contient les fichiers journaux des activités du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Peut-on supprimer le dossier `node_modules/` ?",
+      "answers": [
+        {
+          "text": "Oui, on peut le supprimer à tout moment, car on peut réinstaller tout ce qu'il contient avec npm.",
+          "correct": true
+        },
+        {
+          "text": "Non, il est nécessaire de conserver le dossier `node_modules/` pour que le projet fonctionne correctement.",
+          "correct": false
+        },
+        {
+          "text": "Oui, mais cela causera des erreurs dans notre projet et nécessitera une réinstallation complète des dépendances.",
+          "correct": false
+        },
+        {
+          "text": "Non, le dossier `node_modules/` est protégé en écriture et ne peut pas être supprimé manuellement.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que `package-lock.json` ?",
+            "answers": [
+                {"text": "C'est un fichier créé automatiquement qui donne des détails précis sur notre projet et les outils qu'on utilise.", "correct": true},
+                {"text": "C'est un fichier de configuration qui stocke les paramètres de notre projet JavaScript.", "correct": false},
+                {"text": "C'est un fichier journal qui enregistre toutes les actions effectuées lors de l'installation des dépendances.", "correct": false},
+                {"text": "C'est un fichier de sauvegarde qui stocke les données de l'utilisateur pour une utilisation hors ligne.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi `package-lock.json` est-il important ?",
+            "answers": [
+                {"text": "Parce qu'il aide à garder une trace précise des versions des outils utilisés dans notre projet.", "correct": true},
+                {"text": "Parce qu'il stocke les informations de licence pour tous les packages utilisés dans notre projet.", "correct": false},
+                {"text": "Parce qu'il permet de déployer notre projet sur différents serveurs sans avoir à installer à nouveau les dépendances.", "correct": false},
+                {"text": "Parce qu'il crypte les fichiers de configuration du projet pour des raisons de sécurité.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelles informations trouve-t-on dans `package.json` ?",
+            "answers": [
+                {"text": "On y trouve les versions des outils utilisés, le nom de notre projet, sa version et les scripts personnalisés.", "correct": true},
+                {"text": "On y trouve une liste des développeurs impliqués dans le projet et leurs rôles respectifs.", "correct": false},
+                {"text": "On y trouve des informations sur l'infrastructure réseau du projet, y compris les ports utilisés et les adresses IP associées.", "correct": false},
+                {"text": "On y trouve une description détaillée du code source de notre projet, y compris des commentaires sur chaque fonction.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment vérifie-t-on le contenu du dossier de notre projet JavaScript ?",
+            "answers": [
+                {"text": "On utilise la commande `ls ~/Dev/roadtok8s/js/` dans le terminal.", "correct": true},
+                {"text": "On utilise la commande `npm list` dans le terminal.", "correct": false},
+                {"text": "On utilise la commande `cd ~/Dev/roadtok8s/js/` dans le terminal.", "correct": false},
+                {"text": "On utilise la commande `dir ~/Dev/roadtok8s/js/` dans le terminal.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que doit contenir au minimum notre dossier de projet ?",
+            "answers": [
+                {"text": "Le dossier `node_modules/`, les fichiers `package-lock.json` et `package.json`.", "correct": true},
+                {"text": "Le dossier `src/` contenant le code source, un fichier `index.html` et un fichier `styles.css`.", "correct": false},
+                {"text": "Le dossier `dist/` contenant les fichiers distribuables, un fichier `index.html` et un fichier `bundle.js`.", "correct": false},
+                {"text": "Le dossier `test/` contenant les fichiers de test, un fichier `index.js` et un fichier `test.js`.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Quel est le rôle de `package.json` dans la gestion des dépendances ?",
+            "answers": [
+                {"text": "Il sert à lister et à gérer les versions des paquets tiers que notre projet utilise.", "correct": true},
+                {"text": "Il stocke les données de configuration de notre projet, telles que les paramètres de compilation et les variables d'environnement.", "correct": false},
+                {"text": "Il sauvegarde automatiquement les modifications apportées au code source pour faciliter le suivi des changements.", "correct": false},
+                {"text": "Il agit comme une interface graphique pour gérer visuellement les dépendances du projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment npm simplifie-t-il la gestion de l'environnement de développement ?",
+            "answers": [
+                {"text": "En automatisant l'ajout et la mise à jour des paquets dans `package.json`, réduisant ainsi la complexité.", "correct": true},
+                {"text": "En générant automatiquement une documentation complète pour chaque paquet installé, facilitant ainsi la compréhension du code.", "correct": false},
+                {"text": "En fournissant des suggestions intelligentes pour résoudre les conflits de version entre les dépendances.", "correct": false},
+                {"text": "En intégrant des outils de débogage avancés pour détecter et résoudre les erreurs de manière proactive.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que signifie créer un module pour notre application web ?",
+            "answers": [
+                {"text": "Cela signifie développer une partie de notre application qui peut effectuer une tâche spécifique.", "correct": true},
+                {"text": "Cela signifie encapsuler l'ensemble de notre application dans une seule classe JavaScript pour une meilleure modularité.", "correct": false},
+                {"text": "Cela signifie générer une documentation détaillée pour chaque fonctionnalité de notre application.", "correct": false},
+                {"text": "Cela signifie compiler notre application en un seul fichier JavaScript pour une meilleure performance.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il utile de séparer notre application en modules ?",
+            "answers": [
+                {"text": "Pour organiser mieux le code et le rendre plus facile à comprendre et à maintenir.", "correct": true},
+                {"text": "Pour réduire la taille du code en regroupant les fonctions similaires dans un seul fichier.", "correct": false},
+                {"text": "Pour accélérer le chargement de l'application en minimisant le nombre de requêtes HTTP.", "correct": false},
+                {"text": "Pour rendre notre application plus sécurisée en isolant chaque fonctionnalité dans son propre environnement.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un 'script personnalisé' dans `package.json` ?",
+            "answers": [
+                {"text": "C'est une commande que l'on définit pour effectuer des tâches spécifiques, comme démarrer notre application.", "correct": true},
+                {"text": "C'est une fonction JavaScript personnalisée qui étend les fonctionnalités de npm pour notre projet.", "correct": false},
+                {"text": "C'est une configuration avancée qui permet de personnaliser le processus de construction du projet.", "correct": false},
+                {"text": "C'est une directive spéciale qui indique à npm de toujours utiliser la dernière version d'un paquet lors de l'installation.", "correct": false}
+            ]
+        }
+    ]
+}
+
+{
+    "quizzes": [
+        {
+            "question": "Comment npm aide-t-il avec les versions des paquets ?",
+            "answers": [
+                {"text": "Il garde une trace de la version exacte de chaque paquet installé, ce qui aide à éviter les problèmes de compatibilité.", "correct": true},
+                {"text": "Il choisit automatiquement la dernière version de chaque paquet lors de l'installation, garantissant ainsi les fonctionnalités les plus récentes.", "correct": false},
+                {"text": "Il met à jour les paquets installés de manière aléatoire pour maintenir la stabilité du projet.", "correct": false},
+                {"text": "Il permet aux développeurs de spécifier manuellement les versions de chaque paquet dans le fichier `package.json`.", "correct": false}
+            ]
+        },
+        {
+            "question": "Est-ce que chaque projet Node.js a son propre dossier `node_modules/` ?",
+            "answers": [
+                {"text": "Oui, chaque projet a son propre dossier `node_modules/` pour gérer ses paquets indépendamment des autres projets.", "correct": true},
+                {"text": "Non, tous les projets Node.js partagent un seul dossier `node_modules/` pour économiser de l'espace disque.", "correct": false},
+                {"text": "Oui, mais tous les projets Node.js partagent le même dossier `node_modules/` pour simplifier la gestion des dépendances.", "correct": false},
+                {"text": "Non, chaque projet a son propre dossier `packages/` où sont stockés les paquets spécifiques au projet.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+
+

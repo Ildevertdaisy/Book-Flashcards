@@ -1,1 +1,310 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un compte GitHub ?",
+      "answers": [
+        {
+          "text": "C'est un espace sur internet où on peut garder et partager notre travail de programmation.",
+          "correct": true
+        },
+        {
+          "text": "C'est une plateforme de réseautage social pour les développeurs.",
+          "correct": false
+        },
+        {
+          "text": "C'est un logiciel de gestion de versions.",
+          "correct": false
+        },
+        {
+          "text": "C'est un système de stockage en nuage pour les projets de programmation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi avons-nous besoin de créer un \"repository\" sur GitHub ?",
+      "answers": [
+        {
+          "text": "Pour stocker notre code de programmation en ligne et travailler dessus avec d'autres personnes.",
+          "correct": true
+        },
+        {
+          "text": "Pour créer des sauvegardes locales de notre code.",
+          "correct": false
+        },
+        {
+          "text": "Pour tester de nouvelles fonctionnalités de GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Pour organiser nos fichiers de projet sur notre ordinateur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"repository\" ?",
+      "answers": [
+        {
+          "text": "C'est comme un dossier en ligne pour notre projet de programmation sur GitHub.",
+          "correct": true
+        },
+        {
+          "text": "C'est un outil pour écrire du code en ligne.",
+          "correct": false
+        },
+        {
+          "text": "C'est une fonctionnalité de GitHub pour suivre les problèmes de programmation.",
+          "correct": false
+        },
+        {
+          "text": "C'est une méthode de cryptage utilisée pour sécuriser les projets sur GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment crée-t-on un nouveau \"repository\" sur GitHub ?",
+      "answers": [
+        {
+          "text": "En allant sur le site de GitHub, en cliquant sur \"New repository\" et en suivant les instructions.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant une ligne de commande spécifique dans Git.",
+          "correct": false
+        },
+        {
+          "text": "En demandant à un administrateur de créer un \"repository\" pour nous.",
+          "correct": false
+        },
+        {
+          "text": "En exportant un projet existant depuis notre ordinateur vers GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que veut dire \"push an existing repository from the command line\" ?",
+      "answers": [
+        {
+          "text": "Cela signifie envoyer notre projet de programmation de notre ordinateur vers GitHub en utilisant des commandes.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie télécharger un projet existant depuis GitHub vers notre ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie supprimer un projet existant depuis GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie partager notre projet avec d'autres développeurs sur GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la première étape pour envoyer notre projet sur GitHub ?",
+      "answers": [
+        {
+          "text": "Il faut d'abord créer un \"repository\" sur GitHub pour notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Il faut vérifier que notre code est exempt de bugs.",
+          "correct": false
+        },
+        {
+          "text": "Il faut installer GitHub sur notre ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "Il faut obtenir l'autorisation d'un administrateur pour accéder à GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on configurer notre projet local pour l'envoyer sur GitHub ?",
+      "answers": [
+        {
+          "text": "Pour que notre ordinateur sache où envoyer le projet sur internet.",
+          "correct": true
+        },
+        {
+          "text": "Pour crypter notre code avant de l'envoyer.",
+          "correct": false
+        },
+        {
+          "text": "Pour accéder à des fonctionnalités avancées de GitHub.",
+          "correct": false
+        },
+        { "text": "Pour rendre notre code open source.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelles informations GitHub nous donne-t-il pour commencer avec notre nouveau \"repository\" ?",
+      "answers": [
+        {
+          "text": "GitHub nous donne des commandes pour configurer et envoyer notre projet.",
+          "correct": true
+        },
+        {
+          "text": "GitHub nous donne des recommandations pour améliorer notre code.",
+          "correct": false
+        },
+        {
+          "text": "GitHub nous donne un accès exclusif à des outils de développement.",
+          "correct": false
+        },
+        {
+          "text": "GitHub nous donne des tutoriels vidéo sur la programmation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que le \"Quick Setup\" sur la page d'un nouveau \"repository\" GitHub ?",
+      "answers": [
+        {
+          "text": "C'est une aide rapide qui nous montre comment commencer à utiliser notre nouveau \"repository\".",
+          "correct": true
+        },
+        {
+          "text": "C'est une fonctionnalité pour télécharger des projets rapidement depuis GitHub.",
+          "correct": false
+        },
+        {
+          "text": "C'est une option pour supprimer rapidement un \"repository\".",
+          "correct": false
+        },
+        {
+          "text": "C'est une interface pour personnaliser rapidement notre page GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Peut-on voir immédiatement notre code sur GitHub après la création d'un \"repository\" ?",
+      "answers": [
+        {
+          "text": "Non, il faut d'abord envoyer notre code de notre ordinateur vers GitHub.",
+          "correct": true
+        },
+        {
+          "text": "Oui, notre code est automatiquement synchronisé avec GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Non, il faut attendre une validation de la part de GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Oui, mais seulement après une vérification de sécurité par GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'il faut faire avant d'envoyer notre code sur GitHub ?",
+      "answers": [
+        {
+          "text": "Il faut configurer notre projet local avec les informations données par GitHub.",
+          "correct": true
+        },
+        {
+          "text": "Il faut demander la permission à GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Il faut attendre une confirmation par e-mail de GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Il faut vérifier notre code avec un logiciel antivirus.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de bien suivre les instructions de GitHub lors de la création d'un \"repository\" ?",
+      "answers": [
+        {
+          "text": "Pour s'assurer que notre projet est correctement envoyé et stocké en ligne.",
+          "correct": true
+        },
+        {
+          "text": "Pour obtenir des réductions sur les services premium de GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Pour être éligible à des récompenses de GitHub.",
+          "correct": false
+        },
+        { "text": "Pour éviter les pénalités de GitHub.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie \"configurer notre local Git repository\" ?",
+      "answers": [
+        {
+          "text": "Cela signifie préparer notre projet sur notre ordinateur pour qu'il puisse être envoyé sur GitHub.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie activer la fonction de suivi de version de Git.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie crypter notre code avant de l'envoyer sur GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie importer des projets depuis GitHub vers notre ordinateur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'arrive-t-il à notre projet après avoir cliqué sur \"Create Repository\" sur GitHub ?",
+      "answers": [
+        {
+          "text": "Notre projet a maintenant un espace en ligne sur GitHub où on peut l'envoyer.",
+          "correct": true
+        },
+        {
+          "text": "Notre projet est automatiquement partagé sur les réseaux sociaux.",
+          "correct": false
+        },
+        {
+          "text": "Notre projet est téléchargé sur notre ordinateur.",
+          "correct": false
+        },
+        { "text": "Notre projet est supprimé de GitHub.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela implique de copier et coller le code de GitHub pour configurer notre projet ?",
+      "answers": [
+        {
+          "text": "Cela nous aide à préparer notre projet sur notre ordinateur pour qu'il puisse communiquer avec GitHub.",
+          "correct": true
+        },
+        {
+          "text": "Cela remplace notre code local par celui de GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Cela envoie notre code directement sur GitHub sans nécessiter de configuration supplémentaire.",
+          "correct": false
+        },
+        {
+          "text": "Cela crée une sauvegarde de notre code sur notre ordinateur.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

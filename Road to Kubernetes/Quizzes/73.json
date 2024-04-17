@@ -1,1 +1,106 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que Git nous aide à faire avec notre code ?",
+      "answers": [
+        {
+          "text": "Git nous aide à garder une trace de tous les changements qu'on fait dans notre code, comme un journal de bord.",
+          "correct": true
+        },
+        {
+          "text": "Git nous aide à transformer notre code en images.",
+          "correct": false
+        },
+        {
+          "text": "Git nous aide à organiser nos fichiers sur notre ordinateur.",
+          "correct": false
+        },
+        { "text": "Git nous aide à écrire du nouveau code.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi met-on notre code dans un \"remote repository\" ?",
+      "answers": [
+        {
+          "text": "Pour garder notre code en sécurité sur internet, pour qu'on ne le perde pas et pour le partager avec d'autres.",
+          "correct": true
+        },
+        {
+          "text": "Pour rendre notre code secret et inaccessible.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre notre code plus lent à accéder.",
+          "correct": false
+        },
+        {
+          "text": "Pour permettre à Git de le suivre sur notre ordinateur uniquement.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment commence-t-on à suivre notre projet avec Git ?",
+      "answers": [
+        {
+          "text": "On utilise `git init` pour dire à Git de commencer à suivre les changements dans notre projet.",
+          "correct": true
+        },
+        {
+          "text": "On utilise `git start` pour commencer à suivre les changements.",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git follow` pour que Git commence à surveiller notre projet.",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git go` pour indiquer à Git où notre projet se trouve.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Si on a fait des changements dans notre code et qu'on veut que Git s'en souvienne, que fait-on ?",
+      "answers": [
+        {
+          "text": "On utilise `git add` pour préparer les changements, puis `git commit -m \"message\"` pour enregistrer les changements avec une note.",
+          "correct": true
+        },
+        {
+          "text": "On utilise `git save` pour sauvegarder les changements.",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git store` pour stocker les changements.",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git remember` pour que Git se souvienne des changements.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Et si on veut voir tous les changements qu'on a enregistrés, quelle commande on utilise ?",
+      "answers": [
+        {
+          "text": "On utilise `git log` pour voir une liste de tout ce qu'on a changé et enregistré dans notre projet.",
+          "correct": true
+        },
+        {
+          "text": "On utilise `git show` pour voir les changements les plus récents seulement.",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git changes` pour voir tous les changements.",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git diff` pour comparer deux versions différentes du code.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,126 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que Git ?",
+      "answers": [
+        {
+          "text": "Git est un outil qui aide les gens à mettre à jour, partager et suivre les changements dans le code d'un programme.",
+          "correct": true
+        },
+        {
+          "text": "Git est un langage de programmation utilisé pour créer des applications web.",
+          "correct": false
+        },
+        {
+          "text": "Git est un service en ligne qui permet de stocker des fichiers et des dossiers dans le cloud.",
+          "correct": false
+        },
+        {
+          "text": "Git est un protocole de communication utilisé pour transférer des données sur Internet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi utilise-t-on Git ?",
+      "answers": [
+        {
+          "text": "Pour faciliter la gestion des modifications apportées au code d'une application et pour travailler plus facilement en équipe.",
+          "correct": true
+        },
+        {
+          "text": "Pour créer des interfaces utilisateur conviviales pour les applications web.",
+          "correct": false
+        },
+        {
+          "text": "Pour exécuter des tests automatisés sur le code d'une application.",
+          "correct": false
+        },
+        {
+          "text": "Pour sécuriser les données sensibles stockées dans une base de données.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un système de contrôle de version ?",
+      "answers": [
+        {
+          "text": "C'est un système qui garde une trace de tous les changements faits dans le code d'un programme.",
+          "correct": true
+        },
+        {
+          "text": "C'est un système qui gère la distribution des mises à jour logicielles sur différents appareils.",
+          "correct": false
+        },
+        {
+          "text": "C'est un système qui génère automatiquement des rapports sur l'utilisation du code dans une application.",
+          "correct": false
+        },
+        {
+          "text": "C'est un système qui optimise la performance des serveurs web en répartissant la charge de travail.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'appelle-t-on le \"contrôle source\" ?",
+      "answers": [
+        {
+          "text": "C'est un autre nom pour les systèmes qui suivent et gèrent le code source d'une application.",
+          "correct": true
+        },
+        {
+          "text": "C'est le processus de vérification du code pour détecter les erreurs de programmation.",
+          "correct": false
+        },
+        {
+          "text": "C'est un type de versionnage sémantique utilisé pour numéroter les versions d'un logiciel.",
+          "correct": false
+        },
+        {
+          "text": "C'est le processus de gestion des autorisations d'accès aux fichiers dans un système informatique.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment Git aide-t-il les développeurs d'applications ?",
+      "answers": [
+        {
+          "text": "Il permet de revenir facilement à des versions antérieures du code et de voir qui a fait quels changements et quand.",
+          "correct": true
+        },
+        {
+          "text": "Il automatise le processus de déploiement des applications sur des serveurs web.",
+          "correct": false
+        },
+        {
+          "text": "Il simplifie la création d'interfaces utilisateur graphiques pour les applications mobiles.",
+          "correct": false
+        },
+        {
+          "text": "Il optimise les performances des applications en surveillant en temps réel leur utilisation par les utilisateurs.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi est-il important de suivre les changements de code ?",
+            "answers": [
+                { "text": "Cela aide à corriger les erreurs, à améliorer le code et à travailler ensemble sur de grands projets.", "correct": true },
+                { "text": "Pour accélérer le processus de développement et obtenir des résultats plus rapidement.", "correct": false },
+                { "text": "Parce que suivre les changements de code est une exigence imposée par les gestionnaires de projet.", "correct": false },
+                { "text": "Pour éviter toute forme de collaboration et de communication entre les membres de l'équipe de développement.", "correct": false }
+            ]
+        }
+    ]
+}

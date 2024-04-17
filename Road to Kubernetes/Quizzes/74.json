@@ -1,1 +1,187 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi utilise-t-on Git avec notre projet ?",
+      "answers": [
+        {
+          "text": "Pour archiver et gérer les versions de notre projet",
+          "correct": false
+        },
+        {
+          "text": "Pour faciliter la collaboration entre les membres de l'équipe",
+          "correct": false
+        },
+        {
+          "text": "Pour se souvenir et garder une trace de tous les changements qu’on fait dans notre projet",
+          "correct": true
+        },
+        {
+          "text": "Pour optimiser les performances de notre projet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi un \"remote repository\" ?",
+      "answers": [
+        {
+          "text": "Un répertoire local sur notre ordinateur",
+          "correct": false
+        },
+        {
+          "text": "Un endroit sur internet où on peut mettre notre projet pour ne pas le perdre et pour le montrer aux autres",
+          "correct": true
+        },
+        {
+          "text": "Un système de contrôle de version décentralisé",
+          "correct": false
+        },
+        {
+          "text": "Une fonctionnalité de Git permettant de gérer les conflits de fusion",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment dit-on à Git de commencer à surveiller notre projet ?",
+      "answers": [
+        { "text": "En utilisant la commande `git start`", "correct": false },
+        { "text": "En exécutant `git go`", "correct": false },
+        { "text": "On utilise la commande `git init`.", "correct": true },
+        { "text": "Avec la commande `git begin`", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on veut que Git se souvienne des changements qu'on a faits, qu'est-ce qu'on doit faire ?",
+      "answers": [
+        {
+          "text": "Utiliser `git save` pour enregistrer les changements",
+          "correct": false
+        },
+        {
+          "text": "D'abord, on utilise `git add` pour préparer les changements, puis `git commit` pour enregistrer les changements.",
+          "correct": true
+        },
+        {
+          "text": "Exécuter `git remember` pour mémoriser les changements",
+          "correct": false
+        },
+        {
+          "text": "Utiliser `git track` pour suivre les modifications",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on voir tous les changements qu’on a enregistrés ?",
+      "answers": [
+        { "text": "En utilisant la commande `git list`", "correct": false },
+        { "text": "En exécutant `git show`", "correct": false },
+        {
+          "text": "On peut utiliser la commande `git log` pour voir la liste de tous les changements.",
+          "correct": true
+        },
+        { "text": "En exécutant `git changes`", "correct": false }
+      ]
+    },
+    {
+      "question": "Que fait-on si on veut sauvegarder notre projet sur internet avec GitHub ?",
+      "answers": [
+        {
+          "text": "On crée un compte GitHub, on y crée un nouveau projet (repository), et on y pousse notre code avec `git push`.",
+          "correct": true
+        },
+        {
+          "text": "On utilise la commande `git upload` pour téléverser le projet",
+          "correct": false
+        },
+        {
+          "text": "On envoie un e-mail à GitHub avec notre code",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git share` pour partager le projet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour ajouter des fichiers ou dossiers à notre suivi Git ?",
+      "answers": [
+        {
+          "text": "On utilise `git attach` et le nom du fichier ou dossier",
+          "correct": false
+        },
+        {
+          "text": "On exécute `git include` avec le nom du fichier ou dossier",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git add` et le nom du fichier ou dossier.",
+          "correct": true
+        },
+        { "text": "Avec la commande `git append`", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on a fait une erreur et on veut revenir à une version précédente de notre projet, que peut-on faire ?",
+      "answers": [
+        {
+          "text": "On peut utiliser `git undo` pour annuler les changements",
+          "correct": false
+        },
+        {
+          "text": "On peut utiliser `git back` avec le numéro de la version précédente",
+          "correct": false
+        },
+        {
+          "text": "On peut utiliser `git reset` avec le numéro de la version à laquelle on veut revenir.",
+          "correct": true
+        },
+        {
+          "text": "En exécutant `git revert` pour revenir en arrière",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'écrire de bons messages avec nos enregistrements (`commits`) sur Git ?",
+      "answers": [
+        { "text": "Pour ajouter de l'humour à notre projet", "correct": false },
+        {
+          "text": "Pour se rappeler ce qu’on a changé et pourquoi, ce qui peut aider si on a besoin de corriger quelque chose plus tard.",
+          "correct": true
+        },
+        {
+          "text": "Pour rendre nos collègues jaloux de nos compétences en git",
+          "correct": false
+        },
+        {
+          "text": "Pour éviter d'être réprimandé par le chef de projet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que doit-on faire pour montrer ou partager notre projet avec d’autres sur internet ?",
+      "answers": [
+        {
+          "text": "On doit pousser notre code vers un dépôt sur GitHub avec la commande `git push`.",
+          "correct": true
+        },
+        {
+          "text": "On utilise `git publish` pour rendre le projet public",
+          "correct": false
+        },
+        {
+          "text": "On peut simplement envoyer un lien vers notre dossier de projet",
+          "correct": false
+        },
+        {
+          "text": "On utilise `git share` pour partager notre projet avec d'autres",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

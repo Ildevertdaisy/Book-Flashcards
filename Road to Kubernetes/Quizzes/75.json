@@ -1,1 +1,196 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que GitHub ?",
+      "answers": [
+        {
+          "text": "Une plateforme de développement collaboratif",
+          "correct": false
+        },
+        {
+          "text": "Un endroit sur internet où on peut garder et partager nos projets de programmation.",
+          "correct": true
+        },
+        { "text": "Un réseau social pour les développeurs", "correct": false },
+        { "text": "Un système de gestion de base de données", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi avons-nous besoin de GitHub ?",
+      "answers": [
+        { "text": "Pour jouer à des jeux en ligne", "correct": false },
+        {
+          "text": "Pour sauvegarder notre travail sur internet, partager avec d'autres, et travailler ensemble sur des projets.",
+          "correct": true
+        },
+        { "text": "Pour regarder des vidéos en streaming", "correct": false },
+        { "text": "Pour envoyer des emails", "correct": false }
+      ]
+    },
+    {
+      "question": "C'est quoi un compte GitHub ?",
+      "answers": [
+        { "text": "Un compte bancaire en ligne", "correct": false },
+        {
+          "text": "C’est comme un profil qu’on crée sur le site de GitHub pour pouvoir utiliser ses services.",
+          "correct": true
+        },
+        { "text": "Un service de messagerie instantanée", "correct": false },
+        { "text": "Un service de stockage de fichiers", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"repository\" sur GitHub ?",
+      "answers": [
+        { "text": "Une collection de DVD", "correct": false },
+        {
+          "text": "C'est comme un dossier spécial sur internet où on met notre code de projet.",
+          "correct": true
+        },
+        { "text": "Une playlist musicale", "correct": false },
+        { "text": "Un recueil de recettes de cuisine", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi créer un \"repository\" pour notre projet ?",
+      "answers": [
+        { "text": "Pour faire du shopping en ligne", "correct": false },
+        {
+          "text": "Pour le sauvegarder sur internet et pouvoir facilement le partager ou le modifier.",
+          "correct": true
+        },
+        { "text": "Pour organiser nos photos de vacances", "correct": false },
+        { "text": "Pour réserver une table au restaurant", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que GitHub est le seul endroit pour sauvegarder notre code ?",
+      "answers": [
+        { "text": "Oui, GitHub est le seul endroit", "correct": false },
+        {
+          "text": "Non, il y a d'autres endroits similaires comme GitLab, mais ce livre parle surtout de GitHub.",
+          "correct": true
+        },
+        { "text": "Non, mais c'est le seul endroit gratuit", "correct": false },
+        { "text": "Oui, GitHub est le plus sécurisé", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment on crée un compte sur GitHub ?",
+      "answers": [
+        { "text": "En allant à la poste", "correct": false },
+        {
+          "text": "On va sur le site de GitHub et on suit les instructions pour s’inscrire.",
+          "correct": true
+        },
+        { "text": "En téléphonant au service client", "correct": false },
+        {
+          "text": "En demandant à un ami de le faire pour nous",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A-t-on besoin de GitHub pour programmer ?",
+      "answers": [
+        { "text": "Oui, c'est obligatoire", "correct": false },
+        {
+          "text": "Pas toujours, mais c’est très utile pour garder notre travail en sécurité et collaborer avec d'autres.",
+          "correct": true
+        },
+        { "text": "Non, ça ne sert à rien", "correct": false },
+        { "text": "Oui, sinon on ne peut pas programmer", "correct": false }
+      ]
+    },
+    {
+      "question": "C'est quoi GitHub Actions mentionné dans le livre ?",
+      "answers": [
+        { "text": "Un jeu vidéo en ligne", "correct": false },
+        {
+          "text": "C'est un outil sur GitHub qui nous aide à automatiser certaines tâches pour nos projets.",
+          "correct": true
+        },
+        { "text": "Un film d'action", "correct": false },
+        { "text": "Une série télévisée", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on voir le code de quelqu'un d'autre sur GitHub ?",
+      "answers": [
+        { "text": "Non, c'est interdit", "correct": false },
+        {
+          "text": "Oui, si la personne a mis son projet comme public, tout le monde peut le voir.",
+          "correct": true
+        },
+        { "text": "Oui, mais seulement les amis", "correct": false },
+        { "text": "Non, il faut demander la permission", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on utiliser GitHub sans savoir programmer ?",
+      "answers": [
+        { "text": "Non, c'est réservé aux programmeurs", "correct": false },
+        {
+          "text": "On peut l'utiliser pour découvrir des projets ou apprendre, mais il est surtout utile pour ceux qui programment.",
+          "correct": true
+        },
+        { "text": "Oui, c'est facile", "correct": false },
+        {
+          "text": "Non, ça ne sert à rien si on ne sait pas programmer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi le livre recommande-t-il d’utiliser GitHub ?",
+      "answers": [
+        { "text": "Parce que c'est gratuit", "correct": false },
+        {
+          "text": "Parce qu’il montre comment sauvegarder, partager et collaborer sur des projets de programmation.",
+          "correct": true
+        },
+        { "text": "Parce que tous les autres le font", "correct": false },
+        { "text": "Parce que c'est la seule option", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que créer un \"repository\" sur GitHub coûte de l'argent ?",
+      "answers": [
+        { "text": "Oui, beaucoup", "correct": false },
+        {
+          "text": "Non, créer des projets publics sur GitHub est gratuit.",
+          "correct": true
+        },
+        { "text": "Oui, mais seulement si on est étudiant", "correct": false },
+        {
+          "text": "Non, mais cela dépend de la taille du projet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la première étape pour utiliser GitHub avec notre projet ?",
+      "answers": [
+        { "text": "Acheter un ordinateur", "correct": false },
+        { "text": "Créer un compte sur GitHub.", "correct": true },
+        { "text": "Apprendre à programmer", "correct": false },
+        { "text": "Télécharger un logiciel spécifique", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu’apprendra-t-on à faire dans le prochain chapitre du livre ?",
+      "answers": [
+        { "text": "Construire une maison", "correct": false },
+        {
+          "text": "Comment déployer notre code en utilisant un dépôt hébergé par nous-mêmes, sans GitHub.",
+          "correct": true
+        },
+        { "text": "Faire du jardinage", "correct": false },
+        {
+          "text": "Apprendre à jouer d'un instrument de musique",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

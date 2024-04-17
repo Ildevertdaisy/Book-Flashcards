@@ -1,1 +1,237 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que le JavaScript côté serveur ?",
+      "answers": [
+        {
+          "text": "C'est une façon de coder en JavaScript en utilisant un navigateur web.",
+          "correct": false
+        },
+        {
+          "text": "C'est une méthode pour exécuter du code JavaScript sur un serveur au lieu du navigateur.",
+          "correct": true
+        },
+        {
+          "text": "C'est une bibliothèque JavaScript pour créer des animations côté serveur.",
+          "correct": false
+        },
+        {
+          "text": "C'est un concept permettant de tester des scripts JavaScript sur un serveur de test avant de les déployer.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'Express.js ?",
+      "answers": [
+        {
+          "text": "Express.js est un outil pour créer des sites web facilement, un peu comme FastAPI, mais il utilise JavaScript.",
+          "correct": true
+        },
+        {
+          "text": "Express.js est un langage de programmation similaire à JavaScript mais conçu spécifiquement pour les serveurs.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un outil pour manipuler des bases de données en utilisant Node.js.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est une bibliothèque JavaScript pour créer des animations interactives sur les sites web.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que Node.js ?",
+      "answers": [
+        {
+          "text": "Node.js est un programme qui permet d'utiliser JavaScript pour faire fonctionner des applications sur un serveur.",
+          "correct": true
+        },
+        {
+          "text": "Node.js est un outil pour concevoir des interfaces utilisateur interactives dans les pages web.",
+          "correct": false
+        },
+        {
+          "text": "Node.js est une bibliothèque JavaScript pour manipuler des données côté serveur.",
+          "correct": false
+        },
+        {
+          "text": "Node.js est un framework pour développer des applications mobiles multiplateformes.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "À quoi sert npm, le Node Package Manager ?",
+      "answers": [
+        {
+          "text": "npm aide à installer et à gérer des outils supplémentaires pour notre projet, comme si c'était une boîte à outils pour JavaScript.",
+          "correct": true
+        },
+        {
+          "text": "npm est un gestionnaire de packages pour les applications mobiles développées avec Node.js.",
+          "correct": false
+        },
+        {
+          "text": "npm est une plateforme pour tester des applications Node.js avant de les déployer.",
+          "correct": false
+        },
+        {
+          "text": "npm est un framework pour créer des sites web interactifs utilisant Node.js.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on installer Express.js ?",
+      "answers": [
+        {
+          "text": "On peut installer Express.js en utilisant npm, après avoir créé un dossier pour notre projet.",
+          "correct": true
+        },
+        {
+          "text": "On peut installer Express.js en téléchargeant le fichier zip depuis le site officiel et en l'extrayant dans notre projet.",
+          "correct": false
+        },
+        {
+          "text": "On peut installer Express.js en utilisant un éditeur de code tel que Visual Studio Code.",
+          "correct": false
+        },
+        {
+          "text": "On peut installer Express.js en utilisant une commande spéciale dans le terminal qui l'installe automatiquement depuis internet.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Que fait le dossier `mkdir -p ~/Dev/roadtok8s/js/src/` ?",
+            "answers": [
+                {"text": "Cette commande crée un nouveau dossier pour notre code JavaScript.", "correct": true},
+                {"text": "Elle supprime tous les fichiers présents dans le dossier `~/Dev/roadtok8s/js/src/`.", "correct": false},
+                {"text": "Elle affiche le contenu du dossier `~/Dev/roadtok8s/js/src/`.", "correct": false},
+                {"text": "Elle renomme le dossier `~/Dev/roadtok8s/js/src/`.", "correct": false}
+            ]
+        },
+        {
+            "question": "Que fait la commande `cd ~/Dev/roadtok8s/js/` ?",
+            "answers": [
+                {"text": "Elle nous amène dans le dossier qu'on vient de créer pour commencer à travailler sur notre projet.", "correct": true},
+                {"text": "Elle supprime le dossier `~/Dev/roadtok8s/js/`.", "correct": false},
+                {"text": "Elle crée un nouveau fichier nommé `~/Dev/roadtok8s/js/`.", "correct": false},
+                {"text": "Elle affiche le contenu du dossier `~/Dev/roadtok8s/js/`.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le package.json ?",
+            "answers": [
+                {"text": "C'est un fichier qui garde une liste de tous les outils supplémentaires qu'on installe pour notre projet.", "correct": true},
+                {"text": "C'est un fichier de configuration pour le système d'exploitation.", "correct": false},
+                {"text": "C'est un outil pour exécuter du code JavaScript.", "correct": false},
+                {"text": "C'est un fichier qui stocke des images pour notre projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi npm isole-t-il le code dans le dossier local ?",
+            "answers": [
+                {"text": "Pour s'assurer que notre projet utilise seulement les outils qu'on a choisis, sans affecter d'autres projets sur l'ordinateur.", "correct": true},
+                {"text": "Pour rendre notre code JavaScript accessible à tous les autres projets sur l'ordinateur.", "correct": false},
+                {"text": "Pour rendre notre code JavaScript exécutable directement depuis le navigateur.", "correct": false},
+                {"text": "Pour compresser notre code JavaScript et économiser de l'espace disque.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment installe-t-on des outils supplémentaires pour notre projet JavaScript ?",
+            "answers": [
+                {"text": "On utilise npm pour ajouter des outils directement dans notre dossier de projet.", "correct": true},
+                {"text": "On utilise une commande spéciale dans le terminal pour télécharger les outils nécessaires.", "correct": false},
+                {"text": "On recherche et on télécharge manuellement les outils depuis internet.", "correct": false},
+                {"text": "On demande à un développeur tiers de les installer pour nous.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Quelle est la première étape pour créer un projet JavaScript avec Express.js ?",
+            "answers": [
+                {"text": "La première étape est de créer un dossier pour notre projet.", "correct": true},
+                {"text": "La première étape est d'installer Express.js.", "correct": false},
+                {"text": "La première étape est de créer un fichier HTML.", "correct": false},
+                {"text": "La première étape est de choisir un nom pour notre projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi avons-nous besoin de Node.js version 16.14 ou supérieure ?",
+            "answers": [
+                {"text": "Parce que cette version de Node.js a les fonctionnalités nécessaires pour utiliser Express.js correctement.", "correct": true},
+                {"text": "Parce que cette version de Node.js est plus rapide que les versions précédentes.", "correct": false},
+                {"text": "Parce que cette version de Node.js a une meilleure interface utilisateur.", "correct": false},
+                {"text": "Parce que cette version de Node.js a moins de bogues que les versions précédentes.", "correct": false}
+            ]
+        },
+        {
+            "question": "Est-ce qu'il faut activer quelque chose pour utiliser npm dans notre projet ?",
+            "answers": [
+                {"text": "Non, il n'y a pas besoin d'activer quoi que ce soit, npm fonctionne directement dans le dossier de notre projet.", "correct": true},
+                {"text": "Oui, il faut activer l'option 'npm' dans les paramètres du projet.", "correct": false},
+                {"text": "Oui, il faut exécuter une commande spéciale pour activer npm dans le projet.", "correct": false},
+                {"text": "Non, npm est activé par défaut sur tous les projets JavaScript.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important de garder une trace des outils installés dans package.json ?",
+            "answers": [
+                {"text": "Pour savoir quels outils on utilise et pouvoir facilement les gérer.", "correct": true},
+                {"text": "Pour montrer aux autres développeurs quels outils sont installés dans le projet.", "correct": false},
+                {"text": "Pour que le projet fonctionne correctement.", "correct": false},
+                {"text": "Pour éviter les conflits entre les différents outils installés.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle commande utilise-t-on pour aller dans le dossier de notre projet JavaScript ?",
+            "answers": [
+                {"text": "On utilise `cd` suivi du chemin du dossier de notre projet.", "correct": true},
+                {"text": "On utilise `open` suivi du nom du dossier de notre projet.", "correct": false},
+                {"text": "On utilise `move` suivi du chemin du dossier de notre projet.", "correct": false},
+                {"text": "On utilise `start` suivi du nom du dossier de notre projet.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que l'installation d'Express.js permet de faire dans notre projet ?",
+            "answers": [
+                {"text": "Elle permet de construire et de gérer notre application web.", "correct": true},
+                {"text": "Elle permet d'accéder à des ressources en ligne pour notre projet.", "correct": false},
+                {"text": "Elle permet de tester automatiquement notre application web.", "correct": false},
+                {"text": "Elle permet d'installer des outils supplémentaires pour Node.js.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment npm facilite-t-il la gestion des outils pour notre projet ?",
+            "answers": [
+                {"text": "npm garde une liste des outils dans le fichier package.json et les installe dans notre dossier de projet pour qu'ils soient faciles à utiliser.", "correct": true},
+                {"text": "npm automatise le processus de développement dans notre projet.", "correct": false},
+                {"text": "npm fournit des outils graphiques pour visualiser notre projet.", "correct": false},
+                {"text": "npm permet d'accéder à des tutoriels en ligne pour notre projet.", "correct": false}
+            ]
+        }
+    ]
+}

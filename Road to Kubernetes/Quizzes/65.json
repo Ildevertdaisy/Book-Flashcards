@@ -1,1 +1,106 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi est-il important de bien expliquer ce qu'on a changé quand on utilise Git ?",
+      "answers": [
+        {
+          "text": "Pour que tout le monde puisse comprendre ce qu'on a fait et pourquoi on l'a fait.",
+          "correct": true
+        },
+        {
+          "text": "Parce que Git ne fonctionne pas si on ne le fait pas.",
+          "correct": false
+        },
+        {
+          "text": "Pour éviter que Git ne perde nos modifications.",
+          "correct": false
+        },
+        { "text": "Parce que ça rend Git plus rapide.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si on ajoute beaucoup de nouvelles fonctions en même temps sans expliquer ?",
+      "answers": [
+        {
+          "text": "C'est difficile pour les autres de savoir exactement ce qui a changé et pourquoi.",
+          "correct": true
+        },
+        {
+          "text": "Les nouvelles fonctions seront automatiquement documentées.",
+          "correct": false
+        },
+        {
+          "text": "Git les rejette et demande une explication.",
+          "correct": false
+        },
+        { "text": "Les fonctions ne seront pas ajoutées.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un exemple de bon message quand on enregistre des changements avec Git ?",
+      "answers": [
+        {
+          "text": "Un message qui décrit clairement et précisément les changements, comme \"ajout d'une nouvelle fonction pour envoyer des emails\".",
+          "correct": true
+        },
+        { "text": "Un simple \"modification effectuée\".", "correct": false },
+        {
+          "text": "Un message avec des fautes d'orthographe.",
+          "correct": false
+        },
+        {
+          "text": "Un message très long et détaillé sur autre chose que les changements.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un mauvais exemple de message avec Git ?",
+      "answers": [
+        {
+          "text": "Un message vague comme \"des trucs ont changé\", parce que ça n'explique pas ce qui a été fait.",
+          "correct": true
+        },
+        {
+          "text": "Un message qui décrit chaque ligne de code modifiée.",
+          "correct": false
+        },
+        { "text": "Un message en langue étrangère.", "correct": false },
+        { "text": "Un message sans aucun sens.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on ajouter et enregistrer les changements souvent avec Git ?",
+      "answers": [
+        {
+          "text": "Pour garder une bonne trace de ce qu'on a modifié, ce qui aide à suivre les progrès et à corriger les erreurs.",
+          "correct": true
+        },
+        {
+          "text": "Parce que Git ne fonctionne que si on le fait toutes les heures.",
+          "correct": false
+        },
+        {
+          "text": "Pour montrer à nos collègues que nous sommes productifs.",
+          "correct": false
+        },
+        { "text": "Pour que Git ne soit pas lent.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qui aide à faire de bons messages de commit avec Git ?",
+      "answers": [
+        { "text": "Penser à comment expliquer clairement ce qu'on a changé et pourquoi, pour que tout le monde puisse comprendre.", "correct": true },
+        { "text": "Utiliser des acronymes et des abréviations compliquées.", "correct": false },
+        { "text": "Copier-coller les messages des autres sans réfléchir.", "correct": false },
+        { "text": "Écrire le message le plus court possible.", "correct": false }
+      ]
+    }
+  ]
+}

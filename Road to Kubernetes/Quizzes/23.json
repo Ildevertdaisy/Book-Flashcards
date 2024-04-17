@@ -1,1 +1,141 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'une application web ?",
+      "answers": [
+        {
+          "text": "Une application web est un programme sur internet qui peut faire des choses comme montrer des pages ou envoyer des informations.",
+          "correct": true
+        },
+        {
+          "text": "Une application web est un logiciel installé sur un ordinateur local.",
+          "correct": false
+        },
+        {
+          "text": "Une application web est une forme de jeu vidéo en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Une application web est une application mobile.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "À quoi sert une \"route\" dans une application web ?",
+      "answers": [
+        {
+          "text": "Une route est un chemin dans l'application qui dit où aller pour voir quelque chose de spécifique ou faire une action.",
+          "correct": true
+        },
+        {
+          "text": "Une route est un moyen de transport pour les données sur internet.",
+          "correct": false
+        },
+        {
+          "text": "Une route est un obstacle à contourner lors de la navigation sur un site web.",
+          "correct": false
+        },
+        {
+          "text": "Une route est une destination touristique populaire sur internet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une méthode HTTP ?",
+      "answers": [
+        {
+          "text": "Une méthode HTTP est une façon de communiquer sur internet, comme demander des informations (GET) ou envoyer des informations (POST).",
+          "correct": true
+        },
+        {
+          "text": "Une méthode HTTP est un logiciel utilisé pour accéder à des pages web.",
+          "correct": false
+        },
+        {
+          "text": "Une méthode HTTP est un format de fichier utilisé pour stocker des données en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Une méthode HTTP est un type de cryptage utilisé pour sécuriser les connexions internet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce important de bien choisir ses routes et méthodes HTTP dans une application web ?",
+      "answers": [
+        {
+          "text": "Parce que cela aide les gens à trouver ce qu'ils cherchent et à faire des actions spécifiques sur le site web facilement.",
+          "correct": true
+        },
+        {
+          "text": "Parce que cela rend le site web plus coloré et attractif visuellement.",
+          "correct": false
+        },
+        {
+          "text": "Parce que cela réduit le temps de chargement des pages sur le site web.",
+          "correct": false
+        },
+        {
+          "text": "Parce que cela garantit que le site web fonctionne sur tous les navigateurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que FastAPI ?",
+      "answers": [
+        {
+          "text": "FastAPI est un outil qui aide à créer des applications web rapidement, en gérant les routes et les méthodes HTTP de manière simple.",
+          "correct": true
+        },
+        {
+          "text": "FastAPI est une méthode de livraison express de produits commandés en ligne.",
+          "correct": false
+        },
+        { "text": "FastAPI est un réseau social populaire.", "correct": false },
+        {
+          "text": "FastAPI est un langage de programmation utilisé pour créer des jeux vidéo en ligne.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Comment FastAPI simplifie-t-il la création d'applications web ?",
+            "answers": [
+                {"text": "Il rend facile l'ajout de nouvelles routes et le traitement des différentes méthodes HTTP sans beaucoup de code compliqué.", "correct": true},
+                {"text": "FastAPI simplifie la création d'applications web en utilisant uniquement des graphiques.", "correct": false},
+                {"text": "FastAPI simplifie la création d'applications web en se connectant directement à la base de données.", "correct": false},
+                {"text": "FastAPI simplifie la création d'applications web en réduisant la qualité des sites produits.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que Node.js ?",
+            "answers": [
+                {"text": "Node.js est un outil pour créer des applications web, mais il utilise JavaScript, un langage de programmation différent de Python.", "correct": true},
+                {"text": "Node.js est une méthode pour créer des noeuds dans un réseau informatique.", "correct": false},
+                {"text": "Node.js est un service de streaming de musique en ligne.", "correct": false},
+                {"text": "Node.js est un format de fichier pour stocker des données structurées.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi passerait-on de la création d'une application FastAPI à une application Node.js ?",
+            "answers": [
+                {"text": "Pour apprendre ou utiliser une autre manière de créer des applications web, en utilisant JavaScript au lieu de Python.", "correct": true},
+                {"text": "Pour rendre l'application plus lente et moins efficace.", "correct": false},
+                {"text": "Pour ajouter des fonctionnalités de sécurité supplémentaires à l'application.", "correct": false},
+                {"text": "Pour utiliser des outils de développement obsolètes.", "correct": false}
+            ]
+        }
+    ]
+}
+

@@ -1,1 +1,240 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Que fait la commande `git add <chemin>` ?",
+      "answers": [
+        {
+          "text": "Elle prépare Git à suivre les changements dans les fichiers ou dossiers spécifiés.",
+          "correct": true
+        },
+        {
+          "text": "Elle supprime tous les changements dans les fichiers spécifiés.",
+          "correct": false
+        },
+        {
+          "text": "Elle enregistre immédiatement les modifications dans l'historique de Git.",
+          "correct": false
+        },
+        {
+          "text": "Elle crée une nouvelle branche dans le dépôt Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi devons-nous dire à Git quels fichiers suivre ?",
+      "answers": [
+        {
+          "text": "Pour s'assurer que Git garde une trace des fichiers que nous voulons et ignore ceux que nous ne voulons pas suivre.",
+          "correct": true
+        },
+        {
+          "text": "Pour permettre à Git d'automatiquement suivre tous les fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Pour garantir que tous les fichiers sont immédiatement inclus dans le prochain commit.",
+          "correct": false
+        },
+        {
+          "text": "Pour supprimer les fichiers indésirables du dépôt Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il après avoir utilisé `git add` sur un fichier ?",
+      "answers": [
+        {
+          "text": "Git se prépare à enregistrer les changements, mais ne les enregistre pas tout de suite.",
+          "correct": true
+        },
+        {
+          "text": "Git enregistre immédiatement les modifications dans l'historique de Git.",
+          "correct": false
+        },
+        {
+          "text": "Git supprime tous les changements non suivis dans le fichier.",
+          "correct": false
+        },
+        {
+          "text": "Git crée une nouvelle branche pour isoler les modifications.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"commit\" dans Git ?",
+      "answers": [
+        {
+          "text": "C'est lorsque Git enregistre réellement les changements que nous avons préparés.",
+          "correct": true
+        },
+        {
+          "text": "C'est une commande pour supprimer l'historique de commit d'un fichier.",
+          "correct": false
+        },
+        {
+          "text": "C'est un processus pour fusionner deux branches différentes.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour annuler tous les changements dans le dépôt Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment annuler la préparation d'un fichier avec Git ?",
+      "answers": [
+        {
+          "text": "En utilisant la commande `git reset <chemin>`.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant la commande `git commit --reset <chemin>`.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant la commande `git revert <chemin>`.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant la commande `git remove <chemin>`.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Peut-on préparer un fichier avec `git add` et décider de ne pas enregistrer ses changements ?",
+      "answers": [
+        { "text": "Oui, on peut annuler la préparation avant de faire un commit.", "correct": true },
+        { "text": "Non, une fois préparé avec `git add`, le fichier est automatiquement enregistré dans l'historique de Git.", "correct": false },
+        { "text": "Non, une fois préparé avec `git add`, il faut obligatoirement faire un commit pour enregistrer les changements.", "correct": false },
+        { "text": "Non, une fois préparé avec `git add`, les changements sont irréversiblement enregistrés dans l'historique de Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie \"suivre un fichier\" avec Git ?",
+      "answers": [
+        { "text": "Cela signifie que Git gardera une trace des changements faits à ce fichier.", "correct": true },
+        { "text": "Cela signifie que Git va effacer tous les changements faits au fichier.", "correct": false },
+        { "text": "Cela signifie que Git va dupliquer le fichier dans le dépôt.", "correct": false },
+        { "text": "Cela signifie que Git va ignorer tous les changements faits au fichier.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que `git add` enregistre les changements dans le fichier ?",
+      "answers": [
+        { "text": "Non, ça prépare seulement les fichiers pour être enregistrés dans un commit.", "correct": true },
+        { "text": "Oui, `git add` enregistre automatiquement tous les changements dans le fichier.", "correct": false },
+        { "text": "Non, `git add` crée une copie des fichiers avant de les enregistrer dans un commit.", "correct": false },
+        { "text": "Oui, `git add` enregistre les changements dans le fichier sans besoin de faire un commit.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de choisir soigneusement les fichiers à suivre avec Git ?",
+      "answers": [
+        { "text": "Pour ne pas encombrer Git avec des fichiers inutiles ou sensibles.", "correct": true },
+        { "text": "Pour s'assurer que tous les fichiers sont enregistrés dans l'historique de Git.", "correct": false },
+        { "text": "Pour accélérer le processus de suivi des fichiers par Git.", "correct": false },
+        { "text": "Pour permettre à Git de créer des branches spécifiques pour chaque fichier.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quel est le rôle de `git reset <chemin>` par rapport à `git add <chemin>` ?",
+      "answers": [
+        { "text": "`git reset` annule la préparation faite par `git add`, retirant les fichiers de la liste à suivre.", "correct": true },
+        { "text": "`git reset` enregistre tous les changements faits dans les fichiers suivis par Git.", "correct": false },
+        { "text": "`git reset` supprime tous les fichiers suivis par Git.", "correct": false },
+        { "text": "`git reset` crée une copie de sauvegarde des fichiers suivis par Git.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Quand est-ce que les changements dans les fichiers sont définitivement enregistrés par Git ?",
+      "answers": [
+        { "text": "Quand on fait un commit après les avoir préparés avec `git add`.", "correct": true },
+        { "text": "Quand on utilise la commande `git push`.", "correct": false },
+        { "text": "Quand on crée une nouvelle branche avec `git branch`.", "correct": false },
+        { "text": "Quand on utilise la commande `git clone`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on suivre plusieurs fichiers en même temps avec Git ?",
+      "answers": [
+        { "text": "Oui, on peut ajouter plusieurs fichiers à la fois pour les suivre.", "correct": true },
+        { "text": "Non, Git ne permet de suivre qu'un seul fichier à la fois.", "correct": false },
+        { "text": "Oui, mais il faut créer une branche séparée pour chaque fichier.", "correct": false },
+        { "text": "Non, chaque fichier doit être suivi individuellement avec Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela signifie quand on dit que Git \"garde une trace\" des fichiers ?",
+      "answers": [
+        { "text": "Cela signifie que Git se souvient des changements faits aux fichiers au fil du temps.", "correct": true },
+        { "text": "Cela signifie que Git crée une copie de sauvegarde des fichiers.", "correct": false },
+        { "text": "Cela signifie que Git supprime tous les changements précédents des fichiers.", "correct": false },
+        { "text": "Cela signifie que Git rend les fichiers en lecture seule.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi utilise-t-on `git add` avant `git commit` ?",
+      "answers": [
+        { "text": "Pour choisir quels changements dans les fichiers Git doit enregistrer lors du prochain commit.", "correct": true },
+        { "text": "Pour envoyer les changements aux autres membres de l'équipe.", "correct": false },
+        { "text": "Pour créer une nouvelle branche dans le dépôt Git.", "correct": false },
+        { "text": "Pour fusionner les branches existantes dans le dépôt Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'arrive-t-il si on modifie un fichier après l'avoir préparé avec `git add` mais avant de faire un commit ?",
+      "answers": [
+        { "text": "Les nouvelles modifications ne seront pas incluses dans le commit, sauf si on exécute `git add` à nouveau.", "correct": true },
+        { "text": "Les modifications seront automatiquement enregistrées dans le dépôt Git.", "correct": false },
+        { "text": "Les modifications seront supprimées et le fichier reviendra à son état précédent.", "correct": false },
+        { "text": "Git générera une erreur et empêchera le commit jusqu'à ce que le fichier soit restauré.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Quelle est la différence entre sauvegarder un fichier sur l'ordinateur et le suivre avec Git ?",
+      "answers": [
+        { "text": "Sauvegarder enregistre le fichier, suivre avec Git enregistre l’historique des changements dans le fichier.", "correct": true },
+        { "text": "Sauvegarder le fichier le rend accessible en ligne, tandis que Git le garde en local.", "correct": false },
+        { "text": "Sauvegarder crée une copie de sécurité, tandis que Git enregistre les modifications sur un serveur distant.", "correct": false },
+        { "text": "Sauvegarder le fichier le rend en lecture seule, tandis que Git permet des modifications en temps réel.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de bien organiser les fichiers à suivre avec Git dans un projet ?",
+      "answers": [
+        { "text": "Pour garder un historique clair des changements et faciliter la collaboration sur le projet.", "correct": true },
+        { "text": "Pour économiser de l'espace de stockage sur le serveur Git.", "correct": false },
+        { "text": "Pour rendre les fichiers difficiles à trouver, afin de protéger la propriété intellectuelle.", "correct": false },
+        { "text": "Pour accélérer le processus de suivi des fichiers par Git.", "correct": false }
+      ]
+    }
+  ]
+}

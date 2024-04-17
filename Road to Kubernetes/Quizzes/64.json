@@ -1,1 +1,183 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Quand devrait-on dire à Git de suivre les changements dans nos fichiers ?",
+      "answers": [
+        {
+          "text": "Aussi souvent que possible, chaque fois qu'on fait des changements.",
+          "correct": true
+        },
+        {
+          "text": "Seulement une fois par jour pour éviter de surcharger Git.",
+          "correct": false
+        },
+        {
+          "text": "Uniquement lorsqu'on est prêt à partager nos fichiers avec d'autres.",
+          "correct": false
+        },
+        {
+          "text": "Jamais, Git suit automatiquement tous les changements.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'ajouter un message avec nos changements dans Git ?",
+      "answers": [
+        {
+          "text": "Pour expliquer ce qu'on a modifié ou ajouté dans nos fichiers.",
+          "correct": true
+        },
+        {
+          "text": "Pour rendre Git plus lent en ajoutant des informations inutiles.",
+          "correct": false
+        },
+        {
+          "text": "Pour permettre à Git de suivre nos modifications sans ambiguïté.",
+          "correct": false
+        },
+        {
+          "text": "Pour indiquer à Git la date et l'heure exactes de chaque modification.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que faire si on ajoute une nouvelle fonctionnalité à notre projet ?",
+      "answers": [
+        {
+          "text": "On doit l'ajouter à Git avec un message qui explique la fonctionnalité.",
+          "correct": true
+        },
+        {
+          "text": "On doit laisser Git la découvrir automatiquement pour économiser du temps.",
+          "correct": false
+        },
+        {
+          "text": "On doit ignorer cette étape car Git ne peut pas suivre les nouvelles fonctionnalités.",
+          "correct": false
+        },
+        {
+          "text": "On doit créer une branche séparée dans Git pour chaque nouvelle fonctionnalité.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que signifie « commit » dans Git ?",
+      "answers": [
+        {
+          "text": "C'est comme sauvegarder nos changements avec une note qui les explique.",
+          "correct": true
+        },
+        {
+          "text": "C'est le processus de suppression des modifications dans Git.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour annuler tous les changements dans le dépôt local.",
+          "correct": false
+        },
+        {
+          "text": "C'est une étape pour fusionner plusieurs branches dans Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment Git peut-il nous aider à travailler sur un projet ?",
+      "answers": [
+        {
+          "text": "Il garde une trace de tous les changements pour qu'on puisse voir ce qu'on a fait.",
+          "correct": true
+        },
+        {
+          "text": "Il limite l'accès aux fichiers du projet pour empêcher les erreurs de modification.",
+          "correct": false
+        },
+        {
+          "text": "Il automatise la création de documentation pour chaque fichier du projet.",
+          "correct": false
+        },
+        {
+          "text": "Il transforme les fichiers du projet en images pour une visualisation plus facile.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un « commit message » dans Git ?",
+      "answers": [
+        { "text": "Une courte description des changements qu'on a faits.", "correct": true },
+        { "text": "Le nom d'utilisateur associé à chaque modification.", "correct": false },
+        { "text": "Le numéro de version du fichier avant et après les modifications.", "correct": false },
+        { "text": "Un code secret utilisé pour crypter les données de commit.", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on crée un nouveau chemin d'URL dans notre projet, que doit-on faire ?",
+      "answers": [
+        { "text": "Ajouter et commettre les changements dans Git avec un message sur le nouveau chemin.", "correct": true },
+        { "text": "Ignorer le nouveau chemin car Git le détectera automatiquement.", "correct": false },
+        { "text": "Supprimer tous les autres chemins d'URL dans le projet.", "correct": false },
+        { "text": "Créer une branche Git séparée pour chaque nouveau chemin d'URL.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment Git sait-il quels fichiers suivre ?",
+      "answers": [
+        { "text": "On lui dit en utilisant la commande `git add` pour préparer les fichiers.", "correct": true },
+        { "text": "Git suit automatiquement tous les fichiers dans le répertoire du projet.", "correct": false },
+        { "text": "Git suit uniquement les fichiers avec une extension spécifique comme .gitignore.", "correct": false },
+        { "text": "Il suffit de copier manuellement les fichiers dans le répertoire de suivi de Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on annuler des changements dans Git ?",
+      "answers": [
+        { "text": "Oui, avant de commettre les changements, on peut les annuler.", "correct": true },
+        { "text": "Non, une fois les changements ajoutés à Git, ils sont définitifs.", "correct": false },
+        { "text": "Seulement si on a une sauvegarde externe des fichiers avant les modifications.", "correct": false },
+        { "text": "Uniquement si on utilise une branche Git distincte pour chaque modification.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi utiliserait-on Git pour un projet de programmation ?",
+      "answers": [
+        { "text": "Pour se souvenir de tous les changements et pouvoir revenir en arrière si nécessaire.", "correct": true },
+        { "text": "Pour rendre le projet plus compliqué en ajoutant une couche supplémentaire de gestion de version.", "correct": false },
+        { "text": "Pour rendre le projet plus lent en stockant chaque étape de développement dans Git.", "correct": false },
+        { "text": "Pour empêcher les autres développeurs d'accéder au code source du projet.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Comment ajouter un nouveau fichier à Git ?",
+      "answers": [
+        { "text": "En utilisant `git add chemin/vers/le/fichier`.", "correct": true },
+        { "text": "En tapant `git new file` dans la ligne de commande.", "correct": false },
+        { "text": "En téléchargeant le fichier sur GitHub et en espérant qu'il soit ajouté automatiquement.", "correct": false },
+        { "text": "En modifiant directement le fichier dans le répertoire Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un bon exemple de message de commit pour Git ?",
+      "answers": [
+        { "text": "Un message qui explique clairement ce que les changements font, comme \"ajout d'une nouvelle route URL pour afficher du contenu HTML\".", "correct": true },
+        { "text": "Un simple \"commit\".", "correct": false },
+        { "text": "Un message cryptique sans aucune explication.", "correct": false },
+        { "text": "Un message qui dit simplement \"mise à jour\".", "correct": false }
+      ]
+    }
+  ]
+}

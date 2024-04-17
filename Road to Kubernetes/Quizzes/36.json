@@ -1,1 +1,227 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'Express.js permet de faire facilement ?",
+      "answers": [
+        {
+          "text": "Express.js permet de retourner facilement du HTML.",
+          "correct": true
+        },
+        {
+          "text": "Express.js permet de générer automatiquement des images.",
+          "correct": false
+        },
+        {
+          "text": "Express.js permet d'exécuter des scripts Python.",
+          "correct": false
+        },
+        {
+          "text": "Express.js permet de lire des fichiers audio.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si le HTML n'est pas correctement formaté dans Express.js ?",
+      "answers": [
+        {
+          "text": "Même si le HTML n'est pas bien formaté, le navigateur va quand même l'afficher.",
+          "correct": true
+        },
+        {
+          "text": "Le serveur Express.js affichera une erreur de format HTML.",
+          "correct": false
+        },
+        {
+          "text": "Le navigateur refusera d'afficher le contenu HTML.",
+          "correct": false
+        },
+        {
+          "text": "Le serveur Express.js affichera uniquement le code source HTML.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de choisir le bon port pour nos applications ?",
+      "answers": [
+        {
+          "text": "Le choix du port devient important lorsque nous commençons à déployer nos applications sur internet.",
+          "correct": true
+        },
+        {
+          "text": "Le port détermine la vitesse de chargement de l'application.",
+          "correct": false
+        },
+        {
+          "text": "Le port affecte la taille maximale des fichiers que l'application peut traiter.",
+          "correct": false
+        },
+        {
+          "text": "Le port détermine la qualité de la connexion à la base de données.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on changer le port sur lequel notre application Express.js fonctionne ?",
+      "answers": [
+        {
+          "text": "En utilisant la variable d'environnement PORT avant de lancer l'application.",
+          "correct": true
+        },
+        {
+          "text": "En modifiant directement le fichier main.js.",
+          "correct": false
+        },
+        {
+          "text": "En redémarrant le serveur avec un nouveau port spécifié dans le terminal.",
+          "correct": false
+        },
+        {
+          "text": "En modifiant les paramètres du navigateur web pour écouter un port différent.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour démarrer Express.js sur un nouveau port sous macOS ou Linux ?",
+      "answers": [
+        { "text": "PORT=3011 node main.js", "correct": true },
+        { "text": "npm start --port=3011", "correct": false },
+        { "text": "node main.js --port=3011", "correct": false },
+        { "text": "express --port=3011", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Et sous Windows, comment change-t-on le port de notre application Express.js ?",
+            "answers": [
+                { "text": "set PORT=3011 && node main.js", "correct": true },
+                { "text": "npm run start --port 3011", "correct": false },
+                { "text": "node main.js --port 3011", "correct": false },
+                { "text": "express --port 3011", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment vérifie-t-on que notre serveur Express.js fonctionne sur un nouveau port ?",
+            "answers": [
+                { "text": "Le terminal affiche \"Server running on port http://127.0.0.1:3011\", et on peut ouvrir cette adresse dans un navigateur.", "correct": true },
+                { "text": "Le navigateur affiche une notification indiquant le changement de port.", "correct": false },
+                { "text": "On doit redémarrer l'ordinateur pour que le changement de port prenne effet.", "correct": false },
+                { "text": "Le terminal affiche une erreur indiquant que le port est déjà utilisé.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que doit-on faire pour arrêter notre application Express.js avant de changer de port ?",
+            "answers": [
+                { "text": "Appuyer sur Control + C pour arrêter l'application.", "correct": true },
+                { "text": "Fermer la fenêtre du terminal.", "correct": false },
+                { "text": "Exécuter la commande 'exit' dans le terminal.", "correct": false },
+                { "text": "Redémarrer l'ordinateur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le navigateur affiche quand on visite la nouvelle adresse de notre application Express.js ?",
+            "answers": [
+                { "text": "Il montre le contenu HTML spécifié par notre application.", "correct": true },
+                { "text": "Il affiche une page d'erreur 404.", "correct": false },
+                { "text": "Il redirige automatiquement vers une autre adresse.", "correct": false },
+                { "text": "Il affiche une demande de confirmation pour accéder au site.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi utiliserait-on une variable d'environnement pour le port dans une application web ?",
+            "answers": [
+                { "text": "Pour pouvoir facilement changer le port sur lequel l'application écoute, surtout lors du déploiement.", "correct": true },
+                { "text": "Pour rendre le code plus complexe et difficile à comprendre.", "correct": false },
+                { "text": "Pour limiter l'accès à l'application en fonction du port utilisé.", "correct": false },
+                { "text": "Pour rendre l'application dépendante d'un port spécifique.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'indique le message \"Server running on port http://127.0.0.1:3011\"?",
+            "answers": [
+                { "text": "Cela indique que notre serveur web est prêt et accessible à cette adresse.", "correct": true },
+                { "text": "Le serveur est en mode de maintenance.", "correct": false },
+                { "text": "Une erreur s'est produite lors du démarrage du serveur.", "correct": false },
+                { "text": "Le serveur est en cours d'arrêt.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que doit-on ouvrir pour voir notre application Express.js après avoir changé de port ?",
+            "answers": [
+                { "text": "Ouvrir un navigateur web et aller à l'adresse http://127.0.0.1:3011.", "correct": true },
+                { "text": "Redémarrer l'ordinateur.", "correct": false },
+                { "text": "Changer les paramètres réseau de l'ordinateur.", "correct": false },
+                { "text": "Exécuter une commande dans le terminal.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quelle est la différence entre utiliser Express.js sur le port 3000 ou 3011 ?",
+            "answers": [
+                { "text": "Il n'y a pas de différence dans le fonctionnement de l'application; c'est juste le numéro de port qui change.", "correct": true },
+                { "text": "Express.js fonctionne mieux sur le port 3000.", "correct": false },
+                { "text": "Le port 3011 est réservé aux applications plus rapides.", "correct": false },
+                { "text": "Le port 3000 est plus sécurisé que le port 3011.", "correct": false }
+            ]
+        },
+        {
+            "question": "Est-ce que toutes les applications web doivent utiliser des ports différents ?",
+            "answers": [
+                { "text": "Oui, chaque application web sur un serveur doit écouter sur un port unique pour éviter les conflits.", "correct": true },
+                { "text": "Non, les applications peuvent partager le même port sans problème.", "correct": false },
+                { "text": "Seules les grandes applications ont besoin de ports différents.", "correct": false },
+                { "text": "Les ports sont automatiquement attribués par le serveur, donc cela ne pose pas de problème.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que faire si l'adresse http://127.0.0.1:3011 ne montre pas notre application ?",
+            "answers": [
+                { "text": "Vérifier que l'application est démarrée correctement et écoute sur le bon port.", "correct": true },
+                { "text": "Redémarrer l'ordinateur.", "correct": false },
+                { "text": "Modifier les paramètres réseau de l'ordinateur.", "correct": false },
+                { "text": "Contacter le fournisseur d'accès à internet.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Comment les développeurs choisissent-ils sur quel port faire fonctionner leurs applications web ?",
+            "answers": [
+                { "text": "Ils choisissent un port disponible qui ne soit pas utilisé par une autre application sur le même serveur.", "correct": true },
+                { "text": "Ils sélectionnent un port au hasard.", "correct": false },
+                { "text": "Ils utilisent toujours le port 80 pour toutes leurs applications.", "correct": false },
+                { "text": "Ils demandent à l'utilisateur de choisir le port lors de l'installation de l'application.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi est-il utile de savoir comment changer le port d'une application web ?",
+            "answers": [
+                { "text": "Cela permet aux développeurs de s'assurer que leurs applications peuvent coexister sur le même serveur sans interférer les unes avec les autres.", "correct": true },
+                { "text": "Changer le port rend l'application plus rapide.", "correct": false },
+                { "text": "Cela permet de sécuriser davantage l'application.", "correct": false },
+                { "text": "Changer le port rend l'application plus compatible avec différents navigateurs.", "correct": false }
+            ]
+        }
+    ]
+}
+
+

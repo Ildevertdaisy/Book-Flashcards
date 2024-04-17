@@ -1,1 +1,192 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "C'est quoi Git ?",
+      "answers": [
+        {
+          "text": "Git est un système de gestion de bases de données relationnelles.",
+          "correct": false
+        },
+        {
+          "text": "Git est une plateforme de réseau social pour les développeurs.",
+          "correct": false
+        },
+        {
+          "text": "Git est un logiciel de contrôle de version distribué.",
+          "correct": false
+        },
+        {
+          "text": "Git est un outil qui aide à suivre les changements dans nos fichiers de projet.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Comment on dit à Git de commencer à suivre nos fichiers ?",
+      "answers": [
+        { "text": "En utilisant la commande `git follow`.", "correct": false },
+        { "text": "En utilisant la commande `git track`.", "correct": false },
+        { "text": "En utilisant la commande `git start`.", "correct": false },
+        {
+          "text": "En utilisant la commande `git init` dans notre dossier de projet.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"repo\" Git ?",
+      "answers": [
+        {
+          "text": "Un \"repo\" ou dépôt Git est un espace dans notre dossier qui permet à Git de suivre nos changements.",
+          "correct": true
+        },
+        {
+          "text": "Un \"repo\" Git est une commande pour réinitialiser Git.",
+          "correct": false
+        },
+        {
+          "text": "Un \"repo\" Git est un fichier de configuration Git.",
+          "correct": false
+        },
+        {
+          "text": "Un \"repo\" Git est un service web pour stocker des fichiers.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Si on a déjà utilisé `git init`, que se passe-t-il si on l'utilise encore une fois ?",
+      "answers": [
+        {
+          "text": "Git efface tous les fichiers dans le dossier.",
+          "correct": false
+        },
+        {
+          "text": "Git réinitialise le système d'exploitation.",
+          "correct": false
+        },
+        {
+          "text": "Git nous dit que le \"repo\" existe déjà.",
+          "correct": true
+        },
+        { "text": "Git crée un nouveau dépôt Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on vérifier si un dossier est suivi par Git ?",
+      "answers": [
+        { "text": "En tapant `git check`.", "correct": false },
+        {
+          "text": "En tapant `git status` pour voir l'état de suivi des fichiers par Git.",
+          "correct": true
+        },
+        { "text": "En tapant `git list`.", "correct": false },
+        { "text": "En tapant `git verify`.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que fait la commande `git status` ?",
+      "answers": [
+        { "text": "Elle nous montre si des fichiers ont changé et si Git suit ces changements.", "correct": true },
+        { "text": "Elle supprime tous les fichiers du dépôt Git.", "correct": false },
+        { "text": "Elle installe une nouvelle version de Git.", "correct": false },
+        { "text": "Elle crée un nouveau dépôt Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'indique un message \"fatal: not a git repository\" ?",
+      "answers": [
+        { "text": "Cela signifie que le dossier n'est pas suivi par Git.", "correct": true },
+        { "text": "Cela signifie que Git a rencontré une erreur fatale.", "correct": false },
+        { "text": "Cela signifie que le dépôt Git est corrompu.", "correct": false },
+        { "text": "Cela signifie que Git a besoin d'être réinstallé.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il utile d'avoir un \"repo\" Git pour notre projet ?",
+      "answers": [
+        { "text": "Cela nous aide à sauvegarder notre travail, revenir à des versions antérieures si nécessaire, et collaborer avec d'autres.", "correct": true },
+        { "text": "Cela nous permet de compiler notre code.", "correct": false },
+        { "text": "Cela nous permet de créer des pages web.", "correct": false },
+        { "text": "Cela nous permet de télécharger des fichiers depuis internet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que devons-nous faire après avoir initialisé un \"repo\" Git ?",
+      "answers": [
+        { "text": "Commencer à dire à Git quels fichiers suivre et enregistrer nos changements.", "correct": true },
+        { "text": "Fermer l'application Git.", "correct": false },
+        { "text": "Supprimer tous les fichiers du dépôt Git.", "correct": false },
+        { "text": "Ignorer tous les fichiers du dépôt Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que Git sauvegarde automatiquement les changements dans nos fichiers ?",
+      "answers": [
+        { "text": "Non, nous devons dire explicitement à Git quand sauvegarder nos changements.", "correct": true },
+        { "text": "Oui, Git sauvegarde automatiquement toutes les heures.", "correct": false },
+        { "text": "Oui, Git sauvegarde automatiquement à chaque modification de fichier.", "correct": false },
+        { "text": "Non, Git ne sauvegarde pas du tout les changements.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que montre la figure 2.7 dans le texte ?",
+      "answers": [
+        { "text": "Elle montre ce que Git dit quand on utilise `git status` dans notre projet Python.", "correct": true },
+        { "text": "Elle montre les étapes pour installer Git sur notre ordinateur.", "correct": false },
+        { "text": "Elle montre les différents types de dépôts Git.", "correct": false },
+        { "text": "Elle montre les commandes pour créer un nouveau projet Python.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on utiliser Git sans internet ?",
+      "answers": [
+        { "text": "Oui, Git fonctionne localement sur notre ordinateur jusqu'à ce qu'on décide de partager notre travail en ligne.", "correct": true },
+        { "text": "Non, Git nécessite une connexion internet permanente pour fonctionner.", "correct": false },
+        { "text": "Oui, mais Git fonctionne de manière limitée sans connexion internet.", "correct": false },
+        { "text": "Non, Git ne peut pas du tout fonctionner sans connexion internet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi utiliserait-on `git status` souvent ?",
+      "answers": [
+        { "text": "Pour vérifier quels fichiers ont changé et quels changements Git suit.", "correct": true },
+        { "text": "Pour réinitialiser le dépôt Git.", "correct": false },
+        { "text": "Pour supprimer tous les fichiers suivis par Git.", "correct": false },
+        { "text": "Pour fusionner deux branches Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie \"initialiser un dépôt Git\" ?",
+      "answers": [
+        { "text": "Cela signifie préparer un dossier pour que Git puisse suivre les changements de fichiers.", "correct": true },
+        { "text": "Cela signifie télécharger tous les fichiers du dépôt Git.", "correct": false },
+        { "text": "Cela signifie supprimer tous les fichiers du dépôt Git.", "correct": false },
+        { "text": "Cela signifie créer une nouvelle branche Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela signifie quand Git dit qu'un dépôt est \"vide\" ?",
+      "answers": [
+        { "text": "Cela signifie que Git est prêt à suivre les fichiers, mais aucun fichier n'est encore suivi.", "correct": true },
+        { "text": "Cela signifie qu'il n'y a pas de connexion internet pour le dépôt Git.", "correct": false },
+        { "text": "Cela signifie qu'il n'y a aucun fichier dans le dossier du dépôt Git.", "correct": false },
+        { "text": "Cela signifie qu'il n'y a pas de commits dans l'historique du dépôt Git.", "correct": false }
+      ]
+    }
+  ]
+}

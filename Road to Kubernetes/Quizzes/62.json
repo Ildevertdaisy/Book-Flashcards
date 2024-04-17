@@ -1,1 +1,234 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi Git est-il utile pour travailler sur des projets ?",
+      "answers": [
+        {
+          "text": "Il aide à garder une trace des modifications faites dans les fichiers du projet.",
+          "correct": true
+        },
+        {
+          "text": "Git permet de télécharger rapidement des fichiers depuis internet.",
+          "correct": false
+        },
+        {
+          "text": "Git est utilisé pour créer des sites web statiques.",
+          "correct": false
+        },
+        {
+          "text": "Git est principalement utilisé pour envoyer des e-mails.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que fait-on avec la commande `git add` ?",
+      "answers": [
+        {
+          "text": "On prépare Git à suivre les changements dans les fichiers qu'on choisit.",
+          "correct": true
+        },
+        {
+          "text": "On supprime les fichiers du répertoire de travail.",
+          "correct": false
+        },
+        {
+          "text": "On envoie les modifications sur un serveur distant.",
+          "correct": false
+        },
+        {
+          "text": "On crée une nouvelle branche dans le dépôt Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'utiliser un fichier `.gitignore` ?",
+      "answers": [
+        {
+          "text": "Pour dire à Git quels fichiers ou dossiers il ne doit pas suivre.",
+          "correct": true
+        },
+        {
+          "text": "Pour forcer Git à suivre tous les fichiers, peu importe leur nature.",
+          "correct": false
+        },
+        {
+          "text": "Pour permettre à Git d'ignorer les messages de commit.",
+          "correct": false
+        },
+        {
+          "text": "Pour limiter le nombre de commits dans un dépôt Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment enregistrer nos modifications dans Git ?",
+      "answers": [
+        {
+          "text": "En utilisant la commande `git commit -m \"message\"`.",
+          "correct": true
+        },
+        { "text": "En utilisant la commande `git push`.", "correct": false },
+        { "text": "En utilisant la commande `git add`.", "correct": false },
+        { "text": "En utilisant la commande `git checkout`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que représente le message dans la commande `git commit` ?",
+      "answers": [
+        {
+          "text": "Une description des modifications apportées pour se souvenir de ce qui a été fait.",
+          "correct": true
+        },
+        {
+          "text": "Un identifiant unique pour chaque commit.",
+          "correct": false
+        },
+        {
+          "text": "Une instruction pour Git d'ignorer certains fichiers.",
+          "correct": false
+        },
+        {
+          "text": "Une commande pour annuler le dernier commit.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Peut-on suivre tous les fichiers d'un dossier avec Git ?",
+      "answers": [
+        { "text": "Oui, en utilisant `git add nom_du_dossier/` pour ajouter tout le dossier.", "correct": true },
+        { "text": "Non, Git ne peut suivre que les fichiers individuels.", "correct": false },
+        { "text": "Oui, en utilisant `git track all` pour suivre tous les fichiers.", "correct": false },
+        { "text": "Non, Git ne peut suivre que les fichiers spécifiés un par un.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si on oublie d'ajouter un fichier avec `git add` avant de faire `git commit` ?",
+      "answers": [
+        { "text": "Le fichier ne sera pas enregistré dans les modifications de Git.", "correct": true },
+        { "text": "Le fichier sera automatiquement ajouté lors du commit.", "correct": false },
+        { "text": "Le fichier sera enregistré mais avec un avertissement de Git.", "correct": false },
+        { "text": "Le fichier sera ajouté mais marqué comme non suivi par Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire si on a des fichiers qu'on ne veut jamais enregistrer dans Git ?",
+      "answers": [
+        { "text": "On doit les ajouter au fichier `.gitignore`.", "correct": true },
+        { "text": "On doit les compresser dans un fichier zip avant de les ajouter à Git.", "correct": false },
+        { "text": "On doit les supprimer du système de fichiers avant de faire un commit.", "correct": false },
+        { "text": "On doit les renommer avec une extension spéciale pour les ignorer.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi certains fichiers comme `node_modules` ne sont-ils pas suivis par Git ?",
+      "answers": [
+        { "text": "Parce qu'ils sont trop grands et peuvent être facilement recréés.", "correct": true },
+        { "text": "Parce qu'ils sont considérés comme des fichiers système et doivent être ignorés.", "correct": false },
+        { "text": "Parce qu'ils sont verrouillés en lecture seule par Git.", "correct": false },
+        { "text": "Parce qu'ils sont stockés dans un format incompatible avec Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que faire si on veut enregistrer les changements dans un projet Node.js avec Git ?",
+      "answers": [
+        { "text": "Utiliser `git add` pour préparer les fichiers, puis `git commit` pour les enregistrer.", "correct": true },
+        { "text": "Utiliser `git save` pour enregistrer directement les modifications.", "correct": false },
+        { "text": "Utiliser `git node save` pour spécifier que c'est un projet Node.js.", "correct": false },
+        { "text": "Utiliser `git commit -m 'Node.js changes'` pour enregistrer les modifications.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Est-il nécessaire de lire la documentation officielle de Git pour comprendre toutes ses fonctionnalités ?",
+      "answers": [
+        { "text": "Oui, pour apprendre des fonctionnalités avancées non couvertes ici.", "correct": true },
+        { "text": "Non, les fonctionnalités de base suffisent pour la plupart des projets.", "correct": false },
+        { "text": "Non, il est plus efficace de rechercher des tutoriels sur Internet.", "correct": false },
+        { "text": "Non, Git est intuitif et peut être utilisé sans lire la documentation.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment ajouter tous les fichiers d'un dossier spécifique à Git ?",
+      "answers": [
+        { "text": "Avec `git add dossier/`, pour ajouter le dossier et tout ce qu'il contient.", "correct": true },
+        { "text": "Avec `git add .` pour ajouter tous les fichiers dans le dossier.", "correct": false },
+        { "text": "En spécifiant chaque fichier individuellement avec `git add fichier1 fichier2 ...`.", "correct": false },
+        { "text": "En utilisant `git track folder/` pour suivre le dossier entier.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie 'commit' en Git ?",
+      "answers": [
+        { "text": "C'est comme dire à Git de se rappeler officiellement des fichiers tels qu'ils sont à ce moment-là.", "correct": true },
+        { "text": "Cela signifie valider définitivement les modifications sur les fichiers.", "correct": false },
+        { "text": "Cela signifie fusionner plusieurs branches en une seule.", "correct": false },
+        { "text": "Cela signifie supprimer des fichiers du référentiel Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi utiliser des messages avec `git commit` ?",
+      "answers": [
+        { "text": "Pour expliquer ce qui a changé, facilitant ainsi le suivi des modifications pour soi-même et les autres.", "correct": true },
+        { "text": "Pour augmenter la sécurité des commits en ajoutant des mots de passe.", "correct": false },
+        { "text": "Pour activer certaines fonctionnalités avancées de Git.", "correct": false },
+        { "text": "Pour empêcher Git de fusionner automatiquement les branches.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire après avoir modifié un fichier pour que Git s'en souvienne ?",
+      "answers": [
+        { "text": "D'abord, utiliser `git add` pour le fichier, puis `git commit` pour enregistrer la modification avec une explication.", "correct": true },
+        { "text": "Exécuter `git save` pour enregistrer les modifications.", "correct": false },
+        { "text": "Exécuter `git remember` pour que Git garde une trace des modifications.", "correct": false },
+        { "text": "Exécuter `git update` pour mettre à jour le fichier modifié dans Git.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Est-ce que `git add` suffit pour que les modifications soient sauvegardées définitivement dans Git ?",
+      "answers": [
+        { "text": "Non, après `git add`, on doit utiliser `git commit` avec un message pour sauvegarder les modifications de manière définitive.", "correct": true },
+        { "text": "Oui, `git add` enregistre automatiquement les modifications dans Git.", "correct": false },
+        { "text": "Non, `git add` est uniquement pour les modifications temporaires.", "correct": false },
+        { "text": "Oui, tant que l'on exécute `git push` après `git add`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on enregistrer un dossier entier et son contenu dans Git ?",
+      "answers": [
+        { "text": "En utilisant `git add nom_du_dossier/` pour ajouter le dossier avec tout son contenu à Git.", "correct": true },
+        { "text": "En exécutant `git add *` dans le dossier à enregistrer.", "correct": false },
+        { "text": "En utilisant `git add dossier/*` pour ajouter uniquement les fichiers du dossier à Git.", "correct": false },
+        { "text": "En exécutant `git track dossier/` pour que Git suive le dossier entier.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+

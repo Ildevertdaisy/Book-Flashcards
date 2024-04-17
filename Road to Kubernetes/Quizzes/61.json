@@ -1,1 +1,201 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Que doit-on faire après avoir modifié des fichiers dans notre projet ?",
+      "answers": [
+        {
+          "text": "On doit enregistrer ces modifications avec Git.",
+          "correct": true
+        },
+        {
+          "text": "On doit imprimer les modifications et les envoyer par la poste.",
+          "correct": false
+        },
+        {
+          "text": "On doit les publier sur les réseaux sociaux.",
+          "correct": false
+        },
+        {
+          "text": "On doit les effacer pour revenir à la version précédente.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Si on ne veut pas suivre certains fichiers avec Git, que doit-on faire ?",
+      "answers": [
+        {
+          "text": "On doit les mettre dans un document appelé .gitignore.",
+          "correct": true
+        },
+        {
+          "text": "On doit les envoyer par e-mail à Git pour lui demander de les ignorer.",
+          "correct": false
+        },
+        {
+          "text": "On doit les renommer pour qu'ils ne soient plus reconnus par Git.",
+          "correct": false
+        },
+        {
+          "text": "On doit les déplacer dans un autre répertoire où Git ne peut pas les voir.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment prépare-t-on Git à enregistrer nos modifications ?",
+      "answers": [
+        { "text": "Avec la commande `git add`.", "correct": true },
+        {
+          "text": "En envoyant un SMS à Git pour lui dire ce qu'on a changé.",
+          "correct": false
+        },
+        {
+          "text": "En chantant une chanson sur nos modifications à Git.",
+          "correct": false
+        },
+        {
+          "text": "En organisant une réunion avec Git pour discuter des modifications.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour vraiment enregistrer nos modifications dans Git ?",
+      "answers": [
+        {
+          "text": "On utilise `git commit -m \"message sur les changements\"`.",
+          "correct": true
+        },
+        { "text": "On utilise `git save`.", "correct": false },
+        { "text": "On utilise `git upload`.", "correct": false },
+        { "text": "On utilise `git store`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi ajoute-t-on un message avec `git commit` ?",
+      "answers": [
+        {
+          "text": "Pour expliquer ce qu'on a changé dans le projet.",
+          "correct": true
+        },
+        {
+          "text": "Pour défier Git à deviner ce qu'on a modifié.",
+          "correct": false
+        },
+        {
+          "text": "Parce que Git ne fonctionne pas sans un message.",
+          "correct": false
+        },
+        {
+          "text": "Pour demander de l'aide sur Stack Overflow.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que fait-on si on a des nouveaux fichiers ou changements qu'on ne veut pas suivre ?",
+      "answers": [
+        { "text": "On met à jour le fichier .gitignore.", "correct": true },
+        { "text": "On envoie un e-mail à Git pour lui dire d'ignorer les fichiers.", "correct": false },
+        { "text": "On demande à Git de les supprimer de l'historique.", "correct": false },
+        { "text": "On les envoie par fax à Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si on oublie de préparer les fichiers avec `git add` avant de faire `git commit` ?",
+      "answers": [
+        { "text": "Les modifications ne seront pas enregistrées par Git.", "correct": true },
+        { "text": "Git les enregistrera automatiquement.", "correct": false },
+        { "text": "Git générera une erreur et arrêtera le processus de commit.", "correct": false },
+        { "text": "Git ajoutera les fichiers par défaut.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quand doit-on utiliser `git push` ?",
+      "answers": [
+        { "text": "Pour envoyer notre code à un autre endroit, comme internet, mais on apprendra cela plus tard.", "correct": true },
+        { "text": "Pour supprimer notre code du dépôt distant.", "correct": false },
+        { "text": "Pour sauvegarder notre code sur une clé USB.", "correct": false },
+        { "text": "Pour fusionner plusieurs branches dans Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on revenir en arrière si on fait une erreur dans notre code ?",
+      "answers": [
+        { "text": "Oui, grâce à Git, on peut revenir à une version précédente.", "correct": true },
+        { "text": "Non, une fois le code enregistré, il est figé.", "correct": false },
+        { "text": "Seulement si on demande l'autorisation à Git.", "correct": false },
+        { "text": "Non, Git ne permet pas de corriger les erreurs.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on toujours faire après avoir ajouté ou changé quelque chose dans notre projet ?",
+      "answers": [
+        { "text": "On doit le préparer puis l'enregistrer avec Git.", "correct": true },
+        { "text": "On doit demander à Git de publier le changement sur les réseaux sociaux.", "correct": false },
+        { "text": "On doit redémarrer l'ordinateur pour que les changements prennent effet.", "correct": false },
+        { "text": "On doit contacter le support de Git pour vérifier les modifications.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que signifie \"commit\" dans le contexte de Git ?",
+      "answers": [
+        { "text": "C'est comme dire à Git de se souvenir de cette version des fichiers.", "correct": true },
+        { "text": "C'est l'action de fusionner des branches dans Git.", "correct": false },
+        { "text": "C'est l'étape où Git envoie les fichiers sur internet.", "correct": false },
+        { "text": "C'est l'opération de suppression de fichiers dans Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'écrire un bon message avec `git commit` ?",
+      "answers": [
+        { "text": "Pour aider les autres (et nous-même plus tard) à comprendre ce qui a été changé.", "correct": true },
+        { "text": "Parce que Git ne permet pas de commit sans message.", "correct": false },
+        { "text": "Pour défier les autres contributeurs du projet.", "correct": false },
+        { "text": "Pour donner des instructions spécifiques à Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que devons-nous faire avant de `git push` ?",
+      "answers": [
+        { "text": "On doit préparer avec `git add` et enregistrer les changements avec `git commit`.", "correct": true },
+        { "text": "On doit créer une nouvelle branche avec `git branch`.", "correct": false },
+        { "text": "On doit réinitialiser notre répertoire de travail avec `git reset`.", "correct": false },
+        { "text": "On doit vérifier l'état de notre dépôt avec `git status`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment sait-on quels fichiers Git va suivre ?",
+      "answers": [
+        { "text": "On utilise `git status` pour voir les fichiers préparés et non préparés.", "correct": true },
+        { "text": "On regarde le contenu du fichier .gitignore.", "correct": false },
+        { "text": "On demande à Git avec la commande `git query-files`.", "correct": false },
+        { "text": "Git suit automatiquement tous les fichiers.", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on fait une erreur, peut-on annuler une préparation avec `git add` ?",
+      "answers": [
+        { "text": "Oui, avec la commande `git reset`.", "correct": true },
+        { "text": "Non, une fois que c'est préparé, c'est définitif.", "correct": false },
+        { "text": "Oui, en supprimant manuellement les fichiers de la zone de préparation.", "correct": false },
+        { "text": "Non, Git ne permet pas d'annuler une préparation.", "correct": false }
+      ]
+    }
+  ]
+}

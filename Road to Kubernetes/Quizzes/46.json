@@ -1,1 +1,198 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un dépôt distant (remote repository) dans Git ?",
+      "answers": [
+        {
+          "text": "C'est un endroit où on peut stocker notre projet Git, comme sur internet.",
+          "correct": true
+        },
+        {
+          "text": "Un dépôt distant est un endroit où on stocke des fichiers locaux uniquement.",
+          "correct": false
+        },
+        { "text": "C'est un concept obsolète dans Git.", "correct": false },
+        {
+          "text": "Un dépôt distant est un type de dépôt local dans Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi utilise-t-on un dépôt distant ?",
+      "answers": [
+        {
+          "text": "Pour gérer nos projets Git, partager notre code et déclencher des automatismes.",
+          "correct": true
+        },
+        {
+          "text": "Pour stocker des fichiers locaux uniquement.",
+          "correct": false
+        },
+        {
+          "text": "Un dépôt distant est utilisé pour isoler notre code.",
+          "correct": false
+        },
+        {
+          "text": "On n'utilise pas de dépôts distants dans Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quels sont les deux types de dépôts distants mentionnés ?",
+      "answers": [
+        {
+          "text": "Les dépôts gérés par nous-même et ceux gérés par des tiers.",
+          "correct": true
+        },
+        {
+          "text": "Les dépôts locaux et les dépôts distants.",
+          "correct": false
+        },
+        {
+          "text": "Les dépôts principaux et les dépôts secondaires.",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a qu'un seul type de dépôt distant.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que ferons-nous dans le prochain chapitre avec un dépôt distant ?",
+      "answers": [
+        {
+          "text": "Nous mettrons en place un dépôt distant géré par nous-même pour aider au déploiement manuel.",
+          "correct": true
+        },
+        {
+          "text": "Nous supprimerons tous les dépôts distants.",
+          "correct": false
+        },
+        {
+          "text": "Nous copierons un dépôt distant existant.",
+          "correct": false
+        },
+        {
+          "text": "Nous ne ferons rien avec un dépôt distant dans le prochain chapitre.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que GitHub.com ?",
+      "answers": [
+        {
+          "text": "C'est un outil de dépôt distant géré par des tiers qui permet de stocker notre code dans le nuage.",
+          "correct": true
+        },
+        {
+          "text": "GitHub.com est un logiciel de gestion de versions local.",
+          "correct": false
+        },
+        { "text": "GitHub.com est un dépôt local.", "correct": false },
+        {
+          "text": "C'est un terme pour désigner les dépôts Git sur notre ordinateur.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Comment GitHub.com peut-il nous aider ?",
+      "answers": [
+        { "text": "Il permet de partager notre code avec d'autres et de déclencher des automatismes.", "correct": true },
+        { "text": "GitHub.com est un service de messagerie instantanée.", "correct": false },
+        { "text": "Il fournit des recettes de cuisine en ligne.", "correct": false },
+        { "text": "C'est un réseau social pour les amateurs de photographie.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que GitLab ?",
+      "answers": [
+        { "text": "C'est un autre dépôt distant populaire qui peut être géré par des tiers ou par nous-même.", "correct": true },
+        { "text": "GitLab est un système de réservation de billets de concert.", "correct": false },
+        { "text": "C'est un service de streaming musical.", "correct": false },
+        { "text": "GitLab est un jeu vidéo en ligne.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi GitLab n'est-il pas couvert dans ce livre ?",
+      "answers": [
+        { "text": "Parce qu'il est hors du champ de ce livre.", "correct": true },
+        { "text": "Parce qu'il n'existe pas.", "correct": false },
+        { "text": "Parce que ce livre est exclusivement dédié à Git.", "correct": false },
+        { "text": "GitLab est un sujet tabou dans le monde de l'informatique.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'allons-nous faire maintenant avec nos projets ?",
+      "answers": [
+        { "text": "Nous allons les mettre à jour pour commencer à utiliser Git.", "correct": true },
+        { "text": "Nous allons les convertir en œuvres d'art.", "correct": false },
+        { "text": "Nous allons les stocker dans un congélateur.", "correct": false },
+        { "text": "Nous allons les envoyer dans l'espace.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il utile de partager notre code avec d'autres ?",
+      "answers": [
+        { "text": "Pour collaborer sur des projets et améliorer notre code grâce aux contributions.", "correct": true },
+        { "text": "Pour garder notre code secret et le protéger des autres.", "correct": false },
+        { "text": "Pour montrer aux autres à quel point nous sommes intelligents.", "correct": false },
+        { "text": "Pour effrayer nos ennemis.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Quel est l'avantage des pipelines d'automatisation mentionnés ?",
+      "answers": [
+        { "text": "Ils permettent de déployer automatiquement notre code et d'exécuter d'autres tâches utiles.", "correct": true },
+        { "text": "Les pipelines d'automatisation sont utilisés pour la plomberie domestique.", "correct": false },
+        { "text": "Ils sont principalement utilisés pour l'agriculture.", "correct": false },
+        { "text": "Les pipelines d'automatisation sont des systèmes de transport de pétrole.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi choisit-on d'utiliser un dépôt géré par des tiers comme GitHub ?",
+      "answers": [
+        { "text": "Pour bénéficier de fonctionnalités supplémentaires comme le partage de code et l'automatisation sans avoir à gérer l'infrastructure nous-même.", "correct": true },
+        { "text": "Parce que GitHub est gratuit pour tout le monde.", "correct": false },
+        { "text": "Pour profiter des réductions sur les repas au restaurant.", "correct": false },
+        { "text": "Parce que GitHub offre des cours en ligne gratuits.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle est la différence principale entre un dépôt géré par soi-même et un dépôt géré par des tiers ?",
+      "answers": [
+        { "text": "La gestion et la maintenance de l'infrastructure nécessaire pour le dépôt.", "correct": true },
+        { "text": "Les dépôts gérés par soi-même ont des fonctionnalités supérieures.", "correct": false },
+        { "text": "Les dépôts gérés par soi-même ont moins de contraintes de sécurité.", "correct": false },
+        { "text": "La couleur de l'interface utilisateur.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment les dépôts distants aident-ils dans le déploiement de notre application ?",
+      "answers": [
+        { "text": "Ils fournissent une plateforme centralisée pour stocker, partager et automatiser le processus de déploiement de notre application.", "correct": true },
+        { "text": "Ils fournissent des outils pour réparer les voitures.", "correct": false },
+        { "text": "Ils aident à préparer des repas sains.", "correct": false },
+        { "text": "Les dépôts distants sont utilisés pour la pêche en haute mer.", "correct": false }
+      ]
+    }
+  ]
+}

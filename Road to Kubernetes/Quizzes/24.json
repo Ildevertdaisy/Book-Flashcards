@@ -1,1 +1,135 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'une application web JavaScript ?",
+      "answers": [
+        {
+          "text": "C'est un programme sur internet qu'on utilise avec JavaScript pour créer des sites web.",
+          "correct": true
+        },
+        {
+          "text": "Une application web JavaScript est un logiciel destiné à contrôler les installations électriques.",
+          "correct": false
+        },
+        {
+          "text": "Une application web JavaScript est un outil utilisé pour surveiller la météo dans différents endroits du monde.",
+          "correct": false
+        },
+        {
+          "text": "C'est un programme conçu pour gérer les stocks d'une entreprise en utilisant JavaScript.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi Express.js ?",
+      "answers": [
+        {
+          "text": "Express.js est un outil qui aide à construire des applications web en utilisant Node.js, qui est une façon de programmer avec JavaScript.",
+          "correct": true
+        },
+        {
+          "text": "Express.js est un langage de programmation utilisé pour créer des applications de messagerie.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un logiciel pour faire de l'exercice physique guidé par des vidéos en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un framework pour concevoir des jeux vidéo en utilisant JavaScript.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Express.js et FastAPI, ils sont pareils ?",
+      "answers": [
+        {
+          "text": "Oui, ils servent à la même chose, mais Express.js utilise JavaScript tandis que FastAPI utilise Python pour créer des applications web.",
+          "correct": true
+        },
+        {
+          "text": "Non, Express.js est utilisé pour la création de bases de données tandis que FastAPI est utilisé pour la conception d'interfaces graphiques.",
+          "correct": false
+        },
+        {
+          "text": "Non, Express.js est un outil pour la création de sites statiques tandis que FastAPI est utilisé pour les sites dynamiques.",
+          "correct": false
+        },
+        {
+          "text": "Non, Express.js est destiné aux petites applications tandis que FastAPI est pour les grandes entreprises.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi utilise-t-on JavaScript dans les applications web ?",
+      "answers": [
+        {
+          "text": "Parce que JavaScript peut faire fonctionner des sites web de manière interactive et dynamique, à la fois sur l'ordinateur de l'utilisateur et sur le serveur.",
+          "correct": true
+        },
+        {
+          "text": "Pour rendre les applications web plus lentes et moins interactives.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre les applications web plus difficiles à développer et à maintenir.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre les applications web moins accessibles sur différents navigateurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la différence entre JavaScript pour navigateur et JavaScript côté serveur ?",
+      "answers": [
+        {
+          "text": "Le JavaScript pour navigateur fonctionne dans le navigateur web de l'utilisateur pour rendre les pages interactives, tandis que le JavaScript côté serveur, comme avec Node.js, fonctionne sur un serveur internet pour gérer ce que le site web fait.",
+          "correct": true
+        },
+        {
+          "text": "Il n'y a pas de différence entre JavaScript pour navigateur et JavaScript côté serveur, ce sont les mêmes.",
+          "correct": false
+        },
+        {
+          "text": "Le JavaScript pour navigateur est utilisé pour créer des sites web statiques tandis que le JavaScript côté serveur est utilisé pour des applications web dynamiques.",
+          "correct": false
+        },
+        {
+          "text": "Le JavaScript pour navigateur est utilisé pour les applications mobiles tandis que le JavaScript côté serveur est utilisé pour les applications de bureau.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "C'est quoi Node.js ?",
+            "answers": [
+                {"text": "Node.js est une manière d'utiliser JavaScript pour créer des applications web qui fonctionnent sur un serveur, ce qui permet au site web de traiter des informations et de répondre aux utilisateurs.", "correct": true},
+                {"text": "Node.js est un langage de programmation utilisé pour créer des jeux vidéo en ligne.", "correct": false},
+                {"text": "Node.js est un outil pour concevoir des sites web statiques sans aucune interaction.", "correct": false},
+                {"text": "Node.js est une technologie pour générer des rapports financiers automatisés.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi dit-on qu'il y a deux types de JavaScript ?",
+            "answers": [
+                {"text": "Parce qu'on peut utiliser JavaScript de deux manières différentes : dans le navigateur de quelqu'un pour rendre les pages web vivantes, ou sur un serveur pour construire l'application web elle-même.", "correct": true},
+                {"text": "Parce qu'il existe deux versions différentes de JavaScript : une pour les applications mobiles et une pour les applications de bureau.", "correct": false},
+                {"text": "Parce qu'il y a JavaScript côté serveur et JavaScript côté client, chacun utilisé pour des tâches spécifiques dans le développement web.", "correct": false},
+                {"text": "Parce qu'il y a JavaScript pour les enfants et JavaScript pour les adultes, chacun ayant des fonctionnalités adaptées à son public cible.", "correct": false}
+            ]
+        }
+    ]
+}
+
+

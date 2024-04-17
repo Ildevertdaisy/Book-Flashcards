@@ -1,1 +1,149 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que Git ?",
+      "answers": [
+        {
+          "text": "Git est un outil qui aide à suivre les modifications apportées aux fichiers d'un projet.",
+          "correct": true
+        },
+        {
+          "text": "Git est un logiciel de gestion de bases de données relationnelles.",
+          "correct": false
+        },
+        {
+          "text": "Git est un langage de programmation utilisé pour créer des sites web dynamiques.",
+          "correct": false
+        },
+        {
+          "text": "Git est un système d'exploitation open source.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi utilise-t-on `git add` ?",
+      "answers": [
+        {
+          "text": "Pour dire à Git quels fichiers ou dossiers nous voulons garder un œil dessus.",
+          "correct": true
+        },
+        {
+          "text": "Pour enregistrer les modifications dans l'historique de Git.",
+          "correct": false
+        },
+        { "text": "Pour créer une nouvelle branche Git.", "correct": false },
+        {
+          "text": "Pour supprimer des fichiers de l'historique de Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quand on ajoute des modifications avec Git, doit-on ajouter des choses qui vont ensemble ou pas ?",
+      "answers": [
+        {
+          "text": "Oui, il est préférable d'ajouter des modifications qui sont liées entre elles.",
+          "correct": true
+        },
+        {
+          "text": "Non, Git peut gérer des modifications indépendantes de manière efficace.",
+          "correct": false
+        },
+        { "text": "Cela dépend de la taille du projet.", "correct": false },
+        {
+          "text": "Cela dépend des préférences personnelles du développeur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si on ajoute deux modifications qui ne sont pas liées avec Git ?",
+      "answers": [
+        {
+          "text": "Il vaut mieux les ajouter et les suivre séparément pour que ce soit plus clair.",
+          "correct": true
+        },
+        {
+          "text": "Git les fusionnera automatiquement lors du prochain commit.",
+          "correct": false
+        },
+        {
+          "text": "Git les ignorera et ne les inclura pas dans l'historique.",
+          "correct": false
+        },
+        {
+          "text": "Cela entraînera une erreur lors de l'ajout des modifications.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la différence entre sauvegarder un fichier et le suivre avec Git ?",
+      "answers": [
+        {
+          "text": "Sauvegarder enregistre le fichier sur l'ordinateur, et suivre avec Git garde une trace des modifications dans le temps.",
+          "correct": true
+        },
+        {
+          "text": "Il n'y a pas de différence, les deux termes sont interchangeables.",
+          "correct": false
+        },
+        {
+          "text": "Suivre avec Git enregistre le fichier dans un format spécifique à Git, tandis que sauvegarder le fichier le conserve dans son format d'origine.",
+          "correct": false
+        },
+        {
+          "text": "Sauvegarder le fichier implique de le stocker dans un emplacement spécifique sur le réseau, tandis que le suivre avec Git le conserve localement.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi est-ce une bonne idée de suivre les modifications séparément si elles ne sont pas liées ?",
+      "answers": [
+        { "text": "Pour aider à comprendre les changements faits et pourquoi ils ont été faits.", "correct": true },
+        { "text": "Pour accélérer le processus de suivi des modifications.", "correct": false },
+        { "text": "Parce que Git ne peut pas gérer les modifications liées ensemble.", "correct": false },
+        { "text": "Parce que cela rend le processus de résolution des conflits plus difficile.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que veut dire \"interconnectées\" dans le contexte de Git ?",
+      "answers": [
+        { "text": "Cela signifie que les modifications apportées sont liées d'une manière ou d'une autre.", "correct": true },
+        { "text": "Cela signifie que les modifications sont stockées sur un réseau interconnecté.", "correct": false },
+        { "text": "Cela signifie que les modifications sont cryptées pour des raisons de sécurité.", "correct": false },
+        { "text": "Cela signifie que les modifications sont enregistrées dans un fichier interconnecté.", "correct": false }
+      ]
+    },
+    {
+      "question": "Git nous permet-il de voir comment un fichier a changé au fil du temps ?",
+      "answers": [
+        { "text": "Oui, Git garde une trace de l'historique des modifications d'un fichier.", "correct": true },
+        { "text": "Non, Git ne conserve que la version la plus récente d'un fichier.", "correct": false },
+        { "text": "Oui, mais seulement pour les fichiers spécifiés dans le fichier de configuration de Git.", "correct": false },
+        { "text": "Non, Git ne garde pas d'historique des modifications des fichiers.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que fait-on après avoir utilisé `git add` sur des fichiers ou dossiers ?",
+      "answers": [
+        { "text": "On utilise `git commit` pour enregistrer ces modifications dans l'historique de Git.", "correct": true },
+        { "text": "On utilise `git status` pour vérifier l'état des fichiers ajoutés.", "correct": false },
+        { "text": "On utilise `git push` pour envoyer les modifications sur le dépôt distant.", "correct": false },
+        { "text": "On utilise `git diff` pour afficher les différences entre les fichiers ajoutés.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+

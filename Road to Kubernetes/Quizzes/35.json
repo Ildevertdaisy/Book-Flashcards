@@ -1,1 +1,216 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Comment exécute-t-on un fichier JavaScript depuis la ligne de commande ?",
+      "answers": [
+        {
+          "text": "En utilisant la commande `node <module>`.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant la commande `javascript <module>`.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant la commande `run <module>`.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant la commande `exec <module>`.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que doit-on faire pour démarrer notre application Express.js ?",
+      "answers": [
+        {
+          "text": "Aller dans le dossier du code source et exécuter `node main.js`.",
+          "correct": true
+        },
+        {
+          "text": "Exécuter `express start` depuis n'importe quel emplacement.",
+          "correct": false
+        },
+        {
+          "text": "Exécuter `start express` depuis le dossier d'installation d'Express.js.",
+          "correct": false
+        },
+        {
+          "text": "Double-cliquer sur le fichier `main.js` dans l'explorateur de fichiers.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Sur quel port notre application Express.js écoute-t-elle par défaut ?",
+      "answers": [
+        { "text": "Sur le port 3000.", "correct": true },
+        { "text": "Sur le port 8080.", "correct": false },
+        { "text": "Sur le port 5000.", "correct": false },
+        { "text": "Sur le port 8888.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour se déplacer dans le dossier du code source de notre application ?",
+      "answers": [
+        { "text": "`cd ~/Dev/roadtok8s/js/src`.", "correct": true },
+        { "text": "`change directory src`.", "correct": false },
+        { "text": "`move src`.", "correct": false },
+        { "text": "`open src`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment sait-on que notre serveur web Express.js fonctionne ?",
+      "answers": [
+        {
+          "text": "On voit un message \"Server running on port http://127.0.0.1:3000\" dans le terminal.",
+          "correct": true
+        },
+        {
+          "text": "Le navigateur affiche une notification indiquant que le serveur est en cours d'exécution.",
+          "correct": false
+        },
+        {
+          "text": "Le fichier `main.js` affiche une icône de confirmation lorsqu'il est ouvert.",
+          "correct": false
+        },
+        {
+          "text": "On reçoit un e-mail de confirmation du serveur Express.js.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Que doit-on faire pour voir notre application Express.js dans un navigateur web ?",
+            "answers": [
+                { "text": "Ouvrir l'URL http://127.0.0.1:3000 dans le navigateur.", "correct": true },
+                { "text": "Exécuter `express view` dans le terminal.", "correct": false },
+                { "text": "Cliquer sur le fichier `main.js` pour l'ouvrir dans le navigateur.", "correct": false },
+                { "text": "Ouvrir l'URL http://localhost:3000 dans le navigateur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment peut-on voir le code HTML généré par notre application dans le navigateur ?",
+            "answers": [
+                { "text": "En utilisant l'option \"voir le code source\" dans les outils de développement du navigateur.", "correct": true },
+                { "text": "En cliquant sur le bouton \"Voir HTML\" dans le navigateur.", "correct": false },
+                { "text": "En tapant `view-source:http://127.0.0.1:3000` dans la barre d'adresse.", "correct": false },
+                { "text": "En téléchargeant le code source depuis le serveur Express.js.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un serveur web Express.js ?",
+            "answers": [
+                { "text": "C'est un programme qui attend des demandes sur internet et y répond.", "correct": true },
+                { "text": "C'est un serveur exclusif aux applications mobiles.", "correct": false },
+                { "text": "C'est un outil pour créer des pages web statiques.", "correct": false },
+                { "text": "C'est un format de fichier spécifique à Express.js.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi est-il utile de voir le code source HTML dans le navigateur ?",
+            "answers": [
+                { "text": "Pour comprendre comment la page web est construite et affichée.", "correct": true },
+                { "text": "Pour modifier directement le code source dans le navigateur.", "correct": false },
+                { "text": "Pour vérifier la validité de la syntaxe HTML.", "correct": false },
+                { "text": "Pour voir les informations de débogage du navigateur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'indique le message \"Server running on port http://127.0.0.1:3000\" ?",
+            "answers": [
+                { "text": "Que notre serveur web est prêt et écoute les demandes sur le port 3000.", "correct": true },
+                { "text": "Qu'il y a une erreur de connexion au serveur.", "correct": false },
+                { "text": "Qu'une mise à jour du serveur est disponible.", "correct": false },
+                { "text": "Qu'une demande a été reçue avec succès sur le port 3000.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que le \"backend\" dans le contexte d'une application web ?",
+            "answers": [
+                { "text": "C'est la partie de l'application qui fonctionne sur le serveur, gérant les données et les demandes des utilisateurs.", "correct": true },
+                { "text": "C'est la partie de l'application qui gère l'interface utilisateur.", "correct": false },
+                { "text": "C'est la partie de l'application qui s'exécute dans le navigateur de l'utilisateur.", "correct": false },
+                { "text": "C'est la partie de l'application qui gère les interactions avec les bases de données.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi utilise-t-on Node.js pour exécuter des applications JavaScript côté serveur ?",
+            "answers": [
+                { "text": "Parce que Node.js permet d'exécuter JavaScript en dehors d'un navigateur, sur un serveur.", "correct": true },
+                { "text": "Parce que Node.js offre une meilleure performance que les autres langages de serveur.", "correct": false },
+                { "text": "Parce que Node.js est le seul langage qui peut exécuter JavaScript côté serveur.", "correct": false },
+                { "text": "Parce que Node.js fournit une interface utilisateur conviviale pour le développement côté serveur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quelle est la différence entre visiter une page web et voir son code source ?",
+            "answers": [
+                { "text": "Visiter une page web montre comment elle apparaît aux utilisateurs, tandis que voir le code source révèle comment elle est construite.", "correct": true },
+                { "text": "Il n'y a pas de différence, les deux actions affichent le même contenu.", "correct": false },
+                { "text": "Visiter une page web révèle le code source, tandis que voir le code source permet d'interagir avec la page.", "correct": false },
+                { "text": "Voir le code source affiche uniquement le code JavaScript, tandis que visiter une page web affiche le HTML et le CSS.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment peut-on modifier le port par défaut sur lequel notre application Express.js écoute ?",
+            "answers": [
+                { "text": "En changeant la valeur de `port` dans le fichier `main.js`.", "correct": true },
+                { "text": "En utilisant une commande spéciale dans le terminal.", "correct": false },
+                { "text": "En modifiant les paramètres de configuration du navigateur.", "correct": false },
+                { "text": "En redémarrant l'ordinateur avec un port spécifique défini.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce que `node main.js` fait exactement ?",
+            "answers": [
+                { "text": "Cela démarre l'application Express.js définie dans le fichier `main.js`.", "correct": true },
+                { "text": "Cela affiche le contenu du fichier `main.js` dans le terminal.", "correct": false },
+                { "text": "Cela télécharge et installe Node.js sur l'ordinateur.", "correct": false },
+                { "text": "Cela arrête l'exécution de l'application Express.js.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi est-il important de tester notre application web dans un navigateur ?",
+            "answers": [
+                { "text": "Pour s'assurer qu'elle fonctionne correctement et répond aux attentes des utilisateurs.", "correct": true },
+                { "text": "Pour vérifier si elle peut être téléchargée sur le navigateur.", "correct": false },
+                { "text": "Pour mesurer la vitesse de chargement de la page web.", "correct": false },
+                { "text": "Pour évaluer l'efficacité du serveur sur lequel elle est hébergée.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'apprend-on en examinant le code source HTML d'une page web ?",
+            "answers": [
+                { "text": "On apprend comment les éléments de la page sont organisés et comment le contenu est structuré.", "correct": true },
+                { "text": "On découvre les coordonnées géographiques du serveur hébergeant la page web.", "correct": false },
+                { "text": "On trouve les informations de connexion au serveur de base de données.", "correct": false },
+                { "text": "On identifie les ressources externes utilisées par la page web.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+

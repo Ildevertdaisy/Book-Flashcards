@@ -1,1 +1,215 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que le contrôle de version pour les documents ?",
+      "answers": [
+        {
+          "text": "C'est une manière d'utiliser la technologie pour suivre et gérer les changements dans les fichiers et les dossiers.",
+          "correct": true
+        },
+        {
+          "text": "C'est une méthode pour compresser les fichiers de documents.",
+          "correct": false
+        },
+        {
+          "text": "C'est une technique pour sécuriser les documents avec des mots de passe.",
+          "correct": false
+        },
+        {
+          "text": "C'est une façon de créer des documents avec des modèles préétablis.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment le contrôle de version aide-t-il les équipes à écrire du code ?",
+      "answers": [
+        {
+          "text": "Il permet aux individus et aux équipes de travailler plus efficacement ensemble sur des fichiers.",
+          "correct": true
+        },
+        {
+          "text": "Il rend la programmation plus difficile pour les équipes.",
+          "correct": false
+        },
+        {
+          "text": "Il crée des obstacles à la collaboration sur les projets de code.",
+          "correct": false
+        },
+        {
+          "text": "Il limite l'accès aux fichiers de code aux développeurs individuels.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "À quoi ressemble le contrôle de version ?",
+      "answers": [
+        {
+          "text": "Il est semblable aux raccourcis clavier annuler et refaire, mais pour des fichiers entiers.",
+          "correct": true
+        },
+        {
+          "text": "Il ressemble à une interface graphique complexe.",
+          "correct": false
+        },
+        {
+          "text": "Il ressemble à une simple liste de fichiers.",
+          "correct": false
+        },
+        {
+          "text": "Il ressemble à une série de dossiers verrouillés.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que faut-il pour utiliser le contrôle de version ?",
+      "answers": [
+        {
+          "text": "Un outil spécialisé, connaître les bonnes commandes et savoir quand l'utiliser.",
+          "correct": true
+        },
+        {
+          "text": "Juste un ordinateur et des fichiers de code.",
+          "correct": false
+        },
+        {
+          "text": "Des compétences avancées en programmation.",
+          "correct": false
+        },
+        { "text": "Un accès à Internet rapide.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quel est l'outil de contrôle de version que nous allons utiliser ?",
+      "answers": [
+        {
+          "text": "Git, qui est aussi l'outil le plus populaire.",
+          "correct": true
+        },
+        {
+          "text": "SVN, qui est moins connu mais tout aussi efficace.",
+          "correct": false
+        },
+        {
+          "text": "Mercurial, qui est l'outil le plus moderne.",
+          "correct": false
+        },
+        {
+          "text": "CVS, qui est le plus ancien outil de contrôle de version.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi avons-nous besoin d'un outil pour le contrôle de version ?",
+      "answers": [
+        { "text": "Parce qu'il aide à suivre tous les changements apportés aux fichiers de manière organisée.", "correct": true },
+        { "text": "Parce qu'il rend les fichiers plus compliqués à utiliser.", "correct": false },
+        { "text": "Parce qu'il crée des problèmes de compatibilité entre les logiciels.", "correct": false },
+        { "text": "Parce qu'il est obligatoire pour tout travail informatique.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que peut-on faire avec un outil de contrôle de version comme Git ?",
+      "answers": [
+        { "text": "On peut revenir à des versions antérieures de fichiers et voir qui a modifié quoi.", "correct": true },
+        { "text": "On peut uniquement sauvegarder les fichiers localement.", "correct": false },
+        { "text": "On peut seulement télécharger des fichiers depuis Internet.", "correct": false },
+        { "text": "On peut utiliser Git pour créer des jeux vidéo.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une commande dans le contexte du contrôle de version ?",
+      "answers": [
+        { "text": "C'est une instruction que l'on tape sur l'ordinateur pour dire à l'outil de contrôle de version quoi faire.", "correct": true },
+        { "text": "C'est une fonctionnalité cachée dans les fichiers de contrôle de version.", "correct": false },
+        { "text": "C'est une procédure manuelle de sauvegarde de fichiers.", "correct": false },
+        { "text": "C'est un code secret pour accéder à des fonctionnalités spéciales de Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment apprend-on à utiliser Git ?",
+      "answers": [
+        { "text": "En apprenant les commandes spécifiques et en pratiquant leur utilisation.", "correct": true },
+        { "text": "En suivant un cours de cuisine en ligne.", "correct": false },
+        { "text": "En regardant des vidéos de chatons sur Internet.", "correct": false },
+        { "text": "En demandant à ses amis d'utiliser Git pour vous.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de se souvenir de comment utiliser Git ?",
+      "answers": [
+        { "text": "Pour pouvoir utiliser efficacement le contrôle de version dans nos projets.", "correct": true },
+        { "text": "Parce que c'est amusant de savoir des choses.", "correct": false },
+        { "text": "Parce que tout le monde utilise Git.", "correct": false },
+        { "text": "Parce que ça rend votre ordinateur plus rapide.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Git est-il le seul outil pour le contrôle de version ?",
+      "answers": [
+        { "text": "Non, il y a eu beaucoup d'outils au fil des années, mais Git est le plus populaire.", "correct": true },
+        { "text": "Oui, Git est le seul outil pour le contrôle de version.", "correct": false },
+        { "text": "Seulement les experts utilisent Git.", "correct": false },
+        { "text": "Git est un outil obsolète pour le contrôle de version.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que permet Git qui est différent des raccourcis annuler et refaire ?",
+      "answers": [
+        { "text": "Git permet de contrôler les versions de dossiers entiers et pas seulement de textes.", "correct": true },
+        { "text": "Git ne permet pas d'annuler ou de refaire des actions.", "correct": false },
+        { "text": "Git est plus lent que les raccourcis annuler et refaire.", "correct": false },
+        { "text": "Les raccourcis annuler et refaire sont plus faciles à utiliser que Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment Git change-t-il la façon dont les équipes travaillent sur du code ?",
+      "answers": [
+        { "text": "Il permet une collaboration plus fluide et un meilleur suivi des changements.", "correct": true },
+        { "text": "Git rend la collaboration plus difficile.", "correct": false },
+        { "text": "Git n'a aucun impact sur la façon dont les équipes travaillent sur du code.", "correct": false },
+        { "text": "Git ne fonctionne pas bien pour les équipes.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on installer Git sur notre ordinateur ?",
+      "answers": [
+        { "text": "Pour pouvoir utiliser ses fonctionnalités de contrôle de version sur nos projets.", "correct": true },
+        { "text": "Parce que tout le monde utilise Git.", "correct": false },
+        { "text": "Git est un logiciel malveillant et il ne doit pas être installé.", "correct": false },
+        { "text": "Il n'est pas nécessaire d'installer Git sur notre ordinateur.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quel est l'avantage principal d'apprendre à utiliser Git pour un projet ?",
+      "answers": [
+        { "text": "Cela permet de mieux gérer les modifications et de travailler ensemble plus facilement.", "correct": true },
+        { "text": "Git est difficile à apprendre, donc il n'y a pas d'avantage à l'utiliser.", "correct": false },
+        { "text": "Git ralentit le processus de développement d'un projet.", "correct": false },
+        { "text": "Apprendre Git est une perte de temps.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+

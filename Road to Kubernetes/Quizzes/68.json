@@ -1,1 +1,241 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Comment on commence à suivre notre travail sur l'ordinateur avec Git ?",
+      "answers": [
+        { "text": "On utilise la commande `git init`.", "correct": true },
+        { "text": "On utilise la commande `git start`.", "correct": false },
+        { "text": "On utilise la commande `git begin`.", "correct": false },
+        { "text": "On utilise la commande `git follow`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quand est-ce qu'on doit utiliser `git init` ?",
+      "answers": [
+        {
+          "text": "Quand on veut que Git commence à suivre notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Quand on veut arrêter Git de suivre notre projet.",
+          "correct": false
+        },
+        {
+          "text": "Quand on veut effacer tout le travail dans le projet.",
+          "correct": false
+        },
+        {
+          "text": "Quand on veut fusionner deux projets Git ensemble.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi `.gitignore` ?",
+      "answers": [
+        {
+          "text": "Un fichier où on écrit les noms des fichiers ou dossiers que Git ne doit pas suivre.",
+          "correct": true
+        },
+        {
+          "text": "Un fichier qui contient les commandes Git avancées.",
+          "correct": false
+        },
+        {
+          "text": "Un fichier qui stocke les informations de connexion Git.",
+          "correct": false
+        },
+        {
+          "text": "Un fichier qui indique la version actuelle de Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi on met des fichiers dans `.gitignore` ?",
+      "answers": [
+        {
+          "text": "Pour éviter que Git suive des fichiers qu'on ne veut pas partager ou sauvegarder.",
+          "correct": true
+        },
+        {
+          "text": "Pour indiquer à Git quels fichiers sont les plus importants.",
+          "correct": false
+        },
+        {
+          "text": "Pour signaler à Git quels fichiers sont corrompus et doivent être ignorés.",
+          "correct": false
+        },
+        {
+          "text": "Pour accélérer la vitesse de suivi de Git sur les fichiers.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment on dit à Git quels fichiers suivre ?",
+      "answers": [
+        {
+          "text": "Avec la commande `git add` et le chemin du fichier.",
+          "correct": true
+        },
+        {
+          "text": "Avec la commande `git track` et le nom du fichier.",
+          "correct": false
+        },
+        {
+          "text": "Avec la commande `git follow` et le chemin du fichier.",
+          "correct": false
+        },
+        {
+          "text": "Avec la commande `git include` et le nom du fichier.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que ça veut dire \"commit\" dans Git ?",
+      "answers": [
+        { "text": "C'est comme sauvegarder les changements qu'on a faits dans notre projet.", "correct": true },
+        { "text": "C'est pour annuler les modifications dans notre projet Git.", "correct": false },
+        { "text": "C'est pour fusionner deux branches dans Git.", "correct": false },
+        { "text": "C'est pour supprimer complètement notre projet Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment on fait un \"commit\" dans Git ?",
+      "answers": [
+        { "text": "Avec la commande `git commit -m \"message\"` où on explique les changements.", "correct": true },
+        { "text": "Avec la commande `git save`.", "correct": false },
+        { "text": "Avec la commande `git update`.", "correct": false },
+        { "text": "Avec la commande `git push`.", "correct": false }
+      ]
+    },
+    {
+      "question": "C'est quoi `git push` ?",
+      "answers": [
+        { "text": "C'est pour envoyer nos changements à un endroit sûr sur internet, comme GitHub.", "correct": true },
+        { "text": "C'est pour télécharger des fichiers à partir d'internet vers notre ordinateur.", "correct": false },
+        { "text": "C'est pour vérifier les différences entre notre projet local et celui sur internet.", "correct": false },
+        { "text": "C'est pour annuler les derniers commits dans notre projet local.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi parfois on utilise `git push origin main --force` ?",
+      "answers": [
+        { "text": "Pour forcer l'envoi des changements quand on a effacé notre historique Git.", "correct": true },
+        { "text": "Pour créer une nouvelle branche dans notre projet Git.", "correct": false },
+        { "text": "Pour récupérer les derniers commits depuis le dépôt distant.", "correct": false },
+        { "text": "Pour réorganiser l'historique des commits locaux.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on faire attention avec `--force` dans Git ?",
+      "answers": [
+        { "text": "Parce que ça peut effacer des changements importants sur internet.", "correct": true },
+        { "text": "Parce que ça peut créer des conflits entre les branches Git.", "correct": false },
+        { "text": "Parce que ça peut empêcher les autres collaborateurs de contribuer au projet.", "correct": false },
+        { "text": "Parce que ça peut augmenter la taille du dépôt Git de manière incontrôlée.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Comment on voit l'histoire de nos changements dans Git ?",
+      "answers": [
+        { "text": "Avec la commande `git log`.", "correct": true },
+        { "text": "Avec la commande `git status`.", "correct": false },
+        { "text": "Avec la commande `git history`.", "correct": false },
+        { "text": "Avec la commande `git show`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce important de bien expliquer nos changements quand on fait un \"commit\" ?",
+      "answers": [
+        { "text": "Pour que nous-mêmes et les autres comprennent ce qu'on a changé et pourquoi.", "correct": true },
+        { "text": "Parce que Git ne permet pas de faire un commit sans un message explicatif.", "correct": false },
+        { "text": "Pour cacher nos changements aux autres collaborateurs du projet.", "correct": false },
+        { "text": "Parce que c'est une règle imposée par les serveurs Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que fait-on si on a fait des erreurs dans notre projet Git ?",
+      "answers": [
+        { "text": "On peut effacer le dossier `.git` et recommencer avec `git init`.", "correct": true },
+        { "text": "On annule tous les commits avec `git cancel`.", "correct": false },
+        { "text": "On utilise `git reset` pour revenir à un commit précédent.", "correct": false },
+        { "text": "On utilise `git revert` pour annuler les derniers commits.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que recommencer notre projet Git efface notre travail ?",
+      "answers": [
+        { "text": "Non, ça efface juste l'historique de Git, pas notre travail.", "correct": true },
+        { "text": "Oui, toutes les modifications sont perdues.", "correct": false },
+        { "text": "Oui, cela efface complètement notre projet.", "correct": false },
+        { "text": "Non, mais cela rend notre travail inaccessible.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi pourrait-on vouloir effacer l'historique Git de notre projet ?",
+      "answers": [
+        { "text": "Si on a fait beaucoup d'erreurs et qu'on veut repartir sur une bonne base.", "correct": true },
+        { "text": "Pour rendre notre projet plus léger et plus rapide.", "correct": false },
+        { "text": "Pour cacher nos erreurs aux autres collaborateurs.", "correct": false },
+        { "text": "Pour éviter d'avoir à expliquer nos changements aux autres.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'on fait après avoir effacé l'historique Git de notre projet ?",
+      "answers": [
+        { "text": "On recommence le suivi avec `git init`, `git add`, et `git commit`.", "correct": true },
+        { "text": "On utilise `git reset` pour restaurer les commits précédents.", "correct": false },
+        { "text": "On ignore simplement l'historique Git et on continue à travailler.", "correct": false },
+        { "text": "On utilise `git checkout` pour récupérer les fichiers effacés.", "correct": false }
+      ]
+    },
+    {
+      "question": "C'est quoi un bon message de \"commit\" ?",
+      "answers": [
+        { "text": "Un message qui explique clairement ce qu'on a changé dans le projet.", "correct": true },
+        { "text": "Un message qui contient uniquement des chiffres et des caractères spéciaux.", "correct": false },
+        { "text": "Un message très court sans détails sur les changements effectués.", "correct": false },
+        { "text": "Un message humoristique ou non pertinent par rapport aux changements.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi on pratique à effacer et recréer notre projet Git ?",
+      "answers": [
+        { "text": "Pour mieux apprendre à utiliser Git et à suivre notre travail.", "correct": true },
+        { "text": "Pour éviter de partager nos erreurs avec d'autres utilisateurs de Git.", "correct": false },
+        { "text": "Parce que c'est plus rapide que de corriger les erreurs existantes.", "correct": false },
+        { "text": "Pour masquer nos échecs dans l'utilisation de Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on toujours vérifier avant d'utiliser `--force` avec Git ?",
+      "answers": [
+        { "text": "Que cela ne va pas effacer des travaux importants sur notre dépôt en ligne.", "correct": true },
+        { "text": "Que notre historique Git est bien sauvegardé localement.", "correct": false },
+        { "text": "Que tous les fichiers inutiles sont bien supprimés de notre projet.", "correct": false },
+        { "text": "Que notre dépôt local est synchronisé avec le dépôt distant.", "correct": false }
+      ]
+    }
+  ]
+}

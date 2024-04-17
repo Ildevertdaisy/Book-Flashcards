@@ -1,1 +1,213 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Comment peut-on voir les informations d'un projet dans un fichier ?",
+      "answers": [
+        {
+          "text": "On peut voir ces informations avec la commande `cat package.json` sur l'ordinateur.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant la commande `npm info` suivie du nom du paquet dans le terminal.",
+          "correct": false
+        },
+        {
+          "text": "En ouvrant le fichier `package.json` dans un éditeur de texte comme Visual Studio Code.",
+          "correct": false
+        },
+        {
+          "text": "En exécutant la commande `npm view` avec le nom du paquet en argument dans le terminal.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que fait la commande `npm install <nom-du-paquet>` ?",
+      "answers": [
+        {
+          "text": "Elle installe un outil ou un programme nécessaire pour notre projet et l'ajoute automatiquement dans le fichier du projet.",
+          "correct": true
+        },
+        {
+          "text": "Elle vérifie si un paquet est déjà installé dans le projet et l'ajoute dans le fichier `package.json` s'il ne l'est pas.",
+          "correct": false
+        },
+        {
+          "text": "Elle crée un nouveau fichier `package.json` dans le projet et y ajoute le nom du paquet spécifié.",
+          "correct": false
+        },
+        {
+          "text": "Elle supprime le paquet spécifié du projet s'il est déjà installé et le réinstalle ensuite.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'Express.js ?",
+      "answers": [
+        {
+          "text": "Express.js est un programme qui aide à construire des sites web et des applications web facilement.",
+          "correct": true
+        },
+        {
+          "text": "Express.js est un serveur de bases de données NoSQL utilisé principalement pour les applications web.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un langage de programmation orienté web basé sur JavaScript.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un système de gestion de contenu (CMS) open-source pour les sites web dynamiques.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment sait-on qu'Express.js est bien ajouté à notre projet ?",
+      "answers": [
+        {
+          "text": "On peut le voir dans le fichier `package.json`, sous la section \"dependencies\".",
+          "correct": true
+        },
+        {
+          "text": "En exécutant la commande `npm express -v` dans le terminal et en vérifiant la version installée.",
+          "correct": false
+        },
+        {
+          "text": "En consultant le répertoire `node_modules` et en recherchant le dossier `express`.",
+          "correct": false
+        },
+        {
+          "text": "En examinant le fichier `server.js` où les dépendances sont généralement spécifiées.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il utile que npm ajoute automatiquement les paquets dans `package.json` ?",
+      "answers": [
+        {
+          "text": "Cela nous évite de devoir les ajouter manuellement, ce qui rend notre travail plus facile et moins sujet à l'erreur.",
+          "correct": true
+        },
+        {
+          "text": "Cela permet de garder une trace de tous les paquets installés sur l'ordinateur, facilitant ainsi la gestion des dépendances.",
+          "correct": false
+        },
+        {
+          "text": "Cela garantit que tous les paquets installés dans le projet sont toujours à jour avec les dernières versions disponibles.",
+          "correct": false
+        },
+        {
+          "text": "Cela permet de rendre les paquets disponibles pour d'autres développeurs travaillant sur le même projet, en les synchronisant automatiquement.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que la section \"dependencies\" dans `package.json` ?",
+            "answers": [
+                {"text": "C'est l'endroit où sont listés tous les outils et programmes que notre projet utilise.", "correct": true},
+                {"text": "C'est la partie du fichier où sont stockées les informations sur les contributeurs du projet.", "correct": false},
+                {"text": "C'est la section où sont répertoriées les dépendances du projet en termes de ressources matérielles.", "correct": false},
+                {"text": "C'est la partie du fichier qui résume l'historique des modifications apportées au projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment installe-t-on Express.js pour notre projet ?",
+            "answers": [
+                {"text": "On utilise la commande `npm install express` dans le terminal de l'ordinateur.", "correct": true},
+                {"text": "On télécharge manuellement le fichier source depuis le site web d'Express.js et on l'intègre dans notre projet.", "correct": false},
+                {"text": "On copie et colle le code source d'Express.js à partir de la documentation officielle dans notre projet.", "correct": false},
+                {"text": "On utilise la commande `npm setup express` pour configurer automatiquement Express.js dans notre projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le fichier `package.json` fait pour notre projet ?",
+            "answers": [
+                {"text": "Il garde une trace de tous les réglages et outils nécessaires pour que notre projet fonctionne.", "correct": true},
+                {"text": "Il stocke les fichiers de documentation du projet, y compris les guides de l'utilisateur et les exemples de code.", "correct": false},
+                {"text": "Il contient une copie de tous les fichiers source du projet, ce qui en fait une sauvegarde complète.", "correct": false},
+                {"text": "Il compile automatiquement le code source en un exécutable pour différentes plateformes.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi pourrait-on avoir besoin de vérifier le fichier `package.json` ?",
+            "answers": [
+                {"text": "Pour s'assurer que tous les outils nécessaires sont bien inclus et à jour pour notre projet.", "correct": true},
+                {"text": "Pour trouver les informations de contact des développeurs du projet en cas de besoin d'assistance.", "correct": false},
+                {"text": "Pour examiner l'historique des commits git et des contributions des membres de l'équipe.", "correct": false},
+                {"text": "Pour générer automatiquement la documentation du projet à partir des métadonnées fournies.", "correct": false}
+            ]
+        },
+        {
+            "question": "Qu'est-ce que signifie \"^4.18.2\" à côté de \"express\" dans `package.json` ?",
+            "answers": [
+                {"text": "Cela indique la version d'Express.js que nous utilisons dans notre projet.", "correct": true},
+                {"text": "Cela indique le nombre total de téléchargements de la version 4.18.2 d'Express.js depuis npm.", "correct": false},
+                {"text": "Cela indique le nombre de dépendances directes et indirectes de la version 4.18.2 d'Express.js.", "correct": false},
+                {"text": "Cela indique la date de publication de la version 4.18.2 d'Express.js sur le registre npm.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Est-ce que la version d'Express.js peut être différente pour d'autres projets ?",
+            "answers": [
+                {"text": "Oui, selon quand on installe Express.js, on pourrait avoir une version plus récente ou différente.", "correct": true},
+                {"text": "Non, la version d'Express.js est toujours la même pour tous les projets.", "correct": false},
+                {"text": "Oui, mais seulement si on utilise une configuration de projet spécifique.", "correct": false},
+                {"text": "Non, la version d'Express.js est déterminée par les exigences du système d'exploitation.", "correct": false}
+            ]
+        },
+        {
+            "question": "Peut-on utiliser `npm install` pour ajouter d'autres outils que Express.js à notre projet ?",
+            "answers": [
+                {"text": "Oui, on peut installer n'importe quel outil disponible sur npm de cette façon.", "correct": true},
+                {"text": "Non, `npm install` ne fonctionne que pour installer Express.js.", "correct": false},
+                {"text": "Oui, mais seulement si les outils sont développés par la même équipe que Express.js.", "correct": false},
+                {"text": "Non, `npm install` est réservé exclusivement pour l'installation d'Express.js.", "correct": false}
+            ]
+        },
+        {
+            "question": "Quelle commande permet de vérifier rapidement quels outils sont installés pour notre projet ?",
+            "answers": [
+                {"text": "La commande `cat package.json` nous montre tous les outils listés dans le fichier.", "correct": false},
+                {"text": "La commande `npm list` affiche la liste de tous les paquets installés pour notre projet.", "correct": true},
+                {"text": "La commande `npm check` vérifie la cohérence des outils installés pour notre projet.", "correct": false},
+                {"text": "La commande `ls node_modules` liste tous les outils installés localement pour notre projet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Est-ce que tous les projets Node.js utilisent Express.js ?",
+            "answers": [
+                {"text": "Non, mais c'est un choix populaire pour de nombreux projets en raison de sa facilité d'utilisation.", "correct": true},
+                {"text": "Oui, tous les projets Node.js nécessitent l'utilisation de Express.js pour fonctionner correctement.", "correct": false},
+                {"text": "Oui, Express.js est le seul cadre de développement compatible avec Node.js.", "correct": false},
+                {"text": "Non, Express.js est principalement utilisé pour les projets Web mais pas pour d'autres types de projets Node.js.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-ce important d'avoir la bonne version d'un outil comme Express.js dans notre projet ?",
+            "answers": [
+                {"text": "Pour s'assurer que notre projet fonctionne correctement sans erreurs liées à des incompatibilités de version.", "correct": true},
+                {"text": "Pour garantir que notre projet est conforme aux normes de sécurité établies.", "correct": false},
+                {"text": "Pour accéder à des fonctionnalités supplémentaires qui pourraient ne pas être disponibles dans les versions précédentes.", "correct": false},
+                {"text": "Pour suivre les dernières tendances de développement et rester à jour avec les technologies émergentes.", "correct": false}
+            ]
+        }
+    ]
+}

@@ -1,1 +1,296 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Comment ajoute-t-on une nouvelle route dans notre application Express.js ?",
+      "answers": [
+        {
+          "text": "En utilisant `app.get('/chemin', (req, res) => {})`.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant `app.post('/chemin', (req, res) => {})`.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant `app.route('/chemin', (req, res) => {})`.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant `router.get('/chemin', (req, res) => {})`.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que représente `/api/v2/rocket-man1/` dans notre application ?",
+      "answers": [
+        {
+          "text": "C'est l'adresse de notre nouvelle route dans l'application.",
+          "correct": true
+        },
+        {
+          "text": "C'est le nom d'un modèle de données utilisé dans notre application.",
+          "correct": false
+        },
+        {
+          "text": "C'est un paramètre de requête utilisé pour filtrer les données.",
+          "correct": false
+        },
+        {
+          "text": "C'est le nom d'une fonction middleware utilisée pour valider les requêtes.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que fait la fonction de rappel dans notre route ?",
+      "answers": [
+        {
+          "text": "Elle crée un objet, le convertit en chaîne JSON, et l'envoie comme réponse.",
+          "correct": true
+        },
+        {
+          "text": "Elle valide les données de la requête avant de les traiter.",
+          "correct": false
+        },
+        {
+          "text": "Elle gère les erreurs survenues lors du traitement de la requête.",
+          "correct": false
+        },
+        {
+          "text": "Elle redirige l'utilisateur vers une autre page en fonction de la requête.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un objet JavaScript dans le contexte de notre nouvelle route ?",
+      "answers": [
+        {
+          "text": "C'est une collection d'informations, ici {who: \"rocket man\", where: \"mars\"}.",
+          "correct": true
+        },
+        {
+          "text": "C'est une fonction utilisée pour manipuler les données de la requête.",
+          "correct": false
+        },
+        {
+          "text": "C'est un schéma de données définissant la structure des réponses de notre application.",
+          "correct": false
+        },
+        {
+          "text": "C'est un objet représentant la requête HTTP reçue par le serveur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment convertit-on un objet JavaScript en JSON ?",
+      "answers": [
+        { "text": "Avec `JSON.stringify(objet)`.", "correct": true },
+        { "text": "Avec `JSON.parse(objet)`.", "correct": false },
+        { "text": "Avec `objeto.toJSON()`.", "correct": false },
+        { "text": "Avec `objeto.toString()`.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Que fait `res.json(jsonString)` dans notre application ?",
+            "answers": [
+                { "text": "Il envoie la chaîne JSON comme réponse à qui visite la route.", "correct": true },
+                { "text": "Il convertit la chaîne JSON en objet JavaScript avant de l'envoyer en réponse.", "correct": false },
+                { "text": "Il redirige automatiquement l'utilisateur vers une autre page de l'application.", "correct": false },
+                { "text": "Il génère une erreur car `res.json()` ne prend pas de paramètres.", "correct": false }
+            ]
+        },
+        {
+            "question": "Où peut-on voir la réponse JSON de notre route ?",
+            "answers": [
+                { "text": "En visitant `/api/v2/rocket-man1/` dans un navigateur web.", "correct": true },
+                { "text": "En consultant les journaux de requêtes du serveur.", "correct": false },
+                { "text": "En ouvrant un fichier log généré par l'application.", "correct": false },
+                { "text": "En inspectant les éléments de la page dans l'outil de développement du navigateur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quel type de réponses notre application Express.js peut-elle gérer ?",
+            "answers": [
+                { "text": "Des réponses en HTML et en JSON.", "correct": true },
+                { "text": "Uniquement des réponses en texte brut.", "correct": false },
+                { "text": "Uniquement des réponses en XML.", "correct": false },
+                { "text": "Des réponses en HTML, JSON et XML.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important de savoir gérer des réponses en JSON et HTML ?",
+            "answers": [
+                { "text": "Car cela permet à notre application de communiquer à la fois avec des utilisateurs et d'autres logiciels.", "correct": true },
+                { "text": "Pour limiter la bande passante utilisée par l'application.", "correct": false },
+                { "text": "Pour rendre l'application compatible avec une plus grande variété de navigateurs web.", "correct": false },
+                { "text": "Pour simplifier le processus de développement de l'application.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le tracking de code dans le développement web ?",
+            "answers": [
+                { "text": "C'est le suivi des changements apportés au code de notre application.", "correct": true },
+                { "text": "C'est l'analyse du comportement des utilisateurs sur le site web.", "correct": false },
+                { "text": "C'est la détection et la correction des erreurs de syntaxe dans le code.", "correct": false },
+                { "text": "C'est l'optimisation des performances du site web en modifiant le code source.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Que fait `res.json(jsonString)` dans notre application ?",
+            "answers": [
+                { "text": "Il envoie la chaîne JSON comme réponse à qui visite la route.", "correct": true },
+                { "text": "Il convertit la chaîne JSON en objet JavaScript avant de l'envoyer en réponse.", "correct": false },
+                { "text": "Il redirige automatiquement l'utilisateur vers une autre page de l'application.", "correct": false },
+                { "text": "Il génère une erreur car `res.json()` ne prend pas de paramètres.", "correct": false }
+            ]
+        },
+        {
+            "question": "Où peut-on voir la réponse JSON de notre route ?",
+            "answers": [
+                { "text": "En visitant `/api/v2/rocket-man1/` dans un navigateur web.", "correct": true },
+                { "text": "En consultant les journaux de requêtes du serveur.", "correct": false },
+                { "text": "En ouvrant un fichier log généré par l'application.", "correct": false },
+                { "text": "En inspectant les éléments de la page dans l'outil de développement du navigateur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quel type de réponses notre application Express.js peut-elle gérer ?",
+            "answers": [
+                { "text": "Des réponses en HTML et en JSON.", "correct": true },
+                { "text": "Uniquement des réponses en texte brut.", "correct": false },
+                { "text": "Uniquement des réponses en XML.", "correct": false },
+                { "text": "Des réponses en HTML, JSON et XML.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi est-il important de savoir gérer des réponses en JSON et HTML ?",
+            "answers": [
+                { "text": "Car cela permet à notre application de communiquer à la fois avec des utilisateurs et d'autres logiciels.", "correct": true },
+                { "text": "Pour limiter la bande passante utilisée par l'application.", "correct": false },
+                { "text": "Pour rendre l'application compatible avec une plus grande variété de navigateurs web.", "correct": false },
+                { "text": "Pour simplifier le processus de développement de l'application.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le tracking de code dans le développement web ?",
+            "answers": [
+                { "text": "C'est le suivi des changements apportés au code de notre application.", "correct": true },
+                { "text": "C'est l'analyse du comportement des utilisateurs sur le site web.", "correct": false },
+                { "text": "C'est la détection et la correction des erreurs de syntaxe dans le code.", "correct": false },
+                { "text": "C'est l'optimisation des performances du site web en modifiant le code source.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi devons-nous commencer à suivre nos changements de code ?",
+            "answers": [
+                { "text": "Pour mieux organiser et sauvegarder notre travail.", "correct": true },
+                { "text": "Pour rendre notre code plus difficile à comprendre pour les autres développeurs.", "correct": false },
+                { "text": "Pour éviter de devoir revoir notre code en cas de problème.", "correct": false },
+                { "text": "Pour tester de nouvelles fonctionnalités sans risque de les perdre.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que signifie pousser nos changements vers un dépôt distant ?",
+            "answers": [
+                { "text": "Cela signifie sauvegarder notre code sur internet pour le partager ou le sauvegarder.", "correct": true },
+                { "text": "Cela signifie copier notre code sur un ordinateur distant pour y accéder plus tard.", "correct": false },
+                { "text": "Cela signifie exporter notre code vers un autre outil de gestion de versions.", "correct": false },
+                { "text": "Cela signifie annuler les changements que nous avons effectués localement.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une habitude importante à prendre en développement web ?",
+            "answers": [
+                { "text": "Suivre et sauvegarder régulièrement les changements de code.", "correct": true },
+                { "text": "Modifier directement le code en production sans le tester localement.", "correct": false },
+                { "text": "Attendre longtemps avant de sauvegarder les changements de code.", "correct": false },
+                { "text": "Ne pas communiquer les changements de code avec les autres membres de l'équipe.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment peut-on voir la sortie JSON dans notre navigateur ?",
+            "answers": [
+                { "text": "En naviguant vers la route spécifiée après avoir démarré notre serveur avec `node main.js`.", "correct": true },
+                { "text": "En actualisant simplement la page du navigateur.", "correct": false },
+                { "text": "En désactivant temporairement JavaScript dans les paramètres du navigateur.", "correct": false },
+                { "text": "En redémarrant le serveur de développement.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quel est le but d'ajouter une route qui retourne une réponse JSON ?",
+            "answers": [
+                { "text": "Pour montrer comment notre application peut communiquer des informations structurées.", "correct": true },
+                { "text": "Pour ajouter une fonctionnalité supplémentaire à notre application.", "correct": false },
+                { "text": "Pour ralentir le chargement des pages de notre application.", "correct": false },
+                { "text": "Pour rendre notre application plus difficile à utiliser pour les utilisateurs finaux.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'une route dans une application web ?",
+            "answers": [
+                { "text": "C'est un chemin spécifié dans l'URL qui exécute certaines actions quand il est visité.", "correct": true },
+                { "text": "C'est un fichier contenant du code JavaScript qui gère les requêtes HTTP.", "correct": false },
+                { "text": "C'est une fonction qui génère du contenu dynamique pour les pages web.", "correct": false },
+                { "text": "C'est un ensemble de paramètres utilisés pour configurer un serveur web.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment teste-t-on une nouvelle route dans notre application ?",
+            "answers": [
+                { "text": "En démarrant l'application et en visitant la route dans un navigateur.", "correct": true },
+                { "text": "En écrivant des tests automatisés pour vérifier son fonctionnement.", "correct": false },
+                { "text": "En modifiant le code directement dans le fichier de configuration de l'application.", "correct": false },
+                { "text": "En demandant à d'autres développeurs de tester la route pour nous.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi est-il utile de convertir des objets JavaScript en JSON ?",
+            "answers": [
+                { "text": "Pour faciliter l'échange d'informations entre différentes parties d'une application ou entre différentes applications.", "correct": true },
+                { "text": "Pour rendre le code JavaScript plus efficace en réduisant sa taille.", "correct": false },
+                { "text": "Pour empêcher les utilisateurs malveillants d'accéder à certaines parties de notre application.", "correct": false },
+                { "text": "Pour rendre notre code JavaScript compatible avec une plus grande variété de navigateurs web.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que devrait voir quelqu'un qui visite la route `/api/v2/rocket-man1/` dans notre application Express.js ?",
+            "answers": [
+                { "text": "La personne devrait voir une réponse JSON avec les informations de l'objet JavaScript défini dans la fonction de rappel.", "correct": true },
+                { "text": "La personne devrait voir une page HTML affichant des informations sur le projet Rocket Man.", "correct": false },
+                { "text": "La personne devrait voir une erreur 404 indiquant que la route n'existe pas.", "correct": false },
+                { "text": "La personne devrait voir une page de connexion demandant des identifiants pour accéder à la route.", "correct": false }
+            ]
+        }
+    ]
+}

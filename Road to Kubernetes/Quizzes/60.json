@@ -1,1 +1,221 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'une \"commit\" dans Git ?",
+      "answers": [
+        {
+          "text": "C'est comme sauvegarder les modifications d'un projet pour que Git s'en souvienne.",
+          "correct": true
+        },
+        {
+          "text": "C'est le nom donné à un café dans certaines cultures.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour effacer toutes les données d'un projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est une opération pour transformer le code en images.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour sauvegarder des changements avec Git ?",
+      "answers": [
+        {
+          "text": "On utilise `git commit -m \"message sur les changements\"`.",
+          "correct": true
+        },
+        { "text": "On utilise `git destroy`.", "correct": false },
+        { "text": "On utilise `git backup`.", "correct": false },
+        { "text": "On utilise `git save`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on ajouter un message avec `git commit` ?",
+      "answers": [
+        {
+          "text": "Pour expliquer ce qu'on a changé ou ajouté dans le projet.",
+          "correct": true
+        },
+        {
+          "text": "Parce que Git ne fonctionne pas sans message.",
+          "correct": false
+        },
+        {
+          "text": "Pour saluer les autres contributeurs du projet.",
+          "correct": false
+        },
+        {
+          "text": "Pour demander de l'aide sur Stack Overflow.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que fait `git commit` avec les fichiers ?",
+      "answers": [
+        {
+          "text": "Il prend une photo de comment les fichiers ajoutés sont à ce moment.",
+          "correct": true
+        },
+        { "text": "Il détruit tous les fichiers du projet.", "correct": false },
+        { "text": "Il les convertit en fichiers audio.", "correct": false },
+        {
+          "text": "Il crée un site web à partir des fichiers.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle étape doit-on faire avant de sauvegarder les modifications avec `git commit` ?",
+      "answers": [
+        {
+          "text": "Il faut préparer les fichiers avec `git add`.",
+          "correct": true
+        },
+        { "text": "Il faut exécuter `git push`.", "correct": false },
+        {
+          "text": "Il faut supprimer tous les fichiers du projet.",
+          "correct": false
+        },
+        { "text": "Il faut écrire un poème sur Git.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Peut-on changer d'avis après avoir préparé des fichiers avec `git add` ?",
+      "answers": [
+        { "text": "Oui, on peut les \"dé-preparer\" avec `git reset <chemin>`.", "correct": true },
+        { "text": "Non, une fois ajoutés, les fichiers sont verrouillés en place.", "correct": false },
+        { "text": "Oui, en utilisant `git delete`.", "correct": false },
+        { "text": "Non, les fichiers deviennent immuables.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'arrive-t-il si on fait `git commit` sans ajouter de fichiers avant ?",
+      "answers": [
+        { "text": "Git ne sauvegardera aucun changement parce qu'aucun fichier n'est préparé.", "correct": true },
+        { "text": "Git enverra un e-mail de rappel.", "correct": false },
+        { "text": "Git sauvegardera tous les fichiers du projet.", "correct": false },
+        { "text": "Git créera une branche de développement.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que `git add` sauvegarde définitivement les modifications ?",
+      "answers": [
+        { "text": "Non, cela prépare seulement les fichiers. `git commit` sauvegarde les changements.", "correct": true },
+        { "text": "Oui, une fois ajoutés, les fichiers sont sécurisés.", "correct": false },
+        { "text": "Oui, `git add` verrouille les fichiers pour toujours.", "correct": false },
+        { "text": "Non, `git add` les envoie immédiatement au cloud.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"snapshot\" dans Git ?",
+      "answers": [
+        { "text": "C'est une image de l'état des fichiers au moment de la sauvegarde avec `git commit`.", "correct": true },
+        { "text": "C'est un effet spécial dans les photos de profil Git.", "correct": false },
+        { "text": "C'est une fonctionnalité pour supprimer des fichiers inutiles.", "correct": false },
+        { "text": "C'est une commande pour redimensionner les images.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'écrire un bon message de commit ?",
+      "answers": [
+        { "text": "Pour aider à comprendre les modifications apportées plus tard.", "correct": true },
+        { "text": "Parce que Git ne fonctionnera pas sans un message.", "correct": false },
+        { "text": "Pour impressionner les autres contributeurs du projet.", "correct": false },
+        { "text": "Pour signaler un problème technique au support de Git.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que doit-on faire si on veut sauvegarder les modifications de plusieurs fichiers en même temps ?",
+      "answers": [
+        { "text": "On peut ajouter plusieurs fichiers avec `git add` puis les sauvegarder tous ensemble avec `git commit`.", "correct": true },
+        { "text": "On doit fusionner tous les fichiers en un seul avant de les sauvegarder.", "correct": false },
+        { "text": "On peut les envoyer par fax à Git.", "correct": false },
+        { "text": "On doit demander l'autorisation à Git pour chaque fichier.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie \"Initial python project commit\" ?",
+      "answers": [
+        { "text": "C'est un message pour dire qu'on sauvegarde les premières modifications d'un projet Python.", "correct": true },
+        { "text": "C'est le nom d'un framework Python pour les projets initiaux.", "correct": false },
+        { "text": "C'est une commande pour créer un nouveau projet Python.", "correct": false },
+        { "text": "C'est une erreur dans le processus de sauvegarde de Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-il possible de suivre les modifications d'un dossier entier ?",
+      "answers": [
+        { "text": "Oui, on peut utiliser `git add` sur un dossier pour préparer tous ses fichiers.", "correct": true },
+        { "text": "Non, Git ne peut suivre que les fichiers individuels.", "correct": false },
+        { "text": "Seulement si le dossier est vide.", "correct": false },
+        { "text": "Uniquement si le dossier ne contient pas de sous-dossiers.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on voir les modifications qui seront sauvegardées avant de faire `git commit` ?",
+      "answers": [
+        { "text": "Oui, en utilisant `git status` après avoir préparé les fichiers avec `git add`.", "correct": true },
+        { "text": "Non, Git ne montre les modifications qu'après les avoir sauvegardées.", "correct": false },
+        { "text": "Seulement si on paie une prime à Git.", "correct": false },
+        { "text": "Uniquement si on est connecté à internet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que faire si on a oublié d'ajouter un fichier avant de faire `git commit` ?",
+      "answers": [
+        { "text": "Il faut ajouter le fichier avec `git add` et faire un autre `git commit`.", "correct": true },
+        { "text": "Il faut abandonner le projet et recommencer à zéro.", "correct": false },
+        { "text": "Il faut contacter le support de Git pour corriger l'erreur.", "correct": false },
+        { "text": "Il faut supprimer tout le contenu du projet et recommencer.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Est-ce que `git commit` envoie nos modifications sur internet ?",
+      "answers": [
+        { "text": "Non, cela sauvegarde les modifications localement sur l'ordinateur.", "correct": true },
+        { "text": "Oui, Git envoie les modifications sur internet à chaque `git commit`.", "correct": false },
+        { "text": "Oui, Git les envoie directement sur les réseaux sociaux.", "correct": false },
+        { "text": "Non, Git les envoie par la poste.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi Git demande-t-il un message avec chaque `git commit` ?",
+      "answers": [
+        { "text": "Pour garder une trace de ce qui a été modifié et pourquoi.", "correct": true },
+        { "text": "Parce que Git aime recevoir des messages.", "correct": false },
+        { "text": "Pour des raisons de sécurité.", "correct": false },
+        { "text": "Pour défier les utilisateurs.", "correct": false }
+      ]
+    }
+  ]
+}
+
+

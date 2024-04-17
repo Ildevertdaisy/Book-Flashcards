@@ -1,1 +1,193 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Que fait la commande `git add` ?",
+      "answers": [
+        {
+          "text": "Elle prépare les fichiers ou dossiers pour que Git les suive.",
+          "correct": true
+        },
+        {
+          "text": "Elle supprime les fichiers du répertoire de travail.",
+          "correct": false
+        },
+        {
+          "text": "Elle crée une nouvelle branche dans le dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "Elle modifie les fichiers dans le dépôt local.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour dire à Git de se souvenir définitivement des changements ?",
+      "answers": [
+        { "text": "On utilise `git commit -m \"message\"`.", "correct": true },
+        { "text": "On utilise `git push`.", "correct": false },
+        { "text": "On utilise `git stage`.", "correct": false },
+        { "text": "On utilise `git checkout`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi met-on un message avec `git commit` ?",
+      "answers": [
+        {
+          "text": "Pour expliquer ce qui a changé ou ce qu'on a fait.",
+          "correct": true
+        },
+        {
+          "text": "Pour sélectionner la branche sur laquelle effectuer le commit.",
+          "correct": false
+        },
+        {
+          "text": "Pour fusionner les branches dans le dépôt.",
+          "correct": false
+        },
+        {
+          "text": "Pour annuler les modifications dans le répertoire de travail.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Peut-on ajouter tout un dossier pour que Git le suive ?",
+      "answers": [
+        {
+          "text": "Oui, avec `git add chemin/vers/dossier/`.",
+          "correct": true
+        },
+        {
+          "text": "Non, Git ne peut suivre que les fichiers individuels.",
+          "correct": false
+        },
+        {
+          "text": "Non, seuls les fichiers modifiés peuvent être ajoutés à Git.",
+          "correct": false
+        },
+        {
+          "text": "Oui, mais cela nécessite une commande spéciale `git add folder`.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que signifie faire un `commit` dans Git ?",
+      "answers": [
+        {
+          "text": "C'est comme sauvegarder officiellement les modifications.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie annuler toutes les modifications dans le dépôt.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie fusionner les branches dans le dépôt.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie envoyer les modifications locales vers le dépôt distant.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Si on a oublié d'ajouter un fichier avec `git add`, est-ce que les modifications seront enregistrées ?",
+      "answers": [
+        { "text": "Non, il faut d'abord ajouter le fichier avec `git add`.", "correct": true },
+        { "text": "Oui, Git enregistre automatiquement toutes les modifications.", "correct": false },
+        { "text": "Non, il suffit de faire `git commit` sans ajouter le fichier.", "correct": false },
+        { "text": "Oui, Git peut suivre les modifications sans ajouter explicitement les fichiers.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un `.gitignore` ?",
+      "answers": [
+        { "text": "Un fichier qui dit à Git d'ignorer certains fichiers ou dossiers.", "correct": true },
+        { "text": "Un fichier qui force Git à suivre tous les fichiers du projet.", "correct": false },
+        { "text": "Un fichier qui stocke les messages de commit pour référence future.", "correct": false },
+        { "text": "Un fichier utilisé pour supprimer l'historique des commits.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quand est-ce qu'on utilise `git commit -m \"message\"` ?",
+      "answers": [
+        { "text": "Après avoir ajouté les fichiers avec `git add`, pour enregistrer les changements.", "correct": true },
+        { "text": "Avant d'ajouter les fichiers avec `git add`.", "correct": false },
+        { "text": "Après avoir supprimé des fichiers avec `git rm`.", "correct": false },
+        { "text": "Uniquement lorsque vous souhaitez annuler les modifications dans Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce important de choisir un bon message pour `git commit` ?",
+      "answers": [
+        { "text": "Pour bien se rappeler et expliquer ce qui a été changé.", "correct": true },
+        { "text": "Parce que Git ne permet pas de faire de commit sans message.", "correct": false },
+        { "text": "Pour indiquer à Git de fusionner les branches.", "correct": false },
+        { "text": "Pour empêcher Git d'enregistrer les modifications.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment ajoute-t-on des changements à Git pour les suivre ?",
+      "answers": [
+        { "text": "En utilisant d'abord `git add` puis `git commit -m \"message\"`.", "correct": true },
+        { "text": "En utilisant seulement `git commit -m \"message\"`.", "correct": false },
+        { "text": "En utilisant seulement `git add`.", "correct": false },
+        { "text": "En utilisant `git push` directement.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que doit-on faire si on change d'avis après avoir utilisé `git add` ?",
+      "answers": [
+        { "text": "On peut utiliser `git reset chemin/vers/fichier` pour annuler.", "correct": true },
+        { "text": "Il suffit d'utiliser `git commit` pour enregistrer les changements.", "correct": false },
+        { "text": "On peut utiliser `git checkout` pour annuler tous les changements.", "correct": false },
+        { "text": "On peut utiliser `git push` pour envoyer les modifications malgré tout.", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on modifie un fichier après l'avoir ajouté avec `git add`, doit-on l'ajouter de nouveau ?",
+      "answers": [
+        { "text": "Oui, il faut le rajouter avec `git add` pour prendre en compte les nouvelles modifications.", "correct": true },
+        { "text": "Non, Git détecte automatiquement les modifications et les ajoute au commit.", "correct": false },
+        { "text": "Non, il suffit de faire `git commit` pour enregistrer les modifications.", "correct": false },
+        { "text": "Oui, mais il faut d'abord utiliser `git reset` pour annuler l'ajout précédent.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que `git status` nous montre ?",
+      "answers": [
+        { "text": "Il montre les fichiers modifiés ou prêts à être enregistrés.", "correct": true },
+        { "text": "Il montre les modifications enregistrées dans l'historique des commits.", "correct": false },
+        { "text": "Il montre les fichiers non suivis par Git.", "correct": false },
+        { "text": "Il montre les branches disponibles dans le dépôt Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce une bonne idée de séparer les changements en différents `commits` ?",
+      "answers": [
+        { "text": "Pour mieux organiser et comprendre l'historique des modifications.", "correct": true },
+        { "text": "Pour réduire la taille du dépôt Git.", "correct": false },
+        { "text": "Pour accélérer le processus de fusion des branches.", "correct": false },
+        { "text": "Pour éviter les conflits de fusion lors de la synchronisation avec le dépôt distant.", "correct": false }
+      ]
+    }
+  ]
+}
+
+

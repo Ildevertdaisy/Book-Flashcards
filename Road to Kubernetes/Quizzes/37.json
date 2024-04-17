@@ -1,1 +1,206 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Que se passe-t-il si on essaie de visiter http://127.0.0.1:3000 une nouvelle fois ?",
+      "answers": [
+        {
+          "text": "On teste pour voir si on peut toujours accéder à l'application après avoir changé le port.",
+          "correct": true
+        },
+        {
+          "text": "Le serveur redirige automatiquement vers un autre port.",
+          "correct": false
+        },
+        {
+          "text": "Le navigateur affiche une page d'erreur indiquant que le port est occupé.",
+          "correct": false
+        },
+        {
+          "text": "Le serveur affiche un message d'erreur indiquant une tentative de connexion invalide.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi le port choisi est-il important pour nos applications ?",
+      "answers": [
+        {
+          "text": "Parce que cela affecte notre capacité à accéder à l'application sur internet.",
+          "correct": true
+        },
+        {
+          "text": "Le port choisi détermine la vitesse de l'application.",
+          "correct": false
+        },
+        {
+          "text": "Le port choisi détermine le nombre maximal d'utilisateurs pouvant accéder à l'application simultanément.",
+          "correct": false
+        },
+        {
+          "text": "Le port choisi affecte la sécurité de l'application.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la méthode la plus simple pour arrêter le serveur Node.js ?",
+      "answers": [
+        {
+          "text": "Fermer la fenêtre du terminal ou de la ligne de commande.",
+          "correct": true
+        },
+        {
+          "text": "Exécuter la commande `stop node server`.",
+          "correct": false
+        },
+        { "text": "Redémarrer l'ordinateur.", "correct": false },
+        { "text": "Exécuter la commande `kill node`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on arrêter le serveur Node.js en utilisant le clavier ?",
+      "answers": [
+        {
+          "text": "En appuyant sur Control+C dans le terminal où le programme fonctionne.",
+          "correct": true
+        },
+        {
+          "text": "En appuyant sur Alt+Suppr pour fermer le processus.",
+          "correct": false
+        },
+        {
+          "text": "En appuyant sur la touche Escape puis sur Ctrl+Z.",
+          "correct": false
+        },
+        {
+          "text": "En appuyant sur la touche Windows + R pour ouvrir l'exécuteur de commandes.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la commande pour arrêter un serveur Node.js pour les utilisateurs avancés ?",
+      "answers": [
+        {
+          "text": "Utiliser `kill -9 <PID>`, où `<PID>` est l'identifiant du processus du serveur Node.js.",
+          "correct": true
+        },
+        {
+          "text": "Exécuter la commande `terminate node server`.",
+          "correct": false
+        },
+        { "text": "Exécuter la commande `killall node`.", "correct": false },
+        { "text": "Exécuter la commande `stop node`.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Que permet Express.js de faire en plus de retourner du HTML ?",
+            "answers": [
+                { "text": "Il permet aussi de créer des réponses en JSON en utilisant des caractéristiques JavaScript intégrées.", "correct": true },
+                { "text": "Express.js peut transformer du HTML en code binaire pour une diffusion plus rapide.", "correct": false },
+                { "text": "Express.js autorise uniquement l'envoi de fichiers texte.", "correct": false },
+                { "text": "Express.js ne peut être utilisé que pour la création de serveurs statiques.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une réponse en JSON ?",
+            "answers": [
+                { "text": "C'est une façon de renvoyer des informations structurées en format facile à lire pour les machines et les programmes.", "correct": true },
+                { "text": "Une réponse en JSON est un format spécifique pour les navigateurs Internet Explorer.", "correct": false },
+                { "text": "Une réponse en JSON est une représentation visuelle d'un objet JavaScript.", "correct": false },
+                { "text": "C'est une méthode pour encoder des données sous forme de caractères spéciaux pour l'envoi sur Internet.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi est-il utile de savoir arrêter un serveur web en cours d'exécution ?",
+            "answers": [
+                { "text": "Pour pouvoir gérer quand et comment notre application est accessible.", "correct": true },
+                { "text": "Pour libérer de l'espace mémoire sur le serveur.", "correct": false },
+                { "text": "Pour améliorer les performances du serveur en évitant les pannes.", "correct": false },
+                { "text": "Pour permettre la mise à jour automatique du serveur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce que le PID dans le contexte d'arrêter un serveur web ?",
+            "answers": [
+                { "text": "C'est un numéro unique qui identifie chaque processus en cours sur l'ordinateur, y compris notre serveur web.", "correct": true },
+                { "text": "Le PID est un protocole Internet pour la diffusion de données.", "correct": false },
+                { "text": "Le PID est le nom d'utilisateur du développeur qui a créé le serveur web.", "correct": false },
+                { "text": "Le PID est le nom de domaine du serveur web.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment trouve-t-on le PID d'un serveur Node.js en cours d'exécution ?",
+            "answers": [
+                { "text": "On peut le trouver dans le gestionnaire des tâches ou utiliser des commandes spécifiques dans le terminal.", "correct": true },
+                { "text": "En regardant le pied de page de la page web servie par le serveur Node.js.", "correct": false },
+                { "text": "En consultant la documentation officielle de Node.js.", "correct": false },
+                { "text": "En exécutant la commande `node pid` dans le terminal.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi pourrait-on préférer utiliser Control+C pour arrêter le serveur plutôt que de fermer le terminal ?",
+            "answers": [
+                { "text": "Parce que cela nous donne plus de contrôle sur l'arrêt du serveur de manière propre et sûre.", "correct": true },
+                { "text": "Fermer le terminal peut causer des dommages au système d'exploitation.", "correct": false },
+                { "text": "Control+C arrête uniquement le serveur sans fermer le terminal.", "correct": false },
+                { "text": "Control+C est plus rapide que la fermeture du terminal.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quel avantage y a-t-il à utiliser des réponses JSON dans une application web ?",
+            "answers": [
+                { "text": "Les réponses JSON peuvent être facilement traitées et utilisées par d'autres parties de l'application ou par d'autres applications.", "correct": true },
+                { "text": "Les réponses JSON sont plus esthétiques que les réponses HTML.", "correct": false },
+                { "text": "Les réponses JSON garantissent une sécurité accrue pour les données de l'application.", "correct": false },
+                { "text": "Les réponses JSON permettent d'afficher des éléments dynamiques sur la page web.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quelle différence y a-t-il entre une réponse HTML et une réponse JSON dans une application web ?",
+            "answers": [
+                { "text": "Une réponse HTML est principalement destinée à être vue par les utilisateurs dans un navigateur, tandis qu'une réponse JSON est souvent utilisée pour communiquer des données entre serveurs ou entre le serveur et les applications clientes.", "correct": true },
+                { "text": "Une réponse HTML est toujours plus sécurisée qu'une réponse JSON.", "correct": false },
+                { "text": "Une réponse HTML ne peut pas contenir d'objets imbriqués comme une réponse JSON.", "correct": false },
+                { "text": "Une réponse HTML est plus légère en termes de charge serveur qu'une réponse JSON.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi est-ce important de comprendre comment fonctionne le port d'une application web ?",
+            "answers": [
+                { "text": "Pour s'assurer que l'application est correctement configurée et accessible comme prévu.", "correct": true },
+                { "text": "Pour empêcher les attaques de pirates informatiques sur le serveur.", "correct": false },
+                { "text": "Pour garantir que l'application fonctionne uniquement sur un port sécurisé.", "correct": false },
+                { "text": "Pour réduire le temps de chargement de l'application.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quelle compétence un développeur web doit-il avoir en rapport avec le démarrage et l'arrêt des serveurs web ?",
+            "answers": [
+                { "text": "Il doit savoir comment gérer le cycle de vie de son application web, y compris comment démarrer et arrêter le serveur web sur lequel elle s'exécute.", "correct": true },
+                { "text": "Il doit être capable de créer des interfaces utilisateur conviviales.", "correct": false },
+                { "text": "Il doit être expert dans l'utilisation des frameworks frontend.", "correct": false },
+                { "text": "Il doit connaître toutes les API JavaScript disponibles.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+

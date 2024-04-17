@@ -1,1 +1,238 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'Express.js ?",
+      "answers": [
+        {
+          "text": "Express.js est un framework pour créer des applications mobiles avec JavaScript.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un programme utilisé pour construire des sites web avec JavaScript.",
+          "correct": true
+        },
+        {
+          "text": "Express.js est une bibliothèque pour manipuler des bases de données relationnelles en Node.js.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un langage de programmation basé sur Python.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment ajoute-t-on Express.js dans un projet Node.js ?",
+      "answers": [
+        {
+          "text": "En utilisant la commande `npm install express`.",
+          "correct": false
+        },
+        {
+          "text": "En important Express.js avec `import express from 'express'`.",
+          "correct": false
+        },
+        {
+          "text": "On utilise `require('express')` pour l'ajouter à notre projet.",
+          "correct": true
+        },
+        {
+          "text": "En incluant le script CDN d'Express.js dans le fichier HTML.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi utilise-t-on `require()` dans Node.js ?",
+      "answers": [
+        {
+          "text": "Pour ajouter des fonctionnalités d'authentification à notre application.",
+          "correct": false
+        },
+        {
+          "text": "Pour inclure des styles CSS dans nos fichiers HTML.",
+          "correct": false
+        },
+        {
+          "text": "Pour ajouter d'autres modules ou programmes à notre projet, comme Express.js.",
+          "correct": true
+        },
+        {
+          "text": "Pour exécuter des fonctions asynchrones de manière synchronisée.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quel est le rôle de la variable `app` dans le code ?",
+      "answers": [
+        {
+          "text": "`app` est utilisée pour gérer les communications avec la base de données.",
+          "correct": false
+        },
+        {
+          "text": "`app` est utilisée pour stocker des données temporaires lors de l'exécution du programme.",
+          "correct": false
+        },
+        {
+          "text": "`app` est utilisée pour créer une application web avec Express.js.",
+          "correct": true
+        },
+        {
+          "text": "`app` est utilisée pour définir les paramètres de configuration de l'application.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "À quoi sert le port dans une application web ?",
+      "answers": [
+        {
+          "text": "Le port est utilisé pour stocker les fichiers HTML et CSS de l'application.",
+          "correct": false
+        },
+        {
+          "text": "Le port est utilisé pour sécuriser l'accès à l'application en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Le port est comme une porte numérique où les gens peuvent accéder à notre application web.",
+          "correct": true
+        },
+        {
+          "text": "Le port est utilisé pour limiter le nombre de requêtes HTTP reçues par l'application.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Comment définit-on le port pour une application Express.js ?",
+            "answers": [
+                { "text": "On utilise `process.env.PORT || 3000`, ce qui signifie qu'on utilise un port défini par l'environnement ou 3000 par défaut.", "correct": true },
+                { "text": "On utilise `process.argv.PORT || 3000`, ce qui signifie qu'on utilise un port défini par les arguments de ligne de commande ou 3000 par défaut.", "correct": false },
+                { "text": "On utilise `config.PORT || 3000`, ce qui signifie qu'on utilise un port défini dans un fichier de configuration ou 3000 par défaut.", "correct": false },
+                { "text": "On utilise `3000 || process.env.PORT`, ce qui signifie qu'on utilise un port défini par l'environnement ou 3000 par défaut.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une route HTTP dans Express.js ?",
+            "answers": [
+                { "text": "C'est un chemin dans notre site web qui réagit quand quelqu'un le visite.", "correct": true },
+                { "text": "C'est un middleware qui gère les demandes HTTP entrantes.", "correct": false },
+                { "text": "C'est une fonction qui définit la logique de contrôle d'accès aux différentes parties du site web.", "correct": false },
+                { "text": "C'est une fonction de middleware qui gère les erreurs lors du traitement des demandes HTTP.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment crée-t-on une page d'accueil avec Express.js ?",
+            "answers": [
+                { "text": "En utilisant `app.get('/', (req, res) => {})` pour définir ce qui doit apparaître sur la page d'accueil.", "correct": true },
+                { "text": "En utilisant `app.use('/', (req, res) => {})` pour définir ce qui doit apparaître sur la page d'accueil.", "correct": false },
+                { "text": "En utilisant `app.post('/', (req, res) => {})` pour définir ce qui doit apparaître sur la page d'accueil.", "correct": false },
+                { "text": "En utilisant `app.set('/', (req, res) => {})` pour définir ce qui doit apparaître sur la page d'accueil.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que fait `res.send(\"<h1>Hello Express World!</h1>\");` ?",
+            "answers": [
+                { "text": "Ça envoie un message \"Hello Express World!\" comme réponse quand on visite la page d'accueil.", "correct": true },
+                { "text": "Ça redirige l'utilisateur vers une autre page.", "correct": false },
+                { "text": "Ça envoie un e-mail avec le contenu \"Hello Express World!\".", "correct": false },
+                { "text": "Ça affiche une alerte dans le navigateur avec le message \"Hello Express World!\".", "correct": false }
+            ]
+        },
+        {
+            "question": "À quoi sert `app.listen(port, () => {})` ?",
+            "answers": [
+                { "text": "Pour démarrer l'application et écouter les demandes sur le port défini.", "correct": true },
+                { "text": "Pour définir le port sur lequel l'application doit écouter les demandes.", "correct": false },
+                { "text": "Pour arrêter l'écoute des demandes sur le port spécifié.", "correct": false },
+                { "text": "Pour redémarrer le serveur Express avec de nouveaux paramètres.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Que fait `fs.writeFileSync(appPid, \`${process.pid}\`);` ?",
+            "answers": [
+                { "text": "Ça enregistre l'identifiant du processus de notre application dans un fichier pour le suivre.", "correct": true },
+                { "text": "Ça écrit le code source de notre application dans un fichier.", "correct": false },
+                { "text": "Ça crée un nouveau fichier avec le nom `appPid`.", "correct": false },
+                { "text": "Ça vérifie si le processus de l'application est en cours d'exécution.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi affiche-t-on un message dans la console quand l'application démarre ?",
+            "answers": [
+                { "text": "Pour savoir que notre serveur fonctionne correctement et sur quel port il est accessible.", "correct": true },
+                { "text": "Pour informer les utilisateurs de l'état du serveur.", "correct": false },
+                { "text": "Pour attirer l'attention sur le processus de démarrage de l'application.", "correct": false },
+                { "text": "Pour déboguer d'éventuels problèmes de démarrage de l'application.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment Express.js gère-t-il les différentes méthodes HTTP et les routes ?",
+            "answers": [
+                { "text": "Avec la syntaxe `app.<httpMethod>(<pathString>, <callback>)`.", "correct": true },
+                { "text": "En utilisant une configuration basée sur des fichiers de routes.", "correct": false },
+                { "text": "En définissant des fonctions de rappel pour chaque méthode HTTP.", "correct": false },
+                { "text": "En créant des instances de classe pour chaque route et méthode HTTP.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une méthode HTTP ?",
+            "answers": [
+                { "text": "C'est une action (comme lire, écrire) que notre application peut faire quand on visite une route spécifique.", "correct": true },
+                { "text": "C'est un type de middleware utilisé pour gérer les erreurs HTTP.", "correct": false },
+                { "text": "C'est une fonction JavaScript qui définit la logique de traitement des requêtes HTTP.", "correct": false },
+                { "text": "C'est une méthode de cryptage utilisée pour sécuriser les communications HTTP.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que signifie `<pathString>` dans Express.js ?",
+            "answers": [
+                { "text": "C'est l'adresse ou le chemin dans notre site web où quelque chose doit se passer.", "correct": true },
+                { "text": "C'est une chaîne de caractères représentant le contenu de la réponse HTTP.", "correct": false },
+                { "text": "C'est une variable d'environnement contenant le chemin absolu du répertoire de l'application.", "correct": false },
+                { "text": "C'est une directive spécifiant le type de contenu envoyé dans la réponse HTTP.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "À quoi sert le `<callback>` dans la gestion des routes HTTP avec Express.js ?",
+            "answers": [
+                { "text": "Pour définir ce qui doit être fait quand une route spécifique est visitée.", "correct": true },
+                { "text": "Pour spécifier le type de contenu à renvoyer dans la réponse HTTP.", "correct": false },
+                { "text": "Pour indiquer le chemin du fichier à servir pour la route spécifique.", "correct": false },
+                { "text": "Pour gérer les erreurs lors du traitement de la demande HTTP.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment sait-on quel port utiliser pour notre application Express.js ?",
+            "answers": [
+                { "text": "Soit on utilise un port défini par l'environnement où l'application s'exécute, soit on utilise un port par défaut comme 3000.", "correct": true },
+                { "text": "On spécifie le port dans le fichier de configuration `express.config`.", "correct": false },
+                { "text": "On demande à l'utilisateur de spécifier le port lors du démarrage de l'application.", "correct": false },
+                { "text": "On utilise toujours le port 80 par défaut pour les applications Express.js.", "correct": false }
+            ]
+        }
+    ]
+}
+
+

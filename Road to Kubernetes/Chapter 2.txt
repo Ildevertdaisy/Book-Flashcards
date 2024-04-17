@@ -1822,7 +1822,7 @@ utilisateurs peuvent aller pour voir ou faire quelque chose.
 
 
 2. **Question**: Comment FastAPI permet-il d'ajouter une nouvelle route ?
- **Réponse**: Avec FastAPI, on peut ajouter une nouvelle route en utilisant un
+ **Réponse**: Avec FastAPI, on peut ajouter une nouvelle route en utilisant un
 décorateur spécifique suivi d'une fonction qui répond à cette route.
 
 
@@ -1917,7 +1917,8 @@ vocabulary:
 
  **Réponse**: Uvicorn est un programme qui aide les sites web à fonctionner sur ton
 ordinateur.
-2. **Question**: Comment peut-on voir notre page web dans le navigateur ?
+
+2. **Question**: Comment peut-on voir notre page web dans le navigateur ?
 
  **Réponse**: On peut la voir en tapant l'adresse http://127.0.0.1:8011/api/v1/hello-
 world/ dans la barre d'adresse du navigateur.
@@ -2110,7 +2111,8 @@ complex ideas into straightforward language in French, here are 7 quizzes:
 
   **Réponse**: C'est le JavaScript qui fonctionne dans ton navigateur internet pour
 rendre les sites web interactifs et amusants à utiliser.
-2. **Question**: Pourquoi utilise-t-on JavaScript dans le navigateur ?
+
+2. **Question**: Pourquoi utilise-t-on JavaScript dans le navigateur ?
 
  **Réponse**: On l'utilise pour créer des interfaces utilisateur dynamiques, ce qui
 signifie que les pages web peuvent changer sans avoir à être rechargées.
@@ -2207,7 +2209,8 @@ commands while avoiding complex or childish vocabulary:
 
  **Réponse**: Express.js est un outil pour créer des sites web facilement, un peu
 comme FastAPI, mais il utilise JavaScript.
-2. **Question**: Pourquoi a-t-on besoin d'Express.js ?
+
+2. **Question**: Pourquoi a-t-on besoin d'Express.js ?
 
  **Réponse**: On a besoin d'Express.js pour construire des applications web avec
 moins de complications.
@@ -2307,7 +2310,7 @@ projet JavaScript ?
 
 16. **Question**: Qu'est-ce que l'installation d'Express.js permet de faire dans notre
 projet ?
- **Réponse**: Elle permet de construire et de gérer notre application web.
+**Réponse**: Elle permet de construire et de gérer notre application web.
 
 
 
@@ -2403,7 +2406,8 @@ valeur de "name" manuellement.
 
   **Réponse**: Pour rendre le projet facile à identifier, surtout si on travaille sur
 plusieurs projets.
-12. **Question**: Est-ce que `npm init` crée des fichiers ou dossiers supplémentaires
+
+12. **Question**: Est-ce que `npm init` crée des fichiers ou dossiers supplémentaires
 dans le projet ?
 
    **Réponse**: Non, `npm init` configure seulement `package.json` sans créer de
@@ -2450,7 +2454,7 @@ comment les autres peuvent l'utiliser.
 
 
 #29
-To convey the concepts in the provided transcript to children under 10, here are 15
+To convey the concepts in the provided transcript to children under 10, here are 15
 quizzes in French. These quizzes are designed to simplify the terminology and processes
 described, avoiding both complex jargon and overly simplistic language:
 
@@ -2500,7 +2504,7 @@ projet utilise.
 
 
 7. **Question**: Comment installe-t-on Express.js pour notre projet ?
-  **Réponse**: On utilise la commande `npm install express` dans le terminal de
+**Réponse**: On utilise la commande `npm install express` dans le terminal de
 l'ordinateur.
 
 
@@ -2645,7 +2649,8 @@ version et les scripts personnalisés.
 
   **Réponse**: Il sert à lister et à gérer les versions des paquets tiers que notre projet
 utilise.
-12. **Question**: Comment npm simplifie-t-il la gestion de l'environnement de
+
+12. **Question**: Comment npm simplifie-t-il la gestion de l'environnement de
 développement ?
 
  **Réponse**: En automatisant l'ajout et la mise à jour des paquets dans
@@ -2739,7 +2744,8 @@ colloquial language:
 1. **Question**: Qu'est-ce qu'Express.js ?
 
  **Réponse**: Express.js est un outil pour créer des sites web en utilisant JavaScript.
-2. **Question**: Pourquoi Express.js n'utilise-t-il pas un serveur web tiers comme
+
+2. **Question**: Pourquoi Express.js n'utilise-t-il pas un serveur web tiers comme
 uvicorn ?
 
  **Réponse**: Parce qu'Express.js a une fonction intégrée pour écouter un port
@@ -2840,7 +2846,7 @@ facilitant la création d'applications web.
 
 16. **Question**: Quel avantage y a-t-il à définir un port par défaut pour une application
 web ?
-  **Réponse**: Cela assure que l'application peut toujours fonctionner, même sans
+ **Réponse**: Cela assure que l'application peut toujours fonctionner, même sans
 configuration environnementale spécifique.
 
 
@@ -2990,7 +2996,8 @@ involved:
 
  **Réponse**: C'est une façon pour les sites web de communiquer, comme quand on
 demande à voir une page.
-2. **Question**: Que représente la méthode GET dans `main.js` ?
+
+2. **Question**: Que représente la méthode GET dans `main.js` ?
 
  **Réponse**: GET est une méthode utilisée pour demander des informations d'un site
 web.
@@ -3189,7 +3196,9 @@ application Express.js écoute ?
 15. **Question**: Qu'est-ce que `node main.js` fait exactement ?
 
  **Réponse**: Cela démarre l'application Express.js définie dans le fichier `main.js`.
-16. **Question**: Pourquoi est-il important de tester notre application web dans un
+
+
+16. **Question**: Pourquoi est-il important de tester notre application web dans un
 navigateur ?
 
  **Réponse**: Pour s'assurer qu'elle fonctionne correctement et répond aux attentes
@@ -3284,7 +3293,8 @@ dans une application web ?
 surtout lors du déploiement.
 
 
-11. **Question**: Qu'indique le message "Server running on port http://127.0.0.1:3011"
+
+11. **Question**: Qu'indique le message "Server running on port http://127.0.0.1:3011"
 ?
 
  **Réponse**: Cela indique que notre serveur web est prêt et accessible à cette
@@ -3333,7 +3343,7 @@ application sur le même serveur.
 
 17. **Question**: Pourquoi est-il utile de savoir comment changer le port d'une
 application web ?
- **Réponse**: Cela permet aux développeurs de s'assurer que leurs applications
+**Réponse**: Cela permet aux développeurs de s'assurer que leurs applications
 peuvent coexister sur le même serveur sans interférer les unes avec les autres.
 
 
@@ -3381,7 +3391,9 @@ utilisateurs avancés ?
 
  **Réponse**: Utiliser `kill -9 <PID>`, où `<PID>` est l'identifiant du processus du
 serveur Node.js.
-6. **Question**: Que permet Express.js de faire en plus de retourner du HTML ?
+
+
+6. **Question**: Que permet Express.js de faire en plus de retourner du HTML ?
 
  **Réponse**: Il permet aussi de créer des réponses en JSON en utilisant des
 caractéristiques JavaScript intégrées.
@@ -3430,7 +3442,8 @@ application web ?
 
   **Réponse**: Les réponses JSON peuvent être facilement traitées et utilisées par
 d'autres parties de l'application ou par d'autres applications.
-13. **Question**: Quelle différence y a-t-il entre une réponse HTML et une réponse
+
+13. **Question**: Quelle différence y a-t-il entre une réponse HTML et une réponse
 JSON dans une application web ?
 
   **Réponse**: Une réponse HTML est principalement destinée à être vue par les
@@ -3524,7 +3537,8 @@ here are 14 quizzes in French with simple and clear answers:
 
 
 1. **Question**: Qu'est-ce que JSON ?
- **Réponse**: JSON est un format de données utilisé pour échanger des informations
+
+**Réponse**: JSON est un format de données utilisé pour échanger des informations
 entre un site web et un utilisateur.
 
 
@@ -3574,7 +3588,7 @@ JSON.
 
 
 8. **Question**: Qu'est-ce qu'un objet JavaScript ?
- **Réponse**: C'est une collection de données et de fonctions dans le code d'un site
+ **Réponse**: C'est une collection de données et de fonctions dans le code d'un site
 web.
 
 
@@ -3672,12 +3686,12 @@ route ?
  **Réponse**: Il envoie la chaîne JSON comme réponse à qui visite la route.
 
 
-
 7. **Question**: Où peut-on voir la réponse JSON de notre route ?
 
  **Réponse**: En visitant `/api/v2/rocket-man1/` dans un navigateur web.
-8. **Question**: Quel type de réponses notre application Express.js peut-elle gérer ?
 
+
+8. **Question**: Quel type de réponses notre application Express.js peut-elle gérer ?
  **Réponse**: Des réponses en HTML et en JSON.
 
 
@@ -3776,7 +3790,8 @@ changements dans le code d'un programme.
 
 
 2. **Question**: Pourquoi utilise-t-on Git ?
- **Réponse**: Pour faciliter la gestion des modifications apportées au code d'une
+
+**Réponse**: Pour faciliter la gestion des modifications apportées au code d'une
 application et pour travailler plus facilement en équipe.
 
 
@@ -3828,8 +3843,9 @@ d'un programme.
 
  **Réponse**: Parce qu'il permet de sauvegarder et de partager de nombreuses
 versions d'un projet.
-3. **Question**: Comment Git a-t-il aidé à écrire ce livre ?
 
+
+3. **Question**: Comment Git a-t-il aidé à écrire ce livre ?
  **Réponse**: En sauvegardant de nombreuses versions sauvegardées du livre.
 
 
@@ -3880,7 +3896,7 @@ internet.
 
 
 11. **Question**: Qu'est-ce que le CI/CD dans le contexte de Git ?
- **Réponse**: C'est un type d'automatisation qui utilise notre code pour tester et
+ **Réponse**: C'est un type d'automatisation qui utilise notre code pour tester et
 déployer des applications.
 
 
@@ -3930,7 +3946,7 @@ avoiding complex jargon and offering straightforward answers:
 
 
 2. **Question**: Où doit-on installer Git ?
- **Réponse**: Sur notre ordinateur personnel.
+**Réponse**: Sur notre ordinateur personnel.
 
 
 
@@ -3985,7 +4001,7 @@ code.
 
 
 11. **Question**: Qu'est-ce qu'un dépôt distant dans Git ?
- **Réponse**: C'est un endroit sur internet où on peut stocker notre code.
+**Réponse**: C'est un endroit sur internet où on peut stocker notre code.
 
 
 
@@ -4032,7 +4048,9 @@ documents ou les programmes.
 
  **Réponse**: On écrivait dans un cahier et on faisait des copies pour les ranger dans
 un classeur.
-3. **Question**: Que fait la commande Control + Z (ou Command + Z sur macOS) ?
+
+
+3. **Question**: Que fait la commande Control + Z (ou Command + Z sur macOS) ?
 
  **Réponse**: Elle annule l'action précédente, comme si on revenait en arrière.
 
@@ -4178,7 +4196,8 @@ manière organisée.
 
  **Réponse**: On peut revenir à des versions antérieures de fichiers et voir qui a
 modifié quoi.
-8. **Question**: Qu'est-ce qu'une commande dans le contexte du contrôle de version ?
+
+8. **Question**: Qu'est-ce qu'une commande dans le contexte du contrôle de version ?
 
  **Réponse**: C'est une instruction que l'on tape sur l'ordinateur pour dire à l'outil de
 contrôle de version quoi faire.
@@ -4279,7 +4298,8 @@ notre code dans le nuage.
 
 
 6. **Question**: Comment GitHub.com peut-il nous aider ?
- **Réponse**: Il permet de partager notre code avec d'autres et de déclencher des
+
+**Réponse**: Il permet de partager notre code avec d'autres et de déclencher des
 automatismes.
 
 
@@ -4380,7 +4400,8 @@ Node.js.
 
 
 6. **Question**: Qu'est-ce qui se passe quand on tape `git init` ?
-  **Réponse**: Git crée un nouvel espace où il va surveiller les changements de nos
+
+**Réponse**: Git crée un nouvel espace où il va surveiller les changements de nos
 fichiers.
 
 
@@ -4536,7 +4557,7 @@ séparément.
   **Réponse**: Cela signifie que les informations du "repo" sont seulement sur notre
 ordinateur pour le moment.
 
-11. **Question**: Qu'est-ce qu'un dépôt Git distant ?
+11. **Question**: Qu'est-ce qu'un dépôt Git distant ?
 
   **Réponse**: C'est un "repo" Git stocké sur internet pour qu'on puisse partager notre
 code ou le sauvegarder.
@@ -4738,7 +4759,8 @@ changements.
 
  **Réponse**: Pour pouvoir suivre et enregistrer les changements dans nos fichiers de
 projet.
-7. **Question**: Qu'est-ce que `git init` fait ?
+
+7. **Question**: Qu'est-ce que `git init` fait ?
 
  **Réponse**: Ça prépare notre dossier de projet à être suivi par Git.
 
@@ -4887,7 +4909,9 @@ garder notre projet propre et organisé.
 Pour initier les enfants de moins de 10 ans à cette partie du transcript concernant
 l'ignorance de fichiers avec Git, voici 9 quiz adaptés avec des réponses simples et
 claires :
-1. **Question** : Pourquoi est-ce qu'on ne veut pas suivre certains dossiers avec Git ?
+
+
+1. **Question** : Pourquoi est-ce qu'on ne veut pas suivre certains dossiers avec Git ?
 
  **Réponse** : Parce qu'ils sont très grands et contiennent des choses que tout le
 monde peut déjà trouver ailleurs.
@@ -4989,7 +5013,9 @@ compréhensibles à cet âge, sans vocabulaire trop enfantin :
 5. **Question** : Peut-on effacer `venv/` et `node_modules/` sans problème ?
 
  **Réponse** : Oui, car on peut les recréer avec des commandes spéciales.
-6. **Question** : Pourquoi n'avons-nous pas besoin de garder `venv/` et
+
+
+6. **Question** : Pourquoi n'avons-nous pas besoin de garder `venv/` et
 `node_modules/` avec notre projet ?
 
  **Réponse** : Parce qu'on peut facilement télécharger à nouveau ces outils avec des
@@ -5388,7 +5414,8 @@ sur internet, comme sur GitHub.
 `node_modules` ?
 
  **Réponse** : On peut le récupérer en exécutant `npm install`.
-16. **Question** : Qu'est-ce que le fichier `.env` souvent mentionné dans `.gitignore`
+
+16. **Question** : Qu'est-ce que le fichier `.env` souvent mentionné dans `.gitignore`
 ?
 
  **Réponse** : Un fichier contenant des informations sensibles comme des mots de
@@ -5490,7 +5517,7 @@ un projet ?
 
 
 26. **Question** : Que fait-on si on veut arrêter de suivre un fichier avec Git ?
- **Réponse** : On peut utiliser la commande `git rm` pour le retirer du suivi.
+**Réponse** : On peut utiliser la commande `git rm` pour le retirer du suivi.
 
 
 
@@ -5538,11 +5565,7 @@ ces modifications dans un commit ?
 
  **Réponse** : Oui, mais il faut utiliser des commandes spécifiques pour retirer ces
 modifications de la zone de préparation (staging area).
-33. **Question** : Comment Git aide-t-il les équipes à travailler sur
-
-
-
-le même projet ?
+33. **Question** : Comment Git aide-t-il les équipes à travailler sur le même projet ?
 
   **Réponse** : En suivant les changements de chacun et en permettant de combiner
 ces changements de manière organisée.
@@ -5687,7 +5710,7 @@ Pour transformer ce concept en quiz en français, adapté aux enfants de moins d
 ans, tout en restant concis et en évitant le jargon complexe, voici 9 quiz
 supplémentaires :
 
-51. **Question** : Qu'est-ce que Git ?
+51. **Question** : Qu'est-ce que Git ?
 
    **Réponse** : Git est un outil qui aide à suivre les modifications apportées aux
 fichiers d'un projet.
@@ -6040,7 +6063,8 @@ qui a été fait.
 de faire `git commit` ?
 
  **Réponse** : Le fichier ne sera pas enregistré dans les modifications de Git.
-99. **Question** : Que doit-on faire si on a des fichiers qu'on ne veut jamais enregistrer
+
+99. **Question** : Que doit-on faire si on a des fichiers qu'on ne veut jamais enregistrer
 dans Git ?
 
  **Réponse** : On doit les ajouter au fichier `.gitignore`.
@@ -6188,7 +6212,8 @@ commit` ?
 11. **Question** : Que doit-on faire si on change d'avis après avoir utilisé `git add` ?
 
  **Réponse** : On peut utiliser `git reset chemin/vers/fichier` pour annuler.
-12. **Question** : Si on modifie un fichier après l'avoir ajouté avec `git add`, doit-on
+
+12. **Question** : Si on modifie un fichier après l'avoir ajouté avec `git add`, doit-on
 l'ajouter de nouveau ?
 
  **Réponse** : Oui, il faut le rajouter avec `git add` pour prendre en compte les
@@ -6435,7 +6460,8 @@ suivi des modifications de logiciels.
 
   **Réponse** : Si vous vous sentez bloqué et que corriger les erreurs semble trop
 compliqué.
-12. **Question** : Git est-il le seul outil pour déployer des logiciels ?
+
+12. **Question** : Git est-il le seul outil pour déployer des logiciels ?
 
  **Réponse** : Non, il y a beaucoup d'autres outils, mais Git est très populaire et utile.
 
@@ -6679,7 +6705,9 @@ pourquoi.
 
  **Réponse** : Si on a fait beaucoup d'erreurs et qu'on veut repartir sur une bonne
 base.
-16. **Question** : Qu'est-ce qu'on fait après avoir effacé l'historique Git de notre projet
+
+
+16. **Question** : Qu'est-ce qu'on fait après avoir effacé l'historique Git de notre projet
 ?
 
  **Réponse** : On recommence le suivi avec `git init`, `git add`, et `git commit`.

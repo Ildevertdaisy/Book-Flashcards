@@ -1,1 +1,204 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'on trouve dans le dossier `venv/` d'un projet Python ?",
+      "answers": [
+        {
+          "text": "Des scripts utilisés pour l'automatisation des tâches de développement.",
+          "correct": false
+        },
+        {
+          "text": "Des outils spéciaux pour aider le projet à fonctionner.",
+          "correct": true
+        },
+        {
+          "text": "Des fichiers journaux de l'exécution du programme.",
+          "correct": false
+        },
+        {
+          "text": "Des exemples de code source pour des fonctionnalités avancées.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "À quoi sert le dossier `node_modules/` dans un projet Node.js ?",
+      "answers": [
+        {
+          "text": "Il contient des fichiers de configuration pour le serveur Node.js.",
+          "correct": false
+        },
+        {
+          "text": "Il stocke les fichiers de documentation du projet Node.js.",
+          "correct": false
+        },
+        {
+          "text": "Il contient des outils importants pour le projet Node.js.",
+          "correct": true
+        },
+        {
+          "text": "Il stocke les fichiers journaux de l'application Node.js.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi `requirements.txt` dans un projet Python ?",
+      "answers": [
+        {
+          "text": "Un fichier de sauvegarde pour les données utilisateur du projet Python.",
+          "correct": false
+        },
+        {
+          "text": "Une liste des versions précédentes du code source du projet Python.",
+          "correct": false
+        },
+        {
+          "text": "Une liste des outils spéciaux que le projet Python a besoin.",
+          "correct": true
+        },
+        {
+          "text": "Un fichier de configuration pour définir les dépendances du projet Python.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Et `package.json` dans un projet Node.js, c'est pour quoi ?",
+      "answers": [
+        {
+          "text": "C'est une liste des modules obsolètes à éviter dans le projet Node.js.",
+          "correct": false
+        },
+        {
+          "text": "C'est une liste qui dit quels outils le projet Node.js utilise.",
+          "correct": true
+        },
+        {
+          "text": "C'est un fichier de configuration pour définir les paramètres de l'application Node.js.",
+          "correct": false
+        },
+        {
+          "text": "C'est une liste des développeurs ayant contribué au projet Node.js.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Peut-on effacer `venv/` et `node_modules/` sans problème ?",
+      "answers": [
+        {
+          "text": "Non, car ces dossiers contiennent des informations critiques pour le bon fonctionnement du projet.",
+          "correct": false
+        },
+        {
+          "text": "Oui, car on peut les recréer avec des commandes spéciales.",
+          "correct": true
+        },
+        {
+          "text": "Non, car cela entraînerait la perte de toutes les données du projet.",
+          "correct": false
+        },
+        {
+          "text": "Oui, mais cela nécessite une sauvegarde préalable de ces dossiers pour éviter toute perte de données.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi n'avons-nous pas besoin de garder `venv/` et `node_modules/` avec notre projet ?",
+      "answers": [
+        { "text": "Parce qu'on peut facilement télécharger à nouveau ces outils avec des commandes.", "correct": true },
+        { "text": "Parce que ces dossiers sont généralement vides et ne contiennent aucun fichier utile.", "correct": false },
+        { "text": "Parce que ces dossiers sont automatiquement synchronisés avec le cloud sans intervention.", "correct": false },
+        { "text": "Parce que ces dossiers contiennent des informations confidentielles qui ne doivent pas être partagées.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça veut dire \"être responsable de son propre code\" pour un paquet ?",
+      "answers": [
+        { "text": "Ça veut dire que le créateur du paquet s'occupe de le garder à jour et accessible.", "correct": true },
+        { "text": "Ça signifie que le paquet est exempt de bugs et d'erreurs de codage.", "correct": false },
+        { "text": "Ça veut dire que le paquet est exempt de tout risque de violation de sécurité.", "correct": false },
+        { "text": "Ça signifie que le paquet est entièrement documenté et facile à comprendre.", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on a besoin d'un outil pour notre projet, où peut-on le trouver ?",
+      "answers": [
+        { "text": "On peut le télécharger d'internet grâce à des listes comme `requirements.txt` ou `package.json`.", "correct": true },
+        { "text": "On peut le trouver uniquement sur des disques durs locaux et non sur internet.", "correct": false },
+        { "text": "On peut le demander à d'autres développeurs via des forums en ligne.", "correct": false },
+        { "text": "On peut le générer automatiquement à partir du code source de notre projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce important que les paquets aient leur propre Git ?",
+      "answers": [
+        { "text": "Pour qu'ils soient facilement accessibles et que chacun puisse les utiliser dans ses projets.", "correct": true },
+        { "text": "Pour permettre aux paquets de se mettre à jour automatiquement sans intervention humaine.", "correct": false },
+        { "text": "Pour garantir que les paquets sont entièrement exempts de bogues et de défauts de codage.", "correct": false },
+        { "text": "Pour permettre aux paquets de communiquer directement avec les serveurs de stockage en nuage.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quand on télécharge un nouvel outil pour notre projet, d'où vient-il ?",
+      "answers": [
+        { "text": "Il vient d'internet, d'un endroit où le créateur de l'outil le partage avec tout le monde.", "correct": true },
+        { "text": "Il provient uniquement des dépôts internes de l'organisation sans accès externe.", "correct": false },
+        { "text": "Il est automatiquement généré par l'IDE utilisé pour le développement du projet.", "correct": false },
+        { "text": "Il est extrait du code source d'autres projets similaires sans autorisation.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'on fait si on a besoin d'un outil qu'on n'a pas encore ?",
+      "answers": [
+        { "text": "On utilise une commande spéciale pour le télécharger et l'ajouter à notre projet.", "correct": true },
+        { "text": "On recherche dans les paramètres de l'IDE pour voir s'il est disponible en tant qu'extension.", "correct": false },
+        { "text": "On demande à d'autres développeurs de nous l'envoyer par e-mail.", "correct": false },
+        { "text": "On l'achète sur un marché en ligne spécialisé dans les outils de développement.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment sait-on quels outils notre projet utilise ?",
+      "answers": [
+        { "text": "On regarde dans les fichiers comme `requirements.txt` ou `package.json` qui les listent.", "correct": true },
+        { "text": "On consulte un manuel de référence pour le langage de programmation utilisé.", "correct": false },
+        { "text": "On effectue une recherche sur Internet pour voir ce que recommandent d'autres développeurs.", "correct": false },
+        { "text": "On interroge les membres de l'équipe de développement pour obtenir une liste complète.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce qu'on doit s'inquiéter si on perd le dossier `venv/` ou `node_modules/` ?",
+      "answers": [
+        { "text": "Non, car on peut les recréer facilement avec les bonnes commandes.", "correct": true },
+        { "text": "Oui, car perdre ces dossiers peut entraîner des erreurs graves dans notre projet.", "correct": false },
+        { "text": "Oui, car ces dossiers contiennent des informations sensibles que nous ne pouvons pas récupérer.", "correct": false },
+        { "text": "Non, car ils sont automatiquement sauvegardés dans le cloud chaque fois qu'il y a une modification.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que fait-on si on veut partager notre projet mais sans les gros dossiers comme `venv/` ou `node_modules/` ?",
+      "answers": [
+        { "text": "On partage juste notre code et les listes `requirements.txt` ou `package.json`, et les autres peuvent recréer ce dont ils ont besoin.", "correct": true },
+        { "text": "On compresse les dossiers et on les envoie en pièce jointe avec notre projet.", "correct": false },
+        { "text": "On utilise une fonction de filtrage pour exclure ces dossiers lors du partage du code.", "correct": false },
+        { "text": "On demande aux destinataires de télécharger ces dossiers à partir d'un site Web de stockage de fichiers.", "correct": false }
+      ]
+    }
+  ]
+}

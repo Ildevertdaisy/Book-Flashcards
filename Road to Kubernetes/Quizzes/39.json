@@ -1,1 +1,203 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que JSON ?",
+      "answers": [
+        {
+          "text": "JSON est un format de données utilisé pour échanger des informations entre un site web et un utilisateur.",
+          "correct": true
+        },
+        {
+          "text": "JSON est un langage de programmation orienté objet.",
+          "correct": false
+        },
+        {
+          "text": "JSON est une méthode de cryptage des données.",
+          "correct": false
+        },
+        {
+          "text": "JSON est une abréviation pour Java and Object Notation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "À quoi sert `res.json()` dans Express.js ?",
+      "answers": [
+        {
+          "text": "Il sert à envoyer des données en format JSON à qui demande les informations sur un site web.",
+          "correct": true
+        },
+        {
+          "text": "Il sert à rediriger l'utilisateur vers une autre page web.",
+          "correct": false
+        },
+        {
+          "text": "Il sert à exécuter une fonction de rappel en cas de succès.",
+          "correct": false
+        },
+        {
+          "text": "Il sert à créer une nouvelle session utilisateur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle différence y a-t-il entre un objet JavaScript et une chaîne JSON ?",
+      "answers": [
+        {
+          "text": "Un objet JavaScript est utilisé dans le code, tandis qu'une chaîne JSON est un format de texte pour échanger des données.",
+          "correct": true
+        },
+        {
+          "text": "Un objet JavaScript est une chaîne de caractères, tandis qu'une chaîne JSON est un objet.",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a pas de différence, un objet JavaScript et une chaîne JSON sont identiques.",
+          "correct": false
+        },
+        {
+          "text": "Un objet JavaScript est plus rapide à traiter qu'une chaîne JSON.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment transforme-t-on un objet JavaScript en JSON ?",
+      "answers": [
+        {
+          "text": "En utilisant `JSON.stringify()` pour le convertir en chaîne de caractères JSON.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant `JSON.parse()` pour le convertir en objet JSON.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant `JSON.stringify()` pour le convertir en objet JSON.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant `JSON.encode()` pour le convertir en chaîne de caractères JSON.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on convertir les objets JavaScript en JSON ?",
+      "answers": [
+        {
+          "text": "Pour les envoyer sur internet, car le format JSON est plus universel pour échanger des données.",
+          "correct": true
+        },
+        {
+          "text": "Pour les rendre plus sécurisés contre les attaques XSS.",
+          "correct": false
+        },
+        {
+          "text": "Pour les stocker dans une base de données relationnelle.",
+          "correct": false
+        },
+        {
+          "text": "Pour les rendre compatibles avec les navigateurs Internet Explorer.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Que doit-on faire pour retourner des données JSON dans une application Express.js ?",
+            "answers": [
+                { "text": "On doit déclarer un objet JavaScript, le convertir en JSON, puis le retourner avec `res.json()`.", "correct": true },
+                { "text": "On doit utiliser la méthode `res.send()` pour envoyer les données.", "correct": false },
+                { "text": "On doit créer une fonction middleware pour gérer la réponse JSON.", "correct": false },
+                { "text": "On doit inclure un module externe pour gérer la conversion en JSON.", "correct": false }
+            ]
+        },
+        {
+            "question": "Peut-on envoyer des objets JavaScript directement avec `res.json()` sans les convertir ?",
+            "answers": [
+                { "text": "Oui, car `res.json()` convertit automatiquement les objets JavaScript en JSON.", "correct": true },
+                { "text": "Non, `res.json()` ne peut envoyer que des chaînes de caractères.", "correct": false },
+                { "text": "Oui, mais uniquement si l'objet JavaScript est de petite taille.", "correct": false },
+                { "text": "Non, `res.json()` génère une erreur si on lui passe un objet JavaScript.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'un objet JavaScript ?",
+            "answers": [
+                { "text": "C'est une collection de données et de fonctions dans le code d'un site web.", "correct": true },
+                { "text": "C'est un fichier JavaScript contenant des variables et des fonctions.", "correct": false },
+                { "text": "C'est un format de données utilisé pour stocker des informations sensibles.", "correct": false },
+                { "text": "C'est un type spécial de chaîne de caractères en JavaScript.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment récupère-t-on des données à envoyer en JSON dans une application web ?",
+            "answers": [
+                { "text": "On peut les déclarer directement dans le code ou les récupérer d'une base de données.", "correct": true },
+                { "text": "On doit les coder manuellement dans un fichier JSON externe.", "correct": false },
+                { "text": "On doit les générer dynamiquement en utilisant des expressions régulières.", "correct": false },
+                { "text": "On doit les récupérer à partir de fichiers de configuration.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi utiliserait-on des données JSON dans une application web ?",
+            "answers": [
+                { "text": "Pour échanger facilement des informations entre le serveur et les clients ou d'autres serveurs.", "correct": true },
+                { "text": "Pour réduire la taille des fichiers de configuration de l'application.", "correct": false },
+                { "text": "Pour simplifier le processus de compilation du code JavaScript.", "correct": false },
+                { "text": "Pour sécuriser les communications entre le client et le serveur.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Quel est le rôle de `JSON.stringify()` dans le processus d'envoi de données JSON ?",
+            "answers": [
+                { "text": "Il convertit les objets JavaScript en chaînes JSON pour qu'ils puissent être envoyés sur le web.", "correct": true },
+                { "text": "Il transforme les données JSON en objets JavaScript pour les rendre compatibles avec Express.js.", "correct": false },
+                { "text": "Il génère des données aléatoires en format JSON pour les tests de performance.", "correct": false },
+                { "text": "Il valide la syntaxe des données JSON pour éviter les erreurs lors de l'envoi.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce que signifie JSON ?",
+            "answers": [
+                { "text": "JSON signifie JavaScript Object Notation, qui est une notation pour représenter des données.", "correct": true },
+                { "text": "JSON est l'acronyme de Java Server Object Notation, une technique utilisée pour échanger des données dans les applications Java.", "correct": false },
+                { "text": "JSON est un terme générique pour désigner les objets JavaScript dans le langage informatique.", "correct": false },
+                { "text": "JSON est une abréviation pour JavaScript Online Notation, une méthode de codage en ligne en JavaScript.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi les objets JavaScript et les chaînes JSON sont-ils considérés différents ?",
+            "answers": [
+                { "text": "Parce que les objets JavaScript sont utilisés dans le code et les chaînes JSON sont un format de texte échangé entre serveurs et clients.", "correct": true },
+                { "text": "Parce que les objets JavaScript sont statiques tandis que les chaînes JSON sont dynamiques.", "correct": false },
+                { "text": "Parce que les objets JavaScript sont stockés en mémoire tandis que les chaînes JSON sont stockées sur le disque dur.", "correct": false },
+                { "text": "Parce que les objets JavaScript sont manipulés côté client tandis que les chaînes JSON sont manipulées côté serveur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quel avantage y a-t-il à envoyer des réponses en JSON avec Express.js ?",
+            "answers": [
+                { "text": "Cela permet une communication de données structurée et facile à manipuler entre le serveur et les applications clientes.", "correct": true },
+                { "text": "Cela rend les réponses du serveur plus rapides à traiter par les clients.", "correct": false },
+                { "text": "Cela permet de sécuriser les échanges de données en les cryptant avec un algorithme JSON spécifique.", "correct": false },
+                { "text": "Cela garantit que les réponses du serveur seront compatibles avec tous les navigateurs web.", "correct": false }
+            ]
+        }
+    ]
+}

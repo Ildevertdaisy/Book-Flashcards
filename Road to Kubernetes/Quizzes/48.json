@@ -1,1 +1,290 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "C'est quoi un \"repo\" avec Git ?",
+      "answers": [
+        {
+          "text": "Un \"repo\" est un espace dans un dossier qui permet à Git de suivre les changements de nos fichiers.",
+          "correct": true
+        },
+        {
+          "text": "Un \"repo\" est une variété rare de chèvre des montagnes.",
+          "correct": false
+        },
+        {
+          "text": "Un \"repo\" est un petit robot qui nettoie les fichiers inutiles sur votre ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "Un \"repo\" est un nouveau type de café biologique sans caféine.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment crée-t-on un \"repo\" ?",
+      "answers": [
+        {
+          "text": "En tapant la commande `git init` dans le dossier de notre projet.",
+          "correct": true
+        },
+        {
+          "text": "En chantant une chanson de bonne chance pour les répertoires.",
+          "correct": false
+        },
+        {
+          "text": "En lançant un sortilège de création de dépôt sur Git.",
+          "correct": false
+        },
+        {
+          "text": "En demandant gentiment à votre ordinateur de créer un \"repo\" pour vous.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si on tape `git init` dans un dossier qui a déjà un \"repo\" ?",
+      "answers": [
+        {
+          "text": "Git dit que le \"repo\" existe déjà avec un message comme \"Réinitialisation du dépôt Git existant\".",
+          "correct": true
+        },
+        {
+          "text": "Le dossier devient magiquement un \"repo\" encore plus puissant.",
+          "correct": false
+        },
+        {
+          "text": "Votre ordinateur refuse d'exécuter la commande et affiche un émoji en colère.",
+          "correct": false
+        },
+        {
+          "text": "Une licorne apparaît et danse joyeusement autour de votre bureau.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment savoir si un dossier est déjà un \"repo\" Git ?",
+      "answers": [
+        {
+          "text": "On peut taper `git status` pour voir si le dossier est suivi par Git.",
+          "correct": true
+        },
+        {
+          "text": "Il suffit de secouer le dossier et d'écouter s'il répond.",
+          "correct": false
+        },
+        {
+          "text": "En demandant à une boule de cristal si le dossier est béni par Git.",
+          "correct": false
+        },
+        {
+          "text": "En postant une question sur Twitter avec le hashtag #RepoOrNot.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que `git status` nous montre ?",
+      "answers": [
+        {
+          "text": "Ça montre si le dossier est un \"repo\" Git et l'état des fichiers dedans.",
+          "correct": true
+        },
+        {
+          "text": "Cela affiche les prévisions météorologiques pour votre région.",
+          "correct": false
+        },
+        {
+          "text": "Cela affiche le nombre de likes que votre projet a reçu sur GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Cela déclenche une alerte de sécurité dans une base secrète de Git.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Si `git status` dit \"fatal: not a git repository\", qu'est-ce que ça veut dire ?",
+      "answers": [
+        { "text": "Cela signifie que le dossier n'est pas un \"repo\" Git et que Git ne suit pas les fichiers à l'intérieur.", "correct": true },
+        { "text": "Cela signifie que votre ordinateur est en mode hors ligne et ne peut pas contacter les serveurs Git.", "correct": false },
+        { "text": "Cela signifie que Git a été désinstallé de votre système.", "correct": false },
+        { "text": "Cela signifie que vous avez besoin d'une mise à jour pour votre installation Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que `git init` peut être utilisé plus d'une fois dans le même dossier ?",
+      "answers": [
+        { "text": "Oui, mais il dira juste que le \"repo\" a été réinitialisé.", "correct": true },
+        { "text": "Non, Git refusera d'exécuter la commande une deuxième fois dans le même dossier.", "correct": false },
+        { "text": "Oui, mais cela entraînera la suppression de tous les fichiers du dossier.", "correct": false },
+        { "text": "Non, cela provoquera une erreur fatale et effacera tous les fichiers du dossier.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi voudrions-nous réinitialiser un \"repo\" Git ?",
+      "answers": [
+        { "text": "Habituellement, on ne le fait pas exprès, c'est juste pour confirmer que le \"repo\" est là.", "correct": true },
+        { "text": "Pour effacer toutes les modifications et revenir à une version vide du projet.", "correct": false },
+        { "text": "Pour changer le nom du \"repo\" afin de le rendre plus approprié au projet.", "correct": false },
+        { "text": "Pour supprimer complètement le \"repo\" et recommencer à zéro.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que chaque projet doit avoir son propre \"repo\" Git ?",
+      "answers": [
+        { "text": "Oui, chaque projet a son propre \"repo\" pour suivre ses fichiers séparément.", "correct": true },
+        { "text": "Non, plusieurs projets peuvent partager le même \"repo\" pour plus d'efficacité.", "correct": false },
+        { "text": "Non, un seul \"repo\" peut suivre tous les fichiers de tous les projets sur l'ordinateur.", "correct": false },
+        { "text": "Oui, mais seulement si les projets sont écrits dans le même langage de programmation.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça signifie \"stocké localement\" pour un \"repo\" Git ?",
+      "answers": [
+        { "text": "Cela signifie que les informations du \"repo\" sont seulement sur notre ordinateur pour le moment.", "correct": true },
+        { "text": "Cela signifie que les informations du \"repo\" sont sauvegardées dans le cloud de Git.", "correct": false },
+        { "text": "Cela signifie que les informations du \"repo\" sont partagées avec tous les autres utilisateurs de Git.", "correct": false },
+        { "text": "Cela signifie que les informations du \"repo\" sont stockées sur un serveur distant de sauvegarde.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Si `git status` dit \"fatal: not a git repository\", qu'est-ce que ça veut dire ?",
+      "answers": [
+        { "text": "Cela signifie que le dossier n'est pas un \"repo\" Git et que Git ne suit pas les fichiers à l'intérieur.", "correct": true },
+        { "text": "Cela signifie que votre ordinateur est en mode hors ligne et ne peut pas contacter les serveurs Git.", "correct": false },
+        { "text": "Cela signifie que Git a été désinstallé de votre système.", "correct": false },
+        { "text": "Cela signifie que vous avez besoin d'une mise à jour pour votre installation Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que `git init` peut être utilisé plus d'une fois dans le même dossier ?",
+      "answers": [
+        { "text": "Oui, mais il dira juste que le \"repo\" a été réinitialisé.", "correct": true },
+        { "text": "Non, Git refusera d'exécuter la commande une deuxième fois dans le même dossier.", "correct": false },
+        { "text": "Oui, mais cela entraînera la suppression de tous les fichiers du dossier.", "correct": false },
+        { "text": "Non, cela provoquera une erreur fatale et effacera tous les fichiers du dossier.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi voudrions-nous réinitialiser un \"repo\" Git ?",
+      "answers": [
+        { "text": "Habituellement, on ne le fait pas exprès, c'est juste pour confirmer que le \"repo\" est là.", "correct": true },
+        { "text": "Pour effacer toutes les modifications et revenir à une version vide du projet.", "correct": false },
+        { "text": "Pour changer le nom du \"repo\" afin de le rendre plus approprié au projet.", "correct": false },
+        { "text": "Pour supprimer complètement le \"repo\" et recommencer à zéro.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que chaque projet doit avoir son propre \"repo\" Git ?",
+      "answers": [
+        { "text": "Oui, chaque projet a son propre \"repo\" pour suivre ses fichiers séparément.", "correct": true },
+        { "text": "Non, plusieurs projets peuvent partager le même \"repo\" pour plus d'efficacité.", "correct": false },
+        { "text": "Non, un seul \"repo\" peut suivre tous les fichiers de tous les projets sur l'ordinateur.", "correct": false },
+        { "text": "Oui, mais seulement si les projets sont écrits dans le même langage de programmation.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça signifie \"stocké localement\" pour un \"repo\" Git ?",
+      "answers": [
+        { "text": "Cela signifie que les informations du \"repo\" sont seulement sur notre ordinateur pour le moment.", "correct": true },
+        { "text": "Cela signifie que les informations du \"repo\" sont sauvegardées dans le cloud de Git.", "correct": false },
+        { "text": "Cela signifie que les informations du \"repo\" sont partagées avec tous les autres utilisateurs de Git.", "correct": false },
+        { "text": "Cela signifie que les informations du \"repo\" sont stockées sur un serveur distant de sauvegarde.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un dépôt Git distant ?",
+      "answers": [
+        { "text": "C'est un \"repo\" Git stocké sur internet pour qu'on puisse partager notre code ou le sauvegarder.", "correct": true },
+        { "text": "C'est un \"repo\" Git stocké sur un disque dur externe pour plus de sécurité.", "correct": false },
+        { "text": "C'est un \"repo\" Git utilisé exclusivement par GitLab pour le développement de logiciels.", "correct": false },
+        { "text": "C'est un \"repo\" Git qui ne peut être accédé que par l'utilisateur qui l'a créé.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment passe-t-on d'un \"repo\" local à un distant ?",
+      "answers": [
+        { "text": "On configure notre \"repo\" local pour se connecter à un \"repo\" distant et on y envoie nos fichiers.", "correct": true },
+        { "text": "On utilise une commande spéciale `git connect` pour établir une connexion entre les deux \"repos\".", "correct": false },
+        { "text": "On crée un nouveau \"repo\" distant et on y copie manuellement les fichiers de notre \"repo\" local.", "correct": false },
+        { "text": "On ne peut pas passer d'un \"repo\" local à un distant, ils doivent rester séparés.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire si on veut que Git ne suive pas certains fichiers ?",
+      "answers": [
+        { "text": "On peut utiliser un fichier spécial pour dire à Git quels fichiers ignorer.", "correct": true },
+        { "text": "On doit déplacer ces fichiers dans un dossier différent pour les cacher à Git.", "correct": false },
+        { "text": "On doit supprimer ces fichiers du dossier de notre projet pour qu'ils ne soient pas suivis par Git.", "correct": false },
+        { "text": "On ne peut pas empêcher Git de suivre certains fichiers, il suit tout ce qui est dans le dossier du projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce important de sauvegarder notre code dans un \"repo\" distant ?",
+      "answers": [
+        { "text": "Oui, cela nous permet de ne pas perdre notre travail et de collaborer avec d'autres personnes.", "correct": true },
+        { "text": "Non, tant que notre code est sauvegardé localement, il est en sécurité.", "correct": false },
+        { "text": "Non, un \"repo\" distant est juste une option facultative pour ceux qui veulent partager leur code en ligne.", "correct": false },
+        { "text": "Non, un \"repo\" distant est juste un moyen de visualiser notre code sur un autre ordinateur, il n'a pas de rôle de sauvegarde.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on voir l'historique de nos changements avec Git ?",
+      "answers": [
+        { "text": "Oui, Git nous permet de voir tous les changements qu'on a faits.", "correct": true },
+        { "text": "Non, Git ne garde pas d'historique des changements, il se contente de suivre la version actuelle du code.", "correct": false },
+        { "text": "Oui, mais seulement si notre projet est très petit, sinon l'historique devient trop volumineux.", "correct": false },
+        { "text": "Non, Git ne garde l'historique que des changements majeurs, pas des changements mineurs.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Quelle commande Git nous montre l'état actuel de notre \"repo\" ?",
+      "answers": [
+        { "text": "La commande `git status`.", "correct": true },
+        { "text": "La commande `git show`.", "correct": false },
+        { "text": "La commande `git changes`.", "correct": false },
+        { "text": "La commande `git current`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi utiliserait-on Git pour un projet ?",
+      "answers": [
+        { "text": "Pour suivre les changements, collaborer facilement et sauvegarder notre travail.", "correct": true },
+        { "text": "Pour compiler le code, générer des rapports et tester des fonctionnalités.", "correct": false },
+        { "text": "Pour créer des interfaces utilisateur, développer des fonctionnalités et optimiser les performances.", "correct": false },
+        { "text": "Pour analyser les données, effectuer des requêtes et générer des visualisations.", "correct": false }
+      ]
+    }
+  ]
+}

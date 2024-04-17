@@ -1,1 +1,203 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'une branche Git ?",
+      "answers": [
+        {
+          "text": "Une manière d’avoir différentes versions de notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Un chemin dans l'arborescence d'un dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "Un outil pour fusionner des branches dans Git.",
+          "correct": false
+        },
+        { "text": "Une copie de sauvegarde d'un dépôt Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie \"pas de commits\" dans Git ?",
+      "answers": [
+        {
+          "text": "Qu’on n’a pas encore enregistré de changements dans nos fichiers avec Git.",
+          "correct": true
+        },
+        {
+          "text": "Qu'il n'y a pas de branches dans le dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "Qu'il n'y a pas de conflits dans le dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "Qu'il n'y a pas de fichiers dans le dépôt Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi des fichiers non suivis dans Git ?",
+      "answers": [
+        {
+          "text": "Des fichiers ou dossiers que Git ne surveille pas encore pour des changements.",
+          "correct": true
+        },
+        {
+          "text": "Des fichiers ou dossiers que Git surveille activement pour des changements.",
+          "correct": false
+        },
+        {
+          "text": "Des fichiers ou dossiers qui ne peuvent pas être ajoutés au dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "Des fichiers ou dossiers qui ont été supprimés du dépôt Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on dire à Git de ne pas suivre certains fichiers ?",
+      "answers": [
+        {
+          "text": "En les ajoutant à un fichier spécial qui s'appelle `.gitignore`.",
+          "correct": true
+        },
+        { "text": "En utilisant la commande `git exclude`.", "correct": false },
+        {
+          "text": "En les supprimant manuellement du dépôt Git.",
+          "correct": false
+        },
+        {
+          "text": "En modifiant les autorisations d'accès aux fichiers dans Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que montre la figure 2.7 ?",
+      "answers": [
+        {
+          "text": "L'état de notre projet Python quand on utilise la commande `git status` dans Git.",
+          "correct": true
+        },
+        {
+          "text": "Un schéma de l'architecture interne de Git.",
+          "correct": false
+        },
+        { "text": "Un graphique des performances de Git.", "correct": false },
+        {
+          "text": "Une illustration des différences entre Git et d'autres systèmes de contrôle de version.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi utiliserait-on Git pour un projet ?",
+      "answers": [
+        { "text": "Pour gérer les finances du projet.", "correct": false },
+        { "text": "Pour pouvoir suivre et enregistrer les changements dans nos fichiers de projet.", "correct": true },
+        { "text": "Pour organiser les réunions d'équipe du projet.", "correct": false },
+        { "text": "Pour dessiner des diagrammes UML pour le projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que `git init` fait ?",
+      "answers": [
+        { "text": "Ça crée un nouveau fichier dans le projet Git.", "correct": false },
+        { "text": "Ça prépare notre dossier de projet à être suivi par Git.", "correct": true },
+        { "text": "Ça supprime tous les fichiers du projet Git.", "correct": false },
+        { "text": "Ça fusionne toutes les branches du projet Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on utiliser Git pour travailler sur différents types de projets en même temps ?",
+      "answers": [
+        { "text": "Non, Git ne supporte qu'un seul type de projet à la fois.", "correct": false },
+        { "text": "Oui, en utilisant des branches, on peut travailler sur différentes versions d’un projet.", "correct": true },
+        { "text": "Non, Git est limité à un seul projet par utilisateur.", "correct": false },
+        { "text": "Oui, mais cela nécessite l'utilisation de plusieurs dépôts Git distincts.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment savoir si un dossier est déjà un dépôt Git ?",
+      "answers": [
+        { "text": "En ouvrant le dossier avec un éditeur de texte.", "correct": false },
+        { "text": "En utilisant la commande `git status`, si on voit des infos sur le projet, c’est que c’est un dépôt Git.", "correct": true },
+        { "text": "En recherchant le mot-clé 'Git' dans les fichiers du dossier.", "correct": false },
+        { "text": "En regardant la date de création du dossier.", "correct": false }
+      ]
+    },
+    {
+      "question": "C'est quoi un \"commit\" dans Git ?",
+      "answers": [
+        { "text": "C'est un fichier de configuration dans Git.", "correct": false },
+        { "text": "C'est un enregistrement des changements qu’on a faits dans nos fichiers de projet.", "correct": true },
+        { "text": "C'est une branche principale dans un dépôt Git.", "correct": false },
+        { "text": "C'est une commande pour annuler les modifications dans Git.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi le dossier `.gitignore` est important ?",
+      "answers": [
+        { "text": "Pour stocker les sauvegardes de Git.", "correct": false },
+        { "text": "Parce qu'il permet de dire à Git quels fichiers ou dossiers il ne doit pas suivre.", "correct": true },
+        { "text": "Pour stocker les paramètres de configuration de Git.", "correct": false },
+        { "text": "Pour enregistrer les rapports de bug de Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on fait des changements dans nos fichiers, sont-ils automatiquement enregistrés par Git ?",
+      "answers": [
+        { "text": "Oui, Git enregistre automatiquement tous les changements.", "correct": false },
+        { "text": "Non, il faut d’abord dire à Git de suivre ces fichiers, puis enregistrer les changements avec un 'commit'.", "correct": true },
+        { "text": "Oui, mais seulement si on utilise la commande `git auto-save`.", "correct": false },
+        { "text": "Non, il faut utiliser la commande `git save` pour enregistrer les changements.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que la figure 2.8 montre ?",
+      "answers": [
+        { "text": "Elle montre un schéma de l'architecture interne de Git.", "correct": false },
+        { "text": "Elle montre l'état de notre projet Node.js quand on utilise `git status` dans Git.", "correct": true },
+        { "text": "Elle montre une comparaison entre Git et un autre système de contrôle de version.", "correct": false },
+        { "text": "Elle montre les performances de Git par rapport à d'autres outils de développement.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on changer de version de notre projet avec Git ?",
+      "answers": [
+        { "text": "En modifiant directement les fichiers de code source.", "correct": false },
+        { "text": "En utilisant des branches et en faisant des 'commits' pour enregistrer différentes versions.", "correct": true },
+        { "text": "En réinitialisant le dépôt Git à un état antérieur.", "correct": false },
+        { "text": "En supprimant les fichiers inutiles du dépôt Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire avant d’utiliser Git pour un nouveau projet ?",
+      "answers": [
+        { "text": "Créer un fichier `.gitconfig` pour configurer Git.", "correct": false },
+        { "text": "Installer un plugin Git dans notre IDE.", "correct": false },
+        { "text": "On doit utiliser `git init` pour initialiser le suivi de Git dans notre dossier de projet.", "correct": true },
+        { "text": "Créer un nouveau compte utilisateur Git.", "correct": false }
+      ]
+    }
+  ]
+}

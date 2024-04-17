@@ -1,1 +1,187 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que Git ?",
+      "answers": [
+        {
+          "text": "Un système de gestion de base de données",
+          "correct": false
+        },
+        { "text": "Un langage de programmation", "correct": false },
+        {
+          "text": "Git est un outil qui aide à suivre et à gérer les changements dans le code d'un programme.",
+          "correct": true
+        },
+        { "text": "Une application mobile", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi Git est-il important pour la technologie open-source ?",
+      "answers": [
+        {
+          "text": "Il facilite la communication entre les équipes",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'il permet de sauvegarder et de partager de nombreuses versions d'un projet.",
+          "correct": true
+        },
+        {
+          "text": "Git ne joue aucun rôle dans la technologie open-source",
+          "correct": false
+        },
+        { "text": "Il permet de créer des sites web", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment Git a-t-il aidé à écrire ce livre ?",
+      "answers": [
+        { "text": "En fournissant des outils de design", "correct": false },
+        {
+          "text": "En sauvegardant de nombreuses versions sauvegardées du livre.",
+          "correct": true
+        },
+        {
+          "text": "Git n'a pas de rapport avec l'écriture de livres",
+          "correct": false
+        },
+        { "text": "En aidant à la traduction du livre", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle est la première utilité de Git mentionnée ?",
+      "answers": [
+        {
+          "text": "Suivre les changements apportés à notre code.",
+          "correct": true
+        },
+        { "text": "Gérer les emails", "correct": false },
+        { "text": "Organiser des réunions", "correct": false },
+        { "text": "Développer des applications mobiles", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie ignorer certains types de fichiers avec Git ?",
+      "answers": [
+        {
+          "text": "Cela signifie que Git effacera ces fichiers",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie que Git ne suivra pas certains fichiers qu'on ne veut pas inclure.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie que Git les téléchargera automatiquement",
+          "correct": false
+        },
+        { "text": "Cela signifie que Git les rendra publics", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Comment peut-on revenir à une version précédente de notre code avec Git ?",
+      "answers": [
+        { "text": "En supprimant tout le code", "correct": false },
+        { "text": "En utilisant Git pour revenir à une version antérieure du code.", "correct": true },
+        { "text": "En changeant le nom du projet", "correct": false },
+        { "text": "En demandant à un ami de le faire pour nous", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un dépôt distant dans Git ?",
+      "answers": [
+        { "text": "Un répertoire sur notre ordinateur", "correct": false },
+        { "text": "C'est un endroit non local où on peut stocker notre code, comme sur internet.", "correct": true },
+        { "text": "Un coffre-fort pour les clés de notre code", "correct": false },
+        { "text": "Un système de stockage sur disque dur externe", "correct": false }
+      ]
+    },
+    {
+      "question": "Que permet de faire la commande \"push\" dans Git ?",
+      "answers": [
+        { "text": "Elle permet de supprimer notre code", "correct": false },
+        { "text": "Elle permet de mettre notre code en pause", "correct": false },
+        { "text": "Elle permet d'envoyer (télécharger) notre code vers un dépôt distant.", "correct": true },
+        { "text": "Elle permet de renommer notre code", "correct": false }
+      ]
+    },
+    {
+      "question": "Et la commande \"pull\", que fait-elle ?",
+      "answers": [
+        { "text": "Elle permet de supprimer notre code", "correct": false },
+        { "text": "Elle permet de mettre notre code en pause", "correct": false },
+        { "text": "Elle permet de télécharger notre code depuis un dépôt distant.", "correct": true },
+        { "text": "Elle permet de renommer notre code", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi tirer notre code quand on passe en production ?",
+      "answers": [
+        { "text": "Pour faire de l'exercice", "correct": false },
+        { "text": "Pour éviter les erreurs de typographie", "correct": false },
+        { "text": "Pour s'assurer d'utiliser la version la plus récente et stable du code.", "correct": true },
+        { "text": "Pour se relaxer", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que le CI/CD dans le contexte de Git ?",
+      "answers": [
+        { "text": "Une forme de danse populaire", "correct": false },
+        { "text": "Un type de serveur de jeux vidéo", "correct": false },
+        { "text": "C'est un type d'automatisation qui utilise notre code pour tester et déployer des applications.", "correct": true },
+        { "text": "Un nouveau langage de programmation", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment les flux de travail sont-ils déclenchés avec Git ?",
+      "answers": [
+        { "text": "Par l'éclairage d'une bougie", "correct": false },
+        { "text": "Par des actions spécifiques comme pousser ou tirer du code, ce qui peut lancer des automatismes.", "correct": true },
+        { "text": "En fonction de la phase de la lune", "correct": false },
+        { "text": "Par la météo", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que le suivi de code permet de faire ?",
+      "answers": [
+        { "text": "Il permet de faire pousser les plantes plus rapidement", "correct": false },
+        { "text": "Il permet de voir qui a fait quel changement et quand.", "correct": true },
+        { "text": "Il permet de naviguer dans un labyrinthe", "correct": false },
+        { "text": "Il permet de prévoir l'avenir", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi ignorer certains fichiers peut être utile dans un projet ?",
+      "answers": [
+        { "text": "Pour rendre le code plus compliqué", "correct": false },
+        { "text": "Pour éviter d'inclure des fichiers inutiles ou sensibles dans le suivi de version.", "correct": true },
+        { "text": "Pour augmenter la taille des fichiers", "correct": false },
+        { "text": "Pour attirer les extraterrestres", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on partager notre code avec d'autres développeurs en utilisant Git ?",
+      "answers": [
+        { "text": "En le criant fort depuis notre fenêtre", "correct": false },
+        { "text": "En le lançant par la poste", "correct": false },
+        { "text": "En le partageant sur les réseaux sociaux", "correct": false },
+        { "text": "En poussant notre code vers un dépôt distant où d'autres peuvent le télécharger.", "correct": true }
+      ]
+    }
+  ]
+}
+
+
+

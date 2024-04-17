@@ -1,1 +1,165 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "À quoi servira Git dans ce livre ?",
+      "answers": [
+        {
+          "text": "Git nous aidera avec le déploiement et notre voyage vers Kubernetes.",
+          "correct": true
+        },
+        { "text": "À créer des recettes de cuisine", "correct": false },
+        { "text": "À jouer de la musique", "correct": false },
+        { "text": "À faire du jardinage", "correct": false }
+      ]
+    },
+    {
+      "question": "Où doit-on installer Git ?",
+      "answers": [
+        { "text": "Sur notre ordinateur personnel.", "correct": true },
+        { "text": "Dans l'espace", "correct": false },
+        { "text": "Sur notre téléphone portable", "correct": false },
+        { "text": "Dans le réfrigérateur", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on vérifier si Git est bien installé sur notre ordinateur ?",
+      "answers": [
+        {
+          "text": "En exécutant la commande `git --version` dans la ligne de commande.",
+          "correct": true
+        },
+        { "text": "En demandant à nos amis", "correct": false },
+        { "text": "En regardant par la fenêtre", "correct": false },
+        { "text": "En allumant la télévision", "correct": false }
+      ]
+    },
+    {
+      "question": "Que devrait indiquer la commande si Git est correctement installé ?",
+      "answers": [
+        {
+          "text": "Elle devrait afficher un numéro de version, comme `git version 2.30.1`.",
+          "correct": true
+        },
+        { "text": "Elle devrait afficher des émojis", "correct": false },
+        { "text": "Elle devrait afficher un poème", "correct": false },
+        { "text": "Elle devrait afficher des images de chat", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'arrive-t-il si la commande `git --version` montre une erreur ?",
+      "answers": [
+        {
+          "text": "Cela signifie qu'il faut installer Git sur l'ordinateur.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie qu'il faut éteindre l'ordinateur",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie qu'il faut changer de système d'exploitation",
+          "correct": false
+        },
+        { "text": "Cela signifie qu'il faut déménager", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Où peut-on télécharger Git ?",
+      "answers": [
+        { "text": "Sur le site https://git-scm.com/downloads.", "correct": true },
+        { "text": "Dans un magasin de vélos", "correct": false },
+        { "text": "En demandant à notre voisin", "correct": false },
+        { "text": "Dans une librairie", "correct": false }
+      ]
+    },
+    {
+      "question": "L'installation de Git est-elle compliquée ?",
+      "answers": [
+        { "text": "Non, elle est assez simple pour commencer.", "correct": true },
+        { "text": "Oui, c'est aussi difficile que de résoudre une équation mathématique complexe", "correct": false },
+        { "text": "Oui, il faut au moins un doctorat pour y arriver", "correct": false },
+        { "text": "Non, mais il faut être un expert en informatique", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de s'assurer que Git est installé ?",
+      "answers": [
+        { "text": "Pour pouvoir suivre les changements de code et travailler sur le déploiement de nos applications.", "correct": true },
+        { "text": "Pour pouvoir faire du café", "correct": false },
+        { "text": "Pour pouvoir jouer à des jeux vidéo", "correct": false },
+        { "text": "Pour pouvoir résoudre des énigmes", "correct": false }
+      ]
+    },
+    {
+      "question": "Git est-il un outil seulement pour les professionnels ?",
+      "answers": [
+        { "text": "Non, tout le monde peut apprendre à l'utiliser pour gérer des projets.", "correct": true },
+        { "text": "Oui, seuls les informaticiens expérimentés peuvent l'utiliser", "correct": false },
+        { "text": "Non, mais seuls les enfants peuvent l'utiliser", "correct": false },
+        { "text": "Oui, seules les personnes âgées peuvent l'utiliser", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi Git est-il appelé un système de contrôle de version ?",
+      "answers": [
+        { "text": "Parce qu'il garde une trace de toutes les modifications apportées au code.", "correct": true },
+        { "text": "Parce qu'il peut contrôler le climat", "correct": false },
+        { "text": "Parce qu'il peut contrôler le trafic", "correct": false },
+        { "text": "Parce qu'il peut contrôler les animaux", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un dépôt distant dans Git ?",
+      "answers": [
+        { "text": "C'est un endroit sur internet où on peut stocker notre code.", "correct": true },
+        { "text": "C'est un endroit dans l'espace où on envoie nos messages", "correct": false },
+        { "text": "C'est une machine à voyager dans le temps", "correct": false },
+        { "text": "C'est un coffre-fort sous-marin", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment Git aide-t-il dans le travail d'équipe ?",
+      "answers": [
+        { "text": "Il permet à plusieurs personnes de travailler sur le même projet sans se gêner.", "correct": true },
+        { "text": "Il organise des tournois de jeux vidéo pour les équipes", "correct": false },
+        { "text": "Il organise des séances de méditation pour les équipes", "correct": false },
+        { "text": "Il organise des sorties en plein air pour les équipes", "correct": false }
+      ]
+    },
+    {
+      "question": "Git est-il utilisé seulement pour les projets informatiques ?",
+      "answers": [
+        { "text": "Principalement, mais ses principes peuvent s'appliquer à d'autres types de projets.", "correct": true },
+        { "text": "Non, il est uniquement utilisé pour les projets de cuisine", "correct": false },
+        { "text": "Oui, il est seulement utilisé pour les projets de jardinage", "correct": false },
+        { "text": "Oui, il est seulement utilisé pour les projets de voyage spatial", "correct": false }
+      ]
+    },
+    {
+      "question": "Quel est l'avantage principal de Git pour les développeurs ?",
+      "answers": [
+        { "text": "Il facilite le suivi des modifications et la collaboration sur les projets de code.", "correct": true },
+        { "text": "Il donne des conseils pour la vie quotidienne", "correct": false },
+        { "text": "Il aide à résoudre des énigmes", "correct": false },
+        { "text": "Il fournit des recettes de cuisine", "correct": false }
+      ]
+    }
+  ]
+}
+

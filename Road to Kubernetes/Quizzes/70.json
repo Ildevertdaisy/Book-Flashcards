@@ -1,1 +1,292 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "C'est quoi un \"commit\" dans Git ?",
+      "answers": [
+        {
+          "text": "C'est comme dire à l'ordinateur de se souvenir exactement de ce que tu as fait à un moment précis dans ton projet.",
+          "correct": true
+        },
+        {
+          "text": "C'est une commande pour effacer tout le projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est une façon de partager son code avec d'autres développeurs.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour changer le nom du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi on écrit un message quand on fait un \"commit\" ?",
+      "answers": [
+        {
+          "text": "Pour se rappeler plus tard ce qu'on a changé ou ajouté dans notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Pour dire à Git de supprimer certaines parties du projet.",
+          "correct": false
+        },
+        {
+          "text": "Pour envoyer un message à d'autres développeurs.",
+          "correct": false
+        },
+        { "text": "Pour demander de l'aide sur le projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment on peut voir tous les changements qu'on a faits dans notre projet ?",
+      "answers": [
+        {
+          "text": "En utilisant la commande `git log`, qui montre une liste de tous nos \"commits\".",
+          "correct": true
+        },
+        {
+          "text": "En regardant simplement les fichiers du projet.",
+          "correct": false
+        },
+        { "text": "En demandant à d'autres développeurs.", "correct": false },
+        { "text": "En supprimant et en réinstallant Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'il y a dans un journal de \"commit\" de Git ?",
+      "answers": [
+        {
+          "text": "On peut voir qui a fait le changement, quand il l'a fait, et ce qu'il a dit qu'il a fait.",
+          "correct": true
+        },
+        {
+          "text": "On peut voir tous les fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "On peut voir des publicités pour d'autres projets.",
+          "correct": false
+        },
+        { "text": "On peut voir des images de chats.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi c'est utile de travailler en équipe avec Git ?",
+      "answers": [
+        {
+          "text": "Parce qu'on peut voir qui a fait quoi et quand, ça aide tout le monde à rester organisé.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'on peut cacher notre travail aux autres développeurs.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on peut accéder à des jeux vidéo en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on peut écouter de la musique ensemble.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça veut dire \"HEAD → main\" dans Git ?",
+      "answers": [
+        {
+          "text": "Ça montre sur quelle partie du projet on travaille en ce moment.",
+          "correct": true
+        },
+        {
+          "text": "C'est un code secret pour accéder à des fonctionnalités spéciales de Git.",
+          "correct": false
+        },
+        { "text": "C'est une erreur dans Git.", "correct": false },
+        {
+          "text": "C'est une blague que les développeurs Git utilisent.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'on doit faire si on a fait une erreur dans notre projet ?",
+      "answers": [
+        {
+          "text": "On peut regarder dans le journal de Git pour trouver un \"commit\" précédent et revenir à comment les choses étaient à ce moment-là.",
+          "correct": true
+        },
+        {
+          "text": "On doit supprimer tout le projet et recommencer à zéro.",
+          "correct": false
+        },
+        {
+          "text": "On doit cacher l'erreur et espérer que personne ne la remarque.",
+          "correct": false
+        },
+        {
+          "text": "On doit demander à quelqu'un d'autre de résoudre le problème pour nous.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi l'idée de \"rebooter\" un dépôt Git ?",
+      "answers": [
+        {
+          "text": "C'est comme recommencer à zéro si on s'est trop embrouillé avec nos changements.",
+          "correct": true
+        },
+        {
+          "text": "C'est une commande pour supprimer Git du système.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour envoyer tous les fichiers du projet sur Internet.",
+          "correct": false
+        },
+        {
+          "text": "C'est une façon de cacher notre travail aux autres développeurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment on \"reboot\" notre projet Git ?",
+      "answers": [
+        {
+          "text": "On efface le dossier .git et on refait `git init` pour recommencer.",
+          "correct": true
+        },
+        {
+          "text": "On envoie simplement un e-mail à Git pour lui demander de tout effacer.",
+          "correct": false
+        },
+        {
+          "text": "On ferme les yeux et on espère que tout revient à la normale.",
+          "correct": false
+        },
+        {
+          "text": "On demande à quelqu'un d'autre de le faire pour nous.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi on ne veut pas toujours \"rebooter\" notre projet Git ?",
+      "answers": [
+        {
+          "text": "Parce qu'on perd toute l'histoire de ce qu'on a changé avant.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'on veut rendre notre projet plus lent.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on veut rendre notre projet plus compliqué.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on veut rendre notre projet plus petit.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi un .gitignore ?",
+      "answers": [
+        {
+          "text": "C'est un fichier où on dit à Git de ne pas se souvenir de certains fichiers ou dossiers.",
+          "correct": true
+        },
+        {
+          "text": "C'est un fichier où on dit à Git de se souvenir de tout.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier où on écrit des blagues pour les autres développeurs.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier où on cache nos messages de commit.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi on ajoute des fichiers au .gitignore ?",
+      "answers": [
+        {
+          "text": "Pour ne pas encombrer notre projet avec des fichiers qu'on n'a pas besoin de partager ou de se rappeler.",
+          "correct": true
+        },
+        {
+          "text": "Pour rendre notre projet plus compliqué.",
+          "correct": false
+        },
+        { "text": "Pour rendre notre projet plus lent.", "correct": false },
+        { "text": "Pour rendre notre projet plus grand.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment on fait pour ajouter des fichiers qu'on veut suivre avec Git ?",
+      "answers": [
+        {
+          "text": "On utilise la commande `git add` et le nom du fichier ou dossier.",
+          "correct": true
+        },
+        {
+          "text": "On envoie un e-mail à Git avec les fichiers attachés.",
+          "correct": false
+        },
+        {
+          "text": "On ne peut pas ajouter de nouveaux fichiers avec Git.",
+          "correct": false
+        },
+        {
+          "text": "On utilise la commande `git remove` pour supprimer des fichiers.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça fait, `git add` ?",
+      "answers": [
+        {
+          "text": "Ça prépare les fichiers pour que Git se souvienne d'eux la prochaine fois qu'on fait un \"commit\".",
+          "correct": true
+        },
+        {
+          "text": "Ça supprime tous les fichiers du projet.",
+          "correct": false
+        },
+        { "text": "Ça envoie les fichiers sur Internet.", "correct": false },
+        {
+          "text": "Ça envoie un message à tous les développeurs du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment on dit à Git de vraiment se souvenir des fichiers qu'on a préparés ?",
+      "answers": [
+        {
+          "text": "Avec la commande `git commit -m \"message\"`, où on explique ce qu'on a changé.",
+          "correct": true
+        },
+        {
+          "text": "En écrivant un message sur un bout de papier et en le collant sur l'ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "En demandant à un ami de se souvenir pour nous.",
+          "correct": false
+        },
+        { "text": "En criant très fort dans l'ordinateur.", "correct": false }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,166 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "C'est quoi Git ?",
+      "answers": [
+        {
+          "text": "Git est un outil pour dessiner des graphiques.",
+          "correct": false
+        },
+        {
+          "text": "Git est un outil qui aide à suivre et enregistrer les changements qu'on fait dans nos projets ou devoirs sur l'ordinateur.",
+          "correct": true
+        },
+        {
+          "text": "Git est un navigateur web développé par Google.",
+          "correct": false
+        },
+        {
+          "text": "Git est un logiciel de traitement de texte.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi certains fichiers doivent être ignorés avec Git ?",
+      "answers": [
+        {
+          "text": "Parce qu'ils contiennent des images de chat.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils contiennent des informations ou des outils que tout le monde n'a pas besoin de voir ou d'utiliser.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'ils sont corrompus et ne peuvent pas être utilisés.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils sont écrits dans une langue étrangère.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que sont `venv/` et `node_modules/` ?",
+      "answers": [
+        {
+          "text": "Ce sont des dossiers qui contiennent des logiciels de musique.",
+          "correct": false
+        },
+        {
+          "text": "Ce sont des dossiers qui contiennent des outils spéciaux pour aider nos projets à fonctionner, mais on n'a pas besoin de les enregistrer ou de les partager avec Git.",
+          "correct": true
+        },
+        {
+          "text": "Ce sont des dossiers qui contiennent des jeux vidéo.",
+          "correct": false
+        },
+        {
+          "text": "Ce sont des dossiers qui contiennent des recettes de cuisine.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un éditeur de texte avec des fonctionnalités Git intégrées ?",
+      "answers": [
+        {
+          "text": "C'est un programme sur l'ordinateur qui nous aide à dessiner des graphiques.",
+          "correct": false
+        },
+        {
+          "text": "C'est un programme sur l'ordinateur qui nous aide à écrire et à modifier nos projets et qui rend l'utilisation de Git plus facile.",
+          "correct": true
+        },
+        {
+          "text": "C'est un programme sur l'ordinateur qui nous aide à écouter de la musique.",
+          "correct": false
+        },
+        {
+          "text": "C'est un programme sur l'ordinateur qui nous aide à jouer à des jeux vidéo.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi VSCode est recommandé pour les débutants avec Git ?",
+      "answers": [
+        {
+          "text": "Parce que VSCode est un système d'exploitation stable.",
+          "correct": false
+        },
+        {
+          "text": "Parce que VSCode a des outils spéciaux qui rendent l'utilisation de Git plus simple, même pour ceux qui apprennent juste.",
+          "correct": true
+        },
+        {
+          "text": "Parce que VSCode est un logiciel de retouche photo puissant.",
+          "correct": false
+        },
+        {
+          "text": "Parce que VSCode est un outil de dessin vectoriel très populaire.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que cela veut dire quand un fichier est \"non suivi\" par Git ?",
+      "answers": [
+        { "text": "Cela signifie que Git ne garde pas de trace des changements dans ce fichier, jusqu'à ce qu'on lui dise de le faire.", "correct": true },
+        { "text": "Cela signifie que Git surveille constamment les changements dans ce fichier.", "correct": false },
+        { "text": "Cela signifie que le fichier est verrouillé en écriture par Git.", "correct": false },
+        { "text": "Cela signifie que le fichier est automatiquement supprimé par Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on dire à Git de ne pas suivre certains dossiers ou fichiers ?",
+      "answers": [
+        { "text": "En utilisant la commande `git exclude`.", "correct": false },
+        { "text": "En les supprimant manuellement du dépôt Git.", "correct": false },
+        { "text": "En les ajoutant à un fichier spécial appelé `.gitignore`.", "correct": true },
+        { "text": "En modifiant les autorisations d'accès aux fichiers dans Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que `git init` fait dans un projet ?",
+      "answers": [
+        { "text": "Ça supprime tous les fichiers du projet.", "correct": false },
+        { "text": "Ça prépare le projet pour que Git puisse commencer à suivre les changements.", "correct": true },
+        { "text": "Ça fusionne toutes les branches du projet.", "correct": false },
+        { "text": "Ça annule tous les 'commits' précédents dans le projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que fait la commande `git status` ?",
+      "answers": [
+        { "text": "Elle montre les fichiers que Git suit et ceux qu'il ne suit pas encore.", "correct": true },
+        { "text": "Elle réinitialise le projet Git à un état antérieur.", "correct": false },
+        { "text": "Elle crée une nouvelle branche dans le projet Git.", "correct": false },
+        { "text": "Elle supprime les fichiers du répertoire de travail.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'ignorer certains fichiers dans nos projets avec Git ?",
+      "answers": [
+        { "text": "Pour ne pas encombrer notre projet avec des fichiers inutiles et pour garder notre projet propre et organisé.", "correct": true },
+        { "text": "Pour rendre le projet plus complexe et difficile à comprendre pour les autres collaborateurs.", "correct": false },
+        { "text": "Parce que Git ne peut pas gérer ces fichiers.", "correct": false },
+        { "text": "Parce que cela augmente la taille du dépôt Git de manière inutile.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+

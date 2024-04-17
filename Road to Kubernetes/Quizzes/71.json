@@ -1,1 +1,178 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "C'est quoi `git reset` ?",
+      "answers": [
+        {
+          "text": "C'est une commande pour revenir en arrière à un moment précis de notre projet, comme si on utilisait une machine à remonter le temps.",
+          "correct": true
+        },
+        {
+          "text": "C'est une commande pour effacer tout notre projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour partager notre projet avec d'autres développeurs.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour changer le nom de notre projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi faut-il faire attention avec `git reset` ?",
+      "answers": [
+        {
+          "text": "Parce qu'on peut perdre des changements importants dans notre projet si on ne l'utilise pas correctement.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'on peut accélérer notre projet de manière incontrôlable.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on peut rendre notre projet plus sécurisé.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on peut ajouter des fonctionnalités supplémentaires à notre projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi un \"remote repository\" ?",
+      "answers": [
+        {
+          "text": "C'est un endroit sur un autre ordinateur où on peut sauvegarder notre projet pour ne pas le perdre.",
+          "correct": true
+        },
+        {
+          "text": "C'est un dossier sur notre propre ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour supprimer des fichiers de notre projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier de configuration pour Git.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi c'est une bonne idée de sauvegarder son code ailleurs ?",
+      "answers": [
+        {
+          "text": "Pour être sûr de pouvoir retrouver son travail même si on fait une erreur sur son propre ordinateur.",
+          "correct": true
+        },
+        { "text": "Pour rendre notre projet plus lent.", "correct": false },
+        {
+          "text": "Pour rendre notre projet plus compliqué.",
+          "correct": false
+        },
+        {
+          "text": "Pour ajouter des fonctionnalités supplémentaires à notre projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on voir ce qu'on a changé dans notre projet ?",
+      "answers": [
+        {
+          "text": "En utilisant `git log`, qui montre une liste de tous les changements qu'on a faits.",
+          "correct": true
+        },
+        {
+          "text": "En regardant simplement les fichiers du projet.",
+          "correct": false
+        },
+        { "text": "En demandant à un ami.", "correct": false },
+        {
+          "text": "En supprimant tous les fichiers et en recommençant.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi `git add` ?",
+      "answers": [
+        {
+          "text": "C'est pour dire à Git quels fichiers on veut qu'il surveille et se souvienne pour nous.",
+          "correct": true
+        },
+        {
+          "text": "C'est une commande pour effacer tous les fichiers de notre projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour changer le nom de notre projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande pour partager notre projet avec d'autres développeurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Et `git commit`, c'est pour quoi faire ?",
+      "answers": [
+        {
+          "text": "Pour dire à Git de vraiment se souvenir des fichiers qu'on lui a dit de surveiller avec `git add`.",
+          "correct": true
+        },
+        {
+          "text": "Pour partager notre projet avec d'autres développeurs.",
+          "correct": false
+        },
+        {
+          "text": "Pour effacer tous les fichiers de notre projet.",
+          "correct": false
+        },
+        { "text": "Pour changer le nom de notre projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi on écrit un message avec `git commit` ?",
+      "answers": [
+        {
+          "text": "Pour se rappeler plus tard pourquoi on a fait ces changements, un peu comme une note pour soi-même.",
+          "correct": true
+        },
+        { "text": "Pour rendre notre projet plus lent.", "correct": false },
+        {
+          "text": "Pour rendre notre projet plus compliqué.",
+          "correct": false
+        },
+        {
+          "text": "Pour ajouter des fonctionnalités supplémentaires à notre projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que `git init` fait ?",
+      "answers": [
+        {
+          "text": "Ça commence le suivi de notre projet avec Git, comme ouvrir un livre pour commencer à écrire dedans.",
+          "correct": true
+        },
+        {
+          "text": "Ça efface tous les fichiers de notre projet.",
+          "correct": false
+        },
+        { "text": "Ça change le nom de notre projet.", "correct": false },
+        {
+          "text": "Ça partage notre projet avec d'autres développeurs.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

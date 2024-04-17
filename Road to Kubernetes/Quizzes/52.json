@@ -1,1 +1,154 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi est-ce qu'on ne veut pas suivre certains dossiers avec Git ?",
+      "answers": [
+        {
+          "text": "Parce qu'ils sont très grands et contiennent des choses que tout le monde peut déjà trouver ailleurs.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils contiennent des fichiers confidentiels que personne ne devrait voir.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils contiennent des informations sensibles sur le projet.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils peuvent contenir des fichiers générés ou des dépendances spécifiques à l'environnement de développement.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que le dossier `venv/` dans un projet Python ?",
+      "answers": [
+        {
+          "text": "C'est un dossier spécial qui contient des fichiers de version pour le projet Python.",
+          "correct": false
+        },
+        {
+          "text": "C'est un dossier qui stocke les versions précédentes du code source du projet Python.",
+          "correct": false
+        },
+        {
+          "text": "C'est un dossier qui contient des outils pour aider le projet Python, mais on n'a pas besoin de le partager avec les autres.",
+          "correct": true
+        },
+        {
+          "text": "C'est un dossier qui stocke les fichiers de configuration du projet Python.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Et le dossier `node_modules/` dans un projet Node.js, c'est quoi ?",
+      "answers": [
+        {
+          "text": "C'est un dossier qui contient les fichiers de documentation du projet Node.js.",
+          "correct": false
+        },
+        {
+          "text": "C'est un dossier qui contient les fichiers de test du projet Node.js.",
+          "correct": false
+        },
+        {
+          "text": "Comme `venv/` pour Python, c'est un dossier qui contient des outils pour aider le projet Node.js, mais il est trop gros pour être partagé.",
+          "correct": true
+        },
+        {
+          "text": "C'est un dossier qui stocke les fichiers de configuration du projet Node.js.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un paquet ou package ?",
+      "answers": [
+        {
+          "text": "C'est un fichier compressé contenant plusieurs fichiers de code source.",
+          "correct": false
+        },
+        {
+          "text": "C'est un petit programme ou outil que quelqu'un d'autre a fait et que nous pouvons utiliser dans nos projets.",
+          "correct": true
+        },
+        {
+          "text": "C'est un ensemble de fichiers de configuration pour un environnement de développement spécifique.",
+          "correct": false
+        },
+        {
+          "text": "C'est une version spécifique du code source d'un projet, utilisée pour une fonctionnalité spécifique.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment Git sait quels fichiers ou dossiers ne pas suivre ?",
+      "answers": [
+        {
+          "text": "On lui dit en écrivant les noms des fichiers ou dossiers dans un fichier spécial appelé `.gitexclude`.",
+          "correct": false
+        },
+        {
+          "text": "Il garde une trace de tous les fichiers et dossiers du projet, sauf ceux qui sont explicitement marqués comme à ignorer.",
+          "correct": false
+        },
+        {
+          "text": "Il détecte automatiquement les fichiers ou dossiers qui ne sont pas nécessaires au projet.",
+          "correct": false
+        },
+        {
+          "text": "On lui dit en écrivant les noms des fichiers ou dossiers dans un fichier spécial appelé `.gitignore`.",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "C'est quoi `.gitignore` ?",
+      "answers": [
+        { "text": "Un fichier qui contient les instructions pour Git sur la manière de gérer les conflits de fusion.", "correct": false },
+        { "text": "Un papier secret où on écrit les noms des choses qu'on ne veut pas que Git garde en mémoire.", "correct": true },
+        { "text": "Un fichier de configuration utilisé pour définir les règles de nommage des branches Git.", "correct": false },
+        { "text": "Un dossier spécial utilisé par Git pour stocker les informations sur les commits.", "correct": false }
+      ]
+    },
+    {
+      "question": "Si on ajoute le nom d'un dossier dans `.gitignore`, que se passe-t-il ?",
+      "answers": [
+        { "text": "Git supprime immédiatement le dossier et tous ses fichiers du répertoire de travail.", "correct": false },
+        { "text": "Git continue de suivre le dossier, mais exclut les modifications apportées à ses fichiers du suivi des modifications.", "correct": false },
+        { "text": "Git fait comme si ce dossier n'existait pas, il ne fait pas attention à ce qu'il y a dedans.", "correct": true },
+        { "text": "Git supprime toutes les références au dossier de l'historique des commits.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce qu'on doit mettre nos photos de vacances dans `.gitignore` ?",
+      "answers": [
+        { "text": "Oui, car Git ne doit pas stocker des fichiers non liés au projet.", "correct": false },
+        { "text": "Non, car Git peut servir de sauvegarde pour nos souvenirs de vacances.", "correct": false },
+        { "text": "Oui, si les photos ne sont pas importantes pour le projet, on peut les ignorer pour que Git ne les enregistre pas.", "correct": true },
+        { "text": "Non, car Git est conçu pour stocker tous les types de fichiers, quel que soit leur contenu.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'ignorer les dossiers comme `venv/` et `node_modules/` ?",
+      "answers": [
+        { "text": "Pour éviter les conflits de fusion lors de l'intégration des branches de développement.", "correct": false },
+        { "text": "Pour rendre le projet plus difficile à partager avec d'autres développeurs.", "correct": false },
+        { "text": "Pour garder notre projet léger et facile à partager avec les autres, sans envoyer des choses inutiles.", "correct": true },
+        { "text": "Pour forcer les autres développeurs à recréer ces dossiers sur leur propre machine.", "correct": false }
+      ]
+    }
+  ]
+}
+
+

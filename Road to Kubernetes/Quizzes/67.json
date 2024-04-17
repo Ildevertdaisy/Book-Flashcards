@@ -1,1 +1,213 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Comment peut-on recommencer un projet sur l'ordinateur si on a fait des erreurs ?",
+      "answers": [
+        {
+          "text": "On peut effacer ce qu'on a fait et recommencer depuis le début.",
+          "correct": true
+        },
+        {
+          "text": "En demandant à quelqu'un d'autre de le faire pour nous.",
+          "correct": false
+        },
+        {
+          "text": "En ignorant simplement les erreurs et en continuant avec le travail existant.",
+          "correct": false
+        },
+        {
+          "text": "En changeant d'ordinateur pour recommencer à zéro.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi pourrait-on vouloir effacer notre travail et recommencer ?",
+      "answers": [
+        {
+          "text": "Si on a fait des erreurs et qu'on trouve difficile de les corriger.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'on a fini le travail et on veut tout recommencer.",
+          "correct": false
+        },
+        {
+          "text": "Pour éviter d'avoir à partager notre travail avec d'autres.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'on n'aime pas le projet et on veut en commencer un nouveau.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Est-ce une bonne idée d'effacer notre travail souvent ?",
+      "answers": [
+        {
+          "text": "Non, c'est mieux d'apprendre de nos erreurs, mais parfois ça peut aider de recommencer.",
+          "correct": true
+        },
+        {
+          "text": "Oui, c'est la meilleure façon de progresser rapidement.",
+          "correct": false
+        },
+        {
+          "text": "Oui, surtout si quelqu'un d'autre fait les mêmes erreurs.",
+          "correct": false
+        },
+        {
+          "text": "Non, il vaut mieux ignorer les erreurs et continuer.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'on efface pour recommencer notre projet informatique ?",
+      "answers": [
+        {
+          "text": "On efface un dossier spécial qui garde une trace de notre travail.",
+          "correct": true
+        },
+        {
+          "text": "On efface tous les fichiers de l'ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "On efface simplement le dernier fichier modifié.",
+          "correct": false
+        },
+        {
+          "text": "On efface le système d'exploitation de l'ordinateur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que doit-on faire avant d'effacer notre travail sur l'ordinateur ?",
+      "answers": [
+        {
+          "text": "Vérifier qu'on est dans le bon dossier pour ne pas effacer les mauvaises choses.",
+          "correct": true
+        },
+        {
+          "text": "Faire une sauvegarde complète de tous les fichiers de l'ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "Ignorer toutes les alertes et messages d'avertissement.",
+          "correct": false
+        },
+        {
+          "text": "Changer de nom d'utilisateur sur l'ordinateur.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi est-il important d'apprendre à ne pas effacer et recommencer notre travail ?",
+      "answers": [
+        { "text": "Parce qu'en apprenant plus, on peut corriger les erreurs sans tout effacer.", "correct": true },
+        { "text": "Parce que recommencer est toujours une perte de temps.", "correct": false },
+        { "text": "Parce qu'effacer et recommencer est la seule solution à chaque problème.", "correct": false },
+        { "text": "Parce que personne ne se soucie des erreurs de toute façon.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'on utilise pour garder une trace de notre travail informatique ?",
+      "answers": [
+        { "text": "On utilise un outil spécial appelé Git.", "correct": true },
+        { "text": "On utilise une simple feuille de papier.", "correct": false },
+        { "text": "On ne garde pas de trace, c'est plus simple.", "correct": false },
+        { "text": "On se fie à notre mémoire pour se souvenir de tout.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment sait-on qu'on a effacé les traces de notre travail informatique ?",
+      "answers": [
+        { "text": "On regarde dans notre dossier pour vérifier que le dossier spécial n'est plus là.", "correct": true },
+        { "text": "On demande à quelqu'un d'autre de vérifier pour nous.", "correct": false },
+        { "text": "On ne sait jamais vraiment si on a tout effacé.", "correct": false },
+        { "text": "On ne vérifie pas, on efface et on recommence aveuglément.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi apprendre à utiliser correctement l'outil informatique Git ?",
+      "answers": [
+        { "text": "Parce qu'il nous aide à mieux gérer notre travail et à corriger les erreurs.", "correct": true },
+        { "text": "Parce que tout le monde l'utilise, donc il faut le connaître.", "correct": false },
+        { "text": "Parce que Git est obsolète et inutile.", "correct": false },
+        { "text": "Parce que Git rend notre travail plus compliqué.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que fait-on après avoir effacé notre travail et vouloir recommencer ?",
+      "answers": [
+        { "text": "On crée un nouveau projet pour recommencer proprement.", "correct": true },
+        { "text": "On abandonne l'idée de travailler informatiquement.", "correct": false },
+        { "text": "On demande à quelqu'un d'autre de recommencer à notre place.", "correct": false },
+        { "text": "On continue avec les mêmes erreurs, sans rien changer.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Est-ce que recommencer notre projet informatique résout tous les problèmes ?",
+      "answers": [
+        { "text": "Non, ça peut aider à court terme, mais c'est mieux d'apprendre à corriger les erreurs.", "correct": true },
+        { "text": "Oui, recommencer est toujours la meilleure solution.", "correct": false },
+        { "text": "Non, recommencer ne fait qu'aggraver les problèmes.", "correct": false },
+        { "text": "Oui, recommencer est la seule solution efficace.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle commande peut effacer des dossiers et des fichiers sur un ordinateur ?",
+      "answers": [
+        { "text": "Sur macOS ou Linux, c'est `rm -rf .git`, et sur Windows, c'est `rmdir /S .git`.", "correct": true },
+        { "text": "La commande `erase` sur Windows et `delete` sur macOS et Linux.", "correct": false },
+        { "text": "La commande `clean` sur Windows et `purge` sur macOS et Linux.", "correct": false },
+        { "text": "Il n'y a pas de commande pour effacer des dossiers et des fichiers.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on faire attention avec les commandes qui effacent des fichiers ?",
+      "answers": [
+        { "text": "Parce qu'on pourrait effacer des choses importantes par erreur.", "correct": true },
+        { "text": "Parce que ces commandes sont inutiles et ne devraient jamais être utilisées.", "correct": false },
+        { "text": "Parce que ces commandes sont trop lentes et inefficaces.", "correct": false },
+        { "text": "Parce que ces commandes peuvent causer des pannes sur l'ordinateur.", "correct": false }
+      ]
+    },
+    {
+      "question": "Après avoir effacé le dossier spécial de Git, que doit-on vérifier ?",
+      "answers": [
+        { "text": "Il faut vérifier que le dossier est bien effacé en regardant dans le dossier du projet.", "correct": true },
+        { "text": "Il faut redémarrer l'ordinateur pour appliquer les changements.", "correct": false },
+        { "text": "Il faut contacter le support technique pour vérification.", "correct": false },
+        { "text": "Il faut ignorer cette vérification car elle est inutile.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que l'apprentissage de Git est important pour travailler sur des projets informatiques ?",
+      "answers": [
+        { "text": "Oui, car cela nous aide à suivre les modifications de notre travail et à collaborer avec d'autres.", "correct": true },
+        { "text": "Non, Git est un outil obsolète et inutile.", "correct": false },
+        { "text": "Non, car il existe d'autres outils plus simples que Git.", "correct": false },
+        { "text": "Oui, mais seulement pour les développeurs expérimentés.", "correct": false }
+      ]
+    }
+  ]
+}

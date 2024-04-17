@@ -1,1 +1,133 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que le JavaScript utilisé dans le navigateur ?",
+      "answers": [
+        {
+          "text": "C'est le JavaScript qui fonctionne dans ton navigateur internet pour rendre les sites web interactifs et amusants à utiliser.",
+          "correct": true
+        },
+        {
+          "text": "C'est le JavaScript qui est utilisé pour programmer des robots industriels.",
+          "correct": false
+        },
+        {
+          "text": "C'est le JavaScript qui est utilisé pour créer des applications mobiles natives.",
+          "correct": false
+        },
+        {
+          "text": "C'est le JavaScript qui est utilisé pour écrire des scripts de serveur dans des bases de données.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi utilise-t-on JavaScript dans le navigateur ?",
+      "answers": [
+        {
+          "text": "On l'utilise pour créer des interfaces utilisateur dynamiques, ce qui signifie que les pages web peuvent changer sans avoir à être rechargées.",
+          "correct": true
+        },
+        {
+          "text": "On l'utilise pour faire des calculs mathématiques complexes côté serveur.",
+          "correct": false
+        },
+        {
+          "text": "On l'utilise pour effectuer des tâches de maintenance système sur les ordinateurs des utilisateurs.",
+          "correct": false
+        },
+        {
+          "text": "On l'utilise pour manipuler des fichiers système sur le disque dur de l'utilisateur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quels sont des exemples d'outils utilisés avec JavaScript dans le navigateur ?",
+      "answers": [
+        {
+          "text": "Des exemples incluent React.js, Vue.js, et Angular, qui aident à construire des sites web très interactifs.",
+          "correct": true
+        },
+        {
+          "text": "Des exemples incluent Python, Java et C++, qui sont des langages de programmation couramment utilisés dans le développement web.",
+          "correct": false
+        },
+        {
+          "text": "Des exemples incluent Photoshop, Illustrator et InDesign, qui sont des logiciels de design graphique utilisés pour créer des images pour le web.",
+          "correct": false
+        },
+        {
+          "text": "Des exemples incluent MySQL, MongoDB et PostgreSQL, qui sont des bases de données populaires utilisées dans le développement web.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que Node.js ?",
+      "answers": [
+        {
+          "text": "Node.js est une façon d'utiliser JavaScript pour faire fonctionner des applications web sur un serveur, pas dans ton navigateur.",
+          "correct": true
+        },
+        {
+          "text": "Node.js est une bibliothèque JavaScript utilisée pour créer des effets visuels spéciaux dans les pages web.",
+          "correct": false
+        },
+        {
+          "text": "Node.js est une méthode pour coder des jeux vidéo en JavaScript.",
+          "correct": false
+        },
+        {
+          "text": "Node.js est un éditeur de texte utilisé pour écrire du code JavaScript.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi Express.js ?",
+      "answers": [
+        {
+          "text": "Express.js est un outil qui fonctionne avec Node.js pour rendre la création de sites web plus facile et rapide.",
+          "correct": true
+        },
+        {
+          "text": "Express.js est un langage de programmation basé sur JavaScript utilisé pour créer des applications mobiles.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est une plateforme de messagerie instantanée utilisée pour les échanges professionnels.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un outil utilisé pour créer des modèles 3D interactifs dans un navigateur web.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Quelle est la différence entre JavaScript dans le navigateur et Node.js ?",
+            "answers": [
+                {"text": "JavaScript dans le navigateur rend les pages web interactives pour les utilisateurs, tandis que Node.js permet de créer des applications web qui fonctionnent sur un serveur.", "correct": true},
+                {"text": "JavaScript dans le navigateur permet de créer des applications côté serveur, tandis que Node.js est utilisé pour créer des interfaces utilisateur dans les pages web.", "correct": false},
+                {"text": "JavaScript dans le navigateur est une version plus ancienne de JavaScript, tandis que Node.js est la version moderne utilisée pour les applications web.", "correct": false},
+                {"text": "JavaScript dans le navigateur est utilisé pour les applications mobiles, tandis que Node.js est utilisé pour les applications de bureau.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi Node.js et Express.js ne sont pas des outils basés sur le navigateur ?",
+            "answers": [
+                {"text": "Parce qu'ils sont utilisés pour créer et gérer les applications côté serveur, ce qui signifie qu'ils s'exécutent sur des ordinateurs qui hébergent des sites web, pas sur ton ordinateur personnel.", "correct": true},
+                {"text": "Parce qu'ils sont uniquement compatibles avec les navigateurs Internet Explorer et ne peuvent pas être utilisés sur d'autres navigateurs modernes.", "correct": false},
+                {"text": "Parce qu'ils sont conçus pour fonctionner exclusivement sur les appareils mobiles et ne sont pas compatibles avec les ordinateurs de bureau.", "correct": false},
+                {"text": "Parce qu'ils sont des outils de développement utilisés pour créer des animations et des effets visuels dans les pages web, pas pour créer des fonctionnalités côté serveur.", "correct": false}
+            ]
+        }
+    ]
+}

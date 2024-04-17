@@ -1,1 +1,223 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que GitHub ?",
+      "answers": [
+        {
+          "text": "C'est un endroit sur internet où on peut garder notre code pour que d'autres puissent le voir ou pour ne pas le perdre.",
+          "correct": true
+        },
+        {
+          "text": "GitHub est une plateforme de développement de logiciels.",
+          "correct": false
+        },
+        { "text": "GitHub est un langage de programmation.", "correct": false },
+        {
+          "text": "GitHub est un système de gestion de base de données.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi doit-on créer un compte GitHub ?",
+      "answers": [
+        {
+          "text": "Pour pouvoir garder notre code en ligne et travailler avec d'autres personnes sur des projets.",
+          "correct": true
+        },
+        { "text": "Pour stocker nos photos en ligne.", "correct": false },
+        {
+          "text": "Pour créer des feuilles de calcul en ligne.",
+          "correct": false
+        },
+        { "text": "Pour jouer à des jeux en ligne.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un dépôt (ou \"repo\") sur GitHub ?",
+      "answers": [
+        {
+          "text": "C'est comme un dossier sur internet où on met notre code.",
+          "correct": true
+        },
+        { "text": "Un dépôt est un type de magasin.", "correct": false },
+        { "text": "Un dépôt est une application mobile.", "correct": false },
+        { "text": "Un dépôt est un moyen de transport.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment peut-on mettre notre code sur GitHub ?",
+      "answers": [
+        {
+          "text": "En utilisant des commandes spéciales qui envoient notre code de notre ordinateur à GitHub.",
+          "correct": true
+        },
+        { "text": "En utilisant un fax.", "correct": false },
+        { "text": "En envoyant une lettre.", "correct": false },
+        { "text": "En utilisant une machine à écrire.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela signifie \"pousser\" notre code sur GitHub ?",
+      "answers": [
+        {
+          "text": "Ça veut dire envoyer notre code de notre ordinateur sur GitHub.",
+          "correct": true
+        },
+        {
+          "text": "Ça veut dire supprimer notre code de GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Ça veut dire télécharger du code depuis GitHub.",
+          "correct": false
+        },
+        { "text": "Ça veut dire imprimer notre code.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi avons-nous besoin d'ajouter une \"remote\" à notre projet Git ?",
+      "answers": [
+        {
+          "text": "Pour dire à notre ordinateur où envoyer le code sur internet.",
+          "correct": true
+        },
+        { "text": "Pour jouer à des jeux en ligne.", "correct": false },
+        { "text": "Pour stocker nos photos en ligne.", "correct": false },
+        {
+          "text": "Pour créer des feuilles de calcul en ligne.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour envoyer notre code sur GitHub ?",
+      "answers": [
+        { "text": "On utilise \"git push origin main\".", "correct": true },
+        { "text": "On utilise \"git pull origin main\".", "correct": false },
+        { "text": "On utilise \"git commit -m 'message'\".", "correct": false },
+        { "text": "On utilise \"git clone repository\".", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce important d'utiliser Git pour nos projets ?",
+      "answers": [
+        {
+          "text": "Pour garder une trace de tous les changements qu'on fait et pouvoir travailler avec d'autres facilement.",
+          "correct": true
+        },
+        {
+          "text": "Parce que Git est un langage de programmation très puissant.",
+          "correct": false
+        },
+        { "text": "Parce que Git est amusant à utiliser.", "correct": false },
+        {
+          "text": "Parce que Git est le seul moyen d'envoyer du code sur GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une \"branche\" dans Git ?",
+      "answers": [
+        {
+          "text": "C'est une version de notre projet où on peut essayer des choses nouvelles sans toucher à la version principale.",
+          "correct": true
+        },
+        { "text": "Une branche est un outil de jardinage.", "correct": false },
+        { "text": "Une branche est une partie d'un arbre.", "correct": false },
+        { "text": "Une branche est une technique de pêche.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"commit\" dans Git ?",
+      "answers": [
+        {
+          "text": "C'est une sauvegarde de notre code à un moment précis.",
+          "correct": true
+        },
+        { "text": "Un commit est une compétition sportive.", "correct": false },
+        { "text": "Un commit est un type de contrat.", "correct": false },
+        { "text": "Un commit est un type de nourriture.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il bon de répéter le processus d'envoi de code sur GitHub ?",
+      "answers": [
+        {
+          "text": "Pour s'assurer que notre code est toujours à jour et en sécurité sur internet.",
+          "correct": true
+        },
+        {
+          "text": "Parce que GitHub nous paie pour le faire.",
+          "correct": false
+        },
+        { "text": "Parce que GitHub nous force à le faire.", "correct": false },
+        {
+          "text": "Parce que GitHub est lent et nécessite plusieurs tentatives.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"remote add\" dans Git ?",
+      "answers": [
+        {
+          "text": "C'est une commande pour dire à notre ordinateur où notre code doit aller sur internet.",
+          "correct": true
+        },
+        {
+          "text": "Un remote add est une nouvelle fonctionnalité de Git.",
+          "correct": false
+        },
+        {
+          "text": "Un remote add est une extension de navigateur.",
+          "correct": false
+        },
+        {
+          "text": "Un remote add est un type de câble informatique.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce qu'on crée un nouveau dépôt sur GitHub pour chaque projet ?",
+      "answers": [
+        {
+          "text": "Pour garder nos projets organisés et séparés.",
+          "correct": true
+        },
+        {
+          "text": "Parce que GitHub nous oblige à le faire.",
+          "correct": false
+        },
+        {
+          "text": "Parce que GitHub limite le nombre de fichiers par dépôt.",
+          "correct": false
+        },
+        { "text": "Parce que GitHub facture par dépôt.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle est la première étape pour envoyer notre projet Node.js sur GitHub ?",
+      "answers": [
+        {
+          "text": "Créer un nouveau dépôt sur GitHub nommé pour notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Installer un nouveau logiciel sur notre ordinateur.",
+          "correct": false
+        },
+        {
+          "text": "Écrire du code pour notre projet Node.js.",
+          "correct": false
+        },
+        {
+          "text": "Enregistrer notre projet sur une clé USB.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

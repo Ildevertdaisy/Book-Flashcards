@@ -1,1 +1,88 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que le JavaScript côté serveur ?",
+      "answers": [
+        {
+          "text": "C'est du JavaScript qui fonctionne sur un ordinateur qui héberge un site web, pas dans ton navigateur.",
+          "correct": true
+        },
+        {
+          "text": "C'est une version spéciale de JavaScript qui ne peut être utilisée que par les développeurs expérimentés.",
+          "correct": false
+        },
+        {
+          "text": "C'est une technologie qui permet d'exécuter du JavaScript sur un téléphone portable.",
+          "correct": false
+        },
+        {
+          "text": "C'est une méthode de programmation qui permet aux utilisateurs de modifier le code JavaScript côté serveur à partir de leur navigateur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que Node.js ?",
+      "answers": [
+        {
+          "text": "Node.js est un outil qui permet d'utiliser JavaScript pour faire fonctionner des sites web sur un serveur.",
+          "correct": true
+        },
+        {
+          "text": "Node.js est un langage de programmation similaire à JavaScript mais conçu spécifiquement pour les serveurs.",
+          "correct": false
+        },
+        {
+          "text": "Node.js est un outil pour créer des interfaces utilisateur interactives dans les pages web.",
+          "correct": false
+        },
+        {
+          "text": "Node.js est un langage de programmation utilisé principalement pour créer des applications mobiles.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Node.js et Python, ils font le même travail ?",
+      "answers": [
+        {
+          "text": "Oui, tous les deux peuvent faire fonctionner des applications sur un serveur, mais Node.js utilise JavaScript et Python utilise le langage Python.",
+          "correct": true
+        },
+        {
+          "text": "Non, Node.js est utilisé uniquement pour les petites applications web tandis que Python est utilisé pour les applications d'entreprise.",
+          "correct": false
+        },
+        {
+          "text": "Non, Node.js est utilisé exclusivement pour les applications mobiles tandis que Python est utilisé pour les applications web.",
+          "correct": false
+        },
+        {
+          "text": "Oui, tous les deux sont des outils pour créer des bases de données en ligne.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi appelle-t-on Node.js un \"runtime\" ?",
+      "answers": [
+        {
+          "text": "Parce que c'est l'environnement qui permet à JavaScript de fonctionner sur un serveur, tout comme Python a besoin de son propre environnement pour fonctionner.",
+          "correct": true
+        },
+        {
+          "text": "Parce que c'est une bibliothèque JavaScript utilisée pour exécuter des programmes plus rapidement.",
+          "correct": false
+        },
+        {
+          "text": "Parce que c'est une version spéciale de JavaScript conçue pour les serveurs d'applications.",
+          "correct": false
+        },
+        {
+          "text": "Parce que c'est une plateforme de développement qui prend en charge l'exécution de différents langages de programmation sur un serveur.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

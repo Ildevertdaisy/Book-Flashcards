@@ -1,1 +1,207 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un fichier `.gitignore` ?",
+      "answers": [
+        {
+          "text": "C'est un fichier spécial qui dit à Git quels fichiers ou dossiers il ne doit pas suivre.",
+          "correct": true
+        },
+        {
+          "text": "C'est un fichier de configuration qui permet de personnaliser l'interface utilisateur de Git.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier qui contient des informations de suivi sur l'historique des modifications dans le projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier utilisé pour stocker des clés d'accès aux services de cloud computing.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi met-on un point avant `.gitignore` dans le nom du fichier ?",
+      "answers": [
+        {
+          "text": "Le point rend le fichier spécial ou caché dans certains systèmes.",
+          "correct": true
+        },
+        {
+          "text": "C'est une convention de nommage pour les fichiers qui contiennent du code source dans Git.",
+          "correct": false
+        },
+        {
+          "text": "Le point indique que le fichier est situé à la racine du projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est une pratique recommandée pour différencier les fichiers de configuration des autres fichiers du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que fait le dossier `.git` dans notre projet ?",
+      "answers": [
+        {
+          "text": "Il garde toutes les informations de suivi de Git pour notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Il stocke des sauvegardes automatiques des fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Il contient des fichiers de configuration pour les outils de développement.",
+          "correct": false
+        },
+        {
+          "text": "Il sert de répertoire de stockage pour les dépendances externes du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Si on ne voit pas le dossier `.git`, qu'est-ce que ça veut dire ?",
+      "answers": [
+        {
+          "text": "Ça veut dire qu'on a peut-être oublié de faire quelque chose avec Git au début.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie que le projet n'utilise pas Git pour le suivi des versions.",
+          "correct": false
+        },
+        {
+          "text": "Il est possible que le dossier soit caché et nécessite une configuration spéciale pour être affiché.",
+          "correct": false
+        },
+        {
+          "text": "Cela indique qu'il y a une erreur dans l'installation de Git sur le système.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quels dossiers dans notre projet Python on ne veut pas que Git suive ?",
+      "answers": [
+        {
+          "text": "On ne veut pas que Git suive les dossiers `venv/` et les fichiers qu'on choisit d'ignorer.",
+          "correct": true
+        },
+        {
+          "text": "On ne veut pas que Git suive les fichiers de documentation du projet.",
+          "correct": false
+        },
+        {
+          "text": "On ne veut pas que Git suive les fichiers de configuration des environnements virtuels.",
+          "correct": false
+        },
+        {
+          "text": "On ne veut pas que Git suive les dossiers contenant les tests unitaires du projet.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Comment vérifie-t-on quels dossiers et fichiers sont dans notre projet Python ?",
+      "answers": [
+        { "text": "On utilise une commande spéciale qui nous montre tout dans le dossier, même les fichiers cachés.", "correct": true },
+        { "text": "On peut le voir en ouvrant le projet dans un éditeur de texte et en explorant les répertoires manuellement.", "correct": false },
+        { "text": "On peut le trouver dans la documentation officielle de Python.", "correct": false },
+        { "text": "On peut demander à un collègue de vérifier les fichiers pour nous.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'on fait si on fait une erreur avec Git au début de notre projet ?",
+      "answers": [
+        { "text": "On vérifie les étapes qu'on a suivies et on essaie de trouver où on a fait l'erreur.", "correct": true },
+        { "text": "On abandonne le projet et on commence à partir de zéro.", "correct": false },
+        { "text": "On demande à quelqu'un d'autre de corriger nos erreurs.", "correct": false },
+        { "text": "On contacte le support technique de Git pour obtenir de l'aide.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quand est-ce qu'on utilise le fichier `.gitignore` ?",
+      "answers": [
+        { "text": "Dès le début du projet, pour dire à Git quels fichiers ou dossiers il doit ignorer.", "correct": true },
+        { "text": "À la fin du projet, pour nettoyer les fichiers inutiles.", "correct": false },
+        { "text": "Quand le projet est partagé publiquement sur internet.", "correct": false },
+        { "text": "Quand on veut compresser le projet pour l'envoyer par email.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que le dossier `.git` est visible normalement dans nos dossiers de projet ?",
+      "answers": [
+        { "text": "Non, il est souvent caché parce qu'il commence par un point.", "correct": true },
+        { "text": "Oui, il est affiché en gras dans l'explorateur de fichiers.", "correct": false },
+        { "text": "Seulement si on configure Git pour le rendre visible.", "correct": false },
+        { "text": "Il est visible uniquement si on utilise une version spécifique de Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi certains dossiers ou fichiers sont-ils cachés dans nos projets ?",
+      "answers": [
+        { "text": "Pour les garder spéciaux et pas facilement modifiés ou effacés.", "correct": true },
+        { "text": "Pour économiser de l'espace disque sur le serveur de versionnement.", "correct": false },
+        { "text": "Pour les rendre accessibles uniquement aux administrateurs du projet.", "correct": false },
+        { "text": "Parce qu'ils contiennent des informations confidentielles sur le projet.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Est-ce important de bien configurer le fichier `.gitignore` ?",
+      "answers": [
+        { "text": "Oui, car cela aide à garder notre projet propre et à ne pas suivre des fichiers inutiles.", "correct": true },
+        { "text": "Non, car Git ignore automatiquement les fichiers inutiles sans avoir besoin de configuration.", "correct": false },
+        { "text": "Cela dépend du nombre de fichiers dans notre projet.", "correct": false },
+        { "text": "Pas vraiment, car on peut toujours nettoyer notre projet à la fin.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire si on oublie d'ajouter quelque chose dans `.gitignore` ?",
+      "answers": [
+        { "text": "On peut toujours l'ajouter plus tard et dire à Git de ne plus suivre ce fichier ou dossier.", "correct": true },
+        { "text": "On ignore simplement le problème et continue à travailler sur notre projet.", "correct": false },
+        { "text": "On doit recommencer notre projet à partir de zéro.", "correct": false },
+        { "text": "On demande à quelqu'un d'autre de le faire pour nous.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que se passe-t-il si on ne met pas `venv/` dans `.gitignore` pour un projet Python ?",
+      "answers": [
+        { "text": "Git va suivre et enregistrer les changements dans ce dossier, ce qui n'est pas nécessaire et peut rendre notre projet plus lourd.", "correct": true },
+        { "text": "Git va automatiquement supprimer le dossier `venv/` lors du prochain commit.", "correct": false },
+        { "text": "Rien ne se passe, car Git sait qu'il ne doit pas suivre les dossiers de l'environnement virtuel.", "correct": false },
+        { "text": "Cela dépend du contenu spécifique du dossier `venv/`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment sait-on ce qu'il faut mettre dans `.gitignore` ?",
+      "answers": [
+        { "text": "On met les dossiers et fichiers qu'on ne veut pas partager ou suivre, comme les dossiers de paquets tiers.", "correct": true },
+        { "text": "On met tous les fichiers du projet dans `.gitignore` pour garder le projet léger.", "correct": false },
+        { "text": "On met uniquement les fichiers de code source dans `.gitignore`.", "correct": false },
+        { "text": "On demande à Git de générer automatiquement le contenu de `.gitignore`.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+

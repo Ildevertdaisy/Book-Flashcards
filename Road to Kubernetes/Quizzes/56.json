@@ -1,1 +1,229 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi crée-t-on un fichier `.gitignore` dans un projet ?",
+      "answers": [
+        {
+          "text": "Pour dire à Git de ne pas suivre certains fichiers ou dossiers.",
+          "correct": true
+        },
+        {
+          "text": "Pour configurer les paramètres de suivi de Git.",
+          "correct": false
+        },
+        {
+          "text": "Pour indiquer à Git quels fichiers ou dossiers suivre.",
+          "correct": false
+        },
+        {
+          "text": "Pour créer des sauvegardes automatiques des fichiers du projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que contient le dossier `node_modules/` dans un projet Node.js ?",
+      "answers": [
+        {
+          "text": "Des paquets tiers utilisés dans le projet.",
+          "correct": true
+        },
+        {
+          "text": "Des fichiers de configuration du projet.",
+          "correct": false
+        },
+        { "text": "Des données de test pour le projet.", "correct": false },
+        { "text": "Des fichiers de documentation du projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quels types de fichiers ou dossiers ajoutons-nous souvent dans `.gitignore` ?",
+      "answers": [
+        {
+          "text": "Des dossiers comme `node_modules/` et des fichiers temporaires ou sensibles.",
+          "correct": true
+        },
+        { "text": "Tous les fichiers du projet.", "correct": false },
+        {
+          "text": "Uniquement les fichiers de configuration.",
+          "correct": false
+        },
+        { "text": "Les fichiers de documentation du projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire si `git status` montre toujours des fichiers que nous voulions ignorer ?",
+      "answers": [
+        {
+          "text": "Il faut vérifier si le fichier `.gitignore` est bien enregistré et placé correctement.",
+          "correct": true
+        },
+        {
+          "text": "Il faut ajouter ces fichiers à Git manuellement.",
+          "correct": false
+        },
+        {
+          "text": "Il faut supprimer ces fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Il faut ignorer les résultats de `git status`.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un dépôt (ou repo) Git ?",
+      "answers": [
+        {
+          "text": "C'est un espace dans un dossier où Git suit les modifications des fichiers.",
+          "correct": true
+        },
+        {
+          "text": "C'est un format de fichier utilisé par Git pour stocker les modifications.",
+          "correct": false
+        },
+        {
+          "text": "C'est une commande Git pour créer un nouveau projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier de configuration principal de Git.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que la commande `git init` ?",
+      "answers": [
+        { "text": "C'est la commande qui initialise un nouveau dépôt Git dans un dossier.", "correct": true },
+        { "text": "C'est la commande pour afficher l'historique des commits.", "correct": false },
+        { "text": "C'est la commande pour annuler les modifications dans Git.", "correct": false },
+        { "text": "C'est la commande pour fusionner deux branches Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que la commande `git status` nous montre ?",
+      "answers": [
+        { "text": "L'état actuel du dépôt Git, comme les fichiers suivis ou non et les modifications.", "correct": true },
+        { "text": "La liste des branches locales dans le dépôt Git.", "correct": false },
+        { "text": "Les détails sur le dernier commit effectué.", "correct": false },
+        { "text": "Les différences entre la branche actuelle et une autre branche.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important d'ignorer certains fichiers avec `.gitignore` ?",
+      "answers": [
+        { "text": "Pour éviter de suivre des fichiers inutiles ou sensibles et de garder le dépôt propre.", "correct": true },
+        { "text": "Pour forcer Git à suivre tous les fichiers du projet.", "correct": false },
+        { "text": "Pour exclure les fichiers du projet lors de la création d'une nouvelle branche.", "correct": false },
+        { "text": "Pour empêcher les autres collaborateurs de contribuer au projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que signifie 'branch' (branche) en Git ?",
+      "answers": [
+        { "text": "C'est une version séparée du code pour travailler sur différentes tâches.", "correct": true },
+        { "text": "C'est un type de fichier utilisé pour stocker les modifications dans Git.", "correct": false },
+        { "text": "C'est une commande pour fusionner deux branches Git.", "correct": false },
+        { "text": "C'est une méthode pour annuler les modifications dans le dépôt Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi devrions-nous ignorer le dossier `.DS_Store` sur macOS ?",
+      "answers": [
+        { "text": "Parce que c'est un fichier système qui n'a pas besoin d'être suivi dans Git.", "correct": true },
+        { "text": "Parce que c'est un fichier important pour le suivi des modifications dans Git.", "correct": false },
+        { "text": "Parce que c'est un fichier de configuration nécessaire pour Git.", "correct": false },
+        { "text": "Parce que c'est un fichier de journalisation des actions utilisateur dans Git.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Quel outil utilisera-t-on pour gérer nos projets avec Git ?",
+      "answers": [
+        { "text": "Un dépôt local (local repository), comme GitLab.", "correct": false },
+        { "text": "Un système de contrôle de version différent, comme Mercurial.", "correct": false },
+        { "text": "Un système de gestion de versions graphique, comme SourceTree.", "correct": false },
+        { "text": "Un dépôt distant (remote repository), comme GitHub.", "correct": true }
+      ]
+    },
+    {
+      "question": "Quelle est la différence entre un dépôt local et un dépôt distant ?",
+      "answers": [
+        { "text": "Le dépôt local est sur notre ordinateur, tandis que le distant est stocké sur internet, comme sur GitHub.", "correct": true },
+        { "text": "Le dépôt local est stocké sur un serveur distant, tandis que le dépôt distant est stocké localement.", "correct": false },
+        { "text": "Le dépôt local est accessible uniquement par une seule personne, tandis que le dépôt distant peut être accédé par plusieurs personnes.", "correct": false },
+        { "text": "Le dépôt local est utilisé pour les versions stables du code, tandis que le dépôt distant est utilisé pour les versions de développement.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce important d'avoir un fichier `requirements.txt` ou `package.json` dans nos projets ?",
+      "answers": [
+        { "text": "Pour lister les dépendances nécessaires et les récupérer facilement.", "correct": true },
+        { "text": "Pour stocker les fichiers de configuration du projet.", "correct": false },
+        { "text": "Pour gérer les autorisations d'accès au dépôt.", "correct": false },
+        { "text": "Pour suivre l'historique des modifications du projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment récupère-t-on les dépendances dans un projet Node.js ?",
+      "answers": [
+        { "text": "Avec la commande `npm start`.", "correct": false },
+        { "text": "Avec la commande `npm update`.", "correct": false },
+        { "text": "Avec la commande `npm install`.", "correct": true },
+        { "text": "Avec la commande `npm run build`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que fait-on si on supprime accidentellement le dossier `node_modules` ?",
+      "answers": [
+        { "text": "On peut le récupérer en exécutant `npm start`.", "correct": false },
+        { "text": "On peut le récupérer en exécutant `npm update`.", "correct": false },
+        { "text": "On peut le récupérer en exécutant `npm run build`.", "correct": false },
+        { "text": "On peut le récupérer en exécutant `npm install`.", "correct": true }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que le fichier `.env` souvent mentionné dans `.gitignore` ?",
+      "answers": [
+        { "text": "Un fichier contenant des informations sensibles comme des mots de passe, qu'on ne veut pas suivre avec Git.", "correct": true },
+        { "text": "Un fichier utilisé pour stocker des paramètres de configuration généraux du projet.", "correct": false },
+        { "text": "Un fichier de log où les informations sur les commits sont enregistrées.", "correct": false },
+        { "text": "Un fichier de sauvegarde automatique généré par l'éditeur de code.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il crucial de bien placer le fichier `.gitignore` dans notre projet ?",
+      "answers": [
+        { "text": "Pour s'assurer que Git ignore correctement les fichiers et dossiers spécifiés.", "correct": true },
+        { "text": "Pour indiquer à Git où se trouvent les fichiers à ignorer.", "correct": false },
+        { "text": "Pour garantir que Git suit tous les fichiers du projet.", "correct": false },
+        { "text": "Pour activer le suivi des modifications des fichiers spécifiés.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+

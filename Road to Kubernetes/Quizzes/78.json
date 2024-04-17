@@ -1,1 +1,286 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que GitHub ?",
+      "answers": [
+        {
+          "text": "C'est un site internet où on peut sauvegarder et partager notre code de programmation avec d'autres.",
+          "correct": true
+        },
+        {
+          "text": "C'est une plateforme pour jouer à des jeux en ligne.",
+          "correct": false
+        },
+        {
+          "text": "C'est un service de streaming de musique.",
+          "correct": false
+        },
+        {
+          "text": "C'est un réseau social pour les développeurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi devons-nous configurer notre projet de programmation pour GitHub ?",
+      "answers": [
+        {
+          "text": "Pour pouvoir envoyer notre code sur internet et travailler dessus avec d'autres personnes.",
+          "correct": true
+        },
+        {
+          "text": "Pour organiser nos fichiers sur notre ordinateur.",
+          "correct": false
+        },
+        { "text": "Pour jouer à des jeux en ligne.", "correct": false },
+        { "text": "Pour écouter de la musique en streaming.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une \"remote\" dans Git ?",
+      "answers": [
+        {
+          "text": "C'est une connexion entre notre projet sur l'ordinateur et l'endroit où on garde le projet sur internet.",
+          "correct": true
+        },
+        {
+          "text": "C'est un logiciel pour dessiner des schémas.",
+          "correct": false
+        },
+        {
+          "text": "C'est une fonctionnalité pour éditer des vidéos.",
+          "correct": false
+        },
+        { "text": "C'est un type de câble informatique.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de bien configurer notre projet local pour GitHub ?",
+      "answers": [
+        {
+          "text": "Pour s'assurer qu'on peut bien envoyer notre code sur GitHub sans problèmes.",
+          "correct": true
+        },
+        { "text": "Pour jouer à des jeux en ligne.", "correct": false },
+        { "text": "Pour regarder des films en streaming.", "correct": false },
+        { "text": "Pour stocker nos photos en ligne.", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment ajoute-t-on une \"remote\" à notre projet Git ?",
+      "answers": [
+        {
+          "text": "En utilisant une commande spéciale dans l'ordinateur qui lie notre projet à GitHub.",
+          "correct": true
+        },
+        { "text": "En envoyant un email à GitHub.", "correct": false },
+        {
+          "text": "En téléchargeant une application sur notre téléphone.",
+          "correct": false
+        },
+        {
+          "text": "En appelant le support technique de GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelles étapes avons-nous déjà faites avant d'ajouter une \"remote\" ?",
+      "answers": [
+        {
+          "text": "On a initialisé Git, préparé notre code pour être suivi par Git, et enregistré nos changements.",
+          "correct": true
+        },
+        { "text": "On a regardé des tutoriels sur YouTube.", "correct": false },
+        { "text": "On a joué à des jeux vidéo.", "correct": false },
+        { "text": "On a lu des livres sur l'informatique.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que le \"Quick Setup\" sur GitHub ?",
+      "answers": [
+        {
+          "text": "C'est une aide qui montre les commandes pour connecter notre projet local à GitHub.",
+          "correct": true
+        },
+        {
+          "text": "C'est une fonctionnalité pour réserver des voyages.",
+          "correct": false
+        },
+        {
+          "text": "C'est une option pour commander de la nourriture en ligne.",
+          "correct": false
+        },
+        {
+          "text": "C'est une application pour trouver des restaurants près de chez nous.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi n'avons-nous pas besoin de refaire les étapes comme \"git init\" pour GitHub ?",
+      "answers": [
+        {
+          "text": "Parce qu'on a déjà préparé notre projet avec ces étapes sur notre ordinateur.",
+          "correct": true
+        },
+        {
+          "text": "Parce que GitHub le fait automatiquement pour nous.",
+          "correct": false
+        },
+        {
+          "text": "Parce que ces étapes ne sont pas nécessaires pour utiliser GitHub.",
+          "correct": false
+        },
+        {
+          "text": "Parce que ces étapes sont uniquement pour les débutants.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"Initial commit\" ?",
+      "answers": [
+        {
+          "text": "C'est le premier enregistrement de notre projet dans Git, comme une première sauvegarde.",
+          "correct": true
+        },
+        {
+          "text": "C'est le dernier enregistrement de notre projet dans Git.",
+          "correct": false
+        },
+        {
+          "text": "C'est un message que l'on envoie à nos collaborateurs sur GitHub.",
+          "correct": false
+        },
+        {
+          "text": "C'est un document contenant les règles de notre projet sur GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi crée-t-on un fichier Readme.md sur GitHub ?",
+      "answers": [
+        {
+          "text": "Pour donner des informations sur notre projet à ceux qui le visitent sur internet.",
+          "correct": true
+        },
+        { "text": "Pour écrire des notes personnelles.", "correct": false },
+        { "text": "Pour écrire des poèmes.", "correct": false },
+        { "text": "Pour écrire des recettes de cuisine.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour lier notre projet à GitHub ?",
+      "answers": [
+        {
+          "text": "On utilise \"git remote add\" avec des informations spécifiques données par GitHub.",
+          "correct": true
+        },
+        { "text": "On utilise \"git link project\".", "correct": false },
+        { "text": "On utilise \"git connect\".", "correct": false },
+        { "text": "On utilise \"git attach\".", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'arrive-t-il à notre projet une fois qu'on a ajouté une \"remote\" ?",
+      "answers": [
+        {
+          "text": "Notre projet local est prêt à être envoyé et partagé sur GitHub.",
+          "correct": true
+        },
+        {
+          "text": "Notre projet est effacé de notre ordinateur.",
+          "correct": false
+        },
+        { "text": "Notre projet est envoyé sur Mars.", "correct": false },
+        { "text": "Notre projet devient invisible.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce qu'on peut voir notre code tout de suite sur GitHub après l'avoir envoyé ?",
+      "answers": [
+        {
+          "text": "Oui, une fois qu'on a envoyé notre code, on peut le voir sur notre page GitHub.",
+          "correct": true
+        },
+        { "text": "Non, il faut attendre une semaine.", "correct": false },
+        {
+          "text": "Non, il faut envoyer un email à GitHub pour le voir.",
+          "correct": false
+        },
+        {
+          "text": "Non, il faut attendre une confirmation de GitHub.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce utile d'ajouter une \"remote\" à notre projet Git ?",
+      "answers": [
+        {
+          "text": "Cela nous permet d'envoyer notre code sur internet pour le sauvegarder et travailler en équipe.",
+          "correct": true
+        },
+        {
+          "text": "Cela nous permet de jouer à des jeux en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Cela nous permet de regarder des films en streaming.",
+          "correct": false
+        },
+        {
+          "text": "Cela nous permet de stocker nos photos en ligne.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la différence entre \"git add .\" et \"git remote add\" ?",
+      "answers": [
+        {
+          "text": "\"git add .\" prépare notre code pour un enregistrement local, tandis que \"git remote add\" prépare notre projet pour être envoyé sur internet.",
+          "correct": true
+        },
+        {
+          "text": "\"git add .\" envoie notre code sur internet, tandis que \"git remote add\" l'enregistre localement.",
+          "correct": false
+        },
+        {
+          "text": "\"git add .\" crée un nouveau projet, tandis que \"git remote add\" ajoute une nouvelle fonctionnalité à un projet existant.",
+          "correct": false
+        },
+        {
+          "text": "\"git add .\" est une commande pour se déconnecter de GitHub, tandis que \"git remote add\" est une commande pour se connecter à GitHub.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce qu'un repository sur GitHub ?",
+            "answers": [
+                { "text": "C'est un espace sur internet où on garde notre projet de programmation.", "correct": true },
+                { "text": "C'est un service de streaming de musique.", "correct": false },
+                { "text": "C'est un réseau social pour les photographes.", "correct": false },
+                { "text": "C'est un logiciel pour dessiner des schémas.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment savons-nous que notre projet est prêt à être envoyé sur GitHub ?",
+            "answers": [
+                { "text": "Après avoir configuré la \"remote\", préparé et enregistré notre code avec Git.", "correct": true },
+                { "text": "Après avoir regardé une vidéo sur YouTube.", "correct": false },
+                { "text": "Après avoir lu un livre sur l'informatique.", "correct": false },
+                { "text": "Après avoir envoyé un email à GitHub.", "correct": false }
+            ]
+        }
+    ]
+}

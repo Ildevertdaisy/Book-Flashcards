@@ -1,1 +1,122 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un microservice avec Express.js ?",
+      "answers": [
+        {
+          "text": "C'est une manière d'utiliser Express.js pour permettre aux logiciels de communiquer entre eux.",
+          "correct": true
+        },
+        {
+          "text": "C'est un service web conçu pour fonctionner uniquement sur des micro-ordinateurs.",
+          "correct": false
+        },
+        {
+          "text": "C'est une fonctionnalité d'Express.js qui permet de créer des applications miniatures.",
+          "correct": false
+        },
+        {
+          "text": "C'est un module complémentaire d'Express.js pour les services de streaming audio.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "À quoi sert le format JSON dans les applications web ?",
+      "answers": [
+        {
+          "text": "JSON est utilisé pour que les logiciels puissent échanger des données de manière compréhensible.",
+          "correct": true
+        },
+        {
+          "text": "JSON est un langage de programmation utilisé pour créer des applications web interactives.",
+          "correct": false
+        },
+        {
+          "text": "JSON est utilisé pour la mise en forme esthétique des pages web.",
+          "correct": false
+        },
+        {
+          "text": "JSON est un framework JavaScript pour le développement d'applications web.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on retourner des données JSON avec Express.js ?",
+      "answers": [
+        {
+          "text": "On peut utiliser `res.json()` ou définir des en-têtes pour retourner des données JSON.",
+          "correct": true
+        },
+        {
+          "text": "On utilise uniquement des fonctions JavaScript personnalisées pour retourner des données JSON.",
+          "correct": false
+        },
+        {
+          "text": "On utilise exclusivement des balises HTML spéciales pour retourner des données JSON.",
+          "correct": false
+        },
+        {
+          "text": "On utilise des modules externes pour retourner des données JSON avec Express.js.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quelle est la fonction dans Express.js spécialement conçue pour envoyer des réponses JSON ?",
+      "answers": [
+        { "text": "La fonction `res.json()`.", "correct": true },
+        { "text": "La fonction `res.sendJSON()`.", "correct": false },
+        { "text": "La fonction `res.renderJSON()`.", "correct": false },
+        { "text": "La fonction `res.JSONResponse()`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi utiliserait-on des en-têtes pour retourner des données JSON dans Express.js ?",
+      "answers": [
+        {
+          "text": "Les en-têtes peuvent être utilisés pour fournir des informations supplémentaires sur la réponse, comme le type de contenu.",
+          "correct": true
+        },
+        {
+          "text": "Les en-têtes sont nécessaires pour sécuriser les données JSON.",
+          "correct": false
+        },
+        {
+          "text": "Les en-têtes permettent d'ajouter des éléments visuels aux données JSON.",
+          "correct": false
+        },
+        {
+          "text": "Les en-têtes améliorent les performances des applications web utilisant JSON.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Quel est le but principal des données JSON dans le développement web ?",
+            "answers": [
+                { "text": "Le but principal est de faciliter la communication et l'échange de données entre différents logiciels.", "correct": true },
+                { "text": "Les données JSON sont principalement utilisées pour créer des interfaces utilisateur interactives.", "correct": false },
+                { "text": "Les données JSON sont utilisées pour stocker des images et des fichiers multimédias sur les serveurs web.", "correct": false },
+                { "text": "Les données JSON sont utilisées pour sécuriser les connexions réseau dans le développement web.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quelle méthode est recommandée pour envoyer simplement des données JSON en réponse à une requête dans Express.js ?",
+            "answers": [
+                { "text": "Il est recommandé d'utiliser `res.json()` pour sa simplicité et son efficacité dans l'envoi de données JSON.", "correct": true },
+                { "text": "Il est recommandé d'utiliser `res.send()` pour envoyer des données JSON dans Express.js.", "correct": false },
+                { "text": "Il est recommandé d'utiliser `res.render()` pour générer des données JSON à envoyer dans Express.js.", "correct": false },
+                { "text": "Il est recommandé d'utiliser `res.text()` pour envoyer des données JSON dans Express.js.", "correct": false }
+            ]
+        }
+    ]
+}

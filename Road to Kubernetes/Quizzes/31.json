@@ -1,1 +1,79 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'Express.js ?",
+      "answers": [
+        {
+          "text": "Express.js est un framework JavaScript pour construire des applications web.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un outil pour aider à construire des sites web, un peu comme FastAPI mais pour JavaScript.",
+          "correct": true
+        },
+        {
+          "text": "Express.js est un langage de programmation pour les applications mobiles.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un éditeur de texte pour les développeurs web.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi commence-t-on par une application \"Hello World\" avec Express.js ?",
+      "answers": [
+        {
+          "text": "Parce que c'est la seule façon de créer une application Express.js.",
+          "correct": false
+        },
+        {
+          "text": "Parce que c'est la façon la plus rapide de créer un site web.",
+          "correct": false
+        },
+        {
+          "text": "Parce que c'est la façon la plus simple de commencer à apprendre comment utiliser Express.js pour créer un site web.",
+          "correct": true
+        },
+        {
+          "text": "Parce que c'est une exigence pour obtenir une certification en Express.js.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quel fichier doit-on créer pour démarrer notre application Express.js ?",
+      "answers": [
+        {
+          "text": "Il faut créer un fichier appelé `app.js`.",
+          "correct": false
+        },
+        {
+          "text": "Il faut créer un fichier appelé `index.js`.",
+          "correct": false
+        },
+        {
+          "text": "Il faut créer un fichier appelé `main.js` dans le dossier de notre projet.",
+          "correct": true
+        },
+        {
+          "text": "Il faut créer un fichier appelé `server.js`.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Où doit-on placer le fichier `main.js` pour notre projet Express.js ?",
+      "answers": [
+        { "text": "On le place dans le dossier `public`.", "correct": false },
+        {
+          "text": "On le place dans le dossier `src` de notre dossier de projet JavaScript, qui se trouve à `~/dev/roadtok8s/js/`.",
+          "correct": true
+        },
+        { "text": "On le place à la racine du projet.", "correct": false },
+        { "text": "On le place dans le dossier `views`.", "correct": false }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,143 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'uvicorn ?",
+      "answers": [
+        { "text": "Uvicorn est un animal marin.", "correct": false },
+        {
+          "text": "Uvicorn est un personnage de fiction célèbre.",
+          "correct": false
+        },
+        {
+          "text": "Uvicorn est un programme qui aide les sites web à fonctionner sur ton ordinateur.",
+          "correct": true
+        },
+        {
+          "text": "Uvicorn est une ville connue pour son architecture unique.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment peut-on voir notre page web dans le navigateur ?",
+      "answers": [
+        {
+          "text": "En tapant l'adresse http://localhost/ dans la barre d'adresse du navigateur.",
+          "correct": false
+        },
+        {
+          "text": "En tapant l'adresse http://127.0.0.1:8011/api/v1/hello-world/ dans la barre d'adresse du navigateur.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant un navigateur spécialisé pour les développeurs web.",
+          "correct": false
+        },
+        {
+          "text": "En demandant à quelqu'un de nous l'envoyer par e-mail.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une \"route\" dans notre site web ?",
+      "answers": [
+        {
+          "text": "Une méthode de livraison des colis commandés en ligne.",
+          "correct": false
+        },
+        {
+          "text": "Un chemin de randonnée situé près de notre site web.",
+          "correct": false
+        },
+        {
+          "text": "Une route est un chemin spécifique dans notre site web où on peut aller pour voir quelque chose de précis.",
+          "correct": true
+        },
+        {
+          "text": "Une série de défis à relever pour accéder à des contenus spéciaux.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela signifie d'avoir des données différentes dans une réponse web ?",
+      "answers": [
+        {
+          "text": "Cela signifie qu'il y a un problème avec le serveur web.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie que le site web est en maintenance.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie que notre site web peut montrer différentes informations selon où on va sur le site.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie qu'il y a un problème de connexion à internet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il facile de créer de nouvelles routes avec FastAPI ?",
+      "answers": [
+        {
+          "text": "Parce que FastAPI est un service de livraison de repas rapide.",
+          "correct": false
+        },
+        {
+          "text": "Parce que FastAPI propose des réductions pour les nouveaux utilisateurs.",
+          "correct": false
+        },
+        {
+          "text": "Parce que FastAPI a des outils simples pour ajouter des nouvelles parties à notre site web rapidement.",
+          "correct": true
+        },
+        {
+          "text": "Parce que FastAPI offre des cours en ligne gratuits sur le développement web.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Qu'est-ce que la méthode HTTP ?",
+            "answers": [
+                {"text": "C'est un langage de programmation utilisé pour créer des sites web.", "correct": false},
+                {"text": "C'est une façon dont les sites web communiquent et partagent des informations sur internet.", "correct": true},
+                {"text": "C'est un logiciel de messagerie utilisé pour envoyer des e-mails.", "correct": false},
+                {"text": "C'est un protocole de sécurité utilisé pour crypter les données sur internet.", "correct": false}
+            ]
+        },
+        {
+            "question": "Comment FastAPI rend-il la création de nouvelles routes simple ?",
+            "answers": [
+                {"text": "En utilisant des algorithmes de compression avancés.", "correct": false},
+                {"text": "En fournissant une documentation détaillée sur chaque étape du processus.", "correct": false},
+                {"text": "FastAPI utilise des fonctions et des décorateurs pour ajouter de nouvelles routes sans beaucoup de travail.", "correct": true},
+                {"text": "En automatisant la gestion des bases de données.", "correct": false}
+            ]
+        },
+        {
+            "question": "Pourquoi est-ce important de pouvoir ajouter de nouvelles routes facilement dans une application web ?",
+            "answers": [
+                {"text": "Pour s'assurer que le site web est toujours en ligne.", "correct": false},
+                {"text": "Pour réduire le temps de chargement des pages.", "correct": false},
+                {"text": "Pour qu'on puisse rapidement étendre notre site web avec de nouvelles pages et fonctionnalités sans complication.", "correct": true},
+                {"text": "Pour empêcher les cyberattaques.", "correct": false}
+            ]
+        }
+    ]
+}
+
+
+

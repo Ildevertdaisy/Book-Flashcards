@@ -1,1 +1,200 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'une méthode HTTP ?",
+      "answers": [
+        {
+          "text": "C'est une façon pour les sites web de communiquer, comme quand on demande à voir une page.",
+          "correct": true
+        },
+        {
+          "text": "C'est une technologie de cryptage utilisée pour sécuriser les données échangées sur le web.",
+          "correct": false
+        },
+        {
+          "text": "C'est un langage de programmation utilisé pour créer des sites web dynamiques.",
+          "correct": false
+        },
+        {
+          "text": "C'est une méthode de recherche de fichiers sur un serveur web.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que représente la méthode GET dans `main.js` ?",
+      "answers": [
+        {
+          "text": "GET est une méthode utilisée pour demander des informations d'un site web.",
+          "correct": true
+        },
+        {
+          "text": "GET est une méthode utilisée pour envoyer des données à un serveur web.",
+          "correct": false
+        },
+        {
+          "text": "GET est une méthode utilisée pour définir des variables globales dans le script JavaScript.",
+          "correct": false
+        },
+        {
+          "text": "GET est une méthode utilisée pour créer des fichiers dans le système de fichiers du serveur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi un `<pathString>` ?",
+      "answers": [
+        {
+          "text": "C'est un texte qui montre où aller sur un site web, comme l'adresse d'une page.",
+          "correct": true
+        },
+        {
+          "text": "C'est une chaîne de caractères utilisée pour définir le chemin d'accès à une base de données.",
+          "correct": false
+        },
+        {
+          "text": "C'est un code JavaScript utilisé pour manipuler le DOM d'une page web.",
+          "correct": false
+        },
+        {
+          "text": "C'est une méthode de validation utilisée dans les formulaires web.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que fait le chemin `/` dans notre projet Express.js ?",
+      "answers": [
+        {
+          "text": "Il représente la page d'accueil du site web.",
+          "correct": true
+        },
+        {
+          "text": "Il représente un chemin d'accès absolu à un fichier dans le système de fichiers du serveur.",
+          "correct": false
+        },
+        {
+          "text": "Il représente un répertoire racine dans la structure de fichiers du projet.",
+          "correct": false
+        },
+        {
+          "text": "Il représente une route sécurisée dans l'application Express.js.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une fonction de rappel `<callback>` ?",
+      "answers": [
+        {
+          "text": "C'est une partie du code qui s'exécute quand on visite une certaine adresse sur le site.",
+          "correct": true
+        },
+        {
+          "text": "C'est une fonction JavaScript utilisée pour manipuler les tableaux de données.",
+          "correct": false
+        },
+        {
+          "text": "C'est une méthode de cryptage utilisée pour sécuriser les échanges de données sur le web.",
+          "correct": false
+        },
+        {
+          "text": "C'est une fonction utilisée pour définir les règles de validation des formulaires web.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+{
+    "quizzes": [
+        {
+            "question": "À quoi sert le `<callback>` dans notre application Express.js ?",
+            "answers": [
+                { "text": "Il sert à définir ce qui doit se passer quand quelqu'un visite un certain chemin, comme afficher \"Hello Express World!\".", "correct": true },
+                { "text": "Il sert à vérifier l'authenticité des utilisateurs lorsqu'ils se connectent à notre application web.", "correct": false },
+                { "text": "Il sert à envoyer des données d'un formulaire vers notre serveur Express.js.", "correct": false },
+                { "text": "Il sert à gérer les sessions utilisateur sur notre site web.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment peut-on démarrer notre module `main.js` pour voir notre application web fonctionner ?",
+            "answers": [
+                { "text": "On le démarre pour qu'il puisse répondre à des demandes sur internet et montrer notre page.", "correct": true },
+                { "text": "On le démarre pour qu'il puisse envoyer des e-mails automatiques à nos utilisateurs.", "correct": false },
+                { "text": "On le démarre pour qu'il puisse gérer les bases de données de notre application.", "correct": false },
+                { "text": "On le démarre pour qu'il puisse générer des rapports statistiques sur l'utilisation de notre site web.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que doit-on faire pour que notre application web Express.js soit prête à montrer des pages ?",
+            "answers": [
+                { "text": "Configurer `main.js` pour qu'il sache quoi faire quand il reçoit une demande.", "correct": true },
+                { "text": "Installer tous les modules npm nécessaires pour le bon fonctionnement de notre application.", "correct": false },
+                { "text": "Créer une structure de fichiers statique contenant nos pages web à afficher.", "correct": false },
+                { "text": "Définir une adresse IP statique pour notre serveur Express.js.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'arrive-t-il quand on visite l'adresse correspondante à notre route `/` ?",
+            "answers": [
+                { "text": "La fonction de rappel s'exécute et on voit le message \"Hello Express World!\".", "correct": true },
+                { "text": "Notre navigateur est redirigé vers une autre page spécifiée dans le code de la route `/`.", "correct": false },
+                { "text": "Le serveur Express.js envoie un fichier HTML contenant la page d'accueil à notre navigateur.", "correct": false },
+                { "text": "Le serveur Express.js vérifie les informations d'identification de l'utilisateur avant de lui afficher la page d'accueil.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment sait-on sur quel port notre application Express.js fonctionne ?",
+            "answers": [
+                { "text": "On le définit dans le code, et on peut le voir dans les messages dans la console.", "correct": true },
+                { "text": "On le trouve en inspectant le fichier de configuration `express.config` dans notre projet.", "correct": false },
+                { "text": "On doit vérifier dans les paramètres du navigateur pour connaître le port utilisé par notre application.", "correct": false },
+                { "text": "On peut le demander directement à notre fournisseur de services d'hébergement web.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+{
+    "quizzes": [
+        {
+            "question": "Pourquoi est-ce important de définir un port pour notre application web ?",
+            "answers": [
+                { "text": "Pour que l'ordinateur sache où écouter les demandes pour notre site.", "correct": true },
+                { "text": "Pour limiter l'accès à notre application web aux utilisateurs autorisés.", "correct": false },
+                { "text": "Pour augmenter la vitesse de chargement de notre site web.", "correct": false },
+                { "text": "Pour sécuriser les communications entre le serveur et le navigateur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qui se passe si on ne configure pas notre application pour répondre à une route spécifique ?",
+            "answers": [
+                { "text": "On ne pourra pas voir le contenu prévu pour cette route.", "correct": true },
+                { "text": "Notre application affichera un message d'erreur indiquant qu'elle ne peut pas trouver la page demandée.", "correct": false },
+                { "text": "L'application redirigera automatiquement l'utilisateur vers la page d'accueil.", "correct": false },
+                { "text": "Les utilisateurs auront un accès complet à toutes les fonctionnalités de l'application sans restriction.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi utilise-t-on `npm` et `Express.js` pour construire une application web ?",
+            "answers": [
+                { "text": "Pour faciliter la création de sites web et la gestion de ce qu'ils doivent faire.", "correct": true },
+                { "text": "Pour garantir la compatibilité de notre application avec tous les navigateurs web.", "correct": false },
+                { "text": "Pour accélérer le processus de développement en utilisant des modèles pré-conçus.", "correct": false },
+                { "text": "Pour sécuriser les données sensibles échangées entre le serveur et le navigateur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Quel fichier vérifie-t-on pour s'assurer que notre application écoute sur le bon port ?",
+            "answers": [
+                { "text": "On vérifie `main.js` et on regarde les messages dans la console quand on démarre l'application.", "correct": true },
+                { "text": "On vérifie le fichier `package.json` pour voir la configuration du port.", "correct": false },
+                { "text": "On consulte la documentation d'Express.js pour trouver le port par défaut.", "correct": false },
+                { "text": "On examine le fichier de configuration `express.config` pour voir le port spécifié.", "correct": false }
+            ]
+        }
+    ]
+}

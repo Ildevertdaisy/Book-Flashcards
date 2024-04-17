@@ -1,1 +1,238 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "C'est quoi Git ?",
+      "answers": [
+        {
+          "text": "Git est un outil qui aide à suivre les changements dans nos fichiers de projet.",
+          "correct": true
+        },
+        {
+          "text": "Git est un type de nourriture asiatique.",
+          "correct": false
+        },
+        {
+          "text": "Git est un langage de programmation populaire.",
+          "correct": false
+        },
+        {
+          "text": "Git est une compagnie de transport maritime.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi on utilise Git dans nos projets ?",
+      "answers": [
+        {
+          "text": "Pour pouvoir voir comment nos fichiers changent avec le temps.",
+          "correct": true
+        },
+        { "text": "Pour jouer à des jeux vidéo en ligne.", "correct": false },
+        {
+          "text": "Pour apprendre à cuisiner des recettes nouvelles.",
+          "correct": false
+        },
+        {
+          "text": "Pour organiser des événements communautaires.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça veut dire 'initialiser un dépôt Git' ?",
+      "answers": [
+        {
+          "text": "Cela signifie dire à Git de commencer à surveiller les changements dans un dossier de projet.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie nettoyer une pièce en utilisant des produits chimiques.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie réinitialiser un ordinateur à ses paramètres par défaut.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie créer un nouveau compte sur un réseau social.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment on commence à utiliser Git avec notre projet Python ?",
+      "answers": [
+        {
+          "text": "On tape `git init` dans le dossier de notre projet Python.",
+          "correct": true
+        },
+        {
+          "text": "On chante une chanson traditionnelle du Python.",
+          "correct": false
+        },
+        {
+          "text": "On installe un nouvel éditeur de texte pour Python.",
+          "correct": false
+        },
+        {
+          "text": "On envoie un e-mail à Python Corporation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Et pour notre projet Node.js, comment on commence avec Git ?",
+      "answers": [
+        {
+          "text": "De la même manière, on tape `git init` dans le dossier de notre projet Node.js.",
+          "correct": true
+        },
+        {
+          "text": "On envoie une invitation à Node.js sur LinkedIn.",
+          "correct": false
+        },
+        {
+          "text": "On réserve un billet d'avion pour une conférence sur Node.js.",
+          "correct": false
+        },
+        {
+          "text": "On appelle Node.js sur notre téléphone pour demander de l'aide.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qui se passe quand on tape `git init` ?",
+      "answers": [
+        { "text": "Git crée un nouvel espace où il va surveiller les changements de nos fichiers.", "correct": true },
+        { "text": "Git envoie un e-mail à tous nos contacts pour annoncer le début d'un nouveau projet.", "correct": false },
+        { "text": "Git lance un jeu vidéo sur notre ordinateur.", "correct": false },
+        { "text": "Git prépare une tasse de café pour nous.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un 'dépôt Git vide' ?",
+      "answers": [
+        { "text": "C'est un nouveau dépôt Git où aucun changement n'a encore été enregistré.", "correct": true },
+        { "text": "C'est un endroit où Git stocke des outils de jardinage.", "correct": false },
+        { "text": "C'est un dépôt Git rempli de documents secrets.", "correct": false },
+        { "text": "C'est un dépôt Git qui contient uniquement des fichiers corrompus.", "correct": false }
+      ]
+    },
+    {
+      "question": "Où est-ce que Git garde les informations sur les changements ?",
+      "answers": [
+        { "text": "Dans un dossier spécial qui est créé quand on initialise Git.", "correct": true },
+        { "text": "Dans un coffre-fort sous la mer.", "correct": false },
+        { "text": "Dans un nuage informatique.", "correct": false },
+        { "text": "Dans une bibliothèque abandonnée.", "correct": false }
+      ]
+    },
+    {
+      "question": "Peut-on utiliser Git pour n'importe quel type de projet ?",
+      "answers": [
+        { "text": "Oui, que ce soit pour un projet Python, Node.js, ou tout autre type de projet.", "correct": true },
+        { "text": "Non, Git ne fonctionne que pour les projets de cuisine.", "correct": false },
+        { "text": "Non, Git est réservé uniquement aux projets artistiques.", "correct": false },
+        { "text": "Non, Git ne fonctionne que pour les projets de jardinage.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce que l'utilisation de Git est compliquée ?",
+      "answers": [
+        { "text": "Non, commencer avec Git est simple, il suffit de connaître quelques commandes.", "correct": true },
+        { "text": "Oui, Git est réservé aux experts en informatique.", "correct": false },
+        { "text": "Oui, Git nécessite une licence spéciale pour être utilisé.", "correct": false },
+        { "text": "Oui, Git est uniquement destiné aux robots.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi Git dit-il 'dépôt Git initialisé' ?",
+      "answers": [
+        { "text": "Pour nous informer qu'il est prêt à suivre les changements dans notre projet.", "correct": true },
+        { "text": "Pour célébrer le début d'une nouvelle aventure.", "correct": false },
+        { "text": "Parce qu'il aime répéter les mêmes phrases encore et encore.", "correct": false },
+        { "text": "Parce qu'il veut nous rappeler de prendre une pause café.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quel est le premier pas pour suivre notre projet avec Git ?",
+      "answers": [
+        { "text": "Utiliser la commande `git init` dans le dossier de notre projet.", "correct": true },
+        { "text": "Réciter une incantation magique.", "correct": false },
+        { "text": "Changer le nom de notre projet en 'GitProject'.", "correct": false },
+        { "text": "Demander à Git gentiment de suivre notre projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça change dans notre dossier de projet quand on utilise Git ?",
+      "answers": [
+        { "text": "Rien visiblement, mais Git commence en secret à surveiller nos fichiers.", "correct": true },
+        { "text": "Tous les fichiers deviennent invisibles.", "correct": false },
+        { "text": "Notre dossier se transforme en licorne.", "correct": false },
+        { "text": "Un feu d'artifice apparaît à l'écran.", "correct": false }
+      ]
+    },
+    {
+      "question": "Est-ce qu'on doit utiliser Git dès le début de notre projet ?",
+      "answers": [
+        { "text": "Oui, c'est une bonne idée pour bien suivre tous les changements dès le début.", "correct": true },
+        { "text": "Non, il vaut mieux attendre que le projet devienne célèbre.", "correct": false },
+        { "text": "Non, il faut attendre que la pleine lune soit haute dans le ciel.", "correct": false },
+        { "text": "Non, Git fonctionne mieux les jours de pluie.", "correct": false }
+      ]
+    },
+    {
+      "question": "Git peut-il surveiller deux projets en même temps ?",
+      "answers": [
+        { "text": "Oui, chaque projet a son propre dépôt Git quand on utilise `git init`.", "correct": true },
+        { "text": "Non, Git est occupé à prendre des vacances.", "correct": false },
+        { "text": "Non, Git est allergique à la multitâche.", "correct": false },
+        { "text": "Non, Git préfère se concentrer sur un seul projet à la fois.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qui indique que Git surveille notre projet ?",
+      "answers": [
+        { "text": "Le message 'Dépôt Git initialisé' et la création d'un dossier spécial par Git.", "correct": true },
+        { "text": "Une notification envoyée par un pigeon voyageur.", "correct": false },
+        { "text": "Une sonnerie de cloche à chaque modification de fichier.", "correct": false },
+        { "text": "Une pluie de confettis numériques sur l'écran.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce important de surveiller les changements dans nos projets ?",
+      "answers": [
+        { "text": "Pour pouvoir revenir à des versions antérieures si on fait des erreurs ou pour voir l'évolution de notre projet.", "correct": true },
+        { "text": "Pour avoir une excuse pour procrastiner.", "correct": false },
+        { "text": "Pour impressionner nos amis avec notre connaissance de Git.", "correct": false },
+        { "text": "Pour faire semblant d'être occupé devant notre patron.", "correct": false }
+      ]
+    }
+  ]
+}
+
+

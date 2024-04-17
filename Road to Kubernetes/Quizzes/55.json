@@ -1,1 +1,241 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un fichier `.gitignore` ?",
+      "answers": [
+        {
+          "text": "C'est un fichier qui dit à Git quels fichiers ou dossiers il ne doit pas suivre.",
+          "correct": true
+        },
+        {
+          "text": "C'est un fichier utilisé pour ajouter des commentaires spéciaux dans notre projet Git.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier qui indique à Git quels fichiers ou dossiers il doit suivre de près.",
+          "correct": false
+        },
+        {
+          "text": "C'est un fichier réservé aux utilisateurs avancés de Git pour effectuer des opérations spéciales.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi voudrait-on ignorer certains dossiers comme `venv/` dans un projet Python ?",
+      "answers": [
+        {
+          "text": "Parce qu'ils contiennent des paquets tiers qui peuvent être facilement récupérés, donc pas besoin de les suivre avec Git.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'ils contiennent des fichiers secrets que Git ne doit pas voir.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils sont souvent corrompus et peuvent causer des problèmes à Git.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils sont généralement des fichiers temporaires qui ne sont pas nécessaires pour le projet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment vérifie-t-on si Git suit ou non un dossier après avoir modifié le fichier `.gitignore` ?",
+      "answers": [
+        {
+          "text": "On utilise la commande `git status` pour voir si le dossier est toujours listé.",
+          "correct": true
+        },
+        {
+          "text": "On utilise la commande `git follow` pour voir si le dossier est suivi.",
+          "correct": false
+        },
+        {
+          "text": "On regarde manuellement dans le fichier `.gitignore` pour voir si le dossier est exclu.",
+          "correct": false
+        },
+        {
+          "text": "On demande à Git de générer un rapport spécifique sur le suivi des dossiers.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que doit-on faire si `git status` montre toujours le dossier `venv` après avoir ajouté `.gitignore` ?",
+      "answers": [
+        {
+          "text": "Il faut vérifier si le fichier `.gitignore` est bien enregistré et placé au bon endroit.",
+          "correct": true
+        },
+        {
+          "text": "Il faut ignorer simplement le problème car Git prendra automatiquement en compte `.gitignore`.",
+          "correct": false
+        },
+        {
+          "text": "Il faut redémarrer Git pour appliquer les changements.",
+          "correct": false
+        },
+        {
+          "text": "Il faut supprimer le dossier `venv` manuellement et recommencer le processus.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que le dossier `.git` dans un projet ?",
+      "answers": [
+        {
+          "text": "C'est le dossier où Git stocke toutes les informations de suivi pour le projet.",
+          "correct": true
+        },
+        {
+          "text": "C'est le dossier où Git stocke les fichiers de configuration spécifiques au projet.",
+          "correct": false
+        },
+        {
+          "text": "C'est le dossier où Git stocke les fichiers temporaires pendant le processus de suivi.",
+          "correct": false
+        },
+        {
+          "text": "C'est le dossier où Git stocke les journaux de suivi pour le projet.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi certains fichiers ou dossiers commencent-ils par un point (.) ?",
+      "answers": [
+        { "text": "Parce que dans beaucoup de systèmes, cela les rend cachés ou spéciaux.", "correct": true },
+        { "text": "Parce que les points sont utilisés pour marquer les fichiers corrompus.", "correct": false },
+        { "text": "Parce que cela indique que les fichiers sont sécurisés et ne peuvent pas être modifiés.", "correct": false },
+        { "text": "Parce que les points sont utilisés pour marquer les fichiers verrouillés par l'utilisateur.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que la commande `git init` fait ?",
+      "answers": [
+        { "text": "Elle commence le suivi de Git dans un dossier, en créant un nouveau dépôt Git.", "correct": true },
+        { "text": "Elle initialise un nouveau projet en créant un fichier d'initialisation Git.", "correct": false },
+        { "text": "Elle supprime tous les fichiers du dépôt Git actuel.", "correct": false },
+        { "text": "Elle fusionne les modifications des branches Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une branche dans Git ?",
+      "answers": [
+        { "text": "C'est une version du projet qui permet de travailler sur différentes modifications en même temps.", "correct": true },
+        { "text": "C'est un dossier spécial utilisé pour stocker des sauvegardes temporaires.", "correct": false },
+        { "text": "C'est un outil de débogage pour trouver des erreurs dans le code.", "correct": false },
+        { "text": "C'est une zone de stockage pour les fichiers non suivis par Git.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que `git status` nous montre ?",
+      "answers": [
+        { "text": "Il montre l'état actuel du dépôt, comme les fichiers suivis ou non, et les modifications non enregistrées.", "correct": true },
+        { "text": "Il affiche la liste des branches disponibles dans le dépôt Git.", "correct": false },
+        { "text": "Il montre l'historique des validations dans le dépôt Git.", "correct": false },
+        { "text": "Il affiche les différences entre deux commits spécifiques.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce important d'avoir un fichier `.gitignore` ?",
+      "answers": [
+        { "text": "Pour éviter que Git suive et enregistre des fichiers inutiles ou sensibles.", "correct": true },
+        { "text": "Pour indiquer à Git quels fichiers doivent être suivis et enregistrés en priorité.", "correct": false },
+        { "text": "Pour permettre à Git de détecter les conflits de fusion entre les branches.", "correct": false },
+        { "text": "Pour activer la fonctionnalité de suivi automatique des modifications dans Git.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Que fait la commande `cd` utilisée dans les instructions Git ?",
+      "answers": [
+        { "text": "Elle change le dossier actuel vers celui spécifié dans la commande.", "correct": true },
+        { "text": "Elle crée un nouveau dossier dans le répertoire courant.", "correct": false },
+        { "text": "Elle copie un fichier vers un autre emplacement.", "correct": false },
+        { "text": "Elle supprime un fichier ou un dossier du système de fichiers.", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi le dossier `__pycache__` devrait-il être ignoré dans un projet Python ?",
+      "answers": [
+        { "text": "Parce qu'il contient des fichiers compilés Python qui n'ont pas besoin d'être suivis.", "correct": true },
+        { "text": "Parce qu'il contient des fichiers de configuration sensibles.", "correct": false },
+        { "text": "Parce qu'il contient des fichiers de sauvegarde temporaires.", "correct": false },
+        { "text": "Parce qu'il contient des fichiers de documentation du projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un fichier `requirements.txt` dans un projet Python ?",
+      "answers": [
+        { "text": "C'est un fichier qui liste toutes les dépendances tierces nécessaires pour le projet.", "correct": true },
+        { "text": "C'est un fichier qui stocke les informations de configuration du projet.", "correct": false },
+        { "text": "C'est un fichier qui contient le code source principal du projet.", "correct": false },
+        { "text": "C'est un fichier qui enregistre les journaux d'activité du projet.", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle commande utilise-t-on pour installer les dépendances listées dans `requirements.txt` ?",
+      "answers": [
+        { "text": "On utilise `python -m pip install -r requirements.txt`.", "correct": true },
+        { "text": "On utilise `pip install requirements.txt`.", "correct": false },
+        { "text": "On utilise `python -m install -r requirements.txt`.", "correct": false },
+        { "text": "On utilise `pip install -r requirements.txt`.", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que `*.py[cod]` signifie dans un fichier `.gitignore` ?",
+      "answers": [
+        { "text": "Cela indique à Git d'ignorer les fichiers Python compilés.", "correct": true },
+        { "text": "Cela indique à Git d'ignorer les fichiers de configuration Python.", "correct": false },
+        { "text": "Cela indique à Git d'ignorer les fichiers de documentation Python.", "correct": false },
+        { "text": "Cela indique à Git d'ignorer tous les fichiers Python.", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Pourquoi le fichier `.DS_Store` est-il souvent ignoré dans les projets sur macOS ?",
+      "answers": [
+        { "text": "Parce que c'est un fichier système spécifique à macOS qui n'a pas besoin d'être suivi.", "correct": true },
+        { "text": "Parce qu'il contient des données sensibles sur le projet.", "correct": false },
+        { "text": "Parce qu'il s'agit d'un fichier de configuration critique pour Git.", "correct": false },
+        { "text": "Parce qu'il contient des informations de suivi de version inutiles.", "correct": false }
+      ]
+    },
+    {
+      "question": "Que doit-on faire avant de commencer à utiliser Git dans un projet ?",
+      "answers": [
+        { "text": "Il faut installer Git et le configurer sur sa machine.", "correct": true },
+        { "text": "Il faut créer un compte sur GitHub.", "correct": false },
+        { "text": "Il faut écrire le code source du projet.", "correct": false },
+        { "text": "Il faut ignorer tous les fichiers du projet.", "correct": false }
+      ]
+    }
+  ]
+}
+
+

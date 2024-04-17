@@ -1,1 +1,242 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'Express.js ?",
+      "answers": [
+        {
+          "text": "Express.js est un framework JavaScript pour construire des applications web.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un outil pour créer des sites web en utilisant JavaScript.",
+          "correct": true
+        },
+        {
+          "text": "Express.js est une base de données NoSQL.",
+          "correct": false
+        },
+        {
+          "text": "Express.js est un langage de programmation pour les applications mobiles.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi Express.js n'utilise-t-il pas un serveur web tiers comme uvicorn ?",
+      "answers": [
+        {
+          "text": "Parce que Express.js est exclusivement conçu pour les applications mobiles.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'Express.js préfère les serveurs web tiers.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'Express.js a une fonction intégrée pour écouter un port spécifique sur notre machine.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'il est plus compliqué d'utiliser un serveur tiers avec Express.js.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que doit-on importer pour utiliser Express.js ?",
+      "answers": [
+        {
+          "text": "Il faut importer les modules nécessaires comme Express.js lui-même, le système de fichiers et le chemin d'accès.",
+          "correct": true
+        },
+        {
+          "text": "Il faut importer seulement le système de fichiers.",
+          "correct": false
+        },
+        {
+          "text": "Il faut importer seulement le module Express.js.",
+          "correct": false
+        },
+        {
+          "text": "Il faut importer le module Express.js et un module de base de données.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment crée-t-on une instance d'Express.js ?",
+      "answers": [
+        {
+          "text": "En appelant directement la fonction `createExpressInstance()`.",
+          "correct": false
+        },
+        {
+          "text": "En appelant le module Express.js que nous avons importé.",
+          "correct": true
+        },
+        {
+          "text": "En utilisant un constructeur spécial fourni par Express.js.",
+          "correct": false
+        },
+        {
+          "text": "En créant une classe JavaScript personnalisée pour cela.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un port par défaut dans le contexte d'une application web ?",
+      "answers": [
+        {
+          "text": "C'est un numéro utilisé pour écouter les demandes entrantes sur le web.",
+          "correct": true
+        },
+        {
+          "text": "C'est un endroit sur le serveur où sont stockées les ressources statiques.",
+          "correct": false
+        },
+        {
+          "text": "C'est le nom de domaine par défaut d'une application web.",
+          "correct": false
+        },
+        {
+          "text": "C'est le numéro de version par défaut des applications web.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Comment peut-on définir le port sur lequel notre application web doit écouter ?",
+            "answers": [
+                { "text": "En utilisant une fonction spéciale `definePort()` fournie par Express.js.", "correct": false },
+                { "text": "En définissant un port par défaut ou en le liant à une variable d'environnement pour PORT.", "correct": true },
+                { "text": "En configurant le port dans le fichier `config.js` de l'application.", "correct": false },
+                { "text": "En passant le numéro de port comme argument à la fonction `startServer()`.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une fonction de rappel dans le contexte d'une route HTTP ?",
+            "answers": [
+                { "text": "C'est une fonction qui gère ce qui se passe lorsqu'une route spécifique est visitée sur le site.", "correct": true },
+                { "text": "C'est une fonction qui rappelle une autre fonction lorsque la première est terminée.", "correct": false },
+                { "text": "C'est une fonction qui envoie un rappel par e-mail lorsqu'une route est visitée.", "correct": false },
+                { "text": "C'est une fonction qui rappelle les paramètres d'une requête HTTP lorsqu'elle est effectuée.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment définit-on une fonction de démarrage de l'application dans Express.js ?",
+            "answers": [
+                { "text": "En créant une fonction qui écoute sur un port, écrit l'ID du processus dans un fichier local et affiche un message dans la console.", "correct": true },
+                { "text": "En appelant une fonction prédéfinie `startApp()` fournie par Express.js.", "correct": false },
+                { "text": "En créant une classe `Application` avec une méthode `start()`.", "correct": false },
+                { "text": "En configurant une tâche planifiée pour démarrer l'application à une heure spécifique.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi écrit-on l'ID du processus dans un fichier local ?",
+            "answers": [
+                { "text": "Pour garder une trace du processus qui exécute notre application web.", "correct": true },
+                { "text": "Pour permettre à plusieurs instances de l'application de partager les informations de configuration.", "correct": false },
+                { "text": "Pour empêcher d'autres processus de modifier les paramètres de l'application.", "correct": false },
+                { "text": "Pour stocker temporairement des données sensibles utilisées par l'application.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une route HTTP dans une application web ?",
+            "answers": [
+                { "text": "C'est un chemin ou une adresse spécifique sur le site web qui répond à certaines demandes.", "correct": true },
+                { "text": "C'est une connexion sécurisée utilisée pour transférer des données entre le client et le serveur.", "correct": false },
+                { "text": "C'est un protocole de communication utilisé pour synchroniser les données entre le client et le serveur.", "correct": false },
+                { "text": "C'est un ensemble de règles définissant la structure des messages échangés entre le client et le serveur.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Quelle est l'importance de la variable d'environnement PORT ?",
+            "answers": [
+                { "text": "Elle permet de définir dynamiquement sur quel port l'application doit écouter, ce qui est utile dans différents environnements de déploiement.", "correct": true },
+                { "text": "Elle contient le numéro de version de l'application.", "correct": false },
+                { "text": "Elle stocke le chemin d'accès aux fichiers de configuration de l'application.", "correct": false },
+                { "text": "Elle spécifie le nom du domaine de l'application.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment Express.js écoute-t-il un port spécifique ?",
+            "answers": [
+                { "text": "En utilisant une fonction `listen()` qui prend le numéro de port comme argument.", "correct": false },
+                { "text": "En utilisant une méthode intégrée qui spécifie le port et démarre l'écoute des demandes.", "correct": true },
+                { "text": "En créant une instance de serveur et en lui attribuant un port spécifique.", "correct": false },
+                { "text": "En passant le numéro de port comme paramètre à la fonction `startServer()`.", "correct": false }
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une méthode HTTP spécifique dans ce contexte ?",
+            "answers": [
+                { "text": "C'est une action (comme GET ou POST) que notre application peut exécuter lorsqu'une route est visitée.", "correct": true },
+                { "text": "C'est une fonctionnalité spécifique d'Express.js pour gérer les requêtes HTTP.", "correct": false },
+                { "text": "C'est une fonction de rappel utilisée pour gérer les erreurs HTTP.", "correct": false },
+                { "text": "C'est une directive utilisée pour restreindre l'accès aux routes spécifiques.", "correct": false }
+            ]
+        },
+        {
+            "question": "Comment sait-on que notre application Express.js a démarré avec succès ?",
+            "answers": [
+                { "text": "En recevant une confirmation par e-mail.", "correct": false },
+                { "text": "En observant l'augmentation du trafic sur le serveur.", "correct": false },
+                { "text": "Un message s'affiche dans la console indiquant que l'application écoute sur le port spécifié.", "correct": true },
+                { "text": "En vérifiant l'état du serveur dans le tableau de bord de l'hébergeur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Pourquoi utiliserait-on Express.js pour développer une application web ?",
+            "answers": [
+                { "text": "Pour sa simplicité et sa capacité à écouter des ports directement, facilitant la création d'applications web.", "correct": true },
+                { "text": "Pour sa compatibilité avec tous les navigateurs web modernes.", "correct": false },
+                { "text": "Pour sa puissance en matière de traitement côté client.", "correct": false },
+                { "text": "Pour son intégration native avec les bases de données relationnelles.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+{
+    "quizzes": [
+        {
+            "question": "Quel avantage y a-t-il à définir un port par défaut pour une application web ?",
+            "answers": [
+                { "text": "Cela assure que l'application peut toujours fonctionner, même sans configuration environnementale spécifique.", "correct": true },
+                { "text": "Cela permet à l'application de fonctionner uniquement sur des ports bien connus.", "correct": false },
+                { "text": "Cela rend l'application plus sécurisée en cachant le numéro de port réel.", "correct": false },
+                { "text": "Cela limite le nombre de connexions entrantes autorisées sur le serveur.", "correct": false }
+            ]
+        },
+        {
+            "question": "Que signifie 'lier à une variable d'environnement pour PORT' ?",
+            "answers": [
+                { "text": "Cela signifie que l'application utilise un port fixe défini dans son code source.", "correct": false },
+                { "text": "Cela signifie que l'application utilise un port spécifié par l'environnement où elle s'exécute, pour plus de flexibilité.", "correct": true },
+                { "text": "Cela signifie que l'application doit être explicitement autorisée à écouter sur un port par l'utilisateur.", "correct": false },
+                { "text": "Cela signifie que l'application est capable de changer dynamiquement de port en fonction du trafic entrant.", "correct": false }
+            ]
+        }
+    ]
+}
+
+
+
+

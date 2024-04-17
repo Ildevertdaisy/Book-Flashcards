@@ -1,1 +1,196 @@
-{}
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que le contrôle de version ?",
+      "answers": [
+        {
+          "text": "C'est une manière de suivre et de gérer les changements dans les documents ou les programmes.",
+          "correct": true
+        },
+        {
+          "text": "C'est une méthode pour cultiver des légumes dans un jardin",
+          "correct": false
+        },
+        { "text": "C'est un outil pour contrôler la météo", "correct": false },
+        {
+          "text": "C'est un système pour contrôler les animaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment faisait-on le contrôle de version avant l'informatique ?",
+      "answers": [
+        {
+          "text": "On écrivait dans un cahier et on faisait des copies pour les ranger dans un classeur.",
+          "correct": true
+        },
+        { "text": "On envoyait des signaux de fumée", "correct": false },
+        { "text": "On utilisait des pigeons voyageurs", "correct": false },
+        {
+          "text": "On gravait des inscriptions sur des pierres",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que fait la commande Control + Z (ou Command + Z sur macOS) ?",
+      "answers": [
+        {
+          "text": "Elle annule l'action précédente, comme si on revenait en arrière.",
+          "correct": true
+        },
+        { "text": "Elle lance un feu d'artifice", "correct": false },
+        { "text": "Elle envoie un email", "correct": false },
+        { "text": "Elle change la couleur du texte", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi la commande Control + Z est-elle considérée comme une forme de contrôle de version ?",
+      "answers": [
+        {
+          "text": "Parce qu'elle permet de revenir à un état précédent du texte, comme une version antérieure.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'elle transforme le texte en emoji",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'elle ouvre une fenêtre dans une autre dimension",
+          "correct": false
+        },
+        { "text": "Parce qu'elle déclenche une explosion", "correct": false }
+      ]
+    },
+    {
+      "question": "Que fait la commande Control + Shift + Z (ou Command + Shift + Z sur macOS) ?",
+      "answers": [
+        {
+          "text": "Elle refait l'action annulée, comme si on avançait dans le temps vers un état plus récent du texte.",
+          "correct": true
+        },
+        {
+          "text": "Elle fait apparaître une licorne magique",
+          "correct": false
+        },
+        {
+          "text": "Elle transforme le texte en images de chat",
+          "correct": false
+        },
+        { "text": "Elle fait tomber la pluie à l'intérieur", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Comment serait la vie sans les commandes d'annulation et de refaire ?",
+      "answers": [
+        { "text": "Très difficile, car on ne pourrait pas facilement corriger les erreurs.", "correct": true },
+        { "text": "Très facile, car on n'aurait jamais besoin de corriger les erreurs", "correct": false },
+        { "text": "La même chose, car les erreurs ne se produisent jamais", "correct": false },
+        { "text": "Impossible à dire, car tout serait parfait", "correct": false }
+      ]
+    },
+    {
+      "question": "À quoi servait le 'blanco' (white-out) avec les machines à écrire ?",
+      "answers": [
+        { "text": "Pour corriger les erreurs en tapant sur du papier sans pouvoir utiliser d'annulation.", "correct": true },
+        { "text": "Pour rendre le papier plus blanc", "correct": false },
+        { "text": "Pour ajouter un arrière-plan blanc aux documents", "correct": false },
+        { "text": "Pour dessiner des images blanches", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi le contrôle de version est-il important dans la rédaction de documents ou de code ?",
+      "answers": [
+        { "text": "Pour pouvoir facilement corriger des erreurs ou revenir à une version antérieure.", "correct": true },
+        { "text": "Pour rendre les documents plus colorés", "correct": false },
+        { "text": "Pour ajouter des fonctionnalités supplémentaires aux documents", "correct": false },
+        { "text": "Pour limiter l'accès aux documents", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment la technologie a-t-elle changé la façon dont nous gérons les versions d'un document ?",
+      "answers": [
+        { "text": "Elle a rendu le processus plus facile et plus rapide avec des commandes comme annuler et refaire.", "correct": true },
+        { "text": "Elle a rendu le processus plus lent et plus difficile", "correct": false },
+        { "text": "Elle n'a eu aucun impact sur la gestion des versions de documents", "correct": false },
+        { "text": "Elle a rendu le processus plus complexe", "correct": false }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela signifie de 'revenir à un état historique' d'un texte ?",
+      "answers": [
+        { "text": "Cela signifie de revenir à ce que le texte était avant certaines modifications.", "correct": true },
+        { "text": "Cela signifie ajouter des informations historiques au texte", "correct": false },
+        { "text": "Cela signifie supprimer tout le texte", "correct": false },
+        { "text": "Cela signifie changer le texte en quelque chose de complètement nouveau", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que cela signifie de \"bouger en avant dans le temps\" avec un texte ?",
+      "answers": [
+        { "text": "Cela signifie d'appliquer à nouveau des modifications après les avoir annulées.", "correct": true },
+        { "text": "Cela signifie de revenir à un état antérieur du texte", "correct": false },
+        { "text": "Cela signifie de supprimer toutes les modifications précédentes", "correct": false },
+        { "text": "Cela signifie de copier le texte vers un autre document", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce utile d'avoir la commande \"redo\" en plus de \"undo\" ?",
+      "answers": [
+        { "text": "Pour pouvoir annuler une annulation si on change d'avis.", "correct": true },
+        { "text": "Pour annuler toutes les actions précédentes", "correct": false },
+        { "text": "Pour supprimer toutes les modifications précédentes", "correct": false },
+        { "text": "Pour réinitialiser le document à son état initial", "correct": false }
+      ]
+    },
+    {
+      "question": "Quelle est la différence entre écrire avec un typewriter et utiliser un ordinateur en termes de contrôle de version ?",
+      "answers": [
+        { "text": "Avec un typewriter, corriger une erreur était plus compliqué et prenait plus de temps.", "correct": true },
+        { "text": "Il n'y a aucune différence en termes de contrôle de version", "correct": false },
+        { "text": "Le contrôle de version était plus avancé avec un typewriter", "correct": false },
+        { "text": "Le contrôle de version était plus facile avec un ordinateur", "correct": false }
+      ]
+    },
+    {
+      "question": "Comment le contrôle de version aide-t-il dans le travail de groupe sur un document ou un code ?",
+      "answers": [
+        { "text": "Il permet à plusieurs personnes de suivre qui a fait quels changements et quand.", "correct": true },
+        { "text": "Il empêche les autres de modifier le document ou le code", "correct": false },
+        { "text": "Il limite l'accès aux documents ou au code", "correct": false },
+        { "text": "Il fusionne automatiquement toutes les modifications", "correct": false }
+      ]
+    },
+    {
+      "question": "Pourquoi le contrôle de version est-il fondamental dans le développement de logiciels aujourd'hui ?",
+      "answers": [
+        { "text": "Parce qu'il permet de gérer efficacement les changements dans le code et de collaborer plus facilement sur des projets.", "correct": true },
+        { "text": "Parce qu'il rend le développement de logiciels plus lent et plus compliqué", "correct": false },
+        { "text": "Parce qu'il limite la collaboration sur des projets de logiciels", "correct": false },
+        { "text": "Parce qu'il n'est pas nécessaire dans le développement de logiciels", "correct": false }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
