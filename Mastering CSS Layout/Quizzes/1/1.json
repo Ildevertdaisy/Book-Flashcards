@@ -1,0 +1,151 @@
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que CSS ?",
+      "answers": [
+        {
+          "text": "CSS est une façon de décorer les pages web pour les rendre jolies.",
+          "correct": true
+        },
+        {
+          "text": "CSS est une langue de programmation utilisée pour créer des jeux vidéo.",
+          "correct": false
+        },
+        {
+          "text": "CSS est un langage de codage utilisé pour contrôler les robots.",
+          "correct": false
+        },
+        {
+          "text": "CSS est un type de nourriture que l'on peut manger.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C'est quoi un motif de conception (design pattern) ?",
+      "answers": [
+        {
+          "text": "C'est comme une recette qui aide à résoudre des problèmes communs quand on crée des pages web.",
+          "correct": true
+        },
+        {
+          "text": "C'est une technique utilisée pour construire des maisons en bois.",
+          "correct": false
+        },
+        {
+          "text": "C'est un style de peinture utilisé dans l'art moderne.",
+          "correct": false
+        },
+        {
+          "text": "C'est une méthode pour apprendre à tricoter des écharpes.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi on n'aime pas toujours utiliser les \"bootstraps\" ou les systèmes à 12 colonnes pour faire un site ?",
+      "answers": [
+        {
+          "text": "Parce qu'ils peuvent nous limiter et rendre difficile la création de notre propre design.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'ils garantissent toujours un design exceptionnel sans aucun effort.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils permettent une personnalisation totale sans aucune restriction.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils sont magiquement capables de créer des sites web sans aucune compétence.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça veut dire \"jeter de la boue contre le mur pour voir si ça colle\" quand on parle de faire des sites web ?",
+      "answers": [
+        {
+          "text": "Cela signifie essayer beaucoup de choses au hasard en espérant que quelque chose fonctionne bien.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie utiliser uniquement des méthodes éprouvées et testées.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie ignorer complètement le processus de conception.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie suivre scrupuleusement un plan prédéfini sans aucune flexibilité.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment les motifs de conception (design patterns) peuvent-ils aider à créer des pages web ?",
+      "answers": [
+        {
+          "text": "Ils offrent des solutions pratiques pour organiser notre page sans deviner ce qui pourrait marcher.",
+          "correct": true
+        },
+        {
+          "text": "Ils rendent la création de pages web beaucoup plus compliquée et confuse.",
+          "correct": false
+        },
+        {
+          "text": "Ils ne sont d'aucune utilité dans le processus de conception de sites web.",
+          "correct": false
+        },
+        {
+          "text": "Ils garantissent des résultats parfaits sans aucun effort de notre part.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un \"framework CSS\" ?",
+      "answers": [
+        {
+          "text": "C'est un ensemble d'outils et de règles prêts à l'emploi pour aider à construire des sites web.",
+          "correct": true
+        },
+        {
+          "text": "C'est un logiciel utilisé pour créer des fusées spatiales.",
+          "correct": false
+        },
+        {
+          "text": "C'est un instrument de musique utilisé dans les orchestres.",
+          "correct": false
+        },
+        {
+          "text": "C'est une espèce de plante que l'on trouve dans les régions désertiques.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il intéressant d'apprendre à maîtriser les motifs de conception CSS ?",
+      "answers": [
+        {
+          "text": "Parce que ça nous libère des limites des outils tout faits et nous permet de créer des sites web comme on les imagine.",
+          "correct": true
+        },
+        {
+          "text": "Parce que cela rend la création de sites web totalement impossible.",
+          "correct": false
+        },
+        {
+          "text": "Parce que cela n'a absolument aucun impact sur la qualité des sites web.",
+          "correct": false
+        },
+        {
+          "text": "Parce que cela garantit que nos sites web seront toujours en haut des résultats de recherche.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

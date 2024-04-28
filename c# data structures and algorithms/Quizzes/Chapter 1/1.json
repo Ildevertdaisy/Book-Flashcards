@@ -1,0 +1,256 @@
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce que C# ?",
+      "answers": [
+        {
+          "text": "Un programme est un ensemble d'instructions que l'on donne à l'ordinateur pour qu'il réalise des tâches.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'il est très flexible et puissant, ce qui permet de l'utiliser dans beaucoup de projets différents.",
+          "correct": false
+        },
+        {
+          "text": "Ce sont des manières d'organiser l'information dans un programme pour qu'elle soit facile à utiliser.",
+          "correct": false
+        },
+        {
+          "text": "C# est un langage de programmation utilisé pour créer des programmes et des jeux sur des ordinateurs.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "À quoi sert un langage de programmation comme C# ?",
+      "answers": [
+        {
+          "text": "Ce sont des manières d'organiser l'information dans un programme pour qu'elle soit facile à utiliser.",
+          "correct": false
+        },
+        {
+          "text": "Il sert à donner des instructions à un ordinateur pour qu'il sache quoi faire.",
+          "correct": true
+        },
+        {
+          "text": "Cela veut dire que l'on peut utiliser C# pour beaucoup de types de projets différents.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'il donne seulement une description rapide des idées principales sans aller trop en profondeur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que l'on peut faire avec C# ?",
+      "answers": [
+        {
+          "text": "On utilise des commandes spéciales qui aident l'ordinateur à comprendre ce qu'il doit faire.",
+          "correct": false
+        },
+        {
+          "text": "Cela veut dire que l'on peut utiliser C# pour beaucoup de types de projets différents.",
+          "correct": false
+        },
+        {
+          "text": "Il sert à donner des instructions à un ordinateur pour qu'il sache quoi faire.",
+          "correct": false
+        },
+        {
+          "text": "On peut développer des jeux, des applications pour Windows, ou des sites web.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Quels sont les types de constructions que l'on peut utiliser dans C# ?",
+      "answers": [
+        {
+          "text": "Parce qu'il donne seulement une description rapide des idées principales sans aller trop en profondeur.",
+          "correct": false
+        },
+        {
+          "text": "Cela veut dire que l'on peut utiliser C# pour beaucoup de types de projets différents.",
+          "correct": false
+        },
+        {
+          "text": "On utilise des commandes spéciales qui aident l'ordinateur à comprendre ce qu'il doit faire.",
+          "correct": true
+        },
+        {
+          "text": "Il sert à donner des instructions à un ordinateur pour qu'il sache quoi faire.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un algorithme ?",
+      "answers": [
+        {
+          "text": "Un algorithme, c'est comme une recette de cuisine, une série d'instructions pour résoudre un problème ou accomplir une tâche.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'il donne seulement une description rapide des idées principales sans aller trop en profondeur.",
+          "correct": false
+        },
+        {
+          "text": "Cela veut dire que l'on peut utiliser C# pour beaucoup de types de projets différents.",
+          "correct": false
+        },
+        {
+          "text": "On utilise des commandes spéciales qui aident l'ordinateur à comprendre ce qu'il doit faire.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Que signifie \"structures de données\" en programmation ?",
+      "answers": [
+        {
+          "text": "Cela signifie qu'on explique les idées de base de C# rapidement sans entrer dans tous les détails.",
+          "correct": false
+        },
+        {
+          "text": "Ce sont des manières d'organiser l'information dans un programme pour qu'elle soit facile à utiliser.",
+          "correct": true
+        },
+        {
+          "text": "On utilise des commandes spéciales qui aident l'ordinateur à comprendre ce qu'il doit faire.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'il donne seulement une description rapide des idées principales sans aller trop en profondeur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de connaître différents types de données dans C# ?",
+      "answers": [
+        {
+          "text": "Cela veut dire que l'on peut utiliser C# pour beaucoup de types de projets différents.",
+          "correct": false
+        },
+        {
+          "text": "Chaque type de donnée est adapté à certaines tâches, donc savoir les utiliser aide à écrire de meilleurs programmes.",
+          "correct": true
+        },
+        {
+          "text": "Un programme est un ensemble d'instructions que l'on donne à l'ordinateur pour qu'il réalise des tâches.",
+          "correct": false
+        },
+        {
+          "text": "Il sert à donner des instructions à un ordinateur pour qu'il sache quoi faire.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'un programme ?",
+      "answers": [
+        {
+          "text": "Un algorithme, c'est comme une recette de cuisine, une série d'instructions pour résoudre un problème ou accomplir une tâche.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie qu'on explique les idées de base de C# rapidement sans entrer dans tous les détails.",
+          "correct": false
+        },
+        {
+          "text": "Un programme est un ensemble d'instructions que l'on donne à l'ordinateur pour qu'il réalise des tâches.",
+          "correct": true
+        },
+        {
+          "text": "Parce qu'il donne seulement une description rapide des idées principales sans aller trop en profondeur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi utilise-t-on C# dans beaucoup de scénarios différents ?",
+      "answers": [
+        {
+          "text": "Parce qu'il donne seulement une description rapide des idées principales sans aller trop en profondeur.",
+          "correct": false
+        },
+        {
+          "text": "Un programme est un ensemble d'instructions que l'on donne à l'ordinateur pour qu'il réalise des tâches.",
+          "correct": false
+        },
+        {
+          "text": "Un algorithme, c'est comme une recette de cuisine, une série d'instructions pour résoudre un problème ou accomplir une tâche.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'il est très flexible et puissant, ce qui permet de l'utiliser dans beaucoup de projets différents.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'une \"introduction brève\" dans le contexte de l'apprentissage de C# ?",
+      "answers": [
+        {
+          "text": "Cela signifie qu'on explique les idées de base de C# rapidement sans entrer dans tous les détails.",
+          "correct": true
+        },
+        {
+          "text": "Cela veut dire que l'on peut utiliser C# pour beaucoup de types de projets différents.",
+          "correct": false
+        },
+        {
+          "text": "Un algorithme, c'est comme une recette de cuisine, une série d'instructions pour résoudre un problème ou accomplir une tâche.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'il donne seulement une description rapide des idées principales sans aller trop en profondeur.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi ce texte ne serait pas un cours complet sur C# ?",
+      "answers": [
+        {
+          "text": "Parce qu'il est très flexible et puissant, ce qui permet de l'utiliser dans beaucoup de projets différents.",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'il donne seulement une description rapide des idées principales sans aller trop en profondeur.",
+          "correct": true
+        },
+        {
+          "text": "Ce sont des manières d'organiser l'information dans un programme pour qu'elle soit facile à utiliser.",
+          "correct": false
+        },
+        {
+          "text": "On utilise des commandes spéciales qui aident l'ordinateur à comprendre ce qu'il doit faire.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que cela signifie quand on dit que C# a de \"larges possibilités\" ?",
+      "answers": [
+        {
+          "text": "Un algorithme, c'est comme une recette de cuisine, une série d'instructions pour résoudre un problème ou accomplir une tâche.",
+          "correct": false
+        },
+        {
+          "text": "Cela veut dire que l'on peut utiliser C# pour beaucoup de types de projets différents.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie qu'on explique les idées de base de C# rapidement sans entrer dans tous les détails.",
+          "correct": false
+        },
+        {
+          "text": "Il sert à donner des instructions à un ordinateur pour qu'il sache quoi faire.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

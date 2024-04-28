@@ -1,0 +1,88 @@
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un motif de conception pour créer des sites web ?",
+      "answers": [
+        {
+          "text": "C'est une solution spéciale pour organiser les éléments sur une page de manière efficace.",
+          "correct": true
+        },
+        {
+          "text": "C'est un outil utilisé pour dessiner des motifs artistiques sur des sites web.",
+          "correct": false
+        },
+        {
+          "text": "C'est un moyen de communiquer avec les extraterrestres en ligne.",
+          "correct": false
+        },
+        {
+          "text": "C'est une recette de cuisine pour préparer des sites web délicieux.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "En quoi consiste la première partie de notre parcours éducatif sur les motifs de conception ?",
+      "answers": [
+        {
+          "text": "On apprend ce que sont les motifs de conception et comment ils résolvent des problèmes communs.",
+          "correct": true
+        },
+        {
+          "text": "On explore les différentes façons de compter jusqu'à dix en utilisant des motifs de conception.",
+          "correct": false
+        },
+        {
+          "text": "On découvre les secrets des motifs de conception à travers des contes de fées en ligne.",
+          "correct": false
+        },
+        {
+          "text": "On construit des châteaux de sable virtuels en utilisant des motifs de conception sur des plages virtuelles.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'apprendrons-nous après avoir compris les motifs de conception ?",
+      "answers": [
+        {
+          "text": "On pratiquera comment utiliser ces motifs avec les outils CSS grid et CSS flex box.",
+          "correct": true
+        },
+        {
+          "text": "On se lancera dans une expédition pour trouver des motifs de conception cachés dans la jungle numérique.",
+          "correct": false
+        },
+        {
+          "text": "On étudiera les différentes espèces de motifs de conception dans leur habitat naturel en ligne.",
+          "correct": false
+        },
+        {
+          "text": "On apprendra à jouer de la musique en ligne en utilisant des motifs de conception comme notes de musique.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment les sections de ce cours sont-elles organisées ?",
+      "answers": [
+        {
+          "text": "Chaque section s'appuie sur la précédente, en commençant par les bases pour aller vers des mises en pratique.",
+          "correct": true
+        },
+        {
+          "text": "Chaque section est une épreuve de survie en ligne où l'on doit utiliser des motifs de conception pour construire un abri virtuel.",
+          "correct": false
+        },
+        {
+          "text": "Chaque section est un défi de danse en ligne où l'on doit suivre des pas de danse inspirés de motifs de conception.",
+          "correct": false
+        },
+        {
+          "text": "Chaque section est une course en ligne où l'on doit utiliser des motifs de conception pour construire des voitures virtuelles.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un motif de conception dans la création de sites web ?",
+      "answers": [
+        {
+          "text": "C'est une solution spéciale pour résoudre des problèmes communs lorsqu'on organise les éléments d'un site.",
+          "correct": true
+        },
+        {
+          "text": "C'est un animal virtuel que l'on peut élever sur internet.",
+          "correct": false
+        },
+        {
+          "text": "C'est un jeu vidéo dans lequel on doit construire des sites web.",
+          "correct": false
+        },
+        {
+          "text": "C'est une méthode utilisée pour dessiner des motifs sur des sites web avec des crayons numériques.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que le CSS grid ?",
+      "answers": [
+        {
+          "text": "C'est un outil dans CSS qui aide à placer et organiser les éléments d'une page de manière précise.",
+          "correct": true
+        },
+        {
+          "text": "C'est un système de navigation utilisé pour explorer des grilles géantes sur internet.",
+          "correct": false
+        },
+        {
+          "text": "C'est un type de grille utilisé pour jouer aux échecs en ligne.",
+          "correct": false
+        },
+        {
+          "text": "C'est une fonctionnalité de CSS qui transforme automatiquement une page en grille de Sudoku.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Et le CSS flex box, c'est quoi ?",
+      "answers": [
+        {
+          "text": "C'est un autre outil dans CSS qui permet de disposer les éléments d'une page de façon flexible.",
+          "correct": true
+        },
+        {
+          "text": "C'est un modèle de livraison de boîtes de colis à domicile.",
+          "correct": false
+        },
+        {
+          "text": "C'est un jeu de société où les joueurs doivent deviner le contenu de boîtes mystérieuses.",
+          "correct": false
+        },
+        {
+          "text": "C'est un style de danse où les danseurs doivent suivre des instructions affichées sur des boîtes lumineuses.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi apprend-on d'abord le CSS grid avant le flex box ?",
+      "answers": [
+        {
+          "text": "Pour mieux reconnaître les problèmes de mise en page et choisir la meilleure solution entre grid et flex box.",
+          "correct": true
+        },
+        {
+          "text": "Parce que le CSS grid est plus facile à apprendre que le flex box.",
+          "correct": false
+        },
+        {
+          "text": "Parce que le CSS grid a été inventé avant le flex box.",
+          "correct": false
+        },
+        {
+          "text": "Parce que les développeurs ont décidé de l'ordre d'apprentissage de façon aléatoire.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment savoir quel motif de conception utiliser pour un problème de mise en page ?",
+      "answers": [
+        {
+          "text": "En comprenant bien le problème, on peut choisir instinctivement le motif qui convient le mieux pour le résoudre.",
+          "correct": true
+        },
+        {
+          "text": "En lançant un dé et en choisissant aléatoirement parmi tous les motifs possibles.",
+          "correct": false
+        },
+        {
+          "text": "En fermant les yeux et en pointant au hasard sur une liste de motifs de conception.",
+          "correct": false
+        },
+        {
+          "text": "En demandant à un chat de choisir entre plusieurs motifs en leur montrant des images.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quel est l'objectif de maîtriser ces motifs de conception pour les sites web ?",
+      "answers": [
+        {
+          "text": "Pour devenir habile à utiliser ces outils et résoudre les défis courants dans l'organisation des pages web.",
+          "correct": true
+        },
+        {
+          "text": "Pour créer des sites web qui sont totalement identiques à tous les autres sites web sur internet.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre les sites web encore plus confus et difficiles à naviguer pour les utilisateurs.",
+          "correct": false
+        },
+        {
+          "text": "Pour comprendre que les motifs de conception sont en fait des créatures magiques qui contrôlent internet.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

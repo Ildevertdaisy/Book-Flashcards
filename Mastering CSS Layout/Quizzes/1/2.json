@@ -1,0 +1,130 @@
+{
+  "quizzes": [
+    {
+      "question": "Qu'est-ce qu'un motif de conception dans les sites web ?",
+      "answers": [
+        {
+          "text": "C'est comme une astuce pour arranger les éléments sur une page web facilement.",
+          "correct": true
+        },
+        {
+          "text": "C'est un animal rare que l'on trouve uniquement sur internet.",
+          "correct": false
+        },
+        {
+          "text": "C'est un logiciel utilisé pour dessiner des motifs sur des tissus en ligne.",
+          "correct": false
+        },
+        {
+          "text": "C'est un terme utilisé pour décrire la façon dont les sites web sont construits avec des briques.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-ce qu'on utilise des motifs de conception pour les sites web ?",
+      "answers": [
+        {
+          "text": "Pour résoudre des problèmes communs de mise en page sans être limité par des règles fixes.",
+          "correct": true
+        },
+        {
+          "text": "Parce que les motifs de conception rendent les sites web très laids.",
+          "correct": false
+        },
+        {
+          "text": "Pour rendre les sites web extrêmement compliqués à naviguer.",
+          "correct": false
+        },
+        {
+          "text": "Parce que les motifs de conception sont en fait des animaux de compagnie virtuels pour les développeurs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quels sont quelques exemples de motifs de conception qu'on peut utiliser ?",
+      "answers": [
+        {
+          "text": "Des exemples incluent des piles, des séparations, ou des groupes d'éléments alignés.",
+          "correct": true
+        },
+        {
+          "text": "Des exemples incluent des recettes de cuisine, des techniques de jardinage, ou des astuces de bricolage.",
+          "correct": false
+        },
+        {
+          "text": "Des exemples incluent des styles de coiffure, des choix de vêtements, ou des préférences musicales.",
+          "correct": false
+        },
+        {
+          "text": "Des exemples incluent des tours de magie, des types de voitures, ou des espèces d'oiseaux.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce que ça veut dire \"ne plus être confiné à des grilles prédéfinies\" ?",
+      "answers": [
+        {
+          "text": "Cela veut dire qu'on n'est pas obligé de suivre des règles strictes et qu'on peut être plus créatif.",
+          "correct": true
+        },
+        {
+          "text": "Cela signifie qu'on est enfermé dans un espace virtuel avec des barrières numériques.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie qu'on est libre d'adopter n'importe quelle grille de décoration déjà existante.",
+          "correct": false
+        },
+        {
+          "text": "Cela signifie qu'on doit utiliser uniquement des grilles hexagonales au lieu de rectangles.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment les motifs de conception peuvent-ils aider quelqu'un qui crée un site web ?",
+      "answers": [
+        {
+          "text": "Ils donnent des idées et des méthodes pour organiser le site de manière efficace et jolie.",
+          "correct": true
+        },
+        {
+          "text": "Ils rendent le site web totalement inutilisable en le surchargeant de fonctionnalités.",
+          "correct": false
+        },
+        {
+          "text": "Ils imposent des restrictions strictes qui rendent impossible la création d'un site web.",
+          "correct": false
+        },
+        {
+          "text": "Ils transforment le site web en un chaos complet en mélangeant tous les éléments.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quel est l'objectif final d'apprendre à maîtriser les motifs de conception pour les sites web ?",
+      "answers": [
+        {
+          "text": "Pour avoir la confiance et les outils nécessaires pour relever n'importe quel défi de mise en page.",
+          "correct": true
+        },
+        {
+          "text": "Pour rendre les sites web encore plus compliqués et difficiles à utiliser.",
+          "correct": false
+        },
+        {
+          "text": "Pour créer des sites web qui ressemblent exactement à tous les autres sites web sur internet.",
+          "correct": false
+        },
+        {
+          "text": "Pour comprendre que les motifs de conception sont en fait une conspiration pour contrôler internet.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

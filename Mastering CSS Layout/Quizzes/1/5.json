@@ -1,0 +1,88 @@
+{
+  "quizzes": [
+    {
+      "question": "Qu'allons-nous apprendre dans la dernière partie du cours sur les motifs de conception ?",
+      "answers": [
+        {
+          "text": "On va découvrir quelles solutions fonctionnent le mieux pour organiser les pages web.",
+          "correct": true
+        },
+        {
+          "text": "On va explorer les différentes manières de tisser des motifs de conception sur des tapis virtuels.",
+          "correct": false
+        },
+        {
+          "text": "On va apprendre à dresser des animaux de compagnie virtuels en utilisant des motifs de conception.",
+          "correct": false
+        },
+        {
+          "text": "On va étudier les effets de l'utilisation des motifs de conception sur les fluctuations de la bourse virtuelle.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Qu'est-ce qu'on va discuter à part les motifs de conception dans la dernière section ?",
+      "answers": [
+        {
+          "text": "On va parler d'autres astuces utilisées pour bien arranger les éléments sur les sites web.",
+          "correct": true
+        },
+        {
+          "text": "On va organiser une compétition en ligne où les participants doivent construire des sites web utilisant uniquement des motifs de conception.",
+          "correct": false
+        },
+        {
+          "text": "On va explorer les mystères des motifs de conception à travers des contes de fées numériques.",
+          "correct": false
+        },
+        {
+          "text": "On va découvrir les avantages de l'utilisation de motifs de conception dans les voyages spatiaux virtuels.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Comment ces connaissances sur les motifs de conception vont-elles aider ceux qui créent des sites web ?",
+      "answers": [
+        {
+          "text": "Elles donneront une vue d'ensemble sur comment rendre les sites web plus agréables et mieux organisés.",
+          "correct": true
+        },
+        {
+          "text": "Elles transformeront les créateurs de sites web en maîtres de la cuisine en ligne en utilisant des motifs de conception comme recettes.",
+          "correct": false
+        },
+        {
+          "text": "Elles permettront aux créateurs de sites web de devenir des virtuoses du piano en utilisant des motifs de conception comme partitions.",
+          "correct": false
+        },
+        {
+          "text": "Elles aideront les créateurs de sites web à devenir des champions mondiaux dans des tournois en ligne de chasse au trésor virtuel.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pourquoi est-il important de connaître différents motifs de conception et astuces pour les sites web ?",
+      "answers": [
+        {
+          "text": "Pour avoir plus d'idées et de méthodes afin de résoudre les défis de mise en page sur le web de manière efficace.",
+          "correct": true
+        },
+        {
+          "text": "Pour créer des sites web qui ressemblent à des chefs-d'œuvre artistiques dignes d'être exposés dans des galeries virtuelles.",
+          "correct": false
+        },
+        {
+          "text": "Pour être en mesure de construire des sites web qui servent de terrains de jeux virtuels pour les extraterrestres.",
+          "correct": false
+        },
+        {
+          "text": "Pour devenir des experts en archéologie numérique et découvrir des artefacts virtuels cachés dans des sites web.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

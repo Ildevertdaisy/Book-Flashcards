@@ -452,7 +452,7 @@ A doubly linked list is another data structure that allows you to navigate both 
 
 #57
 
-magine a doubly linked list
+Imagine a doubly linked list
 
 If you want to better imagine a doubly linked list, open a text editor and start describing your day in it. Whenever you make a mistake, you press the “undo” button and you see the earlier version. You can also press “redo” and suddenly, you see what was in the document just before you undone the changes. Of course, you can perform such an operation many times, and the system remembers many previous and next operations. This is how you can think of a doubly linked list. In each element of the list, you can easily go to both the next element (equivalent to a “redo” operation) and the previous element (equivalent to a “back” operation). Just look how easy it is to find applications for various data structures in everyday life!
 
